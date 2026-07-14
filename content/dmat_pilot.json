@@ -1,0 +1,51 @@
+{
+  "exam_code": "dMAT",
+  "questions": [
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Solve the system for $x$:\n\n$$\\begin{cases} x + y = 12 \\\\ 2x - y = 6 \\end{cases}$$",
+      "position": 1,
+      "marks": 1,
+      "status": "published",
+      "skills": ["NUMERICAL_REASONING"],
+      "options": [
+        {"label": "A", "content_md": "$x = 5$", "is_correct": false},
+        {"label": "B", "content_md": "$x = 6$", "is_correct": true},
+        {"label": "C", "content_md": "$x = 7$", "is_correct": false},
+        {"label": "D", "content_md": "$x = 8$", "is_correct": false}
+      ]
+    },
+    {
+      "section_code": "LATSQ",
+      "type": "single_choice",
+      "content_md": "In the 5×5 Latin square below, which letter belongs in the highlighted cell?\n\n![grid](exam-media/dmat/latsq/pilot-1.png)",
+      "position": 1,
+      "marks": 1,
+      "status": "published",
+      "skills": ["LOGICAL_DEDUCTION"],
+      "options": [
+        {"label": "A", "content_md": "A", "is_correct": false},
+        {"label": "B", "content_md": "C", "is_correct": true},
+        {"label": "C", "content_md": "D", "is_correct": false},
+        {"label": "D", "content_md": "E", "is_correct": false}
+      ]
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Based on the passage, what is the author's primary conclusion?",
+      "position": 1,
+      "marks": 1,
+      "status": "published",
+      "skills": ["READING_COMPREHENSION", "PROBLEM_SOLVING"],
+      "stimulus_md": "A logistics firm reduced delivery times by 18% after re-routing around a single congested hub. However, per-package cost rose 4% due to longer average distances...",
+      "options": [
+        {"label": "A", "content_md": "Speed and cost always move together.", "is_correct": false},
+        {"label": "B", "content_md": "Removing a bottleneck can trade cost for speed.", "is_correct": true},
+        {"label": "C", "content_md": "Re-routing never affects cost.", "is_correct": false},
+        {"label": "D", "content_md": "Congestion is unavoidable.", "is_correct": false}
+      ]
+    }
+  ]
+}
