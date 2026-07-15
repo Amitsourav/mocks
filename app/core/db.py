@@ -14,12 +14,6 @@ from app.core.config import get_settings
 _pool: asyncpg.Pool | None = None
 
 
-async def _init_connection(conn: asyncpg.Connection) -> None:
-    settings = get_settings()
-    # Resolve unqualified names to our schema, keeping public for extensions.
-    await conn.execute(f"set search_path = {settings.db_schema}, public;")
-
-
 async def connect() -> asyncpg.Pool:
     global _pool
     if _pool is not None:
@@ -29,9 +23,15 @@ async def connect() -> asyncpg.Pool:
         dsn=settings.database_url,
         min_size=settings.db_pool_min,
         max_size=settings.db_pool_max,
-        init=_init_connection,
-        # Supavisor is a transaction-mode pooler; disable client-side statement
-        # cache which is incompatible with server-side prepared statements there.
+        # search_path MUST be a startup parameter, not a session-level `SET`.
+        # Supavisor runs in transaction mode and routes each transaction to a
+        # different backend, so a `SET search_path` issued on connection init
+        # does not survive — later queries would fail with "relation does not
+        # exist". Startup parameters are applied to every backend Supavisor
+        # hands out.
+        server_settings={"search_path": f"{settings.db_schema},public"},
+        # Transaction-mode pooling is incompatible with client-side statement
+        # caching / server-side prepared statements.
         statement_cache_size=0,
         command_timeout=30,
     )

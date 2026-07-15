@@ -34,6 +34,12 @@ app = FastAPI(
     title="Mock Exam Platform API",
     version="0.1.0",
     lifespan=lifespan,
+    # Interactive docs publish the full API map. They expose no data (every data
+    # endpoint requires a valid JWT), but there's no reason to hand attackers a
+    # map in production.
+    docs_url=None if settings.is_production else "/docs",
+    redoc_url=None if settings.is_production else "/redoc",
+    openapi_url=None if settings.is_production else "/openapi.json",
 )
 
 app.add_middleware(

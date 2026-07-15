@@ -48,8 +48,11 @@ DATABASE_URL=postgresql://postgres.lqcmhzouantgqrxlurhm:PASSWORD@aws-0-ap-northe
 # Supabase
 SUPABASE_URL=https://lqcmhzouantgqrxlurhm.supabase.co
 SUPABASE_PROJECT_REF=lqcmhzouantgqrxlurhm
-SUPABASE_JWT_SECRET=<Supabase → Project Settings → API → JWT Secret>
-SUPABASE_JWT_ALG=HS256
+# Current Supabase projects sign with ES256 signing keys (verify via the JWKS
+# URL below). Setting this to HS256 on an ES256 project rejects EVERY login.
+SUPABASE_JWT_ALG=ES256
+# Only needed for legacy HS256 projects:
+SUPABASE_JWT_SECRET=
 SUPABASE_JWKS_URL=https://lqcmhzouantgqrxlurhm.supabase.co/auth/v1/.well-known/jwks.json
 
 # Redis — reference the Railway Redis service (private network preferred)
@@ -95,7 +98,9 @@ Notes:
 
 - [ ] Redis service added; `REDIS_URL=${{Redis.REDIS_PRIVATE_URL}}` on backend
 - [ ] `DATABASE_URL` = Supabase **transaction pooler** string (real password)
-- [ ] `SUPABASE_JWT_SECRET` set
+- [ ] `SUPABASE_JWT_ALG` matches the project's actual signing algorithm — check
+      `curl -s $SUPABASE_URL/auth/v1/.well-known/jwks.json` (ES256 key → `ES256`).
+      Getting this wrong rejects every real login with an `alg` error.
 - [ ] `CORS_ORIGINS` = real frontend origin(s)
 - [ ] Public domain generated; health check path `/health`
 - [ ] Migrations already applied to Supabase (`migrations/0001–0003`) — they run

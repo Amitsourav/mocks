@@ -41,30 +41,44 @@ def verify_token(token: str) -> AuthenticatedUser:
     settings = get_settings()
     alg = settings.supabase_jwt_alg.upper()
 
+    # Supabase issues tokens with this issuer; pinning it stops a validly-signed
+    # token from a *different* project being accepted.
+    issuer = f"{settings.supabase_url.rstrip('/')}/auth/v1" if settings.supabase_url else None
+
     try:
         if alg == "HS256":
+            # Legacy shared-secret projects. Newer Supabase projects use
+            # asymmetric signing keys (ES256/RS256) served via JWKS — check the
+            # project's JWKS endpoint if tokens are rejected with an alg error.
             if not settings.supabase_jwt_secret:
                 raise AuthError("Server missing SUPABASE_JWT_SECRET")
-            claims = jwt.decode(
-                token,
-                settings.supabase_jwt_secret,
-                algorithms=["HS256"],
-                audience="authenticated",
-                options={"require": ["exp", "sub"]},
-            )
+            key = settings.supabase_jwt_secret
         else:
-            signing_key = _get_jwk_client(settings.supabase_jwks_url).get_signing_key_from_jwt(token)
-            claims = jwt.decode(
-                token,
-                signing_key.key,
-                algorithms=[alg],
-                audience="authenticated",
-                options={"require": ["exp", "sub"]},
-            )
+            if not settings.supabase_jwks_url:
+                raise AuthError("Server missing SUPABASE_JWKS_URL for asymmetric JWT verification")
+            key = _get_jwk_client(settings.supabase_jwks_url).get_signing_key_from_jwt(token).key
+
+        claims = jwt.decode(
+            token,
+            key,
+            algorithms=[alg],
+            audience="authenticated",
+            issuer=issuer,
+            options={"require": ["exp", "sub"], "verify_iss": bool(issuer)},
+        )
     except jwt.ExpiredSignatureError as exc:
         raise AuthError("Token expired") from exc
     except jwt.InvalidTokenError as exc:
         raise AuthError(f"Invalid token: {exc}") from exc
+    except jwt.PyJWKClientError as exc:
+        # No matching `kid` in the JWKS (e.g. a forged token signed with the
+        # wrong algorithm, or a key that has been rotated out). This is an auth
+        # failure, not a server fault — must surface as 401, never 500.
+        raise AuthError("Invalid token: no matching signing key") from exc
+    except AuthError:
+        raise
+    except Exception as exc:  # noqa: BLE001 - never let key resolution 500
+        raise AuthError("Invalid token") from exc
 
     sub = claims.get("sub")
     if not sub:

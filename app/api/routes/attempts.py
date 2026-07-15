@@ -4,7 +4,7 @@ from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException
 
-from app.api.deps import get_current_user
+from app.api.deps import get_current_user, require_complete_profile
 from app.core.db import get_pool
 from app.schemas.attempt import (
     AnswerAck,
@@ -27,7 +27,9 @@ def _handle(exc: EngineError) -> HTTPException:
 
 
 @router.post("/exams/{exam_id}/attempts", response_model=AttemptState, status_code=201)
-async def start_attempt(exam_id: UUID, user: CurrentUser = Depends(get_current_user)) -> AttemptState:
+async def start_attempt(
+    exam_id: UUID, user: CurrentUser = Depends(require_complete_profile)
+) -> AttemptState:
     pool = get_pool()
     try:
         attempt_id = await exam_engine.start_attempt(pool, user.id, exam_id)

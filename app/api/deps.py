@@ -33,34 +33,43 @@ async def get_auth_user(authorization: str | None = Header(default=None)) -> Aut
         ) from exc
 
 
+_USER_COLUMNS = """
+    id, auth_user_id, full_name, email, phone, address,
+    target_country, target_examination_id, role, profile_completed
+"""
+
+
 async def get_current_user(auth: AuthenticatedUser = Depends(get_auth_user)) -> CurrentUser:
+    """Resolve the app user for a verified token, provisioning on first sight.
+
+    Read-first: this runs on EVERY authenticated request, so the common path must
+    be a cheap indexed SELECT (idx_users_auth_user_id). Doing an unconditional
+    upsert here would write — and fire the updated_at trigger — on every single
+    API call, which is ruinous during a live exam with many concurrent students.
+    The INSERT only happens on a user's very first authenticated request.
+    """
     pool = get_pool()
     row = await pool.fetchrow(
-        """
-        insert into users (auth_user_id, phone, email)
-        values ($1, $2, $3)
-        on conflict (auth_user_id) do update
-            set phone = coalesce(users.phone, excluded.phone),
-                email = coalesce(users.email, excluded.email)
-        returning id, auth_user_id, full_name, email, phone, address,
-                  target_country, target_examination_id, role, profile_completed
-        """,
+        f"select {_USER_COLUMNS} from users where auth_user_id = $1",
         auth.auth_user_id,
-        auth.phone,
-        auth.email,
     )
-    return CurrentUser(
-        id=row["id"],
-        auth_user_id=row["auth_user_id"],
-        full_name=row["full_name"],
-        email=row["email"],
-        phone=row["phone"],
-        address=row["address"],
-        target_country=row["target_country"],
-        target_examination_id=row["target_examination_id"],
-        role=row["role"],
-        profile_completed=row["profile_completed"],
-    )
+    if row is None:
+        # First request for this auth user. ON CONFLICT resolves the race where
+        # two concurrent first requests both miss the SELECT above.
+        row = await pool.fetchrow(
+            f"""
+            insert into users (auth_user_id, phone, email)
+            values ($1, $2, $3)
+            on conflict (auth_user_id) do update
+                set phone = coalesce(users.phone, excluded.phone),
+                    email = coalesce(users.email, excluded.email)
+            returning {_USER_COLUMNS}
+            """,
+            auth.auth_user_id,
+            auth.phone,
+            auth.email,
+        )
+    return CurrentUser(**dict(row))
 
 
 def require_role(*roles: str):
@@ -70,3 +79,21 @@ def require_role(*roles: str):
         return user
 
     return _dep
+
+
+async def require_complete_profile(user: CurrentUser = Depends(get_current_user)) -> CurrentUser:
+    """Server-side gate: the profile form must be filled before taking a test.
+
+    The frontend drives the UX from `/me.profile_completed`; this is the safety
+    net so the form cannot be skipped by calling the API directly. Browsing the
+    exam catalog stays open deliberately.
+    """
+    if not user.profile_completed:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail={
+                "code": "profile_incomplete",
+                "message": "Complete your profile before starting a test.",
+            },
+        )
+    return user
