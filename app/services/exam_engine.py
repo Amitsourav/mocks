@@ -72,6 +72,17 @@ async def start_attempt(pool: asyncpg.Pool, user_id: UUID, exam_id: UUID) -> UUI
 
     async with pool.acquire() as conn:
         async with conn.transaction():
+            # Retire any attempt whose overall clock has run out, so a lapsed
+            # attempt cannot hold the one-active-attempt index and lock the
+            # student out of ever starting another.
+            await conn.execute(
+                """
+                update attempts set status = 'expired'
+                where user_id = $1 and examination_id = $2 and status = 'in_progress'
+                  and expires_at is not null and now() > expires_at
+                """,
+                user_id, exam_id,
+            )
             try:
                 attempt_id = await conn.fetchval(
                     """
@@ -119,8 +130,9 @@ async def get_attempt_state(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID)
                a.status, a.started_at, a.deadline_at, a.submitted_at
         from attempt_sections a
         join exam_sections s on s.id = a.section_id
+        join exam_modules m on m.id = s.module_id
         where a.attempt_id = $1
-        order by s.position
+        order by m.position, s.position
         """,
         attempt_id,
     )
@@ -145,13 +157,20 @@ async def submit_attempt(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID) ->
 
 async def _load_attempt_for_write(conn: asyncpg.Connection, user_id: UUID, attempt_id: UUID) -> asyncpg.Record:
     attempt = await conn.fetchrow(
-        "select id, user_id, examination_id, status from attempts where id = $1",
+        "select id, user_id, examination_id, status, expires_at from attempts where id = $1",
         attempt_id,
     )
     if attempt is None or attempt["user_id"] != user_id:
         raise EngineError("attempt_not_found", "Attempt not found", 404)
     if attempt["status"] != "in_progress":
         raise EngineError("attempt_not_active", "Attempt is not in progress", 409)
+    # Overall attempt clock: server-authoritative, same grace as section deadlines.
+    # NOTE: do not flip the row to 'expired' here — this runs inside the caller's
+    # transaction, so raising would roll the write back. `start_attempt` sweeps
+    # stale attempts instead, which is also what frees the one-active index.
+    if attempt["expires_at"] is not None:
+        if _utcnow() > attempt["expires_at"] + timedelta(seconds=DEADLINE_GRACE_SECONDS):
+            raise EngineError("attempt_expired", "Attempt time is over", 409)
     return attempt
 
 
@@ -162,9 +181,14 @@ async def enter_section(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID, sec
 
             section = await conn.fetchrow(
                 """
-                select id, examination_id, code, name, time_limit_seconds,
-                       navigation_locked
-                from exam_sections where id = $1
+                select s.id, s.examination_id, s.code, s.name, s.time_limit_seconds,
+                       s.navigation_locked, s.position as section_position,
+                       m.position as module_position,
+                       e.allows_revisit_within_section, e.section_navigation_locked
+                from exam_sections s
+                join exam_modules m on m.id = s.module_id
+                join examinations e on e.id = s.examination_id
+                where s.id = $1
                 """,
                 section_id,
             )
@@ -179,6 +203,32 @@ async def enter_section(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID, sec
                 raise EngineError("section_not_in_attempt", "Section not part of this attempt", 400)
             if astate["status"] == "completed":
                 raise EngineError("section_completed", "Section already completed", 409)
+
+            # Locked navigation: a section may only be opened once every earlier
+            # section (module order, then section order) is finished. A section
+            # whose deadline has passed counts as finished, so a student whose
+            # time ran out is never trapped. Resuming an already-open section is
+            # always allowed.
+            if section["section_navigation_locked"] and astate["status"] == "not_started":
+                unfinished = await conn.fetchval(
+                    """
+                    select count(*)
+                    from attempt_sections a
+                    join exam_sections s on s.id = a.section_id
+                    join exam_modules m on m.id = s.module_id
+                    where a.attempt_id = $1
+                      and (m.position, s.position) < ($2, $3)
+                      and a.status <> 'completed'
+                      and (a.deadline_at is null or now() <= a.deadline_at)
+                    """,
+                    attempt_id, section["module_position"], section["section_position"],
+                )
+                if unfinished:
+                    raise EngineError(
+                        "section_out_of_order",
+                        "Finish the previous section before starting this one.",
+                        409,
+                    )
 
             now = _utcnow()
             if astate["status"] == "not_started":
@@ -257,6 +307,7 @@ async def enter_section(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID, sec
         "server_time": _utcnow(),
         "remaining_seconds": max(0, remaining),
         "navigation_locked": section["navigation_locked"],
+        "allows_revisit": section["allows_revisit_within_section"],
         "stimuli": [{"id": s["id"], "content_md": s["content_md"]} for s in stimuli],
         "questions": [
             {
