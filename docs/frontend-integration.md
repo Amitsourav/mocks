@@ -101,7 +101,11 @@ All require `Authorization: Bearer <token>` except `/health`.
 |---|---|---|
 | GET  | `/health` | Liveness (no auth) |
 | GET  | `/me` | Current user profile |
-| POST | `/me/profile` | Fill post-signup profile form |
+| POST | `/me/profile` | Fill the cascading registration form (see §5a) |
+| GET  | `/reference/states` | States/UTs for the registration dropdown |
+| GET  | `/reference/countries` | Study-destination countries |
+| GET  | `/reference/mock-categories` | Top-level mock categories |
+| GET  | `/reference/mock-categories/{category_code}/exams` | Exams under a category (dependent dropdown) |
 | GET  | `/exams` | List active exams |
 | GET  | `/exams/{exam_id}` | Exam structure + capability flags |
 | POST | `/exams/{exam_id}/attempts` | Start an attempt (needs completed profile) |
@@ -120,8 +124,8 @@ Interactive reference (try every endpoint live): **`{BACKEND_URL}/docs`**
 
 ```
 1. Login screen        -> email OR phone OTP -> session (access_token)
-2. GET /me             -> if profile_completed == false, show profile form
-3. POST /me/profile    -> name / country / etc.
+2. GET /me             -> if profile_completed == false, show registration form (§5a)
+3. POST /me/profile    -> cascading selections + name + phone
 4. GET /exams          -> list; pick dMAT
 5. GET /exams/{id}     -> show modules -> sections; capability flags drive the UI
 6. POST /exams/{id}/attempts        -> start; returns attempt + sections in order
@@ -132,6 +136,46 @@ Interactive reference (try every endpoint live): **`{BACKEND_URL}/docs`**
      POST .../sections/{sid}/submit -> when done / time up
 8. POST /attempts/{id}/submit       -> finish
 ```
+
+### 5a. Registration form (the cascade)
+
+After login, if `GET /me` returns `profile_completed: false`, show the registration
+form. It's a **dependent cascade** — each selection loads the next dropdown from
+the reference endpoints (all require the session token):
+
+```
+1. Full name         (text)
+2. Phone             (E.164, e.g. +919876543210) — required even for email login
+3. State             GET /reference/states                 -> pick a state code
+4. Mock category     GET /reference/mock-categories        -> pick a category code
+5. Exam name         GET /reference/mock-categories/{categoryCode}/exams
+                                                           -> pick a catalog_exam code
+6. Target country    only if the chosen exam has requires_country == true;
+                     GET /reference/countries. If the exam has a
+                     default_country_code (e.g. d-MAT -> DE) you may preselect it.
+```
+
+Each reference item is `{ code, name, ... }` — **submit the `code`, display the
+`name`.** The exams response also carries `requires_country` and
+`default_country_code` so the form knows whether to show the country step.
+
+Submit:
+```js
+await fetch(`${BACKEND_URL}/me/profile`, {
+  method: 'POST',
+  headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    full_name, phone,                 // phone is E.164
+    state_code, mock_category_code, catalog_exam_code,
+    target_country_code               // omit/null when the exam needs no country
+  })
+})
+```
+
+The backend **validates every code** against the catalog and checks the exam
+belongs to the chosen category. Validation errors return `422` with
+`{ detail: { code, message } }` — e.g. `invalid_phone`, `invalid_state`,
+`exam_category_mismatch`, `country_required`. Surface `detail.message` inline.
 
 ### Rules the backend enforces (mirror in UX)
 - **Sections must be entered in order** → out-of-order = `409 section_out_of_order`.
