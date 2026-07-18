@@ -1,0 +1,278 @@
+{
+  "group": "govt_job",
+  "sources": [
+    "https://www.ibps.in/ (IBPS PO/MT — official notifications & exam pattern)",
+    "https://ssc.gov.in/ (SSC CGL — Tier I scheme of examination)",
+    "https://www.rrbcdg.gov.in/ (RRB NTPC — CBT 1 exam pattern)",
+    "https://upsc.gov.in/ (UPSC Civil Services Preliminary Examination — GS Paper I & CSAT Paper II)"
+  ],
+  "category_shared_subjects": [
+    {
+      "category_code": "JOB",
+      "code": "JOB_ENGLISH",
+      "name": "English Language",
+      "chapters": [
+        { "code": "JOB_ENG_GRAMMAR", "name": "Grammar" },
+        { "code": "JOB_ENG_RC", "name": "Reading Comprehension" },
+        { "code": "JOB_ENG_VERBAL", "name": "Verbal Ability" },
+        { "code": "JOB_ENG_ERROR", "name": "Error Detection & Sentence Correction" }
+      ],
+      "skills": [
+        { "code": "JOB_ENG_VOCAB", "name": "Vocabulary" },
+        { "code": "JOB_ENG_CLOZE", "name": "Cloze Test" },
+        { "code": "JOB_ENG_REARRANGE", "name": "Para/Sentence Rearrangement" }
+      ]
+    },
+    {
+      "category_code": "JOB",
+      "code": "JOB_QUANT",
+      "name": "Quantitative Aptitude",
+      "chapters": [
+        { "code": "JOB_QA_NUMBER", "name": "Number System" },
+        { "code": "JOB_QA_ARITH", "name": "Arithmetic" },
+        { "code": "JOB_QA_DI", "name": "Data Interpretation" },
+        { "code": "JOB_QA_ALGEBRA", "name": "Algebra, Geometry & Mensuration" }
+      ],
+      "skills": [
+        { "code": "JOB_QA_SIMPLIFY", "name": "Simplification & Approximation" },
+        { "code": "JOB_QA_SPEED", "name": "Speed Calculation" },
+        { "code": "JOB_QA_WORDPROB", "name": "Word Problems" }
+      ]
+    },
+    {
+      "category_code": "JOB",
+      "code": "JOB_REASONING",
+      "name": "Reasoning Ability",
+      "chapters": [
+        { "code": "JOB_RE_VERBAL", "name": "Verbal Reasoning" },
+        { "code": "JOB_RE_NONVERBAL", "name": "Non-Verbal Reasoning" },
+        { "code": "JOB_RE_PUZZLE", "name": "Puzzles & Seating Arrangement" },
+        { "code": "JOB_RE_ANALYTICAL", "name": "Analytical Reasoning" }
+      ],
+      "skills": [
+        { "code": "JOB_RE_SYLLOGISM", "name": "Syllogism" },
+        { "code": "JOB_RE_CODING", "name": "Coding-Decoding" },
+        { "code": "JOB_RE_BLOOD", "name": "Blood Relations & Directions" }
+      ]
+    },
+    {
+      "category_code": "JOB",
+      "code": "JOB_GA",
+      "name": "General Awareness",
+      "chapters": [
+        { "code": "JOB_GA_CURRENT", "name": "Current Affairs" },
+        { "code": "JOB_GA_STATIC", "name": "Static General Knowledge" },
+        { "code": "JOB_GA_POLITY", "name": "Indian Polity" },
+        { "code": "JOB_GA_GEO", "name": "Indian & World Geography" }
+      ],
+      "skills": [
+        { "code": "JOB_GA_HISTORY", "name": "History & Culture" },
+        { "code": "JOB_GA_SPORTS", "name": "Sports, Awards & Books" }
+      ]
+    }
+  ],
+  "category_shared_mocks": [
+    { "scope": "subject", "subject_code": "JOB_ENGLISH", "title": "English Language — Sectional Mock (Govt Exams)", "duration_min": 20, "questions": 30, "difficulty": "medium" },
+    { "scope": "subject", "subject_code": "JOB_QUANT", "title": "Quantitative Aptitude — Sectional Mock (Govt Exams)", "duration_min": 20, "questions": 30, "difficulty": "medium" },
+    { "scope": "subject", "subject_code": "JOB_REASONING", "title": "Reasoning Ability — Sectional Mock (Govt Exams)", "duration_min": 20, "questions": 30, "difficulty": "medium" },
+    { "scope": "subject", "subject_code": "JOB_GA", "title": "General Awareness — Sectional Mock (Govt Exams)", "duration_min": 15, "questions": 30, "difficulty": "medium" }
+  ],
+  "exams": [
+    {
+      "catalog_exam_code": "BANK",
+      "variants": [
+        { "code": "IBPS_PO", "name": "IBPS PO (Probationary Officer)" }
+      ],
+      "subjects": [
+        {
+          "code": "IBPS_BANKING_AWARENESS",
+          "name": "Banking & Financial Awareness",
+          "chapters": [
+            { "code": "IBPS_BA_RBI", "name": "RBI & Monetary Policy" },
+            { "code": "IBPS_BA_PRODUCTS", "name": "Banking Terminology & Products" },
+            { "code": "IBPS_BA_MARKETS", "name": "Financial Markets & Institutions" },
+            { "code": "IBPS_BA_ECONOMY", "name": "Economy & Fiscal Policy" }
+          ],
+          "skills": [
+            { "code": "IBPS_BA_CURRENT", "name": "Current Banking Affairs" },
+            { "code": "IBPS_BA_ABBR", "name": "Banking Abbreviations" }
+          ]
+        },
+        {
+          "code": "IBPS_COMPUTER",
+          "name": "Computer Aptitude",
+          "chapters": [
+            { "code": "IBPS_CA_FUND", "name": "Computer Fundamentals" },
+            { "code": "IBPS_CA_NET", "name": "Internet & Networking" },
+            { "code": "IBPS_CA_OFFICE", "name": "MS Office & Applications" }
+          ],
+          "skills": [
+            { "code": "IBPS_CA_HWSW", "name": "Hardware & Software Basics" },
+            { "code": "IBPS_CA_ABBR", "name": "Computer Abbreviations" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "IBPS PO — Prelims Full Mock", "duration_min": 60, "questions": 100, "difficulty": "medium", "variant_code": "IBPS_PO" }
+      ]
+    },
+    {
+      "catalog_exam_code": "SSC",
+      "variants": [
+        { "code": "SSC_CGL", "name": "SSC CGL (Combined Graduate Level)" }
+      ],
+      "subjects": [
+        {
+          "code": "SSC_GENERAL_SCIENCE",
+          "name": "General Science (SSC)",
+          "chapters": [
+            { "code": "SSC_GS_PHYSICS", "name": "Physics" },
+            { "code": "SSC_GS_CHEM", "name": "Chemistry" },
+            { "code": "SSC_GS_BIO", "name": "Biology" }
+          ],
+          "skills": [
+            { "code": "SSC_GS_EVERYDAY", "name": "Science in Everyday Life" },
+            { "code": "SSC_GS_DISCOVERY", "name": "Inventions & Discoveries" }
+          ]
+        },
+        {
+          "code": "SSC_STATIC_AWARENESS",
+          "name": "SSC Static Awareness",
+          "chapters": [
+            { "code": "SSC_SA_HISTORY", "name": "Indian History" },
+            { "code": "SSC_SA_POLITY", "name": "Indian Polity & Constitution" },
+            { "code": "SSC_SA_ECONOMY", "name": "Economy & Geography" }
+          ],
+          "skills": [
+            { "code": "SSC_SA_SCHEMES", "name": "Government Schemes" },
+            { "code": "SSC_SA_CURRENT", "name": "Current Affairs" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "SSC CGL — Tier I Full Mock", "duration_min": 60, "questions": 100, "difficulty": "medium", "variant_code": "SSC_CGL" }
+      ]
+    },
+    {
+      "catalog_exam_code": "RAILWAY",
+      "variants": [
+        { "code": "RRB_NTPC", "name": "RRB NTPC (Non-Technical Popular Categories)" }
+      ],
+      "subjects": [
+        {
+          "code": "RRB_GENERAL_SCIENCE",
+          "name": "General Science (RRB NTPC)",
+          "chapters": [
+            { "code": "RRB_GS_PHYSICS", "name": "Physics" },
+            { "code": "RRB_GS_CHEM", "name": "Chemistry" },
+            { "code": "RRB_GS_LIFE", "name": "Life Science" }
+          ],
+          "skills": [
+            { "code": "RRB_GS_EVERYDAY", "name": "Science in Everyday Life" },
+            { "code": "RRB_GS_ENV", "name": "Environmental Science" }
+          ]
+        },
+        {
+          "code": "RRB_GENERAL_AWARENESS",
+          "name": "General Awareness on Current & Railway Affairs",
+          "chapters": [
+            { "code": "RRB_GA_INDIA", "name": "Indian History, Polity & Economy" },
+            { "code": "RRB_GA_GEO", "name": "Geography of India & World" },
+            { "code": "RRB_GA_RAIL", "name": "Indian Railways & Transport" }
+          ],
+          "skills": [
+            { "code": "RRB_GA_CURRENT", "name": "National & International Current Affairs" },
+            { "code": "RRB_GA_ABBR", "name": "Abbreviations & Static GK" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "RRB NTPC — CBT 1 Full Mock", "duration_min": 90, "questions": 100, "difficulty": "medium", "variant_code": "RRB_NTPC" }
+      ]
+    },
+    {
+      "catalog_exam_code": "UPSC",
+      "variants": [
+        { "code": "CSE_PRELIMS", "name": "Civil Services Examination (Prelims)" }
+      ],
+      "subjects": [
+        {
+          "code": "UPSC_GS1",
+          "name": "General Studies Paper I",
+          "chapters": [
+            { "code": "UPSC_GS1_HISTORY", "name": "History & Indian National Movement" },
+            { "code": "UPSC_GS1_GEO", "name": "Indian & World Geography" },
+            { "code": "UPSC_GS1_POLITY", "name": "Indian Polity & Governance" },
+            { "code": "UPSC_GS1_ECONOMY", "name": "Economic & Social Development" },
+            { "code": "UPSC_GS1_ENV", "name": "Environment, Ecology & Biodiversity" },
+            { "code": "UPSC_GS1_SCITECH", "name": "General Science & Technology" },
+            { "code": "UPSC_GS1_CURRENT", "name": "Current Events of National & International Importance" }
+          ],
+          "skills": [
+            { "code": "UPSC_GS1_ANALYSIS", "name": "Current Affairs Analysis" },
+            { "code": "UPSC_GS1_STATIC", "name": "Static Fundamentals" },
+            { "code": "UPSC_GS1_MAP", "name": "Map-based Questions" }
+          ]
+        },
+        {
+          "code": "UPSC_CSAT",
+          "name": "CSAT (General Studies Paper II)",
+          "chapters": [
+            { "code": "UPSC_CSAT_COMP", "name": "Comprehension" },
+            { "code": "UPSC_CSAT_LOGIC", "name": "Logical Reasoning & Analytical Ability" },
+            { "code": "UPSC_CSAT_NUM", "name": "Basic Numeracy (Class X level)" },
+            { "code": "UPSC_CSAT_DI", "name": "Data Interpretation" },
+            { "code": "UPSC_CSAT_DECISION", "name": "Decision Making & Problem Solving" }
+          ],
+          "skills": [
+            { "code": "UPSC_CSAT_MENTAL", "name": "General Mental Ability" },
+            { "code": "UPSC_CSAT_COMM", "name": "Interpersonal & Communication Skills" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "UPSC CSE Prelims — GS Paper I Full Mock", "duration_min": 120, "questions": 100, "difficulty": "hard", "variant_code": "CSE_PRELIMS" }
+      ]
+    },
+    {
+      "catalog_exam_code": "STATE_PCS",
+      "variants": [
+        { "code": "PCS_PRELIMS", "name": "State PCS (Preliminary Examination)" }
+      ],
+      "subjects": [
+        {
+          "code": "PCS_GS",
+          "name": "State PCS General Studies (Prelims)",
+          "chapters": [
+            { "code": "PCS_GS_NATIONAL", "name": "Indian History, Polity & Economy" },
+            { "code": "PCS_GS_STATE", "name": "State-specific History, Geography & Culture" },
+            { "code": "PCS_GS_GEO", "name": "Indian & World Geography" },
+            { "code": "PCS_GS_ENV", "name": "Environment, Ecology & General Science" },
+            { "code": "PCS_GS_CURRENT", "name": "National & International Current Affairs" }
+          ],
+          "skills": [
+            { "code": "PCS_GS_STATICGK", "name": "State Static GK" },
+            { "code": "PCS_GS_ANALYSIS", "name": "Current Affairs Analysis" }
+          ]
+        },
+        {
+          "code": "PCS_CSAT",
+          "name": "State PCS CSAT (Aptitude Test)",
+          "chapters": [
+            { "code": "PCS_CSAT_COMP", "name": "Comprehension" },
+            { "code": "PCS_CSAT_LOGIC", "name": "Logical Reasoning & Analytical Ability" },
+            { "code": "PCS_CSAT_QUANT", "name": "Quantitative Aptitude (Class X level)" },
+            { "code": "PCS_CSAT_DI", "name": "Data Interpretation" }
+          ],
+          "skills": [
+            { "code": "PCS_CSAT_NUM", "name": "Basic Numeracy" },
+            { "code": "PCS_CSAT_DECISION", "name": "Decision Making & Problem Solving" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "State PCS Prelims — GS Paper I Full Mock", "duration_min": 120, "questions": 150, "difficulty": "medium", "variant_code": "PCS_PRELIMS" }
+      ]
+    }
+  ]
+}

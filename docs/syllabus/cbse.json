@@ -1,0 +1,4137 @@
+{
+  "group": "cbse",
+  "sources": [
+    "https://ncert.nic.in/textbook.php",
+    "https://ncert.nic.in/rationalised-content.php",
+    "https://cbseacademic.nic.in/curriculum.html",
+    "https://school.careers360.com/ncert/",
+    "https://www.vedantu.com/",
+    "https://www.learncbse.in/",
+    "https://www.tiwariacademy.com/"
+  ],
+  "exams": [
+    {
+      "catalog_exam_code": "CLASS_6",
+      "subjects": [
+        {
+          "code": "CBSE_C6_MATH",
+          "name": "Mathematics (Ganita Prakash)",
+          "chapters": [
+            {
+              "code": "CBSE_C6_MATH_PATTERNS_MATHEMATICS",
+              "name": "Patterns in Mathematics"
+            },
+            {
+              "code": "CBSE_C6_MATH_LINES_ANGLES",
+              "name": "Lines and Angles"
+            },
+            {
+              "code": "CBSE_C6_MATH_NUMBER_PLAY",
+              "name": "Number Play"
+            },
+            {
+              "code": "CBSE_C6_MATH_DATA_HANDLING_PRESENTATION",
+              "name": "Data Handling and Presentation"
+            },
+            {
+              "code": "CBSE_C6_MATH_PRIME_TIME",
+              "name": "Prime Time"
+            },
+            {
+              "code": "CBSE_C6_MATH_PERIMETER_AREA",
+              "name": "Perimeter and Area"
+            },
+            {
+              "code": "CBSE_C6_MATH_FRACTIONS",
+              "name": "Fractions"
+            },
+            {
+              "code": "CBSE_C6_MATH_PLAYING_CONSTRUCTIONS",
+              "name": "Playing with Constructions"
+            },
+            {
+              "code": "CBSE_C6_MATH_SYMMETRY",
+              "name": "Symmetry"
+            },
+            {
+              "code": "CBSE_C6_MATH_OTHER_SIDE_ZERO",
+              "name": "The Other Side of Zero"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C6_MATH_SK_NUMBERS",
+              "name": "Numbers and Operations"
+            },
+            {
+              "code": "CBSE_C6_MATH_SK_ALGEBRA_PATTERNS",
+              "name": "Patterns and Algebra"
+            },
+            {
+              "code": "CBSE_C6_MATH_SK_GEOMETRY",
+              "name": "Geometry and Measurement"
+            },
+            {
+              "code": "CBSE_C6_MATH_SK_DATA",
+              "name": "Data Handling"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C6_SCI",
+          "name": "Science (Curiosity)",
+          "chapters": [
+            {
+              "code": "CBSE_C6_SCI_WONDERFUL_WORLD_SCIENCE",
+              "name": "The Wonderful World of Science"
+            },
+            {
+              "code": "CBSE_C6_SCI_DIVERSITY_LIVING_WORLD",
+              "name": "Diversity in the Living World"
+            },
+            {
+              "code": "CBSE_C6_SCI_MINDFUL_EATING_PATH_HEALTHY",
+              "name": "Mindful Eating: A Path to a Healthy Body"
+            },
+            {
+              "code": "CBSE_C6_SCI_EXPLORING_MAGNETS",
+              "name": "Exploring Magnets"
+            },
+            {
+              "code": "CBSE_C6_SCI_MEASUREMENT_LENGTH_MOTION",
+              "name": "Measurement of Length and Motion"
+            },
+            {
+              "code": "CBSE_C6_SCI_MATERIALS_AROUND",
+              "name": "Materials Around Us"
+            },
+            {
+              "code": "CBSE_C6_SCI_TEMPERATURE_MEASUREMENT",
+              "name": "Temperature and its Measurement"
+            },
+            {
+              "code": "CBSE_C6_SCI_JOURNEY_THROUGH_STATES_WATER",
+              "name": "A Journey through States of Water"
+            },
+            {
+              "code": "CBSE_C6_SCI_METHODS_SEPARATION_EVERYDAY_LIFE",
+              "name": "Methods of Separation in Everyday Life"
+            },
+            {
+              "code": "CBSE_C6_SCI_LIVING_CREATURES_EXPLORING_CHARACTERISTICS",
+              "name": "Living Creatures: Exploring their Characteristics"
+            },
+            {
+              "code": "CBSE_C6_SCI_NATURE_S_TREASURES",
+              "name": "Nature's Treasures"
+            },
+            {
+              "code": "CBSE_C6_SCI_BEYOND_EARTH",
+              "name": "Beyond Earth"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C6_SCI_SK_LIVING",
+              "name": "Living World"
+            },
+            {
+              "code": "CBSE_C6_SCI_SK_MATTER",
+              "name": "Materials and Matter"
+            },
+            {
+              "code": "CBSE_C6_SCI_SK_PHYSICAL",
+              "name": "Physical Processes"
+            },
+            {
+              "code": "CBSE_C6_SCI_SK_EARTH",
+              "name": "Earth and Universe"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C6_SST",
+          "name": "Social Science (Exploring Society: India and Beyond)",
+          "chapters": [
+            {
+              "code": "CBSE_C6_SST_LOCATING_PLACES_EARTH",
+              "name": "Locating Places on the Earth"
+            },
+            {
+              "code": "CBSE_C6_SST_OCEANS_CONTINENTS",
+              "name": "Oceans and Continents"
+            },
+            {
+              "code": "CBSE_C6_SST_LANDFORMS_LIFE",
+              "name": "Landforms and Life"
+            },
+            {
+              "code": "CBSE_C6_SST_TIMELINE_SOURCES_HISTORY",
+              "name": "Timeline and Sources of History"
+            },
+            {
+              "code": "CBSE_C6_SST_INDIA_BHARAT",
+              "name": "India, That Is Bharat"
+            },
+            {
+              "code": "CBSE_C6_SST_BEGINNINGS_INDIAN_CIVILISATION",
+              "name": "The Beginnings of Indian Civilisation"
+            },
+            {
+              "code": "CBSE_C6_SST_INDIA_S_CULTURAL_ROOTS",
+              "name": "India's Cultural Roots"
+            },
+            {
+              "code": "CBSE_C6_SST_UNITY_DIVERSITY_MANY_ONE",
+              "name": "Unity in Diversity, or 'Many in the One'"
+            },
+            {
+              "code": "CBSE_C6_SST_FAMILY_COMMUNITY",
+              "name": "Family and Community"
+            },
+            {
+              "code": "CBSE_C6_SST_GRASSROOTS_DEMOCRACY_1_GOVERNANCE",
+              "name": "Grassroots Democracy Part 1: Governance"
+            },
+            {
+              "code": "CBSE_C6_SST_GRASSROOTS_DEMOCRACY_2_LOCAL",
+              "name": "Grassroots Democracy Part 2: Local Government in Rural Areas"
+            },
+            {
+              "code": "CBSE_C6_SST_GRASSROOTS_DEMOCRACY_3_LOCAL",
+              "name": "Grassroots Democracy Part 3: Local Government in Urban Areas"
+            },
+            {
+              "code": "CBSE_C6_SST_VALUE_WORK",
+              "name": "The Value of Work"
+            },
+            {
+              "code": "CBSE_C6_SST_ECONOMIC_ACTIVITIES_AROUND",
+              "name": "Economic Activities Around Us"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C6_SST_SK_GEOG",
+              "name": "Geography and Environment"
+            },
+            {
+              "code": "CBSE_C6_SST_SK_HIST",
+              "name": "History and Culture"
+            },
+            {
+              "code": "CBSE_C6_SST_SK_CIVICS",
+              "name": "Governance and Democracy"
+            },
+            {
+              "code": "CBSE_C6_SST_SK_ECON",
+              "name": "Economic Life"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C6_ENG",
+          "name": "English (Poorvi)",
+          "chapters": [
+            {
+              "code": "CBSE_C6_ENG_BOTTLE_DEW",
+              "name": "A Bottle of Dew"
+            },
+            {
+              "code": "CBSE_C6_ENG_RAVEN_FOX",
+              "name": "The Raven and the Fox"
+            },
+            {
+              "code": "CBSE_C6_ENG_RAMA_RESCUE",
+              "name": "Rama to the Rescue"
+            },
+            {
+              "code": "CBSE_C6_ENG_UNLIKELY_BEST_FRIENDS",
+              "name": "The Unlikely Best Friends"
+            },
+            {
+              "code": "CBSE_C6_ENG_FRIEND_S_PRAYER",
+              "name": "A Friend's Prayer"
+            },
+            {
+              "code": "CBSE_C6_ENG_CHAIR",
+              "name": "The Chair"
+            },
+            {
+              "code": "CBSE_C6_ENG_NEEM_BABA",
+              "name": "Neem Baba"
+            },
+            {
+              "code": "CBSE_C6_ENG_WHAT_BIRD_THOUGHT",
+              "name": "What a Bird Thought"
+            },
+            {
+              "code": "CBSE_C6_ENG_SPICES_HEAL",
+              "name": "Spices That Heal Us"
+            },
+            {
+              "code": "CBSE_C6_ENG_CHANGE_HEART",
+              "name": "Change of Heart"
+            },
+            {
+              "code": "CBSE_C6_ENG_WINNER",
+              "name": "The Winner"
+            },
+            {
+              "code": "CBSE_C6_ENG_YOGA_WAY_LIFE",
+              "name": "Yoga: A Way of Life"
+            },
+            {
+              "code": "CBSE_C6_ENG_HAMARA_BHARAT_INCREDIBLE_INDIA",
+              "name": "Hamara Bharat Incredible India"
+            },
+            {
+              "code": "CBSE_C6_ENG_KITES",
+              "name": "The Kites"
+            },
+            {
+              "code": "CBSE_C6_ENG_ILA_SACHANI_EMBROIDERING_DREAMS",
+              "name": "Ila Sachani: Embroidering Dreams With Her Feet"
+            },
+            {
+              "code": "CBSE_C6_ENG_NATIONAL_WAR_MEMORIAL",
+              "name": "National War Memorial"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C6_ENG_SK_READING",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CBSE_C6_ENG_SK_WRITING",
+              "name": "Writing Skills"
+            },
+            {
+              "code": "CBSE_C6_ENG_SK_GRAMMAR",
+              "name": "Grammar and Vocabulary"
+            },
+            {
+              "code": "CBSE_C6_ENG_SK_LIT",
+              "name": "Literature Appreciation"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 6 Mathematics (Ganita Prakash) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C6_MATH",
+          "title": "Class 6 Mathematics (Ganita Prakash) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_MATH_PATTERNS_MATHEMATICS",
+          "title": "Patterns in Mathematics — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_MATH_PERIMETER_AREA",
+          "title": "Perimeter and Area — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_MATH_OTHER_SIDE_ZERO",
+          "title": "The Other Side of Zero — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 6 Science (Curiosity) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C6_SCI",
+          "title": "Class 6 Science (Curiosity) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_SCI_WONDERFUL_WORLD_SCIENCE",
+          "title": "The Wonderful World of Science — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_SCI_TEMPERATURE_MEASUREMENT",
+          "title": "Temperature and its Measurement — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_SCI_BEYOND_EARTH",
+          "title": "Beyond Earth — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 6 Social Science (Exploring Society: India and Beyond) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C6_SST",
+          "title": "Class 6 Social Science (Exploring Society: India and Beyond) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_SST_LOCATING_PLACES_EARTH",
+          "title": "Locating Places on the Earth — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_SST_UNITY_DIVERSITY_MANY_ONE",
+          "title": "Unity in Diversity, or 'Many in the One' — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_SST_ECONOMIC_ACTIVITIES_AROUND",
+          "title": "Economic Activities Around Us — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 6 English (Poorvi) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C6_ENG",
+          "title": "Class 6 English (Poorvi) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_ENG_BOTTLE_DEW",
+          "title": "A Bottle of Dew — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_ENG_SPICES_HEAL",
+          "title": "Spices That Heal Us — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C6_ENG_NATIONAL_WAR_MEMORIAL",
+          "title": "National War Memorial — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CLASS_7",
+      "subjects": [
+        {
+          "code": "CBSE_C7_MATH",
+          "name": "Mathematics (Ganita Prakash)",
+          "chapters": [
+            {
+              "code": "CBSE_C7_MATH_LARGE_NUMBERS_AROUND",
+              "name": "Large Numbers Around Us"
+            },
+            {
+              "code": "CBSE_C7_MATH_ARITHMETIC_EXPRESSIONS",
+              "name": "Arithmetic Expressions"
+            },
+            {
+              "code": "CBSE_C7_MATH_PEEK_BEYOND_POINT",
+              "name": "A Peek Beyond the Point"
+            },
+            {
+              "code": "CBSE_C7_MATH_EXPRESSIONS_USING_LETTER_NUMBERS",
+              "name": "Expressions using Letter-Numbers"
+            },
+            {
+              "code": "CBSE_C7_MATH_PARALLEL_INTERSECTING_LINES",
+              "name": "Parallel and Intersecting Lines"
+            },
+            {
+              "code": "CBSE_C7_MATH_NUMBER_PLAY",
+              "name": "Number Play"
+            },
+            {
+              "code": "CBSE_C7_MATH_TALE_THREE_INTERSECTING_LINES",
+              "name": "A Tale of Three Intersecting Lines"
+            },
+            {
+              "code": "CBSE_C7_MATH_WORKING_FRACTIONS",
+              "name": "Working with Fractions"
+            },
+            {
+              "code": "CBSE_C7_MATH_GEOMETRIC_TWINS",
+              "name": "Geometric Twins"
+            },
+            {
+              "code": "CBSE_C7_MATH_OPERATIONS_INTEGERS",
+              "name": "Operations with Integers"
+            },
+            {
+              "code": "CBSE_C7_MATH_FINDING_COMMON_GROUND",
+              "name": "Finding Common Ground"
+            },
+            {
+              "code": "CBSE_C7_MATH_ANOTHER_PEEK_BEYOND_POINT",
+              "name": "Another Peek Beyond the Point"
+            },
+            {
+              "code": "CBSE_C7_MATH_CONNECTING_DOTS",
+              "name": "Connecting the Dots"
+            },
+            {
+              "code": "CBSE_C7_MATH_CONSTRUCTIONS_TILINGS",
+              "name": "Constructions and Tilings"
+            },
+            {
+              "code": "CBSE_C7_MATH_FINDING_UNKNOWN",
+              "name": "Finding the Unknown"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C7_MATH_SK_NUMBERS",
+              "name": "Numbers and Operations"
+            },
+            {
+              "code": "CBSE_C7_MATH_SK_ALGEBRA",
+              "name": "Algebra and Expressions"
+            },
+            {
+              "code": "CBSE_C7_MATH_SK_GEOMETRY",
+              "name": "Geometry and Construction"
+            },
+            {
+              "code": "CBSE_C7_MATH_SK_DATA",
+              "name": "Data and Reasoning"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C7_SCI",
+          "name": "Science (Curiosity)",
+          "chapters": [
+            {
+              "code": "CBSE_C7_SCI_EVER_EVOLVING_WORLD_SCIENCE",
+              "name": "The Ever-Evolving World of Science"
+            },
+            {
+              "code": "CBSE_C7_SCI_EXPLORING_SUBSTANCES_ACIDIC_BASIC",
+              "name": "Exploring Substances: Acidic, Basic and Neutral"
+            },
+            {
+              "code": "CBSE_C7_SCI_ELECTRICITY_CIRCUITS_COMPONENTS",
+              "name": "Electricity: Circuits and their Components"
+            },
+            {
+              "code": "CBSE_C7_SCI_WORLD_METALS_NON_METALS",
+              "name": "The World of Metals and Non-metals"
+            },
+            {
+              "code": "CBSE_C7_SCI_CHANGES_AROUND_PHYSICAL_CHEMICAL",
+              "name": "Changes Around Us: Physical and Chemical"
+            },
+            {
+              "code": "CBSE_C7_SCI_ADOLESCENCE_STAGE_GROWTH_CHANGE",
+              "name": "Adolescence: A Stage of Growth and Change"
+            },
+            {
+              "code": "CBSE_C7_SCI_HEAT_TRANSFER_NATURE",
+              "name": "Heat Transfer in Nature"
+            },
+            {
+              "code": "CBSE_C7_SCI_MEASUREMENT_TIME_MOTION",
+              "name": "Measurement of Time and Motion"
+            },
+            {
+              "code": "CBSE_C7_SCI_LIFE_PROCESSES_ANIMALS",
+              "name": "Life Processes in Animals"
+            },
+            {
+              "code": "CBSE_C7_SCI_LIFE_PROCESSES_PLANTS",
+              "name": "Life Processes in Plants"
+            },
+            {
+              "code": "CBSE_C7_SCI_LIGHT_SHADOWS_REFLECTIONS",
+              "name": "Light: Shadows and Reflections"
+            },
+            {
+              "code": "CBSE_C7_SCI_EARTH_MOON_SUN",
+              "name": "Earth, Moon, and the Sun"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C7_SCI_SK_LIVING",
+              "name": "Living World"
+            },
+            {
+              "code": "CBSE_C7_SCI_SK_MATTER",
+              "name": "Materials and Matter"
+            },
+            {
+              "code": "CBSE_C7_SCI_SK_PHYSICAL",
+              "name": "Physical Processes"
+            },
+            {
+              "code": "CBSE_C7_SCI_SK_EARTH",
+              "name": "Earth and Universe"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C7_SST",
+          "name": "Social Science (Exploring Society: India and Beyond)",
+          "chapters": [
+            {
+              "code": "CBSE_C7_SST_GEOGRAPHICAL_DIVERSITY_INDIA",
+              "name": "Geographical Diversity of India"
+            },
+            {
+              "code": "CBSE_C7_SST_UNDERSTANDING_WEATHER",
+              "name": "Understanding the Weather"
+            },
+            {
+              "code": "CBSE_C7_SST_CLIMATES_INDIA",
+              "name": "Climates of India"
+            },
+            {
+              "code": "CBSE_C7_SST_NEW_BEGINNINGS_CITIES_STATES",
+              "name": "New Beginnings: Cities and States"
+            },
+            {
+              "code": "CBSE_C7_SST_RISE_EMPIRES",
+              "name": "The Rise of Empires"
+            },
+            {
+              "code": "CBSE_C7_SST_AGE_REORGANISATION",
+              "name": "The Age of Reorganisation"
+            },
+            {
+              "code": "CBSE_C7_SST_GUPTA_ERA_AGE_TIRELESS",
+              "name": "The Gupta Era: An Age of Tireless Creativity"
+            },
+            {
+              "code": "CBSE_C7_SST_LAND_BECOMES_SACRED",
+              "name": "How the Land Becomes Sacred"
+            },
+            {
+              "code": "CBSE_C7_SST_RULERS_RULED_TYPES_GOVERNMENTS",
+              "name": "From the Rulers to the Ruled: Types of Governments"
+            },
+            {
+              "code": "CBSE_C7_SST_CONSTITUTION_INDIA_INTRODUCTION",
+              "name": "The Constitution of India: An Introduction"
+            },
+            {
+              "code": "CBSE_C7_SST_BARTER_MONEY",
+              "name": "From Barter to Money"
+            },
+            {
+              "code": "CBSE_C7_SST_UNDERSTANDING_MARKETS",
+              "name": "Understanding Markets"
+            },
+            {
+              "code": "CBSE_C7_SST_STORY_INDIAN_FARMING",
+              "name": "The Story of Indian Farming"
+            },
+            {
+              "code": "CBSE_C7_SST_INDIA_HER_NEIGHBOURS",
+              "name": "India and Her Neighbours"
+            },
+            {
+              "code": "CBSE_C7_SST_EMPIRES_KINGDOMS_6TH_10TH",
+              "name": "Empires and Kingdoms: 6th to 10th Centuries"
+            },
+            {
+              "code": "CBSE_C7_SST_TURNING_TIDES_11TH_12TH",
+              "name": "Turning Tides: 11th and 12th Centuries"
+            },
+            {
+              "code": "CBSE_C7_SST_INDIA_HOME_MANY",
+              "name": "India, a Home to Many"
+            },
+            {
+              "code": "CBSE_C7_SST_STATE_GOVERNMENT_YOU",
+              "name": "The State, the Government, and You"
+            },
+            {
+              "code": "CBSE_C7_SST_INFRASTRUCTURE_ENGINE_INDIA_S",
+              "name": "Infrastructure: Engine of India's Development"
+            },
+            {
+              "code": "CBSE_C7_SST_BANKS_MAGIC_FINANCE",
+              "name": "Banks and the Magic of Finance"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C7_SST_SK_GEOG",
+              "name": "Geography and Environment"
+            },
+            {
+              "code": "CBSE_C7_SST_SK_HIST",
+              "name": "History and Culture"
+            },
+            {
+              "code": "CBSE_C7_SST_SK_CIVICS",
+              "name": "Governance and Democracy"
+            },
+            {
+              "code": "CBSE_C7_SST_SK_ECON",
+              "name": "Economic Life"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C7_ENG",
+          "name": "English (Poorvi)",
+          "chapters": [
+            {
+              "code": "CBSE_C7_ENG_DAY_RIVER_SPOKE",
+              "name": "The Day the River Spoke"
+            },
+            {
+              "code": "CBSE_C7_ENG_TRY_AGAIN",
+              "name": "Try Again"
+            },
+            {
+              "code": "CBSE_C7_ENG_THREE_DAYS_SEE",
+              "name": "Three Days to See"
+            },
+            {
+              "code": "CBSE_C7_ENG_ANIMALS_BIRDS_DR_DOLITTLE",
+              "name": "Animals, Birds, and Dr Dolittle"
+            },
+            {
+              "code": "CBSE_C7_ENG_FUNNY_MAN",
+              "name": "A Funny Man"
+            },
+            {
+              "code": "CBSE_C7_ENG_SAY_RIGHT_THING",
+              "name": "Say the Right Thing"
+            },
+            {
+              "code": "CBSE_C7_ENG_MY_BROTHER_S_GREAT",
+              "name": "My Brother's Great Invention"
+            },
+            {
+              "code": "CBSE_C7_ENG_PAPER_BOATS",
+              "name": "Paper Boats"
+            },
+            {
+              "code": "CBSE_C7_ENG_NORTH_SOUTH_EAST_WEST",
+              "name": "North, South, East, West"
+            },
+            {
+              "code": "CBSE_C7_ENG_TUNNEL",
+              "name": "The Tunnel"
+            },
+            {
+              "code": "CBSE_C7_ENG_TRAVEL",
+              "name": "Travel"
+            },
+            {
+              "code": "CBSE_C7_ENG_CONQUERING_SUMMIT",
+              "name": "Conquering the Summit"
+            },
+            {
+              "code": "CBSE_C7_ENG_HOMAGE_BRAVE_SOLDIERS",
+              "name": "A Homage to Our Brave Soldiers"
+            },
+            {
+              "code": "CBSE_C7_ENG_MY_DEAR_SOLDIERS",
+              "name": "My Dear Soldiers"
+            },
+            {
+              "code": "CBSE_C7_ENG_RANI_ABBAKKA",
+              "name": "Rani Abbakka"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C7_ENG_SK_READING",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CBSE_C7_ENG_SK_WRITING",
+              "name": "Writing Skills"
+            },
+            {
+              "code": "CBSE_C7_ENG_SK_GRAMMAR",
+              "name": "Grammar and Vocabulary"
+            },
+            {
+              "code": "CBSE_C7_ENG_SK_LIT",
+              "name": "Literature Appreciation"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 7 Mathematics (Ganita Prakash) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C7_MATH",
+          "title": "Class 7 Mathematics (Ganita Prakash) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_MATH_LARGE_NUMBERS_AROUND",
+          "title": "Large Numbers Around Us — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_MATH_WORKING_FRACTIONS",
+          "title": "Working with Fractions — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_MATH_FINDING_UNKNOWN",
+          "title": "Finding the Unknown — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 7 Science (Curiosity) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C7_SCI",
+          "title": "Class 7 Science (Curiosity) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_SCI_EVER_EVOLVING_WORLD_SCIENCE",
+          "title": "The Ever-Evolving World of Science — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_SCI_HEAT_TRANSFER_NATURE",
+          "title": "Heat Transfer in Nature — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_SCI_EARTH_MOON_SUN",
+          "title": "Earth, Moon, and the Sun — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 7 Social Science (Exploring Society: India and Beyond) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C7_SST",
+          "title": "Class 7 Social Science (Exploring Society: India and Beyond) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_SST_GEOGRAPHICAL_DIVERSITY_INDIA",
+          "title": "Geographical Diversity of India — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_SST_BARTER_MONEY",
+          "title": "From Barter to Money — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_SST_BANKS_MAGIC_FINANCE",
+          "title": "Banks and the Magic of Finance — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 7 English (Poorvi) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C7_ENG",
+          "title": "Class 7 English (Poorvi) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_ENG_DAY_RIVER_SPOKE",
+          "title": "The Day the River Spoke — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_ENG_PAPER_BOATS",
+          "title": "Paper Boats — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C7_ENG_RANI_ABBAKKA",
+          "title": "Rani Abbakka — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CLASS_8",
+      "subjects": [
+        {
+          "code": "CBSE_C8_MATH",
+          "name": "Mathematics (Ganita Prakash)",
+          "chapters": [
+            {
+              "code": "CBSE_C8_MATH_SQUARE_CUBE",
+              "name": "A Square and A Cube"
+            },
+            {
+              "code": "CBSE_C8_MATH_POWER_PLAY",
+              "name": "Power Play"
+            },
+            {
+              "code": "CBSE_C8_MATH_STORY_NUMBERS",
+              "name": "A Story of Numbers"
+            },
+            {
+              "code": "CBSE_C8_MATH_QUADRILATERALS",
+              "name": "Quadrilaterals"
+            },
+            {
+              "code": "CBSE_C8_MATH_NUMBER_PLAY",
+              "name": "Number Play"
+            },
+            {
+              "code": "CBSE_C8_MATH_DISTRIBUTE_YET_THINGS_MULTIPLY",
+              "name": "We Distribute, Yet Things Multiply"
+            },
+            {
+              "code": "CBSE_C8_MATH_PROPORTIONAL_REASONING_1",
+              "name": "Proportional Reasoning 1"
+            },
+            {
+              "code": "CBSE_C8_MATH_FRACTIONS_DISGUISE",
+              "name": "Fractions in Disguise"
+            },
+            {
+              "code": "CBSE_C8_MATH_BAUDHAYANA_PYTHAGORAS_THEOREM",
+              "name": "The Baudhayana-Pythagoras Theorem"
+            },
+            {
+              "code": "CBSE_C8_MATH_PROPORTIONAL_REASONING_2",
+              "name": "Proportional Reasoning 2"
+            },
+            {
+              "code": "CBSE_C8_MATH_EXPLORING_SOME_GEOMETRIC_THEMES",
+              "name": "Exploring Some Geometric Themes"
+            },
+            {
+              "code": "CBSE_C8_MATH_TALES_DOTS_LINES",
+              "name": "Tales by Dots and Lines"
+            },
+            {
+              "code": "CBSE_C8_MATH_ALGEBRA_PLAY",
+              "name": "Algebra Play"
+            },
+            {
+              "code": "CBSE_C8_MATH_AREA",
+              "name": "Area"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C8_MATH_SK_NUMBERS",
+              "name": "Numbers and Operations"
+            },
+            {
+              "code": "CBSE_C8_MATH_SK_ALGEBRA",
+              "name": "Algebra and Expressions"
+            },
+            {
+              "code": "CBSE_C8_MATH_SK_GEOMETRY",
+              "name": "Geometry and Mensuration"
+            },
+            {
+              "code": "CBSE_C8_MATH_SK_DATA",
+              "name": "Data and Proportional Reasoning"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C8_SCI",
+          "name": "Science (Curiosity)",
+          "chapters": [
+            {
+              "code": "CBSE_C8_SCI_EXPLORING_INVESTIGATIVE_WORLD_SCIENCE",
+              "name": "Exploring the Investigative World of Science"
+            },
+            {
+              "code": "CBSE_C8_SCI_INVISIBLE_LIVING_WORLD_BEYOND",
+              "name": "The Invisible Living World: Beyond Our Naked Eye"
+            },
+            {
+              "code": "CBSE_C8_SCI_HEALTH_ULTIMATE_TREASURE",
+              "name": "Health: The Ultimate Treasure"
+            },
+            {
+              "code": "CBSE_C8_SCI_ELECTRICITY_MAGNETIC_HEATING_EFFECTS",
+              "name": "Electricity: Magnetic and Heating Effects"
+            },
+            {
+              "code": "CBSE_C8_SCI_EXPLORING_FORCES",
+              "name": "Exploring Forces"
+            },
+            {
+              "code": "CBSE_C8_SCI_PRESSURE_WINDS_STORMS_CYCLONES",
+              "name": "Pressure, Winds, Storms, and Cyclones"
+            },
+            {
+              "code": "CBSE_C8_SCI_PARTICULATE_NATURE_MATTER",
+              "name": "Particulate Nature of Matter"
+            },
+            {
+              "code": "CBSE_C8_SCI_NATURE_MATTER_ELEMENTS_COMPOUNDS",
+              "name": "Nature of Matter: Elements, Compounds, and Mixtures"
+            },
+            {
+              "code": "CBSE_C8_SCI_AMAZING_WORLD_SOLUTES_SOLVENTS",
+              "name": "The Amazing World of Solutes, Solvents, and Solutions"
+            },
+            {
+              "code": "CBSE_C8_SCI_LIGHT_MIRRORS_LENSES",
+              "name": "Light: Mirrors and Lenses"
+            },
+            {
+              "code": "CBSE_C8_SCI_KEEPING_TIME_SKIES",
+              "name": "Keeping Time with the Skies"
+            },
+            {
+              "code": "CBSE_C8_SCI_NATURE_WORKS_HARMONY",
+              "name": "How Nature Works in Harmony"
+            },
+            {
+              "code": "CBSE_C8_SCI_HOME_EARTH_UNIQUE_LIFE",
+              "name": "Our Home: Earth, A Unique Life Sustaining Planet"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C8_SCI_SK_LIVING",
+              "name": "Living World"
+            },
+            {
+              "code": "CBSE_C8_SCI_SK_MATTER",
+              "name": "Materials and Matter"
+            },
+            {
+              "code": "CBSE_C8_SCI_SK_PHYSICAL",
+              "name": "Physical Processes"
+            },
+            {
+              "code": "CBSE_C8_SCI_SK_EARTH",
+              "name": "Earth and Universe"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C8_SST",
+          "name": "Social Science (Exploring Society: India and Beyond, Part 1)",
+          "chapters": [
+            {
+              "code": "CBSE_C8_SST_NATURAL_RESOURCES_USE",
+              "name": "Natural Resources and Their Use"
+            },
+            {
+              "code": "CBSE_C8_SST_RESHAPING_INDIA_S_POLITICAL",
+              "name": "Reshaping India's Political Map"
+            },
+            {
+              "code": "CBSE_C8_SST_RISE_MARATHAS",
+              "name": "The Rise of the Marathas"
+            },
+            {
+              "code": "CBSE_C8_SST_COLONIAL_ERA_INDIA",
+              "name": "The Colonial Era in India"
+            },
+            {
+              "code": "CBSE_C8_SST_UNIVERSAL_FRANCHISE_INDIA_S",
+              "name": "Universal Franchise and India's Electoral System"
+            },
+            {
+              "code": "CBSE_C8_SST_PARLIAMENTARY_SYSTEM_LEGISLATURE_EXECUTIVE",
+              "name": "The Parliamentary System: Legislature and Executive"
+            },
+            {
+              "code": "CBSE_C8_SST_FACTORS_PRODUCTION",
+              "name": "Factors of Production"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C8_SST_SK_GEOG",
+              "name": "Geography and Environment"
+            },
+            {
+              "code": "CBSE_C8_SST_SK_HIST",
+              "name": "History and Culture"
+            },
+            {
+              "code": "CBSE_C8_SST_SK_CIVICS",
+              "name": "Governance and Democracy"
+            },
+            {
+              "code": "CBSE_C8_SST_SK_ECON",
+              "name": "Economic Life"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C8_ENG",
+          "name": "English (Poorvi)",
+          "chapters": [
+            {
+              "code": "CBSE_C8_ENG_WIT_WON_HEARTS",
+              "name": "The Wit that Won Hearts"
+            },
+            {
+              "code": "CBSE_C8_ENG_CONCRETE_EXAMPLE",
+              "name": "A Concrete Example"
+            },
+            {
+              "code": "CBSE_C8_ENG_WISDOM_PAVES_WAY",
+              "name": "Wisdom Paves the Way"
+            },
+            {
+              "code": "CBSE_C8_ENG_TALE_VALOUR_MAJOR_SOMNATH",
+              "name": "A Tale of Valour: Major Somnath Sharma and the Battle of Badgam"
+            },
+            {
+              "code": "CBSE_C8_ENG_SOMEBODY_S_MOTHER",
+              "name": "Somebody's Mother"
+            },
+            {
+              "code": "CBSE_C8_ENG_VERGHESE_KURIEN_I_TOO",
+              "name": "Verghese Kurien I Too Had A Dream"
+            },
+            {
+              "code": "CBSE_C8_ENG_CASE_FIFTH_WORD",
+              "name": "The Case of the Fifth Word"
+            },
+            {
+              "code": "CBSE_C8_ENG_MAGIC_BRUSH_DREAMS",
+              "name": "The Magic Brush of Dreams"
+            },
+            {
+              "code": "CBSE_C8_ENG_SPECTACULAR_WONDERS",
+              "name": "Spectacular Wonders"
+            },
+            {
+              "code": "CBSE_C8_ENG_CHERRY_TREE",
+              "name": "The Cherry Tree"
+            },
+            {
+              "code": "CBSE_C8_ENG_HARVEST_HYMN",
+              "name": "Harvest Hymn"
+            },
+            {
+              "code": "CBSE_C8_ENG_WAITING_RAIN",
+              "name": "Waiting for the Rain"
+            },
+            {
+              "code": "CBSE_C8_ENG_FEATHERED_FRIEND",
+              "name": "Feathered Friend"
+            },
+            {
+              "code": "CBSE_C8_ENG_MAGNIFYING_GLASS",
+              "name": "Magnifying Glass"
+            },
+            {
+              "code": "CBSE_C8_ENG_BIBHA_CHOWDHURI_BEAM_LIGHT",
+              "name": "Bibha Chowdhuri: The Beam of Light that Lit the Path for Women in Indian Science"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C8_ENG_SK_READING",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CBSE_C8_ENG_SK_WRITING",
+              "name": "Writing Skills"
+            },
+            {
+              "code": "CBSE_C8_ENG_SK_GRAMMAR",
+              "name": "Grammar and Vocabulary"
+            },
+            {
+              "code": "CBSE_C8_ENG_SK_LIT",
+              "name": "Literature Appreciation"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 8 Mathematics (Ganita Prakash) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C8_MATH",
+          "title": "Class 8 Mathematics (Ganita Prakash) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_MATH_SQUARE_CUBE",
+          "title": "A Square and A Cube — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_MATH_FRACTIONS_DISGUISE",
+          "title": "Fractions in Disguise — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_MATH_AREA",
+          "title": "Area — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 8 Science (Curiosity) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C8_SCI",
+          "title": "Class 8 Science (Curiosity) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_SCI_EXPLORING_INVESTIGATIVE_WORLD_SCIENCE",
+          "title": "Exploring the Investigative World of Science — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_SCI_PARTICULATE_NATURE_MATTER",
+          "title": "Particulate Nature of Matter — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_SCI_HOME_EARTH_UNIQUE_LIFE",
+          "title": "Our Home: Earth, A Unique Life Sustaining Planet — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 8 Social Science (Exploring Society: India and Beyond, Part 1) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C8_SST",
+          "title": "Class 8 Social Science (Exploring Society: India and Beyond, Part 1) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_SST_NATURAL_RESOURCES_USE",
+          "title": "Natural Resources and Their Use — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_SST_COLONIAL_ERA_INDIA",
+          "title": "The Colonial Era in India — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_SST_FACTORS_PRODUCTION",
+          "title": "Factors of Production — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 8 English (Poorvi) — Full Mock",
+          "duration_min": 90,
+          "questions": 50,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C8_ENG",
+          "title": "Class 8 English (Poorvi) — Subject Mock",
+          "duration_min": 45,
+          "questions": 25,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_ENG_WIT_WON_HEARTS",
+          "title": "The Wit that Won Hearts — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_ENG_MAGIC_BRUSH_DREAMS",
+          "title": "The Magic Brush of Dreams — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C8_ENG_BIBHA_CHOWDHURI_BEAM_LIGHT",
+          "title": "Bibha Chowdhuri: The Beam of Light that Lit the Path for Women in Indian Science — Chapter Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CLASS_9",
+      "subjects": [
+        {
+          "code": "CBSE_C9_MATH",
+          "name": "Mathematics",
+          "chapters": [
+            {
+              "code": "CBSE_C9_MATH_NUMBER_SYSTEMS",
+              "name": "Number Systems"
+            },
+            {
+              "code": "CBSE_C9_MATH_POLYNOMIALS",
+              "name": "Polynomials"
+            },
+            {
+              "code": "CBSE_C9_MATH_COORDINATE_GEOMETRY",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "CBSE_C9_MATH_LINEAR_EQUATIONS_TWO_VARIABLES",
+              "name": "Linear Equations in Two Variables"
+            },
+            {
+              "code": "CBSE_C9_MATH_INTRODUCTION_EUCLID_S_GEOMETRY",
+              "name": "Introduction to Euclid's Geometry"
+            },
+            {
+              "code": "CBSE_C9_MATH_LINES_ANGLES",
+              "name": "Lines and Angles"
+            },
+            {
+              "code": "CBSE_C9_MATH_TRIANGLES",
+              "name": "Triangles"
+            },
+            {
+              "code": "CBSE_C9_MATH_QUADRILATERALS",
+              "name": "Quadrilaterals"
+            },
+            {
+              "code": "CBSE_C9_MATH_CIRCLES",
+              "name": "Circles"
+            },
+            {
+              "code": "CBSE_C9_MATH_HERON_S_FORMULA",
+              "name": "Heron's Formula"
+            },
+            {
+              "code": "CBSE_C9_MATH_SURFACE_AREAS_VOLUMES",
+              "name": "Surface Areas and Volumes"
+            },
+            {
+              "code": "CBSE_C9_MATH_STATISTICS",
+              "name": "Statistics"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C9_MATH_SK_NUMBER_ALGEBRA",
+              "name": "Number Systems and Algebra"
+            },
+            {
+              "code": "CBSE_C9_MATH_SK_COORD_GEOM",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "CBSE_C9_MATH_SK_GEOMETRY",
+              "name": "Geometry"
+            },
+            {
+              "code": "CBSE_C9_MATH_SK_MENSURATION",
+              "name": "Mensuration"
+            },
+            {
+              "code": "CBSE_C9_MATH_SK_STATS",
+              "name": "Statistics"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C9_SCI",
+          "name": "Science",
+          "chapters": [
+            {
+              "code": "CBSE_C9_SCI_MATTER_SURROUNDINGS",
+              "name": "Matter in Our Surroundings"
+            },
+            {
+              "code": "CBSE_C9_SCI_MATTER_AROUND_PURE",
+              "name": "Is Matter Around Us Pure"
+            },
+            {
+              "code": "CBSE_C9_SCI_ATOMS_MOLECULES",
+              "name": "Atoms and Molecules"
+            },
+            {
+              "code": "CBSE_C9_SCI_STRUCTURE_ATOM",
+              "name": "Structure of the Atom"
+            },
+            {
+              "code": "CBSE_C9_SCI_FUNDAMENTAL_UNIT_LIFE",
+              "name": "The Fundamental Unit of Life"
+            },
+            {
+              "code": "CBSE_C9_SCI_TISSUES",
+              "name": "Tissues"
+            },
+            {
+              "code": "CBSE_C9_SCI_MOTION",
+              "name": "Motion"
+            },
+            {
+              "code": "CBSE_C9_SCI_FORCE_LAWS_MOTION",
+              "name": "Force and Laws of Motion"
+            },
+            {
+              "code": "CBSE_C9_SCI_GRAVITATION",
+              "name": "Gravitation"
+            },
+            {
+              "code": "CBSE_C9_SCI_WORK_ENERGY",
+              "name": "Work and Energy"
+            },
+            {
+              "code": "CBSE_C9_SCI_SOUND",
+              "name": "Sound"
+            },
+            {
+              "code": "CBSE_C9_SCI_IMPROVEMENT_FOOD_RESOURCES",
+              "name": "Improvement in Food Resources"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C9_SCI_SK_MATTER",
+              "name": "Matter and its Nature"
+            },
+            {
+              "code": "CBSE_C9_SCI_SK_ATOMS",
+              "name": "Atoms and Molecules"
+            },
+            {
+              "code": "CBSE_C9_SCI_SK_CELL",
+              "name": "Cell and Tissues"
+            },
+            {
+              "code": "CBSE_C9_SCI_SK_MOTION_FORCE",
+              "name": "Motion and Force"
+            },
+            {
+              "code": "CBSE_C9_SCI_SK_ENERGY_SOUND",
+              "name": "Work, Energy and Sound"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C9_SST",
+          "name": "Social Science",
+          "chapters": [
+            {
+              "code": "CBSE_C9_SST_FRENCH_REVOLUTION",
+              "name": "The French Revolution"
+            },
+            {
+              "code": "CBSE_C9_SST_SOCIALISM_EUROPE_RUSSIAN_REVOLUTION",
+              "name": "Socialism in Europe and the Russian Revolution"
+            },
+            {
+              "code": "CBSE_C9_SST_NAZISM_RISE_HITLER",
+              "name": "Nazism and the Rise of Hitler"
+            },
+            {
+              "code": "CBSE_C9_SST_FOREST_SOCIETY_COLONIALISM",
+              "name": "Forest Society and Colonialism"
+            },
+            {
+              "code": "CBSE_C9_SST_PASTORALISTS_MODERN_WORLD",
+              "name": "Pastoralists in the Modern World"
+            },
+            {
+              "code": "CBSE_C9_SST_INDIA_SIZE_LOCATION",
+              "name": "India Size and Location"
+            },
+            {
+              "code": "CBSE_C9_SST_PHYSICAL_FEATURES_INDIA",
+              "name": "Physical Features of India"
+            },
+            {
+              "code": "CBSE_C9_SST_DRAINAGE",
+              "name": "Drainage"
+            },
+            {
+              "code": "CBSE_C9_SST_CLIMATE",
+              "name": "Climate"
+            },
+            {
+              "code": "CBSE_C9_SST_NATURAL_VEGETATION_WILDLIFE",
+              "name": "Natural Vegetation and Wildlife"
+            },
+            {
+              "code": "CBSE_C9_SST_POPULATION",
+              "name": "Population"
+            },
+            {
+              "code": "CBSE_C9_SST_WHAT_DEMOCRACY_DEMOCRACY",
+              "name": "What is Democracy? Why Democracy?"
+            },
+            {
+              "code": "CBSE_C9_SST_CONSTITUTIONAL_DESIGN",
+              "name": "Constitutional Design"
+            },
+            {
+              "code": "CBSE_C9_SST_ELECTORAL_POLITICS",
+              "name": "Electoral Politics"
+            },
+            {
+              "code": "CBSE_C9_SST_WORKING_INSTITUTIONS",
+              "name": "Working of Institutions"
+            },
+            {
+              "code": "CBSE_C9_SST_DEMOCRATIC_RIGHTS",
+              "name": "Democratic Rights"
+            },
+            {
+              "code": "CBSE_C9_SST_STORY_VILLAGE_PALAMPUR",
+              "name": "The Story of Village Palampur"
+            },
+            {
+              "code": "CBSE_C9_SST_PEOPLE_RESOURCE",
+              "name": "People as Resource"
+            },
+            {
+              "code": "CBSE_C9_SST_POVERTY_CHALLENGE",
+              "name": "Poverty as a Challenge"
+            },
+            {
+              "code": "CBSE_C9_SST_FOOD_SECURITY_INDIA",
+              "name": "Food Security in India"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C9_SST_SK_HISTORY",
+              "name": "History"
+            },
+            {
+              "code": "CBSE_C9_SST_SK_GEOGRAPHY",
+              "name": "Geography"
+            },
+            {
+              "code": "CBSE_C9_SST_SK_CIVICS",
+              "name": "Political Science / Civics"
+            },
+            {
+              "code": "CBSE_C9_SST_SK_ECONOMICS",
+              "name": "Economics"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C9_ENG",
+          "name": "English (Beehive)",
+          "chapters": [
+            {
+              "code": "CBSE_C9_ENG_FUN_THEY_HAD",
+              "name": "The Fun They Had"
+            },
+            {
+              "code": "CBSE_C9_ENG_SOUND_MUSIC",
+              "name": "The Sound of Music"
+            },
+            {
+              "code": "CBSE_C9_ENG_LITTLE_GIRL",
+              "name": "The Little Girl"
+            },
+            {
+              "code": "CBSE_C9_ENG_TRULY_BEAUTIFUL_MIND",
+              "name": "A Truly Beautiful Mind"
+            },
+            {
+              "code": "CBSE_C9_ENG_SNAKE_MIRROR",
+              "name": "The Snake and the Mirror"
+            },
+            {
+              "code": "CBSE_C9_ENG_MY_CHILDHOOD",
+              "name": "My Childhood"
+            },
+            {
+              "code": "CBSE_C9_ENG_REACH_TOP",
+              "name": "Reach for the Top"
+            },
+            {
+              "code": "CBSE_C9_ENG_KATHMANDU",
+              "name": "Kathmandu"
+            },
+            {
+              "code": "CBSE_C9_ENG_IF_I_WERE_YOU",
+              "name": "If I Were You"
+            },
+            {
+              "code": "CBSE_C9_ENG_ROAD_NOT_TAKEN",
+              "name": "The Road Not Taken"
+            },
+            {
+              "code": "CBSE_C9_ENG_WIND",
+              "name": "Wind"
+            },
+            {
+              "code": "CBSE_C9_ENG_RAIN_ROOF",
+              "name": "Rain on the Roof"
+            },
+            {
+              "code": "CBSE_C9_ENG_LAKE_ISLE_INNISFREE",
+              "name": "The Lake Isle of Innisfree"
+            },
+            {
+              "code": "CBSE_C9_ENG_LEGEND_NORTHLAND",
+              "name": "A Legend of the Northland"
+            },
+            {
+              "code": "CBSE_C9_ENG_NO_MEN_FOREIGN",
+              "name": "No Men Are Foreign"
+            },
+            {
+              "code": "CBSE_C9_ENG_KILLING_TREE",
+              "name": "On Killing a Tree"
+            },
+            {
+              "code": "CBSE_C9_ENG_SLUMBER_DID_MY_SPIRIT",
+              "name": "A Slumber Did My Spirit Seal"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C9_ENG_SK_READING",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CBSE_C9_ENG_SK_WRITING",
+              "name": "Writing and Grammar"
+            },
+            {
+              "code": "CBSE_C9_ENG_SK_PROSE",
+              "name": "Prose Literature"
+            },
+            {
+              "code": "CBSE_C9_ENG_SK_POETRY",
+              "name": "Poetry"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 9 Mathematics — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C9_MATH",
+          "title": "Class 9 Mathematics — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_MATH_NUMBER_SYSTEMS",
+          "title": "Number Systems — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_MATH_TRIANGLES",
+          "title": "Triangles — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_MATH_STATISTICS",
+          "title": "Statistics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 9 Science — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C9_SCI",
+          "title": "Class 9 Science — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_SCI_MATTER_SURROUNDINGS",
+          "title": "Matter in Our Surroundings — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_SCI_MOTION",
+          "title": "Motion — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_SCI_IMPROVEMENT_FOOD_RESOURCES",
+          "title": "Improvement in Food Resources — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 9 Social Science — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C9_SST",
+          "title": "Class 9 Social Science — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_SST_FRENCH_REVOLUTION",
+          "title": "The French Revolution — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_SST_POPULATION",
+          "title": "Population — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_SST_FOOD_SECURITY_INDIA",
+          "title": "Food Security in India — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 9 English (Beehive) — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C9_ENG",
+          "title": "Class 9 English (Beehive) — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_ENG_FUN_THEY_HAD",
+          "title": "The Fun They Had — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_ENG_IF_I_WERE_YOU",
+          "title": "If I Were You — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C9_ENG_SLUMBER_DID_MY_SPIRIT",
+          "title": "A Slumber Did My Spirit Seal — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CLASS_10",
+      "subjects": [
+        {
+          "code": "CBSE_C10_MATH",
+          "name": "Mathematics",
+          "chapters": [
+            {
+              "code": "CBSE_C10_MATH_REAL_NUMBERS",
+              "name": "Real Numbers"
+            },
+            {
+              "code": "CBSE_C10_MATH_POLYNOMIALS",
+              "name": "Polynomials"
+            },
+            {
+              "code": "CBSE_C10_MATH_PAIR_LINEAR_EQUATIONS_TWO",
+              "name": "Pair of Linear Equations in Two Variables"
+            },
+            {
+              "code": "CBSE_C10_MATH_QUADRATIC_EQUATIONS",
+              "name": "Quadratic Equations"
+            },
+            {
+              "code": "CBSE_C10_MATH_ARITHMETIC_PROGRESSIONS",
+              "name": "Arithmetic Progressions"
+            },
+            {
+              "code": "CBSE_C10_MATH_TRIANGLES",
+              "name": "Triangles"
+            },
+            {
+              "code": "CBSE_C10_MATH_COORDINATE_GEOMETRY",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "CBSE_C10_MATH_INTRODUCTION_TRIGONOMETRY",
+              "name": "Introduction to Trigonometry"
+            },
+            {
+              "code": "CBSE_C10_MATH_SOME_APPLICATIONS_TRIGONOMETRY",
+              "name": "Some Applications of Trigonometry"
+            },
+            {
+              "code": "CBSE_C10_MATH_CIRCLES",
+              "name": "Circles"
+            },
+            {
+              "code": "CBSE_C10_MATH_AREAS_RELATED_CIRCLES",
+              "name": "Areas Related to Circles"
+            },
+            {
+              "code": "CBSE_C10_MATH_SURFACE_AREAS_VOLUMES",
+              "name": "Surface Areas and Volumes"
+            },
+            {
+              "code": "CBSE_C10_MATH_STATISTICS",
+              "name": "Statistics"
+            },
+            {
+              "code": "CBSE_C10_MATH_PROBABILITY",
+              "name": "Probability"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C10_MATH_SK_ALGEBRA",
+              "name": "Algebra"
+            },
+            {
+              "code": "CBSE_C10_MATH_SK_TRIGONOMETRY",
+              "name": "Trigonometry"
+            },
+            {
+              "code": "CBSE_C10_MATH_SK_COORD_GEOM",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "CBSE_C10_MATH_SK_GEOMETRY",
+              "name": "Geometry"
+            },
+            {
+              "code": "CBSE_C10_MATH_SK_MENSURATION",
+              "name": "Mensuration"
+            },
+            {
+              "code": "CBSE_C10_MATH_SK_STATS_PROB",
+              "name": "Statistics and Probability"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C10_SCI",
+          "name": "Science",
+          "chapters": [
+            {
+              "code": "CBSE_C10_SCI_CHEMICAL_REACTIONS_EQUATIONS",
+              "name": "Chemical Reactions and Equations"
+            },
+            {
+              "code": "CBSE_C10_SCI_ACIDS_BASES_SALTS",
+              "name": "Acids, Bases and Salts"
+            },
+            {
+              "code": "CBSE_C10_SCI_METALS_NON_METALS",
+              "name": "Metals and Non-metals"
+            },
+            {
+              "code": "CBSE_C10_SCI_CARBON_COMPOUNDS",
+              "name": "Carbon and its Compounds"
+            },
+            {
+              "code": "CBSE_C10_SCI_LIFE_PROCESSES",
+              "name": "Life Processes"
+            },
+            {
+              "code": "CBSE_C10_SCI_CONTROL_COORDINATION",
+              "name": "Control and Coordination"
+            },
+            {
+              "code": "CBSE_C10_SCI_ORGANISMS_REPRODUCE",
+              "name": "How do Organisms Reproduce?"
+            },
+            {
+              "code": "CBSE_C10_SCI_HEREDITY",
+              "name": "Heredity"
+            },
+            {
+              "code": "CBSE_C10_SCI_LIGHT_REFLECTION_REFRACTION",
+              "name": "Light Reflection and Refraction"
+            },
+            {
+              "code": "CBSE_C10_SCI_HUMAN_EYE_COLOURFUL_WORLD",
+              "name": "The Human Eye and the Colourful World"
+            },
+            {
+              "code": "CBSE_C10_SCI_ELECTRICITY",
+              "name": "Electricity"
+            },
+            {
+              "code": "CBSE_C10_SCI_MAGNETIC_EFFECTS_ELECTRIC_CURRENT",
+              "name": "Magnetic Effects of Electric Current"
+            },
+            {
+              "code": "CBSE_C10_SCI_ENVIRONMENT",
+              "name": "Our Environment"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C10_SCI_SK_CHEMISTRY",
+              "name": "Chemical Substances"
+            },
+            {
+              "code": "CBSE_C10_SCI_SK_ORGANIC",
+              "name": "Carbon and its Compounds"
+            },
+            {
+              "code": "CBSE_C10_SCI_SK_LIFE_PROC",
+              "name": "Life Processes and Reproduction"
+            },
+            {
+              "code": "CBSE_C10_SCI_SK_HEREDITY",
+              "name": "Heredity"
+            },
+            {
+              "code": "CBSE_C10_SCI_SK_PHYSICS_LIGHT",
+              "name": "Light and Human Eye"
+            },
+            {
+              "code": "CBSE_C10_SCI_SK_PHYSICS_ELEC",
+              "name": "Electricity and Magnetism"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C10_SST",
+          "name": "Social Science",
+          "chapters": [
+            {
+              "code": "CBSE_C10_SST_RISE_NATIONALISM_EUROPE",
+              "name": "The Rise of Nationalism in Europe"
+            },
+            {
+              "code": "CBSE_C10_SST_NATIONALISM_INDIA",
+              "name": "Nationalism in India"
+            },
+            {
+              "code": "CBSE_C10_SST_MAKING_GLOBAL_WORLD",
+              "name": "The Making of a Global World"
+            },
+            {
+              "code": "CBSE_C10_SST_AGE_INDUSTRIALISATION",
+              "name": "The Age of Industrialisation"
+            },
+            {
+              "code": "CBSE_C10_SST_PRINT_CULTURE_MODERN_WORLD",
+              "name": "Print Culture and the Modern World"
+            },
+            {
+              "code": "CBSE_C10_SST_RESOURCES_DEVELOPMENT",
+              "name": "Resources and Development"
+            },
+            {
+              "code": "CBSE_C10_SST_FOREST_WILDLIFE_RESOURCES",
+              "name": "Forest and Wildlife Resources"
+            },
+            {
+              "code": "CBSE_C10_SST_WATER_RESOURCES",
+              "name": "Water Resources"
+            },
+            {
+              "code": "CBSE_C10_SST_AGRICULTURE",
+              "name": "Agriculture"
+            },
+            {
+              "code": "CBSE_C10_SST_MINERALS_ENERGY_RESOURCES",
+              "name": "Minerals and Energy Resources"
+            },
+            {
+              "code": "CBSE_C10_SST_MANUFACTURING_INDUSTRIES",
+              "name": "Manufacturing Industries"
+            },
+            {
+              "code": "CBSE_C10_SST_LIFELINES_NATIONAL_ECONOMY",
+              "name": "Lifelines of National Economy"
+            },
+            {
+              "code": "CBSE_C10_SST_POWER_SHARING",
+              "name": "Power-sharing"
+            },
+            {
+              "code": "CBSE_C10_SST_FEDERALISM",
+              "name": "Federalism"
+            },
+            {
+              "code": "CBSE_C10_SST_GENDER_RELIGION_CASTE",
+              "name": "Gender, Religion and Caste"
+            },
+            {
+              "code": "CBSE_C10_SST_POLITICAL_PARTIES",
+              "name": "Political Parties"
+            },
+            {
+              "code": "CBSE_C10_SST_OUTCOMES_DEMOCRACY",
+              "name": "Outcomes of Democracy"
+            },
+            {
+              "code": "CBSE_C10_SST_DEVELOPMENT",
+              "name": "Development"
+            },
+            {
+              "code": "CBSE_C10_SST_SECTORS_INDIAN_ECONOMY",
+              "name": "Sectors of the Indian Economy"
+            },
+            {
+              "code": "CBSE_C10_SST_MONEY_CREDIT",
+              "name": "Money and Credit"
+            },
+            {
+              "code": "CBSE_C10_SST_GLOBALISATION_INDIAN_ECONOMY",
+              "name": "Globalisation and the Indian Economy"
+            },
+            {
+              "code": "CBSE_C10_SST_CONSUMER_RIGHTS",
+              "name": "Consumer Rights"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C10_SST_SK_HISTORY",
+              "name": "History"
+            },
+            {
+              "code": "CBSE_C10_SST_SK_GEOGRAPHY",
+              "name": "Geography"
+            },
+            {
+              "code": "CBSE_C10_SST_SK_CIVICS",
+              "name": "Political Science / Civics"
+            },
+            {
+              "code": "CBSE_C10_SST_SK_ECONOMICS",
+              "name": "Economics"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C10_ENG",
+          "name": "English (First Flight)",
+          "chapters": [
+            {
+              "code": "CBSE_C10_ENG_LETTER_GOD",
+              "name": "A Letter to God"
+            },
+            {
+              "code": "CBSE_C10_ENG_NELSON_MANDELA_LONG_WALK",
+              "name": "Nelson Mandela: Long Walk to Freedom"
+            },
+            {
+              "code": "CBSE_C10_ENG_TWO_STORIES_ABOUT_FLYING",
+              "name": "Two Stories about Flying"
+            },
+            {
+              "code": "CBSE_C10_ENG_DIARY_ANNE_FRANK",
+              "name": "From the Diary of Anne Frank"
+            },
+            {
+              "code": "CBSE_C10_ENG_GLIMPSES_INDIA",
+              "name": "Glimpses of India"
+            },
+            {
+              "code": "CBSE_C10_ENG_MIJBIL_OTTER",
+              "name": "Mijbil the Otter"
+            },
+            {
+              "code": "CBSE_C10_ENG_MADAM_RIDES_BUS",
+              "name": "Madam Rides the Bus"
+            },
+            {
+              "code": "CBSE_C10_ENG_SERMON_BENARES",
+              "name": "The Sermon at Benares"
+            },
+            {
+              "code": "CBSE_C10_ENG_PROPOSAL",
+              "name": "The Proposal"
+            },
+            {
+              "code": "CBSE_C10_ENG_DUST_SNOW",
+              "name": "Dust of Snow"
+            },
+            {
+              "code": "CBSE_C10_ENG_FIRE_ICE",
+              "name": "Fire and Ice"
+            },
+            {
+              "code": "CBSE_C10_ENG_TIGER_ZOO",
+              "name": "A Tiger in the Zoo"
+            },
+            {
+              "code": "CBSE_C10_ENG_TELL_WILD_ANIMALS",
+              "name": "How to Tell Wild Animals"
+            },
+            {
+              "code": "CBSE_C10_ENG_BALL_POEM",
+              "name": "The Ball Poem"
+            },
+            {
+              "code": "CBSE_C10_ENG_AMANDA",
+              "name": "Amanda"
+            },
+            {
+              "code": "CBSE_C10_ENG_TREES",
+              "name": "The Trees"
+            },
+            {
+              "code": "CBSE_C10_ENG_FOG",
+              "name": "Fog"
+            },
+            {
+              "code": "CBSE_C10_ENG_TALE_CUSTARD_DRAGON",
+              "name": "The Tale of Custard the Dragon"
+            },
+            {
+              "code": "CBSE_C10_ENG_ANNE_GREGORY",
+              "name": "For Anne Gregory"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C10_ENG_SK_READING",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CBSE_C10_ENG_SK_WRITING",
+              "name": "Writing and Grammar"
+            },
+            {
+              "code": "CBSE_C10_ENG_SK_PROSE",
+              "name": "Prose Literature"
+            },
+            {
+              "code": "CBSE_C10_ENG_SK_POETRY",
+              "name": "Poetry"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 10 Mathematics — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C10_MATH",
+          "title": "Class 10 Mathematics — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_MATH_REAL_NUMBERS",
+          "title": "Real Numbers — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_MATH_INTRODUCTION_TRIGONOMETRY",
+          "title": "Introduction to Trigonometry — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_MATH_PROBABILITY",
+          "title": "Probability — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 10 Science — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C10_SCI",
+          "title": "Class 10 Science — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_SCI_CHEMICAL_REACTIONS_EQUATIONS",
+          "title": "Chemical Reactions and Equations — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_SCI_ORGANISMS_REPRODUCE",
+          "title": "How do Organisms Reproduce? — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_SCI_ENVIRONMENT",
+          "title": "Our Environment — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 10 Social Science — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C10_SST",
+          "title": "Class 10 Social Science — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_SST_RISE_NATIONALISM_EUROPE",
+          "title": "The Rise of Nationalism in Europe — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_SST_LIFELINES_NATIONAL_ECONOMY",
+          "title": "Lifelines of National Economy — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_SST_CONSUMER_RIGHTS",
+          "title": "Consumer Rights — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 10 English (First Flight) — Full Mock",
+          "duration_min": 120,
+          "questions": 60,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C10_ENG",
+          "title": "Class 10 English (First Flight) — Subject Mock",
+          "duration_min": 50,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_ENG_LETTER_GOD",
+          "title": "A Letter to God — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_ENG_DUST_SNOW",
+          "title": "Dust of Snow — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C10_ENG_ANNE_GREGORY",
+          "title": "For Anne Gregory — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CLASS_11",
+      "subjects": [
+        {
+          "code": "CBSE_C11_PHYSICS",
+          "name": "Physics",
+          "chapters": [
+            {
+              "code": "CBSE_C11_PHY_UNITS_MEASUREMENT",
+              "name": "Units and Measurement"
+            },
+            {
+              "code": "CBSE_C11_PHY_MOTION_STRAIGHT_LINE",
+              "name": "Motion in a Straight Line"
+            },
+            {
+              "code": "CBSE_C11_PHY_MOTION_PLANE",
+              "name": "Motion in a Plane"
+            },
+            {
+              "code": "CBSE_C11_PHY_LAWS_MOTION",
+              "name": "Laws of Motion"
+            },
+            {
+              "code": "CBSE_C11_PHY_WORK_ENERGY_POWER",
+              "name": "Work, Energy and Power"
+            },
+            {
+              "code": "CBSE_C11_PHY_SYSTEM_PARTICLES_ROTATIONAL_MOTION",
+              "name": "System of Particles and Rotational Motion"
+            },
+            {
+              "code": "CBSE_C11_PHY_GRAVITATION",
+              "name": "Gravitation"
+            },
+            {
+              "code": "CBSE_C11_PHY_MECHANICAL_PROPERTIES_SOLIDS",
+              "name": "Mechanical Properties of Solids"
+            },
+            {
+              "code": "CBSE_C11_PHY_MECHANICAL_PROPERTIES_FLUIDS",
+              "name": "Mechanical Properties of Fluids"
+            },
+            {
+              "code": "CBSE_C11_PHY_THERMAL_PROPERTIES_MATTER",
+              "name": "Thermal Properties of Matter"
+            },
+            {
+              "code": "CBSE_C11_PHY_THERMODYNAMICS",
+              "name": "Thermodynamics"
+            },
+            {
+              "code": "CBSE_C11_PHY_KINETIC_THEORY",
+              "name": "Kinetic Theory"
+            },
+            {
+              "code": "CBSE_C11_PHY_OSCILLATIONS",
+              "name": "Oscillations"
+            },
+            {
+              "code": "CBSE_C11_PHY_WAVES",
+              "name": "Waves"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_PHY_SK_MECHANICS",
+              "name": "Mechanics"
+            },
+            {
+              "code": "CBSE_C11_PHY_SK_PROPS_MATTER",
+              "name": "Properties of Matter"
+            },
+            {
+              "code": "CBSE_C11_PHY_SK_THERMO",
+              "name": "Heat and Thermodynamics"
+            },
+            {
+              "code": "CBSE_C11_PHY_SK_OSC_WAVES",
+              "name": "Oscillations and Waves"
+            },
+            {
+              "code": "CBSE_C11_PHY_SK_MEASURE",
+              "name": "Measurement and Units"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C11_CHEMISTRY",
+          "name": "Chemistry",
+          "chapters": [
+            {
+              "code": "CBSE_C11_CHEM_SOME_BASIC_CONCEPTS_CHEMISTRY",
+              "name": "Some Basic Concepts of Chemistry"
+            },
+            {
+              "code": "CBSE_C11_CHEM_STRUCTURE_ATOM",
+              "name": "Structure of Atom"
+            },
+            {
+              "code": "CBSE_C11_CHEM_CLASSIFICATION_ELEMENTS_PERIODICITY_PROPERTIES",
+              "name": "Classification of Elements and Periodicity in Properties"
+            },
+            {
+              "code": "CBSE_C11_CHEM_CHEMICAL_BONDING_MOLECULAR_STRUCTURE",
+              "name": "Chemical Bonding and Molecular Structure"
+            },
+            {
+              "code": "CBSE_C11_CHEM_THERMODYNAMICS",
+              "name": "Thermodynamics"
+            },
+            {
+              "code": "CBSE_C11_CHEM_EQUILIBRIUM",
+              "name": "Equilibrium"
+            },
+            {
+              "code": "CBSE_C11_CHEM_REDOX_REACTIONS",
+              "name": "Redox Reactions"
+            },
+            {
+              "code": "CBSE_C11_CHEM_ORGANIC_CHEMISTRY_SOME_BASIC",
+              "name": "Organic Chemistry - Some Basic Principles and Techniques"
+            },
+            {
+              "code": "CBSE_C11_CHEM_HYDROCARBONS",
+              "name": "Hydrocarbons"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_CHEM_SK_PHYSICAL",
+              "name": "Physical Chemistry"
+            },
+            {
+              "code": "CBSE_C11_CHEM_SK_INORGANIC",
+              "name": "Inorganic Chemistry"
+            },
+            {
+              "code": "CBSE_C11_CHEM_SK_ORGANIC",
+              "name": "Organic Chemistry"
+            },
+            {
+              "code": "CBSE_C11_CHEM_SK_ATOMIC",
+              "name": "Atomic Structure and Bonding"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C11_MATH",
+          "name": "Mathematics",
+          "chapters": [
+            {
+              "code": "CBSE_C11_MATH_SETS",
+              "name": "Sets"
+            },
+            {
+              "code": "CBSE_C11_MATH_RELATIONS_FUNCTIONS",
+              "name": "Relations and Functions"
+            },
+            {
+              "code": "CBSE_C11_MATH_TRIGONOMETRIC_FUNCTIONS",
+              "name": "Trigonometric Functions"
+            },
+            {
+              "code": "CBSE_C11_MATH_COMPLEX_NUMBERS_QUADRATIC_EQUATIONS",
+              "name": "Complex Numbers and Quadratic Equations"
+            },
+            {
+              "code": "CBSE_C11_MATH_LINEAR_INEQUALITIES",
+              "name": "Linear Inequalities"
+            },
+            {
+              "code": "CBSE_C11_MATH_PERMUTATIONS_COMBINATIONS",
+              "name": "Permutations and Combinations"
+            },
+            {
+              "code": "CBSE_C11_MATH_BINOMIAL_THEOREM",
+              "name": "Binomial Theorem"
+            },
+            {
+              "code": "CBSE_C11_MATH_SEQUENCES_SERIES",
+              "name": "Sequences and Series"
+            },
+            {
+              "code": "CBSE_C11_MATH_STRAIGHT_LINES",
+              "name": "Straight Lines"
+            },
+            {
+              "code": "CBSE_C11_MATH_CONIC_SECTIONS",
+              "name": "Conic Sections"
+            },
+            {
+              "code": "CBSE_C11_MATH_INTRODUCTION_THREE_DIMENSIONAL_GEOMETRY",
+              "name": "Introduction to Three Dimensional Geometry"
+            },
+            {
+              "code": "CBSE_C11_MATH_LIMITS_DERIVATIVES",
+              "name": "Limits and Derivatives"
+            },
+            {
+              "code": "CBSE_C11_MATH_STATISTICS",
+              "name": "Statistics"
+            },
+            {
+              "code": "CBSE_C11_MATH_PROBABILITY",
+              "name": "Probability"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_MATH_SK_SETS_FUNCTIONS",
+              "name": "Sets and Functions"
+            },
+            {
+              "code": "CBSE_C11_MATH_SK_ALGEBRA",
+              "name": "Algebra"
+            },
+            {
+              "code": "CBSE_C11_MATH_SK_TRIG",
+              "name": "Trigonometry"
+            },
+            {
+              "code": "CBSE_C11_MATH_SK_COORD_GEOM",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "CBSE_C11_MATH_SK_CALCULUS",
+              "name": "Calculus"
+            },
+            {
+              "code": "CBSE_C11_MATH_SK_STATS_PROB",
+              "name": "Statistics and Probability"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C11_BIOLOGY",
+          "name": "Biology",
+          "chapters": [
+            {
+              "code": "CBSE_C11_BIO_LIVING_WORLD",
+              "name": "The Living World"
+            },
+            {
+              "code": "CBSE_C11_BIO_BIOLOGICAL_CLASSIFICATION",
+              "name": "Biological Classification"
+            },
+            {
+              "code": "CBSE_C11_BIO_PLANT_KINGDOM",
+              "name": "Plant Kingdom"
+            },
+            {
+              "code": "CBSE_C11_BIO_ANIMAL_KINGDOM",
+              "name": "Animal Kingdom"
+            },
+            {
+              "code": "CBSE_C11_BIO_MORPHOLOGY_FLOWERING_PLANTS",
+              "name": "Morphology of Flowering Plants"
+            },
+            {
+              "code": "CBSE_C11_BIO_ANATOMY_FLOWERING_PLANTS",
+              "name": "Anatomy of Flowering Plants"
+            },
+            {
+              "code": "CBSE_C11_BIO_STRUCTURAL_ORGANISATION_ANIMALS",
+              "name": "Structural Organisation in Animals"
+            },
+            {
+              "code": "CBSE_C11_BIO_CELL_UNIT_LIFE",
+              "name": "Cell: The Unit of Life"
+            },
+            {
+              "code": "CBSE_C11_BIO_BIOMOLECULES",
+              "name": "Biomolecules"
+            },
+            {
+              "code": "CBSE_C11_BIO_CELL_CYCLE_CELL_DIVISION",
+              "name": "Cell Cycle and Cell Division"
+            },
+            {
+              "code": "CBSE_C11_BIO_PHOTOSYNTHESIS_HIGHER_PLANTS",
+              "name": "Photosynthesis in Higher Plants"
+            },
+            {
+              "code": "CBSE_C11_BIO_RESPIRATION_PLANTS",
+              "name": "Respiration in Plants"
+            },
+            {
+              "code": "CBSE_C11_BIO_PLANT_GROWTH_DEVELOPMENT",
+              "name": "Plant Growth and Development"
+            },
+            {
+              "code": "CBSE_C11_BIO_BREATHING_EXCHANGE_GASES",
+              "name": "Breathing and Exchange of Gases"
+            },
+            {
+              "code": "CBSE_C11_BIO_BODY_FLUIDS_CIRCULATION",
+              "name": "Body Fluids and Circulation"
+            },
+            {
+              "code": "CBSE_C11_BIO_EXCRETORY_PRODUCTS_ELIMINATION",
+              "name": "Excretory Products and their Elimination"
+            },
+            {
+              "code": "CBSE_C11_BIO_LOCOMOTION_MOVEMENT",
+              "name": "Locomotion and Movement"
+            },
+            {
+              "code": "CBSE_C11_BIO_NEURAL_CONTROL_COORDINATION",
+              "name": "Neural Control and Coordination"
+            },
+            {
+              "code": "CBSE_C11_BIO_CHEMICAL_COORDINATION_INTEGRATION",
+              "name": "Chemical Coordination and Integration"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_BIO_SK_DIVERSITY",
+              "name": "Diversity of Living Organisms"
+            },
+            {
+              "code": "CBSE_C11_BIO_SK_STRUCT_ORG",
+              "name": "Structural Organisation"
+            },
+            {
+              "code": "CBSE_C11_BIO_SK_CELL",
+              "name": "Cell Biology and Biomolecules"
+            },
+            {
+              "code": "CBSE_C11_BIO_SK_PLANT_PHYS",
+              "name": "Plant Physiology"
+            },
+            {
+              "code": "CBSE_C11_BIO_SK_HUMAN_PHYS",
+              "name": "Human Physiology"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C11_ACCOUNTANCY",
+          "name": "Accountancy",
+          "chapters": [
+            {
+              "code": "CBSE_C11_ACC_INTRODUCTION_ACCOUNTING",
+              "name": "Introduction to Accounting"
+            },
+            {
+              "code": "CBSE_C11_ACC_THEORY_BASE_ACCOUNTING",
+              "name": "Theory Base of Accounting"
+            },
+            {
+              "code": "CBSE_C11_ACC_RECORDING_TRANSACTIONS_I",
+              "name": "Recording of Transactions I"
+            },
+            {
+              "code": "CBSE_C11_ACC_RECORDING_TRANSACTIONS_II",
+              "name": "Recording of Transactions II"
+            },
+            {
+              "code": "CBSE_C11_ACC_BANK_RECONCILIATION_STATEMENT",
+              "name": "Bank Reconciliation Statement"
+            },
+            {
+              "code": "CBSE_C11_ACC_TRIAL_BALANCE_RECTIFICATION_ERRORS",
+              "name": "Trial Balance and Rectification of Errors"
+            },
+            {
+              "code": "CBSE_C11_ACC_DEPRECIATION_PROVISIONS_RESERVES",
+              "name": "Depreciation, Provisions and Reserves"
+            },
+            {
+              "code": "CBSE_C11_ACC_FINANCIAL_STATEMENTS_I",
+              "name": "Financial Statements I"
+            },
+            {
+              "code": "CBSE_C11_ACC_FINANCIAL_STATEMENTS_II",
+              "name": "Financial Statements II"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_ACC_SK_FUNDAMENTALS",
+              "name": "Accounting Fundamentals"
+            },
+            {
+              "code": "CBSE_C11_ACC_SK_JOURNAL_LEDGER",
+              "name": "Recording and Ledger"
+            },
+            {
+              "code": "CBSE_C11_ACC_SK_ADJUSTMENTS",
+              "name": "Adjustments and Rectification"
+            },
+            {
+              "code": "CBSE_C11_ACC_SK_FINAL_ACCOUNTS",
+              "name": "Final Accounts"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C11_BUSINESS_STUDIES",
+          "name": "Business Studies",
+          "chapters": [
+            {
+              "code": "CBSE_C11_BST_BUSINESS_TRADE_COMMERCE",
+              "name": "Business, Trade and Commerce"
+            },
+            {
+              "code": "CBSE_C11_BST_FORMS_BUSINESS_ORGANISATION",
+              "name": "Forms of Business Organisation"
+            },
+            {
+              "code": "CBSE_C11_BST_PRIVATE_PUBLIC_GLOBAL_ENTERPRISES",
+              "name": "Private, Public and Global Enterprises"
+            },
+            {
+              "code": "CBSE_C11_BST_BUSINESS_SERVICES",
+              "name": "Business Services"
+            },
+            {
+              "code": "CBSE_C11_BST_EMERGING_MODES_BUSINESS",
+              "name": "Emerging Modes of Business"
+            },
+            {
+              "code": "CBSE_C11_BST_SOCIAL_RESPONSIBILITIES_BUSINESS_BUSINESS",
+              "name": "Social Responsibilities of Business and Business Ethics"
+            },
+            {
+              "code": "CBSE_C11_BST_FORMATION_COMPANY",
+              "name": "Formation of a Company"
+            },
+            {
+              "code": "CBSE_C11_BST_SOURCES_BUSINESS_FINANCE",
+              "name": "Sources of Business Finance"
+            },
+            {
+              "code": "CBSE_C11_BST_MSME_BUSINESS_ENTREPRENEURSHIP",
+              "name": "MSME and Business Entrepreneurship"
+            },
+            {
+              "code": "CBSE_C11_BST_INTERNAL_TRADE",
+              "name": "Internal Trade"
+            },
+            {
+              "code": "CBSE_C11_BST_INTERNATIONAL_BUSINESS",
+              "name": "International Business"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_BST_SK_FOUNDATIONS",
+              "name": "Foundations of Business"
+            },
+            {
+              "code": "CBSE_C11_BST_SK_ORG_TYPES",
+              "name": "Forms and Formation"
+            },
+            {
+              "code": "CBSE_C11_BST_SK_BIZ_FINANCE",
+              "name": "Business Finance and Services"
+            },
+            {
+              "code": "CBSE_C11_BST_SK_TRADE",
+              "name": "Trade and Commerce"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C11_ECONOMICS",
+          "name": "Economics",
+          "chapters": [
+            {
+              "code": "CBSE_C11_ECO_INTRODUCTION_STATISTICS_ECONOMICS",
+              "name": "Introduction to Statistics for Economics"
+            },
+            {
+              "code": "CBSE_C11_ECO_COLLECTION_DATA",
+              "name": "Collection of Data"
+            },
+            {
+              "code": "CBSE_C11_ECO_ORGANISATION_DATA",
+              "name": "Organisation of Data"
+            },
+            {
+              "code": "CBSE_C11_ECO_PRESENTATION_DATA",
+              "name": "Presentation of Data"
+            },
+            {
+              "code": "CBSE_C11_ECO_MEASURES_CENTRAL_TENDENCY",
+              "name": "Measures of Central Tendency"
+            },
+            {
+              "code": "CBSE_C11_ECO_CORRELATION",
+              "name": "Correlation"
+            },
+            {
+              "code": "CBSE_C11_ECO_INDEX_NUMBERS",
+              "name": "Index Numbers"
+            },
+            {
+              "code": "CBSE_C11_ECO_USE_STATISTICAL_TOOLS",
+              "name": "Use of Statistical Tools"
+            },
+            {
+              "code": "CBSE_C11_ECO_INDIAN_ECONOMY_EVE_INDEPENDENCE",
+              "name": "Indian Economy on the Eve of Independence"
+            },
+            {
+              "code": "CBSE_C11_ECO_INDIAN_ECONOMY_1950_1990",
+              "name": "Indian Economy 1950-1990"
+            },
+            {
+              "code": "CBSE_C11_ECO_LIBERALISATION_PRIVATISATION_GLOBALISATION_APPRAISAL",
+              "name": "Liberalisation, Privatisation and Globalisation: An Appraisal"
+            },
+            {
+              "code": "CBSE_C11_ECO_HUMAN_CAPITAL_FORMATION_INDIA",
+              "name": "Human Capital Formation in India"
+            },
+            {
+              "code": "CBSE_C11_ECO_RURAL_DEVELOPMENT",
+              "name": "Rural Development"
+            },
+            {
+              "code": "CBSE_C11_ECO_EMPLOYMENT_GROWTH_INFORMALISATION_OTHER",
+              "name": "Employment: Growth, Informalisation and Other Issues"
+            },
+            {
+              "code": "CBSE_C11_ECO_ENVIRONMENT_SUSTAINABLE_DEVELOPMENT",
+              "name": "Environment and Sustainable Development"
+            },
+            {
+              "code": "CBSE_C11_ECO_COMPARATIVE_DEVELOPMENT_EXPERIENCES_INDIA",
+              "name": "Comparative Development Experiences of India and its Neighbours"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C11_ECO_SK_STATS_METHODS",
+              "name": "Statistical Methods"
+            },
+            {
+              "code": "CBSE_C11_ECO_SK_DATA_ANALYSIS",
+              "name": "Data Analysis Tools"
+            },
+            {
+              "code": "CBSE_C11_ECO_SK_INDIAN_ECON",
+              "name": "Indian Economy since Independence"
+            },
+            {
+              "code": "CBSE_C11_ECO_SK_DEVELOPMENT",
+              "name": "Development and Sustainability"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 11 Physics — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_PHYSICS",
+          "title": "Class 11 Physics — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_PHY_UNITS_MEASUREMENT",
+          "title": "Units and Measurement — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_PHY_MECHANICAL_PROPERTIES_SOLIDS",
+          "title": "Mechanical Properties of Solids — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_PHY_WAVES",
+          "title": "Waves — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 11 Chemistry — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_CHEMISTRY",
+          "title": "Class 11 Chemistry — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_CHEM_SOME_BASIC_CONCEPTS_CHEMISTRY",
+          "title": "Some Basic Concepts of Chemistry — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_CHEM_THERMODYNAMICS",
+          "title": "Thermodynamics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_CHEM_HYDROCARBONS",
+          "title": "Hydrocarbons — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 11 Mathematics — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_MATH",
+          "title": "Class 11 Mathematics — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_MATH_SETS",
+          "title": "Sets — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_MATH_SEQUENCES_SERIES",
+          "title": "Sequences and Series — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_MATH_PROBABILITY",
+          "title": "Probability — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 11 Biology — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_BIOLOGY",
+          "title": "Class 11 Biology — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_BIO_LIVING_WORLD",
+          "title": "The Living World — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_BIO_CELL_CYCLE_CELL_DIVISION",
+          "title": "Cell Cycle and Cell Division — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_BIO_CHEMICAL_COORDINATION_INTEGRATION",
+          "title": "Chemical Coordination and Integration — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 11 Accountancy — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_ACCOUNTANCY",
+          "title": "Class 11 Accountancy — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_ACC_INTRODUCTION_ACCOUNTING",
+          "title": "Introduction to Accounting — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_ACC_BANK_RECONCILIATION_STATEMENT",
+          "title": "Bank Reconciliation Statement — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_ACC_FINANCIAL_STATEMENTS_II",
+          "title": "Financial Statements II — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 11 Business Studies — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_BUSINESS_STUDIES",
+          "title": "Class 11 Business Studies — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_BST_BUSINESS_TRADE_COMMERCE",
+          "title": "Business, Trade and Commerce — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_BST_SOCIAL_RESPONSIBILITIES_BUSINESS_BUSINESS",
+          "title": "Social Responsibilities of Business and Business Ethics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_BST_INTERNATIONAL_BUSINESS",
+          "title": "International Business — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 11 Economics — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C11_ECONOMICS",
+          "title": "Class 11 Economics — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_ECO_INTRODUCTION_STATISTICS_ECONOMICS",
+          "title": "Introduction to Statistics for Economics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_ECO_INDIAN_ECONOMY_EVE_INDEPENDENCE",
+          "title": "Indian Economy on the Eve of Independence — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C11_ECO_COMPARATIVE_DEVELOPMENT_EXPERIENCES_INDIA",
+          "title": "Comparative Development Experiences of India and its Neighbours — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CLASS_12",
+      "subjects": [
+        {
+          "code": "CBSE_C12_PHYSICS",
+          "name": "Physics",
+          "chapters": [
+            {
+              "code": "CBSE_C12_PHY_ELECTRIC_CHARGES_FIELDS",
+              "name": "Electric Charges and Fields"
+            },
+            {
+              "code": "CBSE_C12_PHY_ELECTROSTATIC_POTENTIAL_CAPACITANCE",
+              "name": "Electrostatic Potential and Capacitance"
+            },
+            {
+              "code": "CBSE_C12_PHY_CURRENT_ELECTRICITY",
+              "name": "Current Electricity"
+            },
+            {
+              "code": "CBSE_C12_PHY_MOVING_CHARGES_MAGNETISM",
+              "name": "Moving Charges and Magnetism"
+            },
+            {
+              "code": "CBSE_C12_PHY_MAGNETISM_MATTER",
+              "name": "Magnetism and Matter"
+            },
+            {
+              "code": "CBSE_C12_PHY_ELECTROMAGNETIC_INDUCTION",
+              "name": "Electromagnetic Induction"
+            },
+            {
+              "code": "CBSE_C12_PHY_ALTERNATING_CURRENT",
+              "name": "Alternating Current"
+            },
+            {
+              "code": "CBSE_C12_PHY_ELECTROMAGNETIC_WAVES",
+              "name": "Electromagnetic Waves"
+            },
+            {
+              "code": "CBSE_C12_PHY_RAY_OPTICS_OPTICAL_INSTRUMENTS",
+              "name": "Ray Optics and Optical Instruments"
+            },
+            {
+              "code": "CBSE_C12_PHY_WAVE_OPTICS",
+              "name": "Wave Optics"
+            },
+            {
+              "code": "CBSE_C12_PHY_DUAL_NATURE_RADIATION_MATTER",
+              "name": "Dual Nature of Radiation and Matter"
+            },
+            {
+              "code": "CBSE_C12_PHY_ATOMS",
+              "name": "Atoms"
+            },
+            {
+              "code": "CBSE_C12_PHY_NUCLEI",
+              "name": "Nuclei"
+            },
+            {
+              "code": "CBSE_C12_PHY_SEMICONDUCTOR_ELECTRONICS_MATERIALS_DEVICES",
+              "name": "Semiconductor Electronics: Materials, Devices and Simple Circuits"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_PHY_SK_ELECTROSTATICS",
+              "name": "Electrostatics"
+            },
+            {
+              "code": "CBSE_C12_PHY_SK_CURRENT_MAG",
+              "name": "Current Electricity and Magnetism"
+            },
+            {
+              "code": "CBSE_C12_PHY_SK_EMI_AC",
+              "name": "Electromagnetic Induction and AC"
+            },
+            {
+              "code": "CBSE_C12_PHY_SK_OPTICS",
+              "name": "Optics"
+            },
+            {
+              "code": "CBSE_C12_PHY_SK_MODERN",
+              "name": "Modern Physics"
+            },
+            {
+              "code": "CBSE_C12_PHY_SK_ELECTRONICS",
+              "name": "Electronic Devices"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C12_CHEMISTRY",
+          "name": "Chemistry",
+          "chapters": [
+            {
+              "code": "CBSE_C12_CHEM_SOLUTIONS",
+              "name": "Solutions"
+            },
+            {
+              "code": "CBSE_C12_CHEM_ELECTROCHEMISTRY",
+              "name": "Electrochemistry"
+            },
+            {
+              "code": "CBSE_C12_CHEM_CHEMICAL_KINETICS",
+              "name": "Chemical Kinetics"
+            },
+            {
+              "code": "CBSE_C12_CHEM_D_F_BLOCK_ELEMENTS",
+              "name": "The d- and f-Block Elements"
+            },
+            {
+              "code": "CBSE_C12_CHEM_COORDINATION_COMPOUNDS",
+              "name": "Coordination Compounds"
+            },
+            {
+              "code": "CBSE_C12_CHEM_HALOALKANES_HALOARENES",
+              "name": "Haloalkanes and Haloarenes"
+            },
+            {
+              "code": "CBSE_C12_CHEM_ALCOHOLS_PHENOLS_ETHERS",
+              "name": "Alcohols, Phenols and Ethers"
+            },
+            {
+              "code": "CBSE_C12_CHEM_ALDEHYDES_KETONES_CARBOXYLIC_ACIDS",
+              "name": "Aldehydes, Ketones and Carboxylic Acids"
+            },
+            {
+              "code": "CBSE_C12_CHEM_AMINES",
+              "name": "Amines"
+            },
+            {
+              "code": "CBSE_C12_CHEM_BIOMOLECULES",
+              "name": "Biomolecules"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_CHEM_SK_PHYSICAL",
+              "name": "Physical Chemistry"
+            },
+            {
+              "code": "CBSE_C12_CHEM_SK_INORGANIC",
+              "name": "Inorganic Chemistry"
+            },
+            {
+              "code": "CBSE_C12_CHEM_SK_ORGANIC",
+              "name": "Organic Chemistry"
+            },
+            {
+              "code": "CBSE_C12_CHEM_SK_BIOMOLECULES",
+              "name": "Biomolecules and Applied Chemistry"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C12_MATH",
+          "name": "Mathematics",
+          "chapters": [
+            {
+              "code": "CBSE_C12_MATH_RELATIONS_FUNCTIONS",
+              "name": "Relations and Functions"
+            },
+            {
+              "code": "CBSE_C12_MATH_INVERSE_TRIGONOMETRIC_FUNCTIONS",
+              "name": "Inverse Trigonometric Functions"
+            },
+            {
+              "code": "CBSE_C12_MATH_MATRICES",
+              "name": "Matrices"
+            },
+            {
+              "code": "CBSE_C12_MATH_DETERMINANTS",
+              "name": "Determinants"
+            },
+            {
+              "code": "CBSE_C12_MATH_CONTINUITY_DIFFERENTIABILITY",
+              "name": "Continuity and Differentiability"
+            },
+            {
+              "code": "CBSE_C12_MATH_APPLICATION_DERIVATIVES",
+              "name": "Application of Derivatives"
+            },
+            {
+              "code": "CBSE_C12_MATH_INTEGRALS",
+              "name": "Integrals"
+            },
+            {
+              "code": "CBSE_C12_MATH_APPLICATION_INTEGRALS",
+              "name": "Application of Integrals"
+            },
+            {
+              "code": "CBSE_C12_MATH_DIFFERENTIAL_EQUATIONS",
+              "name": "Differential Equations"
+            },
+            {
+              "code": "CBSE_C12_MATH_VECTOR_ALGEBRA",
+              "name": "Vector Algebra"
+            },
+            {
+              "code": "CBSE_C12_MATH_THREE_DIMENSIONAL_GEOMETRY",
+              "name": "Three Dimensional Geometry"
+            },
+            {
+              "code": "CBSE_C12_MATH_LINEAR_PROGRAMMING",
+              "name": "Linear Programming"
+            },
+            {
+              "code": "CBSE_C12_MATH_PROBABILITY",
+              "name": "Probability"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_MATH_SK_REL_FUNC",
+              "name": "Relations and Functions"
+            },
+            {
+              "code": "CBSE_C12_MATH_SK_ALGEBRA_MATRIX",
+              "name": "Algebra: Matrices and Determinants"
+            },
+            {
+              "code": "CBSE_C12_MATH_SK_CALCULUS",
+              "name": "Calculus"
+            },
+            {
+              "code": "CBSE_C12_MATH_SK_VECTORS_3D",
+              "name": "Vectors and 3D Geometry"
+            },
+            {
+              "code": "CBSE_C12_MATH_SK_LPP",
+              "name": "Linear Programming"
+            },
+            {
+              "code": "CBSE_C12_MATH_SK_PROBABILITY",
+              "name": "Probability"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C12_BIOLOGY",
+          "name": "Biology",
+          "chapters": [
+            {
+              "code": "CBSE_C12_BIO_SEXUAL_REPRODUCTION_FLOWERING_PLANTS",
+              "name": "Sexual Reproduction in Flowering Plants"
+            },
+            {
+              "code": "CBSE_C12_BIO_HUMAN_REPRODUCTION",
+              "name": "Human Reproduction"
+            },
+            {
+              "code": "CBSE_C12_BIO_REPRODUCTIVE_HEALTH",
+              "name": "Reproductive Health"
+            },
+            {
+              "code": "CBSE_C12_BIO_PRINCIPLES_INHERITANCE_VARIATION",
+              "name": "Principles of Inheritance and Variation"
+            },
+            {
+              "code": "CBSE_C12_BIO_MOLECULAR_BASIS_INHERITANCE",
+              "name": "Molecular Basis of Inheritance"
+            },
+            {
+              "code": "CBSE_C12_BIO_EVOLUTION",
+              "name": "Evolution"
+            },
+            {
+              "code": "CBSE_C12_BIO_HUMAN_HEALTH_DISEASE",
+              "name": "Human Health and Disease"
+            },
+            {
+              "code": "CBSE_C12_BIO_MICROBES_HUMAN_WELFARE",
+              "name": "Microbes in Human Welfare"
+            },
+            {
+              "code": "CBSE_C12_BIO_BIOTECHNOLOGY_PRINCIPLES_PROCESSES",
+              "name": "Biotechnology: Principles and Processes"
+            },
+            {
+              "code": "CBSE_C12_BIO_BIOTECHNOLOGY_APPLICATIONS",
+              "name": "Biotechnology and its Applications"
+            },
+            {
+              "code": "CBSE_C12_BIO_ORGANISMS_POPULATIONS",
+              "name": "Organisms and Populations"
+            },
+            {
+              "code": "CBSE_C12_BIO_ECOSYSTEM",
+              "name": "Ecosystem"
+            },
+            {
+              "code": "CBSE_C12_BIO_BIODIVERSITY_CONSERVATION",
+              "name": "Biodiversity and Conservation"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_BIO_SK_REPRODUCTION",
+              "name": "Reproduction"
+            },
+            {
+              "code": "CBSE_C12_BIO_SK_GENETICS",
+              "name": "Genetics and Evolution"
+            },
+            {
+              "code": "CBSE_C12_BIO_SK_HUMAN_WELFARE",
+              "name": "Biology in Human Welfare"
+            },
+            {
+              "code": "CBSE_C12_BIO_SK_BIOTECH",
+              "name": "Biotechnology"
+            },
+            {
+              "code": "CBSE_C12_BIO_SK_ECOLOGY",
+              "name": "Ecology and Environment"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C12_ACCOUNTANCY",
+          "name": "Accountancy",
+          "chapters": [
+            {
+              "code": "CBSE_C12_ACC_ACCOUNTING_PARTNERSHIP_FIRMS_BASIC",
+              "name": "Accounting for Partnership Firms: Basic Concepts"
+            },
+            {
+              "code": "CBSE_C12_ACC_RECONSTITUTION_PARTNERSHIP_FIRM_ADMISSION",
+              "name": "Reconstitution of a Partnership Firm: Admission of a Partner"
+            },
+            {
+              "code": "CBSE_C12_ACC_RECONSTITUTION_PARTNERSHIP_FIRM_RETIREMENT",
+              "name": "Reconstitution of a Partnership Firm: Retirement or Death of a Partner"
+            },
+            {
+              "code": "CBSE_C12_ACC_DISSOLUTION_PARTNERSHIP_FIRM",
+              "name": "Dissolution of Partnership Firm"
+            },
+            {
+              "code": "CBSE_C12_ACC_ACCOUNTING_SHARE_CAPITAL",
+              "name": "Accounting for Share Capital"
+            },
+            {
+              "code": "CBSE_C12_ACC_ISSUE_REDEMPTION_DEBENTURES",
+              "name": "Issue and Redemption of Debentures"
+            },
+            {
+              "code": "CBSE_C12_ACC_FINANCIAL_STATEMENTS_COMPANY",
+              "name": "Financial Statements of a Company"
+            },
+            {
+              "code": "CBSE_C12_ACC_ANALYSIS_FINANCIAL_STATEMENTS",
+              "name": "Analysis of Financial Statements"
+            },
+            {
+              "code": "CBSE_C12_ACC_ACCOUNTING_RATIOS",
+              "name": "Accounting Ratios"
+            },
+            {
+              "code": "CBSE_C12_ACC_CASH_FLOW_STATEMENT",
+              "name": "Cash Flow Statement"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_ACC_SK_PARTNERSHIP",
+              "name": "Partnership Accounts"
+            },
+            {
+              "code": "CBSE_C12_ACC_SK_COMPANY",
+              "name": "Company Accounts"
+            },
+            {
+              "code": "CBSE_C12_ACC_SK_FIN_STATEMENTS",
+              "name": "Financial Statements"
+            },
+            {
+              "code": "CBSE_C12_ACC_SK_FIN_ANALYSIS",
+              "name": "Analysis of Financial Statements"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C12_BUSINESS_STUDIES",
+          "name": "Business Studies",
+          "chapters": [
+            {
+              "code": "CBSE_C12_BST_NATURE_SIGNIFICANCE_MANAGEMENT",
+              "name": "Nature and Significance of Management"
+            },
+            {
+              "code": "CBSE_C12_BST_PRINCIPLES_MANAGEMENT",
+              "name": "Principles of Management"
+            },
+            {
+              "code": "CBSE_C12_BST_BUSINESS_ENVIRONMENT",
+              "name": "Business Environment"
+            },
+            {
+              "code": "CBSE_C12_BST_PLANNING",
+              "name": "Planning"
+            },
+            {
+              "code": "CBSE_C12_BST_ORGANISING",
+              "name": "Organising"
+            },
+            {
+              "code": "CBSE_C12_BST_STAFFING",
+              "name": "Staffing"
+            },
+            {
+              "code": "CBSE_C12_BST_DIRECTING",
+              "name": "Directing"
+            },
+            {
+              "code": "CBSE_C12_BST_CONTROLLING",
+              "name": "Controlling"
+            },
+            {
+              "code": "CBSE_C12_BST_FINANCIAL_MANAGEMENT",
+              "name": "Financial Management"
+            },
+            {
+              "code": "CBSE_C12_BST_MARKETING",
+              "name": "Marketing"
+            },
+            {
+              "code": "CBSE_C12_BST_CONSUMER_PROTECTION",
+              "name": "Consumer Protection"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_BST_SK_MGMT_PRINCIPLES",
+              "name": "Principles of Management"
+            },
+            {
+              "code": "CBSE_C12_BST_SK_MGMT_FUNCTIONS",
+              "name": "Functions of Management"
+            },
+            {
+              "code": "CBSE_C12_BST_SK_BIZ_FINANCE",
+              "name": "Business Finance"
+            },
+            {
+              "code": "CBSE_C12_BST_SK_MARKETING",
+              "name": "Marketing and Consumer Protection"
+            }
+          ]
+        },
+        {
+          "code": "CBSE_C12_ECONOMICS",
+          "name": "Economics",
+          "chapters": [
+            {
+              "code": "CBSE_C12_ECO_INTRODUCTION_MICROECONOMICS",
+              "name": "Introduction to Microeconomics"
+            },
+            {
+              "code": "CBSE_C12_ECO_THEORY_CONSUMER_BEHAVIOUR",
+              "name": "Theory of Consumer Behaviour"
+            },
+            {
+              "code": "CBSE_C12_ECO_PRODUCTION_COSTS",
+              "name": "Production and Costs"
+            },
+            {
+              "code": "CBSE_C12_ECO_THEORY_FIRM_UNDER_PERFECT",
+              "name": "The Theory of the Firm under Perfect Competition"
+            },
+            {
+              "code": "CBSE_C12_ECO_MARKET_EQUILIBRIUM",
+              "name": "Market Equilibrium"
+            },
+            {
+              "code": "CBSE_C12_ECO_NON_COMPETITIVE_MARKETS",
+              "name": "Non-Competitive Markets"
+            },
+            {
+              "code": "CBSE_C12_ECO_INTRODUCTION_MACROECONOMICS",
+              "name": "Introduction to Macroeconomics"
+            },
+            {
+              "code": "CBSE_C12_ECO_NATIONAL_INCOME_ACCOUNTING",
+              "name": "National Income Accounting"
+            },
+            {
+              "code": "CBSE_C12_ECO_MONEY_BANKING",
+              "name": "Money and Banking"
+            },
+            {
+              "code": "CBSE_C12_ECO_DETERMINATION_INCOME_EMPLOYMENT",
+              "name": "Determination of Income and Employment"
+            },
+            {
+              "code": "CBSE_C12_ECO_GOVERNMENT_BUDGET_ECONOMY",
+              "name": "Government Budget and the Economy"
+            },
+            {
+              "code": "CBSE_C12_ECO_OPEN_ECONOMY_MACROECONOMICS",
+              "name": "Open Economy Macroeconomics"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CBSE_C12_ECO_SK_CONSUMER",
+              "name": "Consumer and Producer Behaviour"
+            },
+            {
+              "code": "CBSE_C12_ECO_SK_MARKET",
+              "name": "Market and Price Determination"
+            },
+            {
+              "code": "CBSE_C12_ECO_SK_NAT_INCOME",
+              "name": "National Income and Aggregates"
+            },
+            {
+              "code": "CBSE_C12_ECO_SK_MONEY_BANKING",
+              "name": "Money, Banking and Budget"
+            },
+            {
+              "code": "CBSE_C12_ECO_SK_MACRO_POLICY",
+              "name": "Macroeconomic Policy"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "Class 12 Physics — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_PHYSICS",
+          "title": "Class 12 Physics — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_PHY_ELECTRIC_CHARGES_FIELDS",
+          "title": "Electric Charges and Fields — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_PHY_ELECTROMAGNETIC_WAVES",
+          "title": "Electromagnetic Waves — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_PHY_SEMICONDUCTOR_ELECTRONICS_MATERIALS_DEVICES",
+          "title": "Semiconductor Electronics: Materials, Devices and Simple Circuits — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 12 Chemistry — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_CHEMISTRY",
+          "title": "Class 12 Chemistry — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_CHEM_SOLUTIONS",
+          "title": "Solutions — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_CHEM_HALOALKANES_HALOARENES",
+          "title": "Haloalkanes and Haloarenes — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_CHEM_BIOMOLECULES",
+          "title": "Biomolecules — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 12 Mathematics — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_MATH",
+          "title": "Class 12 Mathematics — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_MATH_RELATIONS_FUNCTIONS",
+          "title": "Relations and Functions — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_MATH_INTEGRALS",
+          "title": "Integrals — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_MATH_PROBABILITY",
+          "title": "Probability — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 12 Biology — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_BIOLOGY",
+          "title": "Class 12 Biology — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_BIO_SEXUAL_REPRODUCTION_FLOWERING_PLANTS",
+          "title": "Sexual Reproduction in Flowering Plants — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_BIO_HUMAN_HEALTH_DISEASE",
+          "title": "Human Health and Disease — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_BIO_BIODIVERSITY_CONSERVATION",
+          "title": "Biodiversity and Conservation — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 12 Accountancy — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_ACCOUNTANCY",
+          "title": "Class 12 Accountancy — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_ACC_ACCOUNTING_PARTNERSHIP_FIRMS_BASIC",
+          "title": "Accounting for Partnership Firms: Basic Concepts — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_ACC_ISSUE_REDEMPTION_DEBENTURES",
+          "title": "Issue and Redemption of Debentures — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_ACC_CASH_FLOW_STATEMENT",
+          "title": "Cash Flow Statement — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 12 Business Studies — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_BUSINESS_STUDIES",
+          "title": "Class 12 Business Studies — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_BST_NATURE_SIGNIFICANCE_MANAGEMENT",
+          "title": "Nature and Significance of Management — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_BST_STAFFING",
+          "title": "Staffing — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_BST_CONSUMER_PROTECTION",
+          "title": "Consumer Protection — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "full",
+          "title": "Class 12 Economics — Full Mock",
+          "duration_min": 180,
+          "questions": 90,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CBSE_C12_ECONOMICS",
+          "title": "Class 12 Economics — Subject Mock",
+          "duration_min": 60,
+          "questions": 30,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_ECO_INTRODUCTION_MICROECONOMICS",
+          "title": "Introduction to Microeconomics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_ECO_INTRODUCTION_MACROECONOMICS",
+          "title": "Introduction to Macroeconomics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CBSE_C12_ECO_OPEN_ECONOMY_MACROECONOMICS",
+          "title": "Open Economy Macroeconomics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}
