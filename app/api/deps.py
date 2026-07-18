@@ -34,8 +34,8 @@ async def get_auth_user(authorization: str | None = Header(default=None)) -> Aut
 
 
 _USER_COLUMNS = """
-    id, auth_user_id, full_name, email, phone, address,
-    target_country, target_examination_id, role, profile_completed
+    id, auth_user_id, full_name, email, phone, role, profile_completed,
+    state_code, mock_category_code, catalog_exam_code, target_country_code
 """
 
 
