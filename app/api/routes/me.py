@@ -6,7 +6,10 @@ from fastapi import APIRouter, Depends, HTTPException, status
 
 from app.api.deps import get_current_user
 from app.core.db import get_pool
+from app.schemas.catalog import StreamOut, StreamSwitchIn
 from app.schemas.user import CurrentUser, ProfileUpdate
+from app.services import streams
+from app.services.streams import StreamError
 
 router = APIRouter(prefix="/me", tags=["me"])
 
@@ -96,3 +99,29 @@ async def update_profile(
         country_code,
     )
     return CurrentUser(**dict(row))
+
+
+@router.get("/stream", response_model=StreamOut | None)
+async def get_stream(user: CurrentUser = Depends(get_current_user)) -> StreamOut | None:
+    """The user's CURRENT exam stream (latest entry in the append-only log)."""
+    current = await streams.get_current_stream(get_pool(), user.id)
+    return StreamOut(**current) if current else None
+
+
+@router.post("/stream", response_model=StreamOut)
+async def switch_stream(
+    payload: StreamSwitchIn,
+    user: CurrentUser = Depends(get_current_user),
+) -> StreamOut:
+    """Switch exam stream — APPENDS a new stream-log row (never overwrites history)."""
+    try:
+        current = await streams.switch_stream(
+            get_pool(), user.id, payload.catalog_exam_code,
+            payload.variant_code, payload.target_country_code,
+        )
+    except StreamError as exc:
+        raise HTTPException(
+            status_code=exc.http_status,
+            detail={"code": exc.code, "message": exc.message},
+        ) from exc
+    return StreamOut(**current)

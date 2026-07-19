@@ -35,6 +35,19 @@ class Settings(BaseSettings):
     storage_bucket: str = "exam-media"
     signed_url_ttl: int = 3600
 
+    # OpenRouter (AI insight pipeline). Dormant until a key is set.
+    openrouter_api_key: str = ""
+    openrouter_base_url: str = "https://openrouter.ai/api/v1"
+    # Fast/cheap model for high-volume per-answer grading (concept + error type):
+    openrouter_model_grade: str = "anthropic/claude-3.5-haiku"
+    # Best-reasoning model for the per-attempt + student-profile narrative:
+    openrouter_model_synth: str = "anthropic/claude-opus-4.1"
+    openrouter_app_title: str = "MockExam Insights"
+
+    @property
+    def ai_enabled(self) -> bool:
+        return bool(self.openrouter_api_key)
+
     @property
     def cors_origin_list(self) -> list[str]:
         return [o.strip() for o in self.cors_origins.split(",") if o.strip()]

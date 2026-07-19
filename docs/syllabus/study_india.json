@@ -1,0 +1,1543 @@
+{
+  "group": "study_india",
+  "sources": [
+    "JEE Main 2025 syllabus (NTA official PDF): https://jeemain.nta.nic.in/document/syllabus-for-jee-main-2025/ (cdnbbsr.s3waas.gov.in/.../2024102841.pdf)",
+    "JEE Advanced 2025 syllabus (jeeadv.ac.in, IIT Kanpur): https://jeeadv.ac.in — official syllabus PDF",
+    "NEET UG 2025 syllabus (NTA/NMC official PDF): https://nta.ac.in/Download/Notice/Notice_20241230193629.pdf",
+    "CAT (IIMs, iimcat.ac.in): IIMs do not publish an official topic syllabus; VARC/DILR/QA areas compiled from recent CAT papers and the official exam pattern (3 sections, 40 min each)."
+  ],
+  "exams": [
+    {
+      "catalog_exam_code": "JEE_MAINS",
+      "subjects": [
+        {
+          "code": "JEEM_PHYSICS",
+          "name": "Physics",
+          "chapters": [
+            {
+              "code": "JEEM_PHY_UNITS_AND_MEASUREMENTS",
+              "name": "Units and Measurements"
+            },
+            {
+              "code": "JEEM_PHY_KINEMATICS",
+              "name": "Kinematics"
+            },
+            {
+              "code": "JEEM_PHY_LAWS_OF_MOTION",
+              "name": "Laws of Motion"
+            },
+            {
+              "code": "JEEM_PHY_WORK_ENERGY_AND_POWER",
+              "name": "Work, Energy and Power"
+            },
+            {
+              "code": "JEEM_PHY_ROTATIONAL_MOTION",
+              "name": "Rotational Motion"
+            },
+            {
+              "code": "JEEM_PHY_GRAVITATION",
+              "name": "Gravitation"
+            },
+            {
+              "code": "JEEM_PHY_PROPERTIES_OF_SOLIDS_AND_LIQUIDS",
+              "name": "Properties of Solids and Liquids"
+            },
+            {
+              "code": "JEEM_PHY_THERMODYNAMICS",
+              "name": "Thermodynamics"
+            },
+            {
+              "code": "JEEM_PHY_KINETIC_THEORY_OF_GASES",
+              "name": "Kinetic Theory of Gases"
+            },
+            {
+              "code": "JEEM_PHY_OSCILLATIONS_AND_WAVES",
+              "name": "Oscillations and Waves"
+            },
+            {
+              "code": "JEEM_PHY_ELECTROSTATICS",
+              "name": "Electrostatics"
+            },
+            {
+              "code": "JEEM_PHY_CURRENT_ELECTRICITY",
+              "name": "Current Electricity"
+            },
+            {
+              "code": "JEEM_PHY_MAGNETIC_EFFECTS_OF_CURRENT_AND_MAGNETISM",
+              "name": "Magnetic Effects of Current and Magnetism"
+            },
+            {
+              "code": "JEEM_PHY_ELECTROMAGNETIC_INDUCTION_AND_ALTERNATING_CURRENTS",
+              "name": "Electromagnetic Induction and Alternating Currents"
+            },
+            {
+              "code": "JEEM_PHY_ELECTROMAGNETIC_WAVES",
+              "name": "Electromagnetic Waves"
+            },
+            {
+              "code": "JEEM_PHY_OPTICS",
+              "name": "Optics"
+            },
+            {
+              "code": "JEEM_PHY_DUAL_NATURE_OF_MATTER_AND_RADIATION",
+              "name": "Dual Nature of Matter and Radiation"
+            },
+            {
+              "code": "JEEM_PHY_ATOMS_AND_NUCLEI",
+              "name": "Atoms and Nuclei"
+            },
+            {
+              "code": "JEEM_PHY_ELECTRONIC_DEVICES",
+              "name": "Electronic Devices"
+            },
+            {
+              "code": "JEEM_PHY_EXPERIMENTAL_SKILLS",
+              "name": "Experimental Skills"
+            }
+          ],
+          "skills": [
+            {
+              "code": "JEEM_PHY_SKL_MECHANICS",
+              "name": "Mechanics"
+            },
+            {
+              "code": "JEEM_PHY_SKL_ELECTROMAGNETISM",
+              "name": "Electromagnetism"
+            },
+            {
+              "code": "JEEM_PHY_SKL_THERMODYNAMICS_AND_KINETIC_THEORY",
+              "name": "Thermodynamics and Kinetic Theory"
+            },
+            {
+              "code": "JEEM_PHY_SKL_OPTICS_AND_MODERN_PHYSICS",
+              "name": "Optics and Modern Physics"
+            },
+            {
+              "code": "JEEM_PHY_SKL_OSCILLATIONS_AND_WAVES",
+              "name": "Oscillations and Waves"
+            }
+          ]
+        },
+        {
+          "code": "JEEM_CHEMISTRY",
+          "name": "Chemistry",
+          "chapters": [
+            {
+              "code": "JEEM_CHE_SOME_BASIC_CONCEPTS_IN_CHEMISTRY",
+              "name": "Some Basic Concepts in Chemistry"
+            },
+            {
+              "code": "JEEM_CHE_ATOMIC_STRUCTURE",
+              "name": "Atomic Structure"
+            },
+            {
+              "code": "JEEM_CHE_CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE",
+              "name": "Chemical Bonding and Molecular Structure"
+            },
+            {
+              "code": "JEEM_CHE_CHEMICAL_THERMODYNAMICS",
+              "name": "Chemical Thermodynamics"
+            },
+            {
+              "code": "JEEM_CHE_SOLUTIONS",
+              "name": "Solutions"
+            },
+            {
+              "code": "JEEM_CHE_EQUILIBRIUM",
+              "name": "Equilibrium"
+            },
+            {
+              "code": "JEEM_CHE_REDOX_REACTIONS_AND_ELECTROCHEMISTRY",
+              "name": "Redox Reactions and Electrochemistry"
+            },
+            {
+              "code": "JEEM_CHE_CHEMICAL_KINETICS",
+              "name": "Chemical Kinetics"
+            },
+            {
+              "code": "JEEM_CHE_CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY_IN_PROPERTIES",
+              "name": "Classification of Elements and Periodicity in Properties"
+            },
+            {
+              "code": "JEEM_CHE_P_BLOCK_ELEMENTS",
+              "name": "p-Block Elements"
+            },
+            {
+              "code": "JEEM_CHE_D_AND_F_BLOCK_ELEMENTS",
+              "name": "d- and f-Block Elements"
+            },
+            {
+              "code": "JEEM_CHE_COORDINATION_COMPOUNDS",
+              "name": "Coordination Compounds"
+            },
+            {
+              "code": "JEEM_CHE_PURIFICATION_AND_CHARACTERISATION_OF_ORGANIC_COMPOUNDS",
+              "name": "Purification and Characterisation of Organic Compounds"
+            },
+            {
+              "code": "JEEM_CHE_SOME_BASIC_PRINCIPLES_OF_ORGANIC_CHEMISTRY",
+              "name": "Some Basic Principles of Organic Chemistry"
+            },
+            {
+              "code": "JEEM_CHE_HYDROCARBONS",
+              "name": "Hydrocarbons"
+            },
+            {
+              "code": "JEEM_CHE_ORGANIC_COMPOUNDS_CONTAINING_HALOGENS",
+              "name": "Organic Compounds Containing Halogens"
+            },
+            {
+              "code": "JEEM_CHE_ORGANIC_COMPOUNDS_CONTAINING_OXYGEN",
+              "name": "Organic Compounds Containing Oxygen"
+            },
+            {
+              "code": "JEEM_CHE_ORGANIC_COMPOUNDS_CONTAINING_NITROGEN",
+              "name": "Organic Compounds Containing Nitrogen"
+            },
+            {
+              "code": "JEEM_CHE_BIOMOLECULES",
+              "name": "Biomolecules"
+            },
+            {
+              "code": "JEEM_CHE_PRINCIPLES_RELATED_TO_PRACTICAL_CHEMISTRY",
+              "name": "Principles Related to Practical Chemistry"
+            }
+          ],
+          "skills": [
+            {
+              "code": "JEEM_CHE_SKL_PHYSICAL_CHEMISTRY",
+              "name": "Physical Chemistry"
+            },
+            {
+              "code": "JEEM_CHE_SKL_INORGANIC_CHEMISTRY",
+              "name": "Inorganic Chemistry"
+            },
+            {
+              "code": "JEEM_CHE_SKL_ORGANIC_CHEMISTRY",
+              "name": "Organic Chemistry"
+            }
+          ]
+        },
+        {
+          "code": "JEEM_MATHEMATICS",
+          "name": "Mathematics",
+          "chapters": [
+            {
+              "code": "JEEM_MAT_SETS_RELATIONS_AND_FUNCTIONS",
+              "name": "Sets, Relations and Functions"
+            },
+            {
+              "code": "JEEM_MAT_COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS",
+              "name": "Complex Numbers and Quadratic Equations"
+            },
+            {
+              "code": "JEEM_MAT_MATRICES_AND_DETERMINANTS",
+              "name": "Matrices and Determinants"
+            },
+            {
+              "code": "JEEM_MAT_PERMUTATIONS_AND_COMBINATIONS",
+              "name": "Permutations and Combinations"
+            },
+            {
+              "code": "JEEM_MAT_BINOMIAL_THEOREM_AND_ITS_SIMPLE_APPLICATIONS",
+              "name": "Binomial Theorem and Its Simple Applications"
+            },
+            {
+              "code": "JEEM_MAT_SEQUENCE_AND_SERIES",
+              "name": "Sequence and Series"
+            },
+            {
+              "code": "JEEM_MAT_LIMIT_CONTINUITY_AND_DIFFERENTIABILITY",
+              "name": "Limit, Continuity and Differentiability"
+            },
+            {
+              "code": "JEEM_MAT_INTEGRAL_CALCULUS",
+              "name": "Integral Calculus"
+            },
+            {
+              "code": "JEEM_MAT_DIFFERENTIAL_EQUATIONS",
+              "name": "Differential Equations"
+            },
+            {
+              "code": "JEEM_MAT_COORDINATE_GEOMETRY",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "JEEM_MAT_THREE_DIMENSIONAL_GEOMETRY",
+              "name": "Three Dimensional Geometry"
+            },
+            {
+              "code": "JEEM_MAT_VECTOR_ALGEBRA",
+              "name": "Vector Algebra"
+            },
+            {
+              "code": "JEEM_MAT_STATISTICS_AND_PROBABILITY",
+              "name": "Statistics and Probability"
+            },
+            {
+              "code": "JEEM_MAT_TRIGONOMETRY",
+              "name": "Trigonometry"
+            }
+          ],
+          "skills": [
+            {
+              "code": "JEEM_MAT_SKL_ALGEBRA",
+              "name": "Algebra"
+            },
+            {
+              "code": "JEEM_MAT_SKL_CALCULUS",
+              "name": "Calculus"
+            },
+            {
+              "code": "JEEM_MAT_SKL_COORDINATE_AND_3D_GEOMETRY",
+              "name": "Coordinate and 3D Geometry"
+            },
+            {
+              "code": "JEEM_MAT_SKL_TRIGONOMETRY",
+              "name": "Trigonometry"
+            },
+            {
+              "code": "JEEM_MAT_SKL_PROBABILITY_AND_STATISTICS",
+              "name": "Probability and Statistics"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "JEE Main — Full Mock",
+          "duration_min": 180,
+          "questions": 75,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "JEEM_PHYSICS",
+          "title": "JEE Main Physics — Section Mock",
+          "duration_min": 60,
+          "questions": 25,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "JEEM_CHEMISTRY",
+          "title": "JEE Main Chemistry — Section Mock",
+          "duration_min": 60,
+          "questions": 25,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "JEEM_MATHEMATICS",
+          "title": "JEE Main Mathematics — Section Mock",
+          "duration_min": 60,
+          "questions": 25,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEM_PHY_KINEMATICS",
+          "title": "Kinematics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEM_PHY_ELECTROSTATICS",
+          "title": "Electrostatics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEM_CHE_CHEMICAL_THERMODYNAMICS",
+          "title": "Chemical Thermodynamics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEM_CHE_HYDROCARBONS",
+          "title": "Hydrocarbons — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEM_MAT_INTEGRAL_CALCULUS",
+          "title": "Integral Calculus — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEM_MAT_COMPLEX_NUMBERS_AND_QUADRATIC_EQUATIONS",
+          "title": "Complex Numbers & Quadratic Equations — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "JEE_ADVANCED",
+      "subjects": [
+        {
+          "code": "JEEA_PHYSICS",
+          "name": "Physics",
+          "chapters": [
+            {
+              "code": "JEEA_PHY_GENERAL_UNITS_DIMENSIONS_AND_EXPERIMENTAL_ANALYSIS",
+              "name": "General (Units, Dimensions and Experimental Analysis)"
+            },
+            {
+              "code": "JEEA_PHY_KINEMATICS",
+              "name": "Kinematics"
+            },
+            {
+              "code": "JEEA_PHY_LAWS_OF_MOTION",
+              "name": "Laws of Motion"
+            },
+            {
+              "code": "JEEA_PHY_WORK_POWER_AND_ENERGY",
+              "name": "Work, Power and Energy"
+            },
+            {
+              "code": "JEEA_PHY_SYSTEMS_OF_PARTICLES_AND_ROTATIONAL_MOTION",
+              "name": "Systems of Particles and Rotational Motion"
+            },
+            {
+              "code": "JEEA_PHY_GRAVITATION",
+              "name": "Gravitation"
+            },
+            {
+              "code": "JEEA_PHY_MECHANICAL_PROPERTIES_OF_SOLIDS_ELASTICITY",
+              "name": "Mechanical Properties of Solids (Elasticity)"
+            },
+            {
+              "code": "JEEA_PHY_MECHANICAL_PROPERTIES_OF_FLUIDS",
+              "name": "Mechanical Properties of Fluids"
+            },
+            {
+              "code": "JEEA_PHY_OSCILLATIONS_SHM",
+              "name": "Oscillations (SHM)"
+            },
+            {
+              "code": "JEEA_PHY_WAVES_AND_SOUND",
+              "name": "Waves and Sound"
+            },
+            {
+              "code": "JEEA_PHY_THERMAL_PHYSICS_CALORIMETRY_AND_HEAT_TRANSFER",
+              "name": "Thermal Physics (Calorimetry and Heat Transfer)"
+            },
+            {
+              "code": "JEEA_PHY_KINETIC_THEORY_AND_THERMODYNAMICS",
+              "name": "Kinetic Theory and Thermodynamics"
+            },
+            {
+              "code": "JEEA_PHY_ELECTROSTATICS",
+              "name": "Electrostatics"
+            },
+            {
+              "code": "JEEA_PHY_CAPACITANCE",
+              "name": "Capacitance"
+            },
+            {
+              "code": "JEEA_PHY_CURRENT_ELECTRICITY",
+              "name": "Current Electricity"
+            },
+            {
+              "code": "JEEA_PHY_MAGNETIC_EFFECTS_OF_CURRENT_AND_MAGNETISM",
+              "name": "Magnetic Effects of Current and Magnetism"
+            },
+            {
+              "code": "JEEA_PHY_ELECTROMAGNETIC_INDUCTION_AND_ALTERNATING_CURRENT",
+              "name": "Electromagnetic Induction and Alternating Current"
+            },
+            {
+              "code": "JEEA_PHY_RAY_OPTICS",
+              "name": "Ray Optics"
+            },
+            {
+              "code": "JEEA_PHY_WAVE_OPTICS",
+              "name": "Wave Optics"
+            },
+            {
+              "code": "JEEA_PHY_MODERN_PHYSICS_ATOMIC_STRUCTURE_PHOTOELECTRIC_EFFECT_AND_NUCLEI",
+              "name": "Modern Physics (Atomic Structure, Photoelectric Effect and Nuclei)"
+            }
+          ],
+          "skills": [
+            {
+              "code": "JEEA_PHY_SKL_MECHANICS",
+              "name": "Mechanics"
+            },
+            {
+              "code": "JEEA_PHY_SKL_ELECTRICITY_AND_MAGNETISM",
+              "name": "Electricity and Magnetism"
+            },
+            {
+              "code": "JEEA_PHY_SKL_THERMAL_PHYSICS",
+              "name": "Thermal Physics"
+            },
+            {
+              "code": "JEEA_PHY_SKL_OPTICS",
+              "name": "Optics"
+            },
+            {
+              "code": "JEEA_PHY_SKL_MODERN_PHYSICS",
+              "name": "Modern Physics"
+            }
+          ]
+        },
+        {
+          "code": "JEEA_CHEMISTRY",
+          "name": "Chemistry",
+          "chapters": [
+            {
+              "code": "JEEA_CHE_GENERAL_TOPICS_MOLE_CONCEPT_AND_STOICHIOMETRY",
+              "name": "General Topics (Mole Concept and Stoichiometry)"
+            },
+            {
+              "code": "JEEA_CHE_GASEOUS_AND_LIQUID_STATES",
+              "name": "Gaseous and Liquid States"
+            },
+            {
+              "code": "JEEA_CHE_ATOMIC_STRUCTURE",
+              "name": "Atomic Structure"
+            },
+            {
+              "code": "JEEA_CHE_CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE",
+              "name": "Chemical Bonding and Molecular Structure"
+            },
+            {
+              "code": "JEEA_CHE_ENERGETICS_THERMODYNAMICS_AND_THERMOCHEMISTRY",
+              "name": "Energetics (Thermodynamics and Thermochemistry)"
+            },
+            {
+              "code": "JEEA_CHE_CHEMICAL_EQUILIBRIUM",
+              "name": "Chemical Equilibrium"
+            },
+            {
+              "code": "JEEA_CHE_ELECTROCHEMISTRY",
+              "name": "Electrochemistry"
+            },
+            {
+              "code": "JEEA_CHE_CHEMICAL_KINETICS",
+              "name": "Chemical Kinetics"
+            },
+            {
+              "code": "JEEA_CHE_SOLID_STATE",
+              "name": "Solid State"
+            },
+            {
+              "code": "JEEA_CHE_SOLUTIONS_AND_COLLIGATIVE_PROPERTIES",
+              "name": "Solutions and Colligative Properties"
+            },
+            {
+              "code": "JEEA_CHE_SURFACE_CHEMISTRY",
+              "name": "Surface Chemistry"
+            },
+            {
+              "code": "JEEA_CHE_NUCLEAR_CHEMISTRY",
+              "name": "Nuclear Chemistry"
+            },
+            {
+              "code": "JEEA_CHE_ISOLATION_PREPARATION_AND_PROPERTIES_OF_NON_METALS",
+              "name": "Isolation, Preparation and Properties of Non-metals"
+            },
+            {
+              "code": "JEEA_CHE_PREPARATION_AND_PROPERTIES_OF_S_AND_P_BLOCK_COMPOUNDS",
+              "name": "Preparation and Properties of s- and p-Block Compounds"
+            },
+            {
+              "code": "JEEA_CHE_TRANSITION_ELEMENTS_3D_SERIES",
+              "name": "Transition Elements (3d Series)"
+            },
+            {
+              "code": "JEEA_CHE_COORDINATION_COMPOUNDS",
+              "name": "Coordination Compounds"
+            },
+            {
+              "code": "JEEA_CHE_ORES_AND_MINERALS",
+              "name": "Ores and Minerals"
+            },
+            {
+              "code": "JEEA_CHE_EXTRACTIVE_METALLURGY",
+              "name": "Extractive Metallurgy"
+            },
+            {
+              "code": "JEEA_CHE_PRINCIPLES_OF_QUALITATIVE_ANALYSIS",
+              "name": "Principles of Qualitative Analysis"
+            },
+            {
+              "code": "JEEA_CHE_BASIC_CONCEPTS_OF_ORGANIC_CHEMISTRY_NOMENCLATURE_ISOMERISM_AND_REACTION_MECHANISMS",
+              "name": "Basic Concepts of Organic Chemistry (Nomenclature, Isomerism and Reaction Mechanisms)"
+            },
+            {
+              "code": "JEEA_CHE_ALKANES",
+              "name": "Alkanes"
+            },
+            {
+              "code": "JEEA_CHE_ALKENES_AND_ALKYNES",
+              "name": "Alkenes and Alkynes"
+            },
+            {
+              "code": "JEEA_CHE_REACTIONS_OF_BENZENE",
+              "name": "Reactions of Benzene"
+            },
+            {
+              "code": "JEEA_CHE_PHENOLS",
+              "name": "Phenols"
+            },
+            {
+              "code": "JEEA_CHE_CHARACTERISTIC_REACTIONS_HALOALKANES_ALCOHOLS_ETHERS_CARBONYLS_ACIDS_AND_AMINES",
+              "name": "Characteristic Reactions (Haloalkanes, Alcohols, Ethers, Carbonyls, Acids and Amines)"
+            },
+            {
+              "code": "JEEA_CHE_CARBOHYDRATES",
+              "name": "Carbohydrates"
+            },
+            {
+              "code": "JEEA_CHE_AMINO_ACIDS_AND_PEPTIDES",
+              "name": "Amino Acids and Peptides"
+            },
+            {
+              "code": "JEEA_CHE_POLYMERS",
+              "name": "Polymers"
+            },
+            {
+              "code": "JEEA_CHE_PRACTICAL_ORGANIC_CHEMISTRY",
+              "name": "Practical Organic Chemistry"
+            }
+          ],
+          "skills": [
+            {
+              "code": "JEEA_CHE_SKL_PHYSICAL_CHEMISTRY",
+              "name": "Physical Chemistry"
+            },
+            {
+              "code": "JEEA_CHE_SKL_INORGANIC_CHEMISTRY",
+              "name": "Inorganic Chemistry"
+            },
+            {
+              "code": "JEEA_CHE_SKL_ORGANIC_CHEMISTRY",
+              "name": "Organic Chemistry"
+            }
+          ]
+        },
+        {
+          "code": "JEEA_MATHEMATICS",
+          "name": "Mathematics",
+          "chapters": [
+            {
+              "code": "JEEA_MAT_ALGEBRA_COMPLEX_NUMBERS_QUADRATIC_EQUATIONS_AND_LOGARITHMS",
+              "name": "Algebra (Complex Numbers, Quadratic Equations and Logarithms)"
+            },
+            {
+              "code": "JEEA_MAT_PERMUTATIONS_COMBINATIONS_AND_BINOMIAL_THEOREM",
+              "name": "Permutations, Combinations and Binomial Theorem"
+            },
+            {
+              "code": "JEEA_MAT_SEQUENCES_AND_SERIES",
+              "name": "Sequences and Series"
+            },
+            {
+              "code": "JEEA_MAT_MATRICES_AND_DETERMINANTS",
+              "name": "Matrices and Determinants"
+            },
+            {
+              "code": "JEEA_MAT_PROBABILITY",
+              "name": "Probability"
+            },
+            {
+              "code": "JEEA_MAT_TRIGONOMETRY",
+              "name": "Trigonometry"
+            },
+            {
+              "code": "JEEA_MAT_ANALYTICAL_GEOMETRY_TWO_DIMENSIONS",
+              "name": "Analytical Geometry (Two Dimensions)"
+            },
+            {
+              "code": "JEEA_MAT_ANALYTICAL_GEOMETRY_THREE_DIMENSIONS",
+              "name": "Analytical Geometry (Three Dimensions)"
+            },
+            {
+              "code": "JEEA_MAT_DIFFERENTIAL_CALCULUS",
+              "name": "Differential Calculus"
+            },
+            {
+              "code": "JEEA_MAT_INTEGRAL_CALCULUS",
+              "name": "Integral Calculus"
+            },
+            {
+              "code": "JEEA_MAT_VECTORS",
+              "name": "Vectors"
+            }
+          ],
+          "skills": [
+            {
+              "code": "JEEA_MAT_SKL_ALGEBRA",
+              "name": "Algebra"
+            },
+            {
+              "code": "JEEA_MAT_SKL_CALCULUS",
+              "name": "Calculus"
+            },
+            {
+              "code": "JEEA_MAT_SKL_ANALYTICAL_GEOMETRY",
+              "name": "Analytical Geometry"
+            },
+            {
+              "code": "JEEA_MAT_SKL_TRIGONOMETRY",
+              "name": "Trigonometry"
+            },
+            {
+              "code": "JEEA_MAT_SKL_VECTORS_AND_PROBABILITY",
+              "name": "Vectors and Probability"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "JEE Advanced — Full Mock",
+          "duration_min": 180,
+          "questions": 54,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "JEEA_PHYSICS",
+          "title": "JEE Advanced Physics — Section Mock",
+          "duration_min": 60,
+          "questions": 18,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "JEEA_CHEMISTRY",
+          "title": "JEE Advanced Chemistry — Section Mock",
+          "duration_min": 60,
+          "questions": 18,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "JEEA_MATHEMATICS",
+          "title": "JEE Advanced Mathematics — Section Mock",
+          "duration_min": 60,
+          "questions": 18,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEA_PHY_SYSTEMS_OF_PARTICLES_AND_ROTATIONAL_MOTION",
+          "title": "Rotational Motion — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEA_PHY_ELECTROSTATICS",
+          "title": "Electrostatics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEA_CHE_CHEMICAL_EQUILIBRIUM",
+          "title": "Chemical Equilibrium — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEA_CHE_COORDINATION_COMPOUNDS",
+          "title": "Coordination Compounds — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEA_MAT_DIFFERENTIAL_CALCULUS",
+          "title": "Differential Calculus — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "JEEA_MAT_PROBABILITY",
+          "title": "Probability — Chapter Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "CAT",
+      "subjects": [
+        {
+          "code": "CAT_VARC",
+          "name": "Verbal Ability & Reading Comprehension",
+          "chapters": [
+            {
+              "code": "CAT_VARC_READING_COMPREHENSION",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CAT_VARC_PARA_JUMBLES",
+              "name": "Para Jumbles"
+            },
+            {
+              "code": "CAT_VARC_PARA_SUMMARY",
+              "name": "Para Summary"
+            },
+            {
+              "code": "CAT_VARC_PARA_COMPLETION_AND_ODD_SENTENCE_OUT",
+              "name": "Para Completion and Odd Sentence Out"
+            },
+            {
+              "code": "CAT_VARC_SENTENCE_CORRECTION_AND_GRAMMAR",
+              "name": "Sentence Correction and Grammar"
+            },
+            {
+              "code": "CAT_VARC_VOCABULARY_AND_WORD_USAGE",
+              "name": "Vocabulary and Word Usage"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CAT_VARC_SKL_READING_COMPREHENSION",
+              "name": "Reading Comprehension"
+            },
+            {
+              "code": "CAT_VARC_SKL_VERBAL_REASONING",
+              "name": "Verbal Reasoning"
+            },
+            {
+              "code": "CAT_VARC_SKL_VERBAL_ABILITY_AND_GRAMMAR",
+              "name": "Verbal Ability and Grammar"
+            }
+          ]
+        },
+        {
+          "code": "CAT_DILR",
+          "name": "Data Interpretation & Logical Reasoning",
+          "chapters": [
+            {
+              "code": "CAT_DILR_DATA_INTERPRETATION_TABLES",
+              "name": "Data Interpretation — Tables"
+            },
+            {
+              "code": "CAT_DILR_DATA_INTERPRETATION_BAR_LINE_AND_PIE_CHARTS",
+              "name": "Data Interpretation — Bar, Line and Pie Charts"
+            },
+            {
+              "code": "CAT_DILR_DATA_INTERPRETATION_CASELETS_AND_MIXED_GRAPHS",
+              "name": "Data Interpretation — Caselets and Mixed Graphs"
+            },
+            {
+              "code": "CAT_DILR_DATA_SUFFICIENCY",
+              "name": "Data Sufficiency"
+            },
+            {
+              "code": "CAT_DILR_LOGICAL_REASONING_LINEAR_AND_CIRCULAR_ARRANGEMENTS",
+              "name": "Logical Reasoning — Linear and Circular Arrangements"
+            },
+            {
+              "code": "CAT_DILR_LOGICAL_REASONING_PUZZLES_AND_GRID_BASED_SETS",
+              "name": "Logical Reasoning — Puzzles and Grid-based Sets"
+            },
+            {
+              "code": "CAT_DILR_LOGICAL_REASONING_GAMES_AND_TOURNAMENTS",
+              "name": "Logical Reasoning — Games and Tournaments"
+            },
+            {
+              "code": "CAT_DILR_BLOOD_RELATIONS_AND_DIRECTION_SENSE",
+              "name": "Blood Relations and Direction Sense"
+            },
+            {
+              "code": "CAT_DILR_VENN_DIAGRAMS_AND_SET_THEORY",
+              "name": "Venn Diagrams and Set Theory"
+            },
+            {
+              "code": "CAT_DILR_SYLLOGISMS_AND_LOGICAL_SEQUENCES",
+              "name": "Syllogisms and Logical Sequences"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CAT_DILR_SKL_DATA_INTERPRETATION",
+              "name": "Data Interpretation"
+            },
+            {
+              "code": "CAT_DILR_SKL_LOGICAL_REASONING",
+              "name": "Logical Reasoning"
+            },
+            {
+              "code": "CAT_DILR_SKL_ANALYTICAL_PUZZLES",
+              "name": "Analytical Puzzles"
+            }
+          ]
+        },
+        {
+          "code": "CAT_QA",
+          "name": "Quantitative Ability",
+          "chapters": [
+            {
+              "code": "CAT_QA_NUMBER_SYSTEM",
+              "name": "Number System"
+            },
+            {
+              "code": "CAT_QA_ARITHMETIC_PERCENTAGES_PROFIT_AND_LOSS_AND_INTEREST",
+              "name": "Arithmetic — Percentages, Profit and Loss and Interest"
+            },
+            {
+              "code": "CAT_QA_ARITHMETIC_RATIO_PROPORTION_AND_MIXTURES",
+              "name": "Arithmetic — Ratio, Proportion and Mixtures"
+            },
+            {
+              "code": "CAT_QA_ARITHMETIC_TIME_SPEED_AND_DISTANCE",
+              "name": "Arithmetic — Time, Speed and Distance"
+            },
+            {
+              "code": "CAT_QA_ARITHMETIC_TIME_AND_WORK",
+              "name": "Arithmetic — Time and Work"
+            },
+            {
+              "code": "CAT_QA_ALGEBRA_LINEAR_AND_QUADRATIC_EQUATIONS",
+              "name": "Algebra — Linear and Quadratic Equations"
+            },
+            {
+              "code": "CAT_QA_ALGEBRA_INEQUALITIES_FUNCTIONS_AND_GRAPHS",
+              "name": "Algebra — Inequalities, Functions and Graphs"
+            },
+            {
+              "code": "CAT_QA_ALGEBRA_LOGARITHMS_SURDS_AND_INDICES",
+              "name": "Algebra — Logarithms, Surds and Indices"
+            },
+            {
+              "code": "CAT_QA_GEOMETRY_LINES_ANGLES_AND_TRIANGLES",
+              "name": "Geometry — Lines, Angles and Triangles"
+            },
+            {
+              "code": "CAT_QA_GEOMETRY_CIRCLES_AND_POLYGONS",
+              "name": "Geometry — Circles and Polygons"
+            },
+            {
+              "code": "CAT_QA_COORDINATE_GEOMETRY",
+              "name": "Coordinate Geometry"
+            },
+            {
+              "code": "CAT_QA_MENSURATION",
+              "name": "Mensuration"
+            },
+            {
+              "code": "CAT_QA_PERMUTATION_COMBINATION_AND_PROBABILITY",
+              "name": "Permutation, Combination and Probability"
+            },
+            {
+              "code": "CAT_QA_PROGRESSIONS_SEQUENCES_AND_SERIES",
+              "name": "Progressions (Sequences and Series)"
+            }
+          ],
+          "skills": [
+            {
+              "code": "CAT_QA_SKL_ARITHMETIC",
+              "name": "Arithmetic"
+            },
+            {
+              "code": "CAT_QA_SKL_ALGEBRA",
+              "name": "Algebra"
+            },
+            {
+              "code": "CAT_QA_SKL_GEOMETRY_AND_MENSURATION",
+              "name": "Geometry and Mensuration"
+            },
+            {
+              "code": "CAT_QA_SKL_NUMBER_SYSTEM",
+              "name": "Number System"
+            },
+            {
+              "code": "CAT_QA_SKL_MODERN_MATHEMATICS",
+              "name": "Modern Mathematics"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "CAT — Full Mock",
+          "duration_min": 120,
+          "questions": 66,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CAT_VARC",
+          "title": "CAT VARC — Section Mock",
+          "duration_min": 40,
+          "questions": 24,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CAT_DILR",
+          "title": "CAT DILR — Section Mock",
+          "duration_min": 40,
+          "questions": 22,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "CAT_QA",
+          "title": "CAT QA — Section Mock",
+          "duration_min": 40,
+          "questions": 22,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CAT_VARC_READING_COMPREHENSION",
+          "title": "Reading Comprehension — Topic Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CAT_VARC_PARA_JUMBLES",
+          "title": "Para Jumbles — Topic Mock",
+          "duration_min": 15,
+          "questions": 10,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CAT_DILR_DATA_INTERPRETATION_TABLES",
+          "title": "Data Interpretation (Tables) — Topic Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CAT_DILR_LOGICAL_REASONING_GAMES_AND_TOURNAMENTS",
+          "title": "Logical Reasoning (Games) — Topic Mock",
+          "duration_min": 20,
+          "questions": 12,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CAT_QA_ARITHMETIC_TIME_SPEED_AND_DISTANCE",
+          "title": "Time, Speed & Distance — Topic Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "CAT_QA_NUMBER_SYSTEM",
+          "title": "Number System — Topic Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "catalog_exam_code": "NEET",
+      "subjects": [
+        {
+          "code": "NEET_PHYSICS",
+          "name": "Physics",
+          "chapters": [
+            {
+              "code": "NEET_PHY_PHYSICS_AND_MEASUREMENT",
+              "name": "Physics and Measurement"
+            },
+            {
+              "code": "NEET_PHY_KINEMATICS",
+              "name": "Kinematics"
+            },
+            {
+              "code": "NEET_PHY_LAWS_OF_MOTION",
+              "name": "Laws of Motion"
+            },
+            {
+              "code": "NEET_PHY_WORK_ENERGY_AND_POWER",
+              "name": "Work, Energy and Power"
+            },
+            {
+              "code": "NEET_PHY_ROTATIONAL_MOTION",
+              "name": "Rotational Motion"
+            },
+            {
+              "code": "NEET_PHY_GRAVITATION",
+              "name": "Gravitation"
+            },
+            {
+              "code": "NEET_PHY_PROPERTIES_OF_SOLIDS_AND_LIQUIDS",
+              "name": "Properties of Solids and Liquids"
+            },
+            {
+              "code": "NEET_PHY_THERMODYNAMICS",
+              "name": "Thermodynamics"
+            },
+            {
+              "code": "NEET_PHY_KINETIC_THEORY_OF_GASES",
+              "name": "Kinetic Theory of Gases"
+            },
+            {
+              "code": "NEET_PHY_OSCILLATIONS_AND_WAVES",
+              "name": "Oscillations and Waves"
+            },
+            {
+              "code": "NEET_PHY_ELECTROSTATICS",
+              "name": "Electrostatics"
+            },
+            {
+              "code": "NEET_PHY_CURRENT_ELECTRICITY",
+              "name": "Current Electricity"
+            },
+            {
+              "code": "NEET_PHY_MAGNETIC_EFFECTS_OF_CURRENT_AND_MAGNETISM",
+              "name": "Magnetic Effects of Current and Magnetism"
+            },
+            {
+              "code": "NEET_PHY_ELECTROMAGNETIC_INDUCTION_AND_ALTERNATING_CURRENTS",
+              "name": "Electromagnetic Induction and Alternating Currents"
+            },
+            {
+              "code": "NEET_PHY_ELECTROMAGNETIC_WAVES",
+              "name": "Electromagnetic Waves"
+            },
+            {
+              "code": "NEET_PHY_OPTICS",
+              "name": "Optics"
+            },
+            {
+              "code": "NEET_PHY_DUAL_NATURE_OF_MATTER_AND_RADIATION",
+              "name": "Dual Nature of Matter and Radiation"
+            },
+            {
+              "code": "NEET_PHY_ATOMS_AND_NUCLEI",
+              "name": "Atoms and Nuclei"
+            },
+            {
+              "code": "NEET_PHY_ELECTRONIC_DEVICES",
+              "name": "Electronic Devices"
+            },
+            {
+              "code": "NEET_PHY_EXPERIMENTAL_SKILLS",
+              "name": "Experimental Skills"
+            }
+          ],
+          "skills": [
+            {
+              "code": "NEET_PHY_SKL_MECHANICS",
+              "name": "Mechanics"
+            },
+            {
+              "code": "NEET_PHY_SKL_ELECTRODYNAMICS",
+              "name": "Electrodynamics"
+            },
+            {
+              "code": "NEET_PHY_SKL_HEAT_AND_THERMODYNAMICS",
+              "name": "Heat and Thermodynamics"
+            },
+            {
+              "code": "NEET_PHY_SKL_OPTICS_AND_MODERN_PHYSICS",
+              "name": "Optics and Modern Physics"
+            },
+            {
+              "code": "NEET_PHY_SKL_OSCILLATIONS_AND_WAVES",
+              "name": "Oscillations and Waves"
+            }
+          ]
+        },
+        {
+          "code": "NEET_CHEMISTRY",
+          "name": "Chemistry",
+          "chapters": [
+            {
+              "code": "NEET_CHE_SOME_BASIC_CONCEPTS_IN_CHEMISTRY",
+              "name": "Some Basic Concepts in Chemistry"
+            },
+            {
+              "code": "NEET_CHE_ATOMIC_STRUCTURE",
+              "name": "Atomic Structure"
+            },
+            {
+              "code": "NEET_CHE_CHEMICAL_BONDING_AND_MOLECULAR_STRUCTURE",
+              "name": "Chemical Bonding and Molecular Structure"
+            },
+            {
+              "code": "NEET_CHE_CHEMICAL_THERMODYNAMICS",
+              "name": "Chemical Thermodynamics"
+            },
+            {
+              "code": "NEET_CHE_SOLUTIONS",
+              "name": "Solutions"
+            },
+            {
+              "code": "NEET_CHE_EQUILIBRIUM",
+              "name": "Equilibrium"
+            },
+            {
+              "code": "NEET_CHE_REDOX_REACTIONS_AND_ELECTROCHEMISTRY",
+              "name": "Redox Reactions and Electrochemistry"
+            },
+            {
+              "code": "NEET_CHE_CHEMICAL_KINETICS",
+              "name": "Chemical Kinetics"
+            },
+            {
+              "code": "NEET_CHE_CLASSIFICATION_OF_ELEMENTS_AND_PERIODICITY_IN_PROPERTIES",
+              "name": "Classification of Elements and Periodicity in Properties"
+            },
+            {
+              "code": "NEET_CHE_P_BLOCK_ELEMENTS",
+              "name": "p-Block Elements"
+            },
+            {
+              "code": "NEET_CHE_D_AND_F_BLOCK_ELEMENTS",
+              "name": "d- and f-Block Elements"
+            },
+            {
+              "code": "NEET_CHE_COORDINATION_COMPOUNDS",
+              "name": "Coordination Compounds"
+            },
+            {
+              "code": "NEET_CHE_PURIFICATION_AND_CHARACTERISATION_OF_ORGANIC_COMPOUNDS",
+              "name": "Purification and Characterisation of Organic Compounds"
+            },
+            {
+              "code": "NEET_CHE_SOME_BASIC_PRINCIPLES_OF_ORGANIC_CHEMISTRY",
+              "name": "Some Basic Principles of Organic Chemistry"
+            },
+            {
+              "code": "NEET_CHE_HYDROCARBONS",
+              "name": "Hydrocarbons"
+            },
+            {
+              "code": "NEET_CHE_ORGANIC_COMPOUNDS_CONTAINING_HALOGENS",
+              "name": "Organic Compounds Containing Halogens"
+            },
+            {
+              "code": "NEET_CHE_ORGANIC_COMPOUNDS_CONTAINING_OXYGEN",
+              "name": "Organic Compounds Containing Oxygen"
+            },
+            {
+              "code": "NEET_CHE_ORGANIC_COMPOUNDS_CONTAINING_NITROGEN",
+              "name": "Organic Compounds Containing Nitrogen"
+            },
+            {
+              "code": "NEET_CHE_BIOMOLECULES",
+              "name": "Biomolecules"
+            },
+            {
+              "code": "NEET_CHE_PRINCIPLES_RELATED_TO_PRACTICAL_CHEMISTRY",
+              "name": "Principles Related to Practical Chemistry"
+            }
+          ],
+          "skills": [
+            {
+              "code": "NEET_CHE_SKL_PHYSICAL_CHEMISTRY",
+              "name": "Physical Chemistry"
+            },
+            {
+              "code": "NEET_CHE_SKL_INORGANIC_CHEMISTRY",
+              "name": "Inorganic Chemistry"
+            },
+            {
+              "code": "NEET_CHE_SKL_ORGANIC_CHEMISTRY",
+              "name": "Organic Chemistry"
+            }
+          ]
+        },
+        {
+          "code": "NEET_BOTANY",
+          "name": "Botany",
+          "chapters": [
+            {
+              "code": "NEET_BOT_THE_LIVING_WORLD",
+              "name": "The Living World"
+            },
+            {
+              "code": "NEET_BOT_BIOLOGICAL_CLASSIFICATION",
+              "name": "Biological Classification"
+            },
+            {
+              "code": "NEET_BOT_PLANT_KINGDOM",
+              "name": "Plant Kingdom"
+            },
+            {
+              "code": "NEET_BOT_MORPHOLOGY_OF_FLOWERING_PLANTS",
+              "name": "Morphology of Flowering Plants"
+            },
+            {
+              "code": "NEET_BOT_ANATOMY_OF_FLOWERING_PLANTS",
+              "name": "Anatomy of Flowering Plants"
+            },
+            {
+              "code": "NEET_BOT_CELL_THE_UNIT_OF_LIFE",
+              "name": "Cell: The Unit of Life"
+            },
+            {
+              "code": "NEET_BOT_CELL_CYCLE_AND_CELL_DIVISION",
+              "name": "Cell Cycle and Cell Division"
+            },
+            {
+              "code": "NEET_BOT_PHOTOSYNTHESIS_IN_HIGHER_PLANTS",
+              "name": "Photosynthesis in Higher Plants"
+            },
+            {
+              "code": "NEET_BOT_RESPIRATION_IN_PLANTS",
+              "name": "Respiration in Plants"
+            },
+            {
+              "code": "NEET_BOT_PLANT_GROWTH_AND_DEVELOPMENT",
+              "name": "Plant Growth and Development"
+            },
+            {
+              "code": "NEET_BOT_SEXUAL_REPRODUCTION_IN_FLOWERING_PLANTS",
+              "name": "Sexual Reproduction in Flowering Plants"
+            },
+            {
+              "code": "NEET_BOT_PRINCIPLES_OF_INHERITANCE_AND_VARIATION",
+              "name": "Principles of Inheritance and Variation"
+            },
+            {
+              "code": "NEET_BOT_MOLECULAR_BASIS_OF_INHERITANCE",
+              "name": "Molecular Basis of Inheritance"
+            },
+            {
+              "code": "NEET_BOT_MICROBES_IN_HUMAN_WELFARE",
+              "name": "Microbes in Human Welfare"
+            },
+            {
+              "code": "NEET_BOT_BIOTECHNOLOGY_PRINCIPLES_AND_PROCESSES",
+              "name": "Biotechnology: Principles and Processes"
+            },
+            {
+              "code": "NEET_BOT_BIOTECHNOLOGY_AND_ITS_APPLICATIONS",
+              "name": "Biotechnology and its Applications"
+            },
+            {
+              "code": "NEET_BOT_ORGANISMS_AND_POPULATIONS",
+              "name": "Organisms and Populations"
+            },
+            {
+              "code": "NEET_BOT_ECOSYSTEM",
+              "name": "Ecosystem"
+            },
+            {
+              "code": "NEET_BOT_BIODIVERSITY_AND_CONSERVATION",
+              "name": "Biodiversity and Conservation"
+            }
+          ],
+          "skills": [
+            {
+              "code": "NEET_BOT_SKL_DIVERSITY_AND_PLANT_MORPHOLOGY",
+              "name": "Diversity and Plant Morphology"
+            },
+            {
+              "code": "NEET_BOT_SKL_CELL_BIOLOGY_AND_PLANT_PHYSIOLOGY",
+              "name": "Cell Biology and Plant Physiology"
+            },
+            {
+              "code": "NEET_BOT_SKL_GENETICS_AND_EVOLUTION",
+              "name": "Genetics and Evolution"
+            },
+            {
+              "code": "NEET_BOT_SKL_ECOLOGY_AND_ENVIRONMENT",
+              "name": "Ecology and Environment"
+            },
+            {
+              "code": "NEET_BOT_SKL_BIOTECHNOLOGY",
+              "name": "Biotechnology"
+            }
+          ]
+        },
+        {
+          "code": "NEET_ZOOLOGY",
+          "name": "Zoology",
+          "chapters": [
+            {
+              "code": "NEET_ZOO_ANIMAL_KINGDOM",
+              "name": "Animal Kingdom"
+            },
+            {
+              "code": "NEET_ZOO_STRUCTURAL_ORGANISATION_IN_ANIMALS",
+              "name": "Structural Organisation in Animals"
+            },
+            {
+              "code": "NEET_ZOO_BIOMOLECULES",
+              "name": "Biomolecules"
+            },
+            {
+              "code": "NEET_ZOO_BREATHING_AND_EXCHANGE_OF_GASES",
+              "name": "Breathing and Exchange of Gases"
+            },
+            {
+              "code": "NEET_ZOO_BODY_FLUIDS_AND_CIRCULATION",
+              "name": "Body Fluids and Circulation"
+            },
+            {
+              "code": "NEET_ZOO_EXCRETORY_PRODUCTS_AND_THEIR_ELIMINATION",
+              "name": "Excretory Products and their Elimination"
+            },
+            {
+              "code": "NEET_ZOO_LOCOMOTION_AND_MOVEMENT",
+              "name": "Locomotion and Movement"
+            },
+            {
+              "code": "NEET_ZOO_NEURAL_CONTROL_AND_COORDINATION",
+              "name": "Neural Control and Coordination"
+            },
+            {
+              "code": "NEET_ZOO_CHEMICAL_COORDINATION_AND_INTEGRATION",
+              "name": "Chemical Coordination and Integration"
+            },
+            {
+              "code": "NEET_ZOO_HUMAN_REPRODUCTION",
+              "name": "Human Reproduction"
+            },
+            {
+              "code": "NEET_ZOO_REPRODUCTIVE_HEALTH",
+              "name": "Reproductive Health"
+            },
+            {
+              "code": "NEET_ZOO_HUMAN_HEALTH_AND_DISEASE",
+              "name": "Human Health and Disease"
+            },
+            {
+              "code": "NEET_ZOO_EVOLUTION",
+              "name": "Evolution"
+            }
+          ],
+          "skills": [
+            {
+              "code": "NEET_ZOO_SKL_ANIMAL_DIVERSITY_AND_STRUCTURE",
+              "name": "Animal Diversity and Structure"
+            },
+            {
+              "code": "NEET_ZOO_SKL_HUMAN_PHYSIOLOGY",
+              "name": "Human Physiology"
+            },
+            {
+              "code": "NEET_ZOO_SKL_HUMAN_REPRODUCTION_AND_HEALTH",
+              "name": "Human Reproduction and Health"
+            },
+            {
+              "code": "NEET_ZOO_SKL_BIOMOLECULES",
+              "name": "Biomolecules"
+            },
+            {
+              "code": "NEET_ZOO_SKL_EVOLUTION",
+              "name": "Evolution"
+            }
+          ]
+        }
+      ],
+      "mocks": [
+        {
+          "scope": "full",
+          "title": "NEET — Full Mock",
+          "duration_min": 200,
+          "questions": 180,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "NEET_PHYSICS",
+          "title": "NEET Physics — Section Mock",
+          "duration_min": 50,
+          "questions": 45,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "NEET_CHEMISTRY",
+          "title": "NEET Chemistry — Section Mock",
+          "duration_min": 50,
+          "questions": 45,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "NEET_BOTANY",
+          "title": "NEET Botany — Section Mock",
+          "duration_min": 50,
+          "questions": 45,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "subject",
+          "subject_code": "NEET_ZOOLOGY",
+          "title": "NEET Zoology — Section Mock",
+          "duration_min": 50,
+          "questions": 45,
+          "difficulty": "hard"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "NEET_PHY_KINEMATICS",
+          "title": "Kinematics — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "NEET_PHY_CURRENT_ELECTRICITY",
+          "title": "Current Electricity — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "NEET_CHE_SOME_BASIC_PRINCIPLES_OF_ORGANIC_CHEMISTRY",
+          "title": "Basic Principles of Organic Chemistry — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "NEET_BOT_MOLECULAR_BASIS_OF_INHERITANCE",
+          "title": "Molecular Basis of Inheritance — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        },
+        {
+          "scope": "chapter",
+          "chapter_code": "NEET_ZOO_HUMAN_REPRODUCTION",
+          "title": "Human Reproduction — Chapter Mock",
+          "duration_min": 20,
+          "questions": 15,
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

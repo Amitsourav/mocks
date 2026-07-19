@@ -6,7 +6,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import attempts, exams, health, me, reference
+from app.api.routes import attempts, dashboard, exams, health, me, mock_tests, reference
 from app.core import db, redis
 from app.core.config import get_settings
 
@@ -55,3 +55,5 @@ app.include_router(me.router)
 app.include_router(exams.router)
 app.include_router(attempts.router)
 app.include_router(reference.router)
+app.include_router(mock_tests.router)
+app.include_router(dashboard.router)

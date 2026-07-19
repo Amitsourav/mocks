@@ -1,0 +1,347 @@
+{
+  "group": "study_abroad",
+  "sources": [
+    "d-MAT (Digital Master Test) - https://www.d-mat.de/en/ and official dMAT preparatory materials (d-mat.de)",
+    "GMAT Focus Edition - https://www.mba.com/exams/gmat-exam/about/exam-structure (GMAC / mba.com)",
+    "GRE General Test - https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html (ETS)",
+    "TOEFL iBT (Jan 2026 format) - https://www.ets.org/toefl/test-takers/ibt/about/content.html (ETS)",
+    "IELTS Academic - https://ielts.org/take-a-test/test-types/ielts-academic-test (IELTS.org)"
+  ],
+  "exams": [
+    {
+      "catalog_exam_code": "DMAT",
+      "subjects": [
+        {
+          "code": "DMAT_FIGURE_SEQUENCES",
+          "name": "Figure Sequences",
+          "chapters": [
+            { "code": "DMAT_FIGSEQ_MOVEMENT_RULES", "name": "Movement Rules" },
+            { "code": "DMAT_FIGSEQ_COLOUR_RULES", "name": "Colour Rules" },
+            { "code": "DMAT_FIGSEQ_ORIENTATION_RULES", "name": "Orientation & Rotation Rules" },
+            { "code": "DMAT_FIGSEQ_MATRIX_CONTINUATION", "name": "Matrix Series Continuation" }
+          ],
+          "skills": [
+            { "code": "DMAT_FIGSEQ_PATTERN_RECOGNITION", "name": "Pattern Recognition" },
+            { "code": "DMAT_FIGSEQ_SPATIAL_REASONING", "name": "Spatial Reasoning" },
+            { "code": "DMAT_FIGSEQ_INDUCTIVE_REASONING", "name": "Inductive Reasoning" },
+            { "code": "DMAT_FIGSEQ_ABSTRACT_LOGIC", "name": "Abstract Logic" }
+          ]
+        },
+        {
+          "code": "DMAT_MATH_EQUATIONS",
+          "name": "Mathematical Equations",
+          "chapters": [
+            { "code": "DMAT_MATHEQ_SYSTEMS_OF_EQUATIONS", "name": "Systems of Equations" },
+            { "code": "DMAT_MATHEQ_INTEGER_SOLUTIONS", "name": "Integer Solutions" },
+            { "code": "DMAT_MATHEQ_SUBSTITUTION_ELIMINATION", "name": "Substitution & Elimination" }
+          ],
+          "skills": [
+            { "code": "DMAT_MATHEQ_NUMERICAL_REASONING", "name": "Numerical Reasoning" },
+            { "code": "DMAT_MATHEQ_ALGEBRAIC_MANIPULATION", "name": "Algebraic Manipulation" },
+            { "code": "DMAT_MATHEQ_LOGICAL_DEDUCTION", "name": "Logical Deduction" },
+            { "code": "DMAT_MATHEQ_MENTAL_ARITHMETIC", "name": "Mental Arithmetic" }
+          ]
+        },
+        {
+          "code": "DMAT_LATIN_SQUARES",
+          "name": "Latin Squares",
+          "chapters": [
+            { "code": "DMAT_LATSQ_GRID_COMPLETION", "name": "Grid Completion" },
+            { "code": "DMAT_LATSQ_CONSTRAINT_SATISFACTION", "name": "Constraint Satisfaction" },
+            { "code": "DMAT_LATSQ_DEDUCTIVE_ELIMINATION", "name": "Deductive Elimination" }
+          ],
+          "skills": [
+            { "code": "DMAT_LATSQ_LOGICAL_DEDUCTION", "name": "Logical Deduction" },
+            { "code": "DMAT_LATSQ_CONSTRAINT_REASONING", "name": "Constraint Reasoning" },
+            { "code": "DMAT_LATSQ_SPATIAL_REASONING", "name": "Spatial Reasoning" },
+            { "code": "DMAT_LATSQ_SYSTEMATIC_SEARCH", "name": "Systematic Search" }
+          ]
+        },
+        {
+          "code": "DMAT_GENERAL_ACADEMIC",
+          "name": "General Academic Module",
+          "chapters": [
+            { "code": "DMAT_GENACAD_READING_COMPREHENSION", "name": "Reading Comprehension" },
+            { "code": "DMAT_GENACAD_QUANTITATIVE_PROBLEMS", "name": "Quantitative Problem Solving" },
+            { "code": "DMAT_GENACAD_DATA_INTERPRETATION", "name": "Data & Diagram Interpretation" },
+            { "code": "DMAT_GENACAD_CRITICAL_REASONING", "name": "Critical Reasoning" }
+          ],
+          "skills": [
+            { "code": "DMAT_GENACAD_READING_COMPREHENSION_SKILL", "name": "Reading Comprehension" },
+            { "code": "DMAT_GENACAD_PROBLEM_SOLVING", "name": "Problem Solving" },
+            { "code": "DMAT_GENACAD_ANALYTICAL_REASONING", "name": "Analytical Reasoning" },
+            { "code": "DMAT_GENACAD_QUANTITATIVE_REASONING", "name": "Quantitative Reasoning" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "d-MAT — Full Mock (Core + General Academic)", "duration_min": 180, "questions": 90, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "DMAT_FIGURE_SEQUENCES", "title": "d-MAT Figure Sequences — Subtest Mock", "duration_min": 25, "questions": 20, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "DMAT_MATH_EQUATIONS", "title": "d-MAT Mathematical Equations — Subtest Mock", "duration_min": 25, "questions": 20, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "DMAT_LATIN_SQUARES", "title": "d-MAT Latin Squares — Subtest Mock", "duration_min": 25, "questions": 20, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "DMAT_GENERAL_ACADEMIC", "title": "d-MAT General Academic — Module Mock", "duration_min": 90, "questions": 40, "difficulty": "medium" }
+      ]
+    },
+    {
+      "catalog_exam_code": "GMAT",
+      "subjects": [
+        {
+          "code": "GMAT_QUANT",
+          "name": "Quantitative Reasoning",
+          "chapters": [
+            { "code": "GMAT_QUANT_ARITHMETIC", "name": "Arithmetic" },
+            { "code": "GMAT_QUANT_ALGEBRA", "name": "Algebra" },
+            { "code": "GMAT_QUANT_WORD_PROBLEMS", "name": "Word Problems" },
+            { "code": "GMAT_QUANT_NUMBER_PROPERTIES", "name": "Number Properties" }
+          ],
+          "skills": [
+            { "code": "GMAT_QUANT_PROBLEM_SOLVING", "name": "Problem Solving" },
+            { "code": "GMAT_QUANT_ALGEBRAIC_REASONING", "name": "Algebraic Reasoning" },
+            { "code": "GMAT_QUANT_WORD_PROBLEM_TRANSLATION", "name": "Word Problem Translation" },
+            { "code": "GMAT_QUANT_QUANTITATIVE_ESTIMATION", "name": "Quantitative Estimation" }
+          ]
+        },
+        {
+          "code": "GMAT_VERBAL",
+          "name": "Verbal Reasoning",
+          "chapters": [
+            { "code": "GMAT_VERBAL_READING_COMPREHENSION", "name": "Reading Comprehension" },
+            { "code": "GMAT_VERBAL_CRITICAL_REASONING", "name": "Critical Reasoning" }
+          ],
+          "skills": [
+            { "code": "GMAT_VERBAL_READING_COMPREHENSION_SKILL", "name": "Reading Comprehension" },
+            { "code": "GMAT_VERBAL_ARGUMENT_ANALYSIS", "name": "Argument Analysis" },
+            { "code": "GMAT_VERBAL_INFERENCE", "name": "Inference" },
+            { "code": "GMAT_VERBAL_LOGICAL_EVALUATION", "name": "Logical Evaluation" }
+          ]
+        },
+        {
+          "code": "GMAT_DATA_INSIGHTS",
+          "name": "Data Insights",
+          "chapters": [
+            { "code": "GMAT_DI_DATA_SUFFICIENCY", "name": "Data Sufficiency" },
+            { "code": "GMAT_DI_MULTI_SOURCE_REASONING", "name": "Multi-Source Reasoning" },
+            { "code": "GMAT_DI_TABLE_ANALYSIS", "name": "Table Analysis" },
+            { "code": "GMAT_DI_GRAPHICS_INTERPRETATION", "name": "Graphics Interpretation" },
+            { "code": "GMAT_DI_TWO_PART_ANALYSIS", "name": "Two-Part Analysis" }
+          ],
+          "skills": [
+            { "code": "GMAT_DI_DATA_SUFFICIENCY_SKILL", "name": "Data Sufficiency" },
+            { "code": "GMAT_DI_DATA_INTERPRETATION", "name": "Data Interpretation" },
+            { "code": "GMAT_DI_INTEGRATED_REASONING", "name": "Integrated Reasoning" },
+            { "code": "GMAT_DI_STATISTICAL_REASONING", "name": "Statistical Reasoning" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "GMAT Focus — Full Mock", "duration_min": 135, "questions": 64, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "GMAT_QUANT", "title": "GMAT Quant — Section Mock", "duration_min": 45, "questions": 21, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "GMAT_VERBAL", "title": "GMAT Verbal — Section Mock", "duration_min": 45, "questions": 23, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "GMAT_DATA_INSIGHTS", "title": "GMAT Data Insights — Section Mock", "duration_min": 45, "questions": 20, "difficulty": "hard" }
+      ]
+    },
+    {
+      "catalog_exam_code": "GRE",
+      "subjects": [
+        {
+          "code": "GRE_VERBAL",
+          "name": "Verbal Reasoning",
+          "chapters": [
+            { "code": "GRE_VERBAL_READING_COMPREHENSION", "name": "Reading Comprehension" },
+            { "code": "GRE_VERBAL_TEXT_COMPLETION", "name": "Text Completion" },
+            { "code": "GRE_VERBAL_SENTENCE_EQUIVALENCE", "name": "Sentence Equivalence" }
+          ],
+          "skills": [
+            { "code": "GRE_VERBAL_READING_COMPREHENSION_SKILL", "name": "Reading Comprehension" },
+            { "code": "GRE_VERBAL_VOCABULARY_IN_CONTEXT", "name": "Vocabulary in Context" },
+            { "code": "GRE_VERBAL_CRITICAL_REASONING", "name": "Critical Reasoning" },
+            { "code": "GRE_VERBAL_TEXT_ANALYSIS", "name": "Text Analysis" }
+          ]
+        },
+        {
+          "code": "GRE_QUANT",
+          "name": "Quantitative Reasoning",
+          "chapters": [
+            { "code": "GRE_QUANT_ARITHMETIC", "name": "Arithmetic" },
+            { "code": "GRE_QUANT_ALGEBRA", "name": "Algebra" },
+            { "code": "GRE_QUANT_GEOMETRY", "name": "Geometry" },
+            { "code": "GRE_QUANT_DATA_ANALYSIS", "name": "Data Analysis" }
+          ],
+          "skills": [
+            { "code": "GRE_QUANT_PROBLEM_SOLVING", "name": "Problem Solving" },
+            { "code": "GRE_QUANT_QUANTITATIVE_COMPARISON", "name": "Quantitative Comparison" },
+            { "code": "GRE_QUANT_DATA_INTERPRETATION", "name": "Data Interpretation" },
+            { "code": "GRE_QUANT_MATHEMATICAL_REASONING", "name": "Mathematical Reasoning" }
+          ]
+        },
+        {
+          "code": "GRE_WRITING",
+          "name": "Analytical Writing",
+          "chapters": [
+            { "code": "GRE_WRITING_ANALYZE_AN_ISSUE", "name": "Analyze an Issue" }
+          ],
+          "skills": [
+            { "code": "GRE_WRITING_ARGUMENT_DEVELOPMENT", "name": "Argument Development" },
+            { "code": "GRE_WRITING_EVIDENCE_AND_SUPPORT", "name": "Evidence & Support" },
+            { "code": "GRE_WRITING_ORGANIZATION_COHERENCE", "name": "Organization & Coherence" },
+            { "code": "GRE_WRITING_GRAMMAR_MECHANICS", "name": "Grammar & Mechanics" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "GRE General — Full Mock", "duration_min": 118, "questions": 55, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "GRE_VERBAL", "title": "GRE Verbal — Section Mock", "duration_min": 41, "questions": 27, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "GRE_QUANT", "title": "GRE Quant — Section Mock", "duration_min": 47, "questions": 27, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "GRE_WRITING", "title": "GRE Analytical Writing — Section Mock", "duration_min": 30, "questions": 1, "difficulty": "medium" }
+      ]
+    },
+    {
+      "catalog_exam_code": "TOEFL",
+      "subjects": [
+        {
+          "code": "TOEFL_READING",
+          "name": "Reading",
+          "chapters": [
+            { "code": "TOEFL_READING_COMPLETE_THE_WORDS", "name": "Complete the Words" },
+            { "code": "TOEFL_READING_READ_IN_DAILY_LIFE", "name": "Read in Daily Life" },
+            { "code": "TOEFL_READING_ACADEMIC_PASSAGE", "name": "Read an Academic Passage" }
+          ],
+          "skills": [
+            { "code": "TOEFL_READING_VOCABULARY", "name": "Vocabulary" },
+            { "code": "TOEFL_READING_DETAIL_COMPREHENSION", "name": "Detail Comprehension" },
+            { "code": "TOEFL_READING_INFERENCE", "name": "Inference" },
+            { "code": "TOEFL_READING_ACADEMIC_READING", "name": "Academic Reading" }
+          ]
+        },
+        {
+          "code": "TOEFL_LISTENING",
+          "name": "Listening",
+          "chapters": [
+            { "code": "TOEFL_LISTENING_CHOOSE_A_RESPONSE", "name": "Listen and Choose a Response" },
+            { "code": "TOEFL_LISTENING_CONVERSATION", "name": "Listen to a Conversation" },
+            { "code": "TOEFL_LISTENING_ANNOUNCEMENT", "name": "Listen to an Announcement" },
+            { "code": "TOEFL_LISTENING_ACADEMIC_TALK", "name": "Listen to an Academic Talk" }
+          ],
+          "skills": [
+            { "code": "TOEFL_LISTENING_MAIN_IDEA", "name": "Main Idea Comprehension" },
+            { "code": "TOEFL_LISTENING_DETAIL_RECOGNITION", "name": "Detail Recognition" },
+            { "code": "TOEFL_LISTENING_INFERENCE", "name": "Inference" },
+            { "code": "TOEFL_LISTENING_NOTE_TAKING", "name": "Note-taking" }
+          ]
+        },
+        {
+          "code": "TOEFL_SPEAKING",
+          "name": "Speaking",
+          "chapters": [
+            { "code": "TOEFL_SPEAKING_LISTEN_AND_REPEAT", "name": "Listen and Repeat" },
+            { "code": "TOEFL_SPEAKING_TAKE_AN_INTERVIEW", "name": "Take an Interview" }
+          ],
+          "skills": [
+            { "code": "TOEFL_SPEAKING_PRONUNCIATION", "name": "Pronunciation" },
+            { "code": "TOEFL_SPEAKING_FLUENCY", "name": "Fluency" },
+            { "code": "TOEFL_SPEAKING_COHERENCE", "name": "Coherence" },
+            { "code": "TOEFL_SPEAKING_INTERACTIVE_COMMUNICATION", "name": "Interactive Communication" }
+          ]
+        },
+        {
+          "code": "TOEFL_WRITING",
+          "name": "Writing",
+          "chapters": [
+            { "code": "TOEFL_WRITING_BUILD_A_SENTENCE", "name": "Build a Sentence" },
+            { "code": "TOEFL_WRITING_WRITE_AN_EMAIL", "name": "Write an Email" },
+            { "code": "TOEFL_WRITING_ACADEMIC_DISCUSSION", "name": "Write for an Academic Discussion" }
+          ],
+          "skills": [
+            { "code": "TOEFL_WRITING_SENTENCE_CONSTRUCTION", "name": "Sentence Construction" },
+            { "code": "TOEFL_WRITING_TASK_RESPONSE", "name": "Task Response" },
+            { "code": "TOEFL_WRITING_ORGANIZATION", "name": "Organization" },
+            { "code": "TOEFL_WRITING_GRAMMAR_VOCABULARY", "name": "Grammar & Vocabulary" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "TOEFL iBT — Full Mock", "duration_min": 120, "questions": 120, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "TOEFL_READING", "title": "TOEFL Reading — Section Mock", "duration_min": 30, "questions": 50, "difficulty": "medium" },
+        { "scope": "subject", "subject_code": "TOEFL_LISTENING", "title": "TOEFL Listening — Section Mock", "duration_min": 29, "questions": 47, "difficulty": "medium" },
+        { "scope": "subject", "subject_code": "TOEFL_SPEAKING", "title": "TOEFL Speaking — Section Mock", "duration_min": 8, "questions": 11, "difficulty": "medium" },
+        { "scope": "subject", "subject_code": "TOEFL_WRITING", "title": "TOEFL Writing — Section Mock", "duration_min": 23, "questions": 12, "difficulty": "medium" }
+      ]
+    },
+    {
+      "catalog_exam_code": "IELTS",
+      "subjects": [
+        {
+          "code": "IELTS_LISTENING",
+          "name": "Listening",
+          "chapters": [
+            { "code": "IELTS_LISTENING_MULTIPLE_CHOICE", "name": "Multiple Choice" },
+            { "code": "IELTS_LISTENING_MATCHING", "name": "Matching" },
+            { "code": "IELTS_LISTENING_PLAN_MAP_DIAGRAM_LABELLING", "name": "Plan/Map/Diagram Labelling" },
+            { "code": "IELTS_LISTENING_FORM_NOTE_TABLE_COMPLETION", "name": "Form/Note/Table/Flow-chart/Summary Completion" },
+            { "code": "IELTS_LISTENING_SENTENCE_COMPLETION", "name": "Sentence Completion" }
+          ],
+          "skills": [
+            { "code": "IELTS_LISTENING_DETAIL_COMPREHENSION", "name": "Detail Comprehension" },
+            { "code": "IELTS_LISTENING_MAIN_IDEA", "name": "Main Idea" },
+            { "code": "IELTS_LISTENING_INFERENCE", "name": "Inference" },
+            { "code": "IELTS_LISTENING_FOLLOWING_SIGNPOSTING", "name": "Following Signposting" }
+          ]
+        },
+        {
+          "code": "IELTS_READING",
+          "name": "Reading",
+          "chapters": [
+            { "code": "IELTS_READING_MULTIPLE_CHOICE", "name": "Multiple Choice" },
+            { "code": "IELTS_READING_IDENTIFYING_INFORMATION", "name": "Identifying Information (True/False/Not Given)" },
+            { "code": "IELTS_READING_MATCHING_HEADINGS", "name": "Matching Headings" },
+            { "code": "IELTS_READING_MATCHING_INFORMATION_FEATURES", "name": "Matching Information & Features" },
+            { "code": "IELTS_READING_COMPLETION_TASKS", "name": "Sentence/Summary/Note/Table Completion" },
+            { "code": "IELTS_READING_SHORT_ANSWER", "name": "Short-answer Questions" }
+          ],
+          "skills": [
+            { "code": "IELTS_READING_SKIMMING_SCANNING", "name": "Skimming & Scanning" },
+            { "code": "IELTS_READING_DETAIL_COMPREHENSION", "name": "Detail Comprehension" },
+            { "code": "IELTS_READING_INFERENCE", "name": "Inference" },
+            { "code": "IELTS_READING_IDENTIFYING_OPINION", "name": "Identifying Writer's Views" }
+          ]
+        },
+        {
+          "code": "IELTS_WRITING",
+          "name": "Writing",
+          "chapters": [
+            { "code": "IELTS_WRITING_TASK_1_REPORT", "name": "Task 1 — Report (Graph/Table/Chart/Diagram)" },
+            { "code": "IELTS_WRITING_TASK_2_ESSAY", "name": "Task 2 — Essay" }
+          ],
+          "skills": [
+            { "code": "IELTS_WRITING_TASK_ACHIEVEMENT", "name": "Task Achievement/Response" },
+            { "code": "IELTS_WRITING_COHERENCE_COHESION", "name": "Coherence & Cohesion" },
+            { "code": "IELTS_WRITING_LEXICAL_RESOURCE", "name": "Lexical Resource" },
+            { "code": "IELTS_WRITING_GRAMMATICAL_RANGE", "name": "Grammatical Range & Accuracy" }
+          ]
+        },
+        {
+          "code": "IELTS_SPEAKING",
+          "name": "Speaking",
+          "chapters": [
+            { "code": "IELTS_SPEAKING_PART_1_INTERVIEW", "name": "Part 1 — Introduction & Interview" },
+            { "code": "IELTS_SPEAKING_PART_2_LONG_TURN", "name": "Part 2 — Long Turn (Cue Card)" },
+            { "code": "IELTS_SPEAKING_PART_3_DISCUSSION", "name": "Part 3 — Discussion" }
+          ],
+          "skills": [
+            { "code": "IELTS_SPEAKING_FLUENCY_COHERENCE", "name": "Fluency & Coherence" },
+            { "code": "IELTS_SPEAKING_LEXICAL_RESOURCE", "name": "Lexical Resource" },
+            { "code": "IELTS_SPEAKING_GRAMMATICAL_RANGE", "name": "Grammatical Range & Accuracy" },
+            { "code": "IELTS_SPEAKING_PRONUNCIATION", "name": "Pronunciation" }
+          ]
+        }
+      ],
+      "mocks": [
+        { "scope": "full", "title": "IELTS Academic — Full Mock", "duration_min": 165, "questions": 82, "difficulty": "hard" },
+        { "scope": "subject", "subject_code": "IELTS_LISTENING", "title": "IELTS Listening — Section Mock", "duration_min": 30, "questions": 40, "difficulty": "medium" },
+        { "scope": "subject", "subject_code": "IELTS_READING", "title": "IELTS Reading — Section Mock", "duration_min": 60, "questions": 40, "difficulty": "medium" },
+        { "scope": "subject", "subject_code": "IELTS_WRITING", "title": "IELTS Writing — Section Mock", "duration_min": 60, "questions": 2, "difficulty": "medium" },
+        { "scope": "subject", "subject_code": "IELTS_SPEAKING", "title": "IELTS Speaking — Section Mock", "duration_min": 14, "questions": 3, "difficulty": "medium" }
+      ]
+    }
+  ]
+}
