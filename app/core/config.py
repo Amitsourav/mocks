@@ -20,8 +20,10 @@ class Settings(BaseSettings):
 
     # Database
     database_url: str = ""
-    db_pool_min: int = 2
-    db_pool_max: int = 10
+    # Pre-warm several connections so parallel (asyncio.gather) queries reuse warm
+    # connections instead of paying a cold TLS+auth open on the hot path.
+    db_pool_min: int = 6
+    db_pool_max: int = 16
     db_schema: str = "mock_db"
 
     # Redis

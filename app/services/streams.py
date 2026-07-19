@@ -44,61 +44,73 @@ async def switch_stream(
     variant_code: str | None,
     target_country_code: str | None,
 ) -> dict:
-    """Append a new stream selection (validated like the profile cascade)."""
-    exam = await pool.fetchrow(
+    """Append a new stream selection (validated like the profile cascade).
+
+    Two round-trips only: (1) one query validates exam + variant + country and
+    returns the exam name/category; (2) one writable CTE appends the stream-log
+    row AND mirrors it onto users atomically. The response is built in memory —
+    no extra read.
+    """
+    # Validate AND write in a SINGLE round-trip. The insert only fires when the
+    # exam is valid and the variant/country checks pass; the returned flags let us
+    # raise the precise error on the (rare) invalid input without a second query.
+    row = await pool.fetchrow(
         """
-        select ce.requires_country, ce.default_country_code, mc.code as category_code
-        from catalog_exams ce
-        join mock_categories mc on mc.id = ce.category_id
-        where ce.code = $1 and ce.is_active = true
-        """,
-        catalog_exam_code,
-    )
-    if exam is None:
-        raise StreamError("invalid_exam", "Unknown exam.")
-
-    if variant_code is not None:
-        ok = await pool.fetchval(
-            """
-            select 1 from exam_variants v
-            join catalog_exams ce on ce.id = v.catalog_exam_id
-            where v.code = $1 and ce.code = $2
-            """,
-            variant_code, catalog_exam_code,
+        with exam as (
+            select ce.id, ce.name, ce.requires_country, ce.default_country_code,
+                   mc.code as category_code
+            from catalog_exams ce join mock_categories mc on mc.id = ce.category_id
+            where ce.code = $1 and ce.is_active = true
+        ),
+        checked as (
+            select e.*,
+                   ($3::text is null or exists (select 1 from exam_variants v
+                        where v.code = $3 and v.catalog_exam_id = e.id)) as variant_ok,
+                   coalesce($4::text, e.default_country_code) as country_code
+            from exam e
+        ),
+        gated as (
+            select c.*,
+                   (not c.requires_country or c.country_code is not null) as country_present,
+                   (c.country_code is null
+                     or exists (select 1 from countries co where co.code = c.country_code)) as country_ok
+            from checked c
+        ),
+        ins as (
+            insert into user_stream_selections
+                (user_id, category_code, catalog_exam_code, variant_code, target_country_code, source)
+            select $2, category_code, $1, $3, country_code, 'switch'
+            from gated where variant_ok and country_present and country_ok
+            returning created_at
+        ),
+        upd as (
+            update users set mock_category_code = (select category_code from gated),
+                             catalog_exam_code = $1,
+                             target_country_code = (select country_code from gated)
+            where id = $2 and exists (select 1 from ins)
         )
-        if ok is None:
-            raise StreamError("invalid_variant", "That variant does not belong to the selected exam.")
+        select g.name as exam_name, g.category_code, g.country_code,
+               g.variant_ok, g.country_present, g.country_ok,
+               (select created_at from ins) as created_at
+        from gated g
+        """,
+        catalog_exam_code, user_id, variant_code, (target_country_code or None),
+    )
+    if row is None:
+        raise StreamError("invalid_exam", "Unknown exam.")
+    if not row["variant_ok"]:
+        raise StreamError("invalid_variant", "That variant does not belong to the selected exam.")
+    if not row["country_present"]:
+        raise StreamError("country_required", "Select a target country for this exam.")
+    if not row["country_ok"]:
+        raise StreamError("invalid_country", "Unknown country.")
 
-    country_code: str | None = None
-    if exam["requires_country"]:
-        country_code = (target_country_code or "").strip() or exam["default_country_code"]
-        if not country_code:
-            raise StreamError("country_required", "Select a target country for this exam.")
-        if await pool.fetchval("select 1 from countries where code = $1", country_code) is None:
-            raise StreamError("invalid_country", "Unknown country.")
-
-    category_code = exam["category_code"]
-
-    async with pool.acquire() as conn:
-        async with conn.transaction():
-            await conn.execute(
-                """
-                insert into user_stream_selections
-                    (user_id, category_code, catalog_exam_code, variant_code, target_country_code, source)
-                values ($1,$2,$3,$4,$5,'switch')
-                """,
-                user_id, category_code, catalog_exam_code, variant_code, country_code,
-            )
-            # mirror onto users for cheap reads (log stays authoritative + historical)
-            await conn.execute(
-                """
-                update users set
-                    mock_category_code = $2,
-                    catalog_exam_code = $3,
-                    target_country_code = $4
-                where id = $1
-                """,
-                user_id, category_code, catalog_exam_code, country_code,
-            )
-
-    return await get_current_stream(pool, user_id)
+    return {
+        "category_code": row["category_code"],
+        "catalog_exam_code": catalog_exam_code,
+        "catalog_exam_name": row["exam_name"],
+        "variant_code": variant_code,
+        "target_country_code": row["country_code"],
+        "source": "switch",
+        "selected_at": row["created_at"],
+    }

@@ -8,7 +8,6 @@ from app.api.deps import get_current_user
 from app.core.db import get_pool
 from app.schemas.catalog import MockCatalogOut, MockTestOut, SubjectGroup
 from app.schemas.user import CurrentUser
-from app.services.streams import get_current_stream
 
 router = APIRouter(prefix="/mock-tests", tags=["mock-tests"])
 
@@ -39,41 +38,51 @@ async def list_mock_tests(user: CurrentUser = Depends(get_current_user)) -> Mock
     (subject + chapter mocks) for browsing.
     """
     pool = get_pool()
-    stream = await get_current_stream(pool, user.id)
-    if stream is None:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail={"code": "no_stream", "message": "No exam stream selected yet."},
-        )
-
+    # One round-trip: resolve the current stream (latest log row) AND fetch its
+    # mocks. LEFT JOIN so a stream with no mocks still returns the header row.
     rows = await pool.fetch(
         """
-        select mt.id, mt.scope::text as scope, mt.title, mt.description,
+        with strm as (
+            select category_code, catalog_exam_code
+            from user_stream_selections
+            where user_id = $1 order by created_at desc limit 1
+        )
+        select strm.category_code, strm.catalog_exam_code, ce.name as exam_name,
+               mt.id, mt.scope::text as scope, mt.title, mt.description,
                mt.duration_seconds, mt.total_questions, mt.difficulty,
                mt.linked_examination_id, mt.position,
                ss.code as subject_code, ss.name as subject_name,
                ss.position as subject_position, ss.catalog_exam_id as subject_exam_id,
                sc.code as chapter_code, sc.name as chapter_name,
                ev.code as variant_code
-        from mock_tests mt
+        from strm
+        join catalog_exams ce on ce.code = strm.catalog_exam_code
+        left join mock_categories mc on mc.code = strm.category_code
+        left join mock_tests mt
+          on mt.is_active = true
+         and ( mt.catalog_exam_id = ce.id
+               or (mt.catalog_exam_id is null and mt.category_id = mc.id) )
         left join syllabus_subjects ss on ss.id = mt.subject_id
         left join syllabus_chapters sc on sc.id = mt.chapter_id
         left join exam_variants ev on ev.id = mt.variant_id
-        join catalog_exams ce on ce.code = $1
-        left join mock_categories mc on mc.code = $2
-        where mt.is_active = true
-          and ( mt.catalog_exam_id = ce.id
-                or (mt.catalog_exam_id is null and mt.category_id = mc.id) )
         order by ss.position nulls first, mt.position, mt.title
         """,
-        stream["catalog_exam_code"], stream["category_code"],
+        user.id,
     )
+    if not rows:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail={"code": "no_stream", "message": "No exam stream selected yet."},
+        )
+    header = rows[0]
 
     full: list[MockTestOut] = []
     sectional: list[MockTestOut] = []            # category-shared subject mocks
     subject_map: dict[str, dict] = {}            # exam subject_code -> group
 
     for r in rows:
+        if r["id"] is None:
+            continue                             # stream with no mocks (header-only row)
         mock = _to_mock(r)
         if r["scope"] == "full":
             full.append(mock)
@@ -100,9 +109,9 @@ async def list_mock_tests(user: CurrentUser = Depends(get_current_user)) -> Mock
     ]
 
     return MockCatalogOut(
-        category_code=stream["category_code"],
-        catalog_exam_code=stream["catalog_exam_code"],
-        catalog_exam_name=stream["catalog_exam_name"],
+        category_code=header["category_code"],
+        catalog_exam_code=header["catalog_exam_code"],
+        catalog_exam_name=header["exam_name"],
         full_mocks=full,
         sectional_mocks=sectional,
         subjects=subjects,
