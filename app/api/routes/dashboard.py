@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import json
 from uuid import UUID
 
@@ -49,29 +50,24 @@ def _attempt_item(r) -> AttemptListItem:
 
 @router.get("/summary", response_model=DashboardSummary)
 async def dashboard_summary(user: CurrentUser = Depends(get_current_user)) -> DashboardSummary:
-    pool = get_pool()
-    agg = await pool.fetchrow(
+    # Single round-trip: aggregates + latest/first via ordered array_agg.
+    agg = await get_pool().fetchrow(
         """
         select count(*) as n,
                avg(score) as avg_score,
                max(score) as best_score,
                avg(accuracy_pct) as avg_acc,
-               coalesce(sum(duration_seconds), 0) as total_time
+               coalesce(sum(duration_seconds), 0) as total_time,
+               (array_agg(accuracy_pct order by submitted_at desc nulls last))[1] as latest_acc,
+               (array_agg(percentile   order by submitted_at desc nulls last))[1] as latest_pct,
+               (array_agg(accuracy_pct order by submitted_at asc  nulls last))[1] as first_acc
         from attempt_results
         where user_id = $1
         """,
         user.id,
     )
-    latest = await pool.fetchrow(
-        "select percentile, accuracy_pct from attempt_results where user_id=$1 order by submitted_at desc nulls last limit 1",
-        user.id,
-    )
-    first = await pool.fetchrow(
-        "select accuracy_pct from attempt_results where user_id=$1 order by submitted_at asc nulls last limit 1",
-        user.id,
-    )
-    latest_acc = _f(latest["accuracy_pct"]) if latest else None
-    first_acc = _f(first["accuracy_pct"]) if first else None
+    latest_acc = _f(agg["latest_acc"])
+    first_acc = _f(agg["first_acc"])
     improvement = round(latest_acc - first_acc, 2) if (latest_acc is not None and first_acc is not None) else None
 
     return DashboardSummary(
@@ -79,7 +75,7 @@ async def dashboard_summary(user: CurrentUser = Depends(get_current_user)) -> Da
         avg_score=round(_f(agg["avg_score"]), 2) if agg["avg_score"] is not None else None,
         best_score=_f(agg["best_score"]),
         avg_accuracy_pct=round(_f(agg["avg_acc"]), 2) if agg["avg_acc"] is not None else None,
-        latest_percentile=_f(latest["percentile"]) if latest else None,
+        latest_percentile=_f(agg["latest_pct"]),
         first_accuracy_pct=first_acc,
         improvement_pct=improvement,
         total_time_seconds=agg["total_time"],
@@ -137,43 +133,47 @@ async def dashboard_attempt_detail(
     attempt_id: UUID, user: CurrentUser = Depends(get_current_user)
 ) -> AttemptDetail:
     pool = get_pool()
-    ar = await pool.fetchrow(
-        """
-        select ar.id, mt.title as mock_title, ar.catalog_exam_code, ar.submitted_at,
-               ar.duration_seconds, ar.total_questions, ar.correct, ar.score,
-               ar.max_score, ar.percentile, ar.accuracy_pct, ar.user_id
-        from attempt_results ar
-        left join mock_tests mt on mt.id = ar.mock_test_id
-        where ar.id = $1
-        """,
-        attempt_id,
+    # All five reads are independent — fire them concurrently (one round-trip of
+    # wall-clock instead of five). Ownership is checked on the attempt row after.
+    ar, sections, skills, questions, ins = await asyncio.gather(
+        pool.fetchrow(
+            """
+            select ar.id, mt.title as mock_title, ar.catalog_exam_code, ar.submitted_at,
+                   ar.duration_seconds, ar.total_questions, ar.correct, ar.score,
+                   ar.max_score, ar.percentile, ar.accuracy_pct, ar.user_id
+            from attempt_results ar
+            left join mock_tests mt on mt.id = ar.mock_test_id
+            where ar.id = $1
+            """,
+            attempt_id,
+        ),
+        pool.fetch(
+            "select section_name,total,correct,wrong,skipped,score,accuracy_pct,avg_time_ms "
+            "from attempt_section_results where attempt_result_id=$1 order by position",
+            attempt_id,
+        ),
+        pool.fetch(
+            "select skill_code,skill_name,total,correct,accuracy_pct,avg_time_ms "
+            "from attempt_skill_results where attempt_result_id=$1 order by accuracy_pct asc nulls last",
+            attempt_id,
+        ),
+        pool.fetch(
+            "select question_no,section_name,skill_code,kc_code,error_type::text as error_type,"
+            "is_correct,time_spent_ms,difficulty,marked_for_review "
+            "from attempt_question_results where attempt_result_id=$1 order by question_no",
+            attempt_id,
+        ),
+        pool.fetchrow(
+            """select headline,goal,current_status,gap_diagnosis,calibration_note,next_actions,
+                      recommended_method,behavior_archetype,pacing_note,negative_marking_loss,
+                      guess_rate,calibration_gap,generated_by::text as generated_by
+               from attempt_insights where attempt_result_id=$1""",
+            attempt_id,
+        ),
     )
     if ar is None or ar["user_id"] != user.id:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Attempt not found")
 
-    sections = await pool.fetch(
-        "select section_name,total,correct,wrong,skipped,score,accuracy_pct,avg_time_ms "
-        "from attempt_section_results where attempt_result_id=$1 order by position",
-        attempt_id,
-    )
-    skills = await pool.fetch(
-        "select skill_code,skill_name,total,correct,accuracy_pct,avg_time_ms "
-        "from attempt_skill_results where attempt_result_id=$1 order by accuracy_pct asc nulls last",
-        attempt_id,
-    )
-    questions = await pool.fetch(
-        "select question_no,section_name,skill_code,kc_code,error_type::text as error_type,"
-        "is_correct,time_spent_ms,difficulty,marked_for_review "
-        "from attempt_question_results where attempt_result_id=$1 order by question_no",
-        attempt_id,
-    )
-    ins = await pool.fetchrow(
-        """select headline,goal,current_status,gap_diagnosis,calibration_note,next_actions,
-                  recommended_method,behavior_archetype,pacing_note,negative_marking_loss,
-                  guess_rate,calibration_gap,generated_by::text as generated_by
-           from attempt_insights where attempt_result_id=$1""",
-        attempt_id,
-    )
     return AttemptDetail(
         attempt=_attempt_item(dict(ar)),
         sections=[SectionResultOut(**{k: (_f(v) if k in ("score", "accuracy_pct") else v)
@@ -254,31 +254,32 @@ async def dashboard_concepts(user: CurrentUser = Depends(get_current_user)) -> l
 async def dashboard_strategy(user: CurrentUser = Depends(get_current_user)) -> StrategyOut:
     """Behavioral / test-strategy view aggregated across all the user's attempts."""
     pool = get_pool()
-    dist_rows = await pool.fetch(
-        """select coalesce(q.error_type::text,'unknown') as et, count(*) as n
-           from attempt_question_results q
-           join attempt_results ar on ar.id = q.attempt_result_id
-           where ar.user_id=$1 group by q.error_type""",
-        user.id,
+    dist_rows, agg, arch = await asyncio.gather(
+        pool.fetch(
+            """select coalesce(q.error_type::text,'unknown') as et, count(*) as n
+               from attempt_question_results q
+               join attempt_results ar on ar.id = q.attempt_result_id
+               where ar.user_id=$1 group by q.error_type""",
+            user.id,
+        ),
+        pool.fetchrow(
+            """select count(*) as n, round(avg(guess_rate),2) as gr,
+                      round(sum(negative_marking_loss),2) as nml, round(avg(calibration_gap),2) as cg
+               from attempt_insights ai join attempt_results ar on ar.id = ai.attempt_result_id
+               where ar.user_id=$1""",
+            user.id,
+        ),
+        pool.fetchrow(
+            """select behavior_archetype, count(*) c
+               from attempt_insights ai join attempt_results ar on ar.id = ai.attempt_result_id
+               where ar.user_id=$1 and behavior_archetype is not null
+               group by behavior_archetype order by c desc limit 1""",
+            user.id,
+        ),
     )
     dist = {r["et"]: r["n"] for r in dist_rows}
     wrong = dist.get("careless", 0) + dist.get("conceptual", 0) + dist.get("procedural", 0)
     careless_share = round(100 * dist.get("careless", 0) / wrong, 2) if wrong else None
-
-    agg = await pool.fetchrow(
-        """select count(*) as n, round(avg(guess_rate),2) as gr,
-                  round(sum(negative_marking_loss),2) as nml, round(avg(calibration_gap),2) as cg
-           from attempt_insights ai join attempt_results ar on ar.id = ai.attempt_result_id
-           where ar.user_id=$1""",
-        user.id,
-    )
-    arch = await pool.fetchrow(
-        """select behavior_archetype, count(*) c
-           from attempt_insights ai join attempt_results ar on ar.id = ai.attempt_result_id
-           where ar.user_id=$1 and behavior_archetype is not null
-           group by behavior_archetype order by c desc limit 1""",
-        user.id,
-    )
     return StrategyOut(
         attempts=agg["n"] or 0,
         error_distribution=dist,

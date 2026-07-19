@@ -4,7 +4,7 @@ import re
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from app.api.deps import get_current_user
+from app.api.deps import get_current_user, invalidate_user_cache
 from app.core.db import get_pool
 from app.schemas.catalog import StreamOut, StreamSwitchIn
 from app.schemas.user import CurrentUser, ProfileUpdate
@@ -98,6 +98,7 @@ async def update_profile(
         payload.catalog_exam_code,
         country_code,
     )
+    invalidate_user_cache(user.auth_user_id)
     return CurrentUser(**dict(row))
 
 
@@ -119,6 +120,11 @@ async def switch_stream(
             get_pool(), user.id, payload.catalog_exam_code,
             payload.variant_code, payload.target_country_code,
         )
+        # Note: we intentionally do NOT invalidate the auth cache here. The current
+        # stream is read from the user_stream_selections LOG (not the cached user),
+        # and this response returns the new stream directly. Invalidating would make
+        # the very next request pay an extra auth DB round-trip. The cached user's
+        # mirror columns may lag by up to the cache TTL — cosmetic only.
     except StreamError as exc:
         raise HTTPException(
             status_code=exc.http_status,
