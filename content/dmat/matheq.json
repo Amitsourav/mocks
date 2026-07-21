@@ -1,0 +1,2273 @@
+{
+  "exam_code": "dMAT",
+  "questions": [
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Solve the system and find the value of $y$:\n\n$$\\begin{cases} 5x - 2y = -12 \\\\ - 3x - 3y = 45 \\end{cases}$$",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "LINEAR_SYSTEMS",
+        "NUMERICAL_REASONING",
+        "ELIMINATION_METHOD"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$y = -6$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$y = -8$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$y = 9$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$y = -9$",
+          "is_correct": true
+        }
+      ],
+      "position": 1,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Solve the system and find the value of $y$:\n\n$$\\begin{cases} - 6x - 6y = -78 \\\\ - 5x - 3y = -57 \\end{cases}$$",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "LINEAR_SYSTEMS",
+        "NUMERICAL_REASONING",
+        "ELIMINATION_METHOD"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$y = 9$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$y = 5$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$y = -4$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$y = 4$",
+          "is_correct": true
+        }
+      ],
+      "position": 2,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A grocer sells apples for $4 per kg and oranges for $3 per kg. Yesterday, the total weight of apples and oranges sold was 150 kg, and the total sales revenue was $520. How many kilograms of apples were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$70$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$80$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$90$",
+          "is_correct": false
+        }
+      ],
+      "position": 3,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A farmer is planning a rectangular vegetable garden. She knows that the perimeter of the garden will be 40 meters. She also wants the length of the garden to be 6 meters longer than its width. What will be the area, in square meters, of this vegetable garden?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$91$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$96$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$84$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$100$",
+          "is_correct": false
+        }
+      ],
+      "position": 4,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "The sum of the digits of a two-digit number is 11. When the digits are reversed, the new number is 27 less than the original number. What is the original two-digit number?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$83$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$47$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$92$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$74$",
+          "is_correct": true
+        }
+      ],
+      "position": 5,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Two angles are complementary (their measures add up to 90°). The larger angle is 12 degrees more than twice the smaller angle. What is the measure, in degrees, of the smaller angle?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$22$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$39$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$26$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$32$",
+          "is_correct": false
+        }
+      ],
+      "position": 6,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "An investor splits $12,000 into two simple-interest accounts. The first account earns a 5% annual interest rate, and the second earns a 3% annual interest rate. After one year, the total interest earned from both accounts is $480. How much money, in dollars, was invested in the 5% account?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$8000$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$5000$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$6000$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$7000$",
+          "is_correct": false
+        }
+      ],
+      "position": 7,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A chemist has two acid solutions. Solution A is 20% acid and Solution B is 45% acid. She wants to mix them to produce 200 liters of a 30% acid solution. How many liters of Solution A should she use?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$120$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$80$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$160$",
+          "is_correct": false
+        }
+      ],
+      "position": 8,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "John is currently five times as old as his son Ben. In twelve years, John will be three times as old as Ben will be then. How old is Ben now?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$10$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$6$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$12$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$15$",
+          "is_correct": false
+        }
+      ],
+      "position": 9,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A school canteen sells sandwiches and drinks. The price of one sandwich is $4 and the price of one drink is $2. On Monday, the canteen sold a total of 80 items and collected $260. How many sandwiches were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$50$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": false
+        }
+      ],
+      "position": 10,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Maria signs up for a new mobile plan that has a fixed monthly charge plus a cost per gigabyte (GB) of data used. Her bill for the first month, when she used 8 GB of data, was $68. Her bill for the second month, when she used 12 GB of data, was $92. If the fixed monthly charge and the cost per GB are constant, what is the fixed monthly charge in dollars?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$16$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$20$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$24$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$32$",
+          "is_correct": false
+        }
+      ],
+      "position": 11,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A candy store mixes two types of gummy bears: Fruit Delight, which costs $5 per kilogram, and Sour Blast, which costs $8 per kilogram. The owner wants to create a 90-kilogram batch of a new mix that will sell for $6 per kilogram. How many kilograms of Fruit Delight gummy bears should be used?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$75$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$60$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$54$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": false
+        }
+      ],
+      "position": 12,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A farmer counts the heads and legs of the animals in his barnyard. He sees a total of 60 heads and a total of 160 legs. If the only animals are pigs and chickens, how many pigs does he have?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$10$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$30$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$20$",
+          "is_correct": true
+        }
+      ],
+      "position": 13,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "An investor puts a total of $10,000 into two simple-interest savings accounts. Account A pays 4% annual interest and Account B pays 6% annual interest. After one year, the total interest earned from both accounts is $520. How much money, in dollars, was invested in Account A?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$4500$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$6000$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$3000$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$4000$",
+          "is_correct": true
+        }
+      ],
+      "position": 14,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "In a basketball game, a team scored a total of 120 points. Points were scored only by making two-point baskets (field goals) and three-point baskets. The team made a total of 55 scoring plays. How many three-point baskets did the team make?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$15$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$5$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$10$",
+          "is_correct": true
+        }
+      ],
+      "position": 15,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A taxi company charges a base fare plus a rate per kilometer. On Monday, a customer took a 15 km ride and was charged a total of $42. On Tuesday, the same customer took a 25 km ride and was charged a total of $62. Assuming the base fare (in dollars) and the rate per kilometer (in dollars per km) are constant integers, what is the base fare?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$8$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$12$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$10$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$15$",
+          "is_correct": false
+        }
+      ],
+      "position": 16,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Anna has a mobile phone plan. Her plan has a fixed monthly charge, plus a cost for each gigabyte (GB) of data she uses. In March, she used 8 GB of data and her total bill was $65. In April, she used 4 GB of data and her total bill was $45. What is the fixed monthly charge (in dollars) for her phone plan?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$15$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$25$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": false
+        }
+      ],
+      "position": 17,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A cinema sold 80 tickets for a special screening. The price for a standard ticket is $15 and for a premium ticket is $25. The total revenue from ticket sales was $1600. How many premium tickets were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$40$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$50$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$45$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$35$",
+          "is_correct": false
+        }
+      ],
+      "position": 18,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At a fruit stand, apples cost $2 each and oranges cost $1 each. Sarah bought a total of 90 apples and oranges and spent exactly $126. How many apples did Sarah buy?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$30$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$36$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$50$",
+          "is_correct": false
+        }
+      ],
+      "position": 19,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A two-digit number is equal to 6 times the sum of its digits. If the digits are reversed, the new number is 9 less than the original number. What is the original two-digit number?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$45$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$63$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$72$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$54$",
+          "is_correct": true
+        }
+      ],
+      "position": 20,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "For a special cinema screening, tickets were sold in two price tiers: Premium seats at $200 each and Standard seats at $100 each. A total of 90 tickets were sold, and the total revenue collected was $12,600. How many Premium seat tickets were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$48$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$36$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$32$",
+          "is_correct": false
+        }
+      ],
+      "position": 21,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A farmer counts 100 heads and 272 legs in his pen containing only chickens and pigs. How many pigs are there?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$32$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$28$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$36$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$44$",
+          "is_correct": false
+        }
+      ],
+      "position": 22,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A rectangular parking lot has a perimeter of 380 meters. The length of the lot is 40 meters more than the width. What is the length of the parking lot, in meters?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$135$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$115$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$125$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$105$",
+          "is_correct": false
+        }
+      ],
+      "position": 23,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At the school canteen, one sandwich costs $5 and one juice box costs $2. On Monday, the total sales from sandwiches and juice boxes were $130, and a total of 35 items were sold. How many sandwiches were sold on Monday?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$18$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": false
+        }
+      ],
+      "position": 24,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A charity drive collected a total of 90 coins and notes, consisting only of 5-dollar coins and 10-dollar notes. The total value of the collection is 650 dollars. How many 10-dollar notes were collected?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$50$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$40$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$45$",
+          "is_correct": false
+        }
+      ],
+      "position": 25,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A rectangular garden has a total perimeter of 64 meters. Twice the garden's length is equal to three times its width plus 4 meters. Find the length of the garden.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$16$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$20$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$18$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$22$",
+          "is_correct": false
+        }
+      ],
+      "position": 26,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Anna buys some apples and oranges. If she buys 2 apples and 3 oranges, the total cost is 120 cents. If she buys 3 apples and 2 oranges, the total cost is 130 cents. Each apple costs the same, and each orange costs the same. What is the cost, in cents, of one apple?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$20$",
+          "is_correct": false
+        }
+      ],
+      "position": 27,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Alex is 8 years older than Blake. In 5 years, Alex will be twice as old as Blake is now. How old is Blake now?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$16$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$8$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$11$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$13$",
+          "is_correct": true
+        }
+      ],
+      "position": 28,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "On a farm, there are ducks and sheep. A duck has 2 legs, and a sheep has 4 legs. The farmer counts all the animals and finds there are 80 heads in total. He also counts all the legs and finds there are 220 legs in total. How many sheep are on the farm?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$35$",
+          "is_correct": false
+        }
+      ],
+      "position": 29,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "In a class, the total number of students is 50. Twice the number of boys plus the number of girls equals 60. How many boys are in the class?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$10$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$30$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$40$",
+          "is_correct": false
+        }
+      ],
+      "position": 30,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Anya buys pens and notebooks for school. One pen costs $3 and one notebook costs $5. She bought a total of 16 items. When she calculated the total cost, it came to $68. How many pens did Anya buy?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$8$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$6$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$4$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$10$",
+          "is_correct": false
+        }
+      ],
+      "position": 31,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A class is selling tickets for a school fair. They sell adult tickets for $5 each and child tickets for $2 each. At the end of the day, they have sold a total of 180 tickets and collected $648. How many adult tickets were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$96$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$84$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$72$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$108$",
+          "is_correct": false
+        }
+      ],
+      "position": 32,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A speedboat takes 4 hours to travel 80 kilometers upstream against the current. On the return trip downstream with the current, it takes only 2 hours to cover the same 80 kilometers. Assuming the boat's speed in still water and the current's speed are constant, what is the boat's speed in still water?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": true
+        }
+      ],
+      "position": 33,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A school canteen sells chicken sandwiches and veggie wraps. On Monday, they sold a total of 75 items. The chicken sandwich costs $120 and the veggie wrap costs $80. The total sales for Monday were $8000. How many chicken sandwiches were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$50$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$55$",
+          "is_correct": false
+        }
+      ],
+      "position": 34,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At a bookstore, pens cost $\\$3$ each and notebooks cost $\\$5$ each. Yesterday, a customer bought a total of 12 items (some pens and some notebooks) and spent a total of $\\$50$. How many notebooks did the customer buy?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$7$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$5$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$8$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$4$",
+          "is_correct": false
+        }
+      ],
+      "position": 35,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A fruit vendor sold a total of 50 kg of apples and oranges. Apples are priced at ₹120 per kg and oranges at ₹80 per kg. The total revenue from the sale was ₹5200. How many kilograms of apples did the vendor sell?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$25$",
+          "is_correct": false
+        }
+      ],
+      "position": 36,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A school canteen sells burgers and fries. A burger costs $8 and fries cost $5. On Monday, the canteen sold a total of 120 items and collected a total of $780 from these sales. How many burgers were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$70$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$65$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$60$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$55$",
+          "is_correct": false
+        }
+      ],
+      "position": 37,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Two complementary angles are labeled angle A and angle B. If three times angle A plus twice angle B equals 240 degrees, and the angles are complementary, what is the measure of angle A in degrees?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$50$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$45$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$30$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$60$",
+          "is_correct": true
+        }
+      ],
+      "position": 38,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "In a hockey game, a team can score goals worth 2 points and power-play goals worth 3 points. The final score of a team was 65 points, and they scored a total of 28 goals. How many power-play goals did they score?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$9$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$11$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$7$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$8$",
+          "is_correct": false
+        }
+      ],
+      "position": 39,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A taxi company charges a fixed base fare for starting a ride plus a certain rate per kilometer traveled. On Monday, Mr. Lee took a taxi ride of 8 kilometers and paid a total of ₹78. On Tuesday, he took another taxi ride of 12 kilometers and paid ₹102. What is the base fare (in ₹) charged by the taxi company?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$36$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$24$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$42$",
+          "is_correct": false
+        }
+      ],
+      "position": 40,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A chemist needs to prepare 800 mL of a 25% acid solution. The stockroom has a 10% acid solution and a 40% acid solution. How many milliliters of the 40% solution must she mix with the 10% solution to obtain the desired mixture?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$600$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$400$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$200$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$300$",
+          "is_correct": false
+        }
+      ],
+      "position": 41,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "In a basketball game, a team scored a total of 88 points. They made a combination of two-point field goals and three-point field goals. Altogether, they made 40 baskets. How many three-point field goals did they make?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$8$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$12$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$32$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$16$",
+          "is_correct": false
+        }
+      ],
+      "position": 42,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Two workers, Alex and Bailey, are painting a large fence. Working together, they can paint the entire fence in 6 hours. If Alex worked alone for 4 hours and then Bailey finished the job alone, painting for 9 hours, the entire fence would be painted. Assuming each painter works at a constant rate, how many hours would it take Bailey to paint the entire fence alone?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$18$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$15$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$12$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$10$",
+          "is_correct": false
+        }
+      ],
+      "position": 43,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A school canteen sells packs of fruit and bottles of juice. A fruit pack costs $2 and a juice bottle costs $3. On Monday, the total sales from these items were $180, and exactly 70 items were sold. How many fruit packs were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$35$",
+          "is_correct": false
+        }
+      ],
+      "position": 44,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A school canteen sells chicken sandwiches for a fixed price and fruit cups for a fixed price. On Monday, they sold 3 chicken sandwiches and 2 fruit cups, and the total money collected was $34. On Tuesday, they sold 1 chicken sandwich and 4 fruit cups, and the total was $28. How much does one chicken sandwich cost?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$10$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$8$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$6$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$7$",
+          "is_correct": false
+        }
+      ],
+      "position": 45,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "In the school canteen, a slice of pizza costs $1.50 and a can of soda costs $0.80. On Monday, the canteen sold a total of 120 items and collected $146.40 from these two items. How many slices of pizza were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$48$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$72$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$80$",
+          "is_correct": false
+        }
+      ],
+      "position": 46,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At the farmers' market, apples cost $4 per kg and bananas cost $6 per kg. A fruit seller bought a total of 50 kg of these two fruits and spent $260 altogether. How many kilograms of apples did the seller buy?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$30$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$20$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$15$",
+          "is_correct": false
+        }
+      ],
+      "position": 47,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A farmer has chickens and goats in his farmyard. The total number of animals is 50. Altogether, the animals have 140 legs. How many goats does the farmer have? (Each chicken has 2 legs and each goat has日常工作 legs.)",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$21$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": false
+        }
+      ],
+      "position": 48,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "The ages of a father and his son are currently such that the father is 4 times as old as the son. In 10 years, the father will be 3 times as old as the son. What is the current age of the son?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$15$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$20$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$10$",
+          "is_correct": false
+        }
+      ],
+      "position": 49,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A lab technician needs to prepare 120 liters of a 15% saline solution by mixing two available solutions: one is 10% saline and the other is 25% saline. How many liters of the 10% solution must be used?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$80$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$72$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$90$",
+          "is_correct": false
+        }
+      ],
+      "position": 50,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "On a farm, there are chickens and cows. Counting heads, there are 90 animals in total. Counting legs, there are 280 legs in total. Each chicken has 2 legs and each cow has 4 legs. How many chickens are on the farm?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$50$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$45$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$40$",
+          "is_correct": true
+        }
+      ],
+      "position": 51,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A mother is currently three times as old as her daughter. In 15 years, the mother will be twice as old as her daughter will be then. What is the daughter's current age?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$12$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$10$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$15$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$20$",
+          "is_correct": false
+        }
+      ],
+      "position": 52,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "Anna is twice as old as Ben now. Three years ago, Anna was three times as old as Ben. What is Ben's current age?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$12$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$6$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$5$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$9$",
+          "is_correct": false
+        }
+      ],
+      "position": 53,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A class is fundraising by selling T-shirts. The boys each sell 8 T-shirts and the girls each sell 5 T-shirts. In total, the class sells 310 T-shirts. If there are 44 students in the class, how many boys are in the class?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$25$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$34$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": true
+        }
+      ],
+      "position": 54,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At a local market, strawberries are sold for $3 per kg and cherries for $5 per kg. On Saturday, a vendor sold a total of 80 kg of these fruits and collected $300 in total sales. How many kilograms of cherries were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$25$",
+          "is_correct": false
+        }
+      ],
+      "position": 55,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A school canteen sells apples for $1 each and oranges for $2 each. On Monday, a total of 60 fruits were sold, and the total revenue was $90. How many apples were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$30$",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$50$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$40$",
+          "is_correct": false
+        }
+      ],
+      "position": 56,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At the school fair, adult tickets cost $7 each and student tickets cost $3 each. The total number of tickets sold was 120, and the total money collected was $600. How many adult tickets were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$70$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$60$",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "$50$",
+          "is_correct": false
+        }
+      ],
+      "position": 57,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At a school canteen, hot dogs cost $2 each and juice boxes cost $1 each. On Monday, the canteen sold a total of 90 hot dogs and juice boxes combined. The total money collected from these sales was $126. How many hot dogs were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$45$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$36$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$30$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$40$",
+          "is_correct": false
+        }
+      ],
+      "position": 58,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At a farmers' market, apples are sold for $3 per kilogram and pears for $2 per kilogram. Yesterday, the market sold 50 kilograms of fruit in total and collected $130 from these sales. How many kilograms of apples were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$35$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$40$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$20$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": true
+        }
+      ],
+      "position": 59,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A motorboat travels 120 km upstream in a river with a constant current, taking 5 hours. The return trip downstream (same 120 km) takes only 3 hours. Find the speed of the boat in still water (in km/h).",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$36$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$32$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$28$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$30$",
+          "is_correct": false
+        }
+      ],
+      "position": 60,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At the school fair, hot dogs cost $3 each and slices of pizza cost $4 each. On Tuesday, the total number of hot dogs and pizza slices sold was 120, and the total collected was $410. How many hot dogs were sold?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$60$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$50$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$80$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$70$",
+          "is_correct": true
+        }
+      ],
+      "position": 61,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "At a farmers' market, a customer buys mangoes and oranges. The total weight of the purchase is 20 kg. The price per kg for mangoes is $8, and for oranges is $5. If the total cost of the fruit is $139, how many kilograms of mangoes did the customer buy?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$15$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$13$",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$11$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$9$",
+          "is_correct": false
+        }
+      ],
+      "position": 62,
+      "marks": 1
+    },
+    {
+      "section_code": "MATHEQ",
+      "type": "single_choice",
+      "content_md": "A customer buys pens and notebooks. A pen costs $3 and a notebook costs $5. One day, the customer buys a total of 20 items and spends $84. How many pens did the customer buy?",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "WORD_PROBLEM_MODELING",
+        "NUMERICAL_REASONING",
+        "PROBLEM_SOLVING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$10$",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$5$",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "$12$",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$8$",
+          "is_correct": true
+        }
+      ],
+      "position": 63,
+      "marks": 1
+    }
+  ]
+}

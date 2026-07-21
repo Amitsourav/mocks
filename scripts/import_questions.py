@@ -39,12 +39,22 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import hashlib
 import json
 import os
+import re
 import sys
+import uuid
 from pathlib import Path
 
 import asyncpg
+
+
+def content_hash(content_md: str) -> str:
+    """Stable fingerprint of a question's text for exact-duplicate detection.
+    Normalizes whitespace + case so trivial formatting differences collide."""
+    normalized = re.sub(r"\s+", " ", (content_md or "").strip().lower())
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 CHOICE_TYPES = {"single_choice", "multi_select"}
 VALID_TYPES = {"single_choice", "multi_select", "numeric_entry", "essay"}
@@ -132,56 +142,82 @@ async def import_doc(conn: asyncpg.Connection, doc: dict) -> dict:
         )
     }
 
-    counts = {"questions": 0, "options": 0, "tags": 0, "stimuli": 0}
-    for q in doc["questions"]:
+    counts = {"questions": 0, "options": 0, "tags": 0, "stimuli": 0, "duplicates": 0}
+
+    # Dedup up front in ONE round-trip: which incoming hashes already exist?
+    incoming_hashes = [content_hash(q["content_md"]) for q in doc["questions"]]
+    rows = await conn.fetch(
+        "select content_hash from mock_db.questions where content_hash = any($1::text[])",
+        incoming_hashes,
+    )
+    existing = {r["content_hash"] for r in rows}
+
+    # Build all rows client-side (UUIDs generated here), then bulk-insert with
+    # executemany — a handful of round-trips instead of thousands (Tokyo latency).
+    stim_rows, q_rows, opt_rows, tag_rows = [], [], [], []
+    seen_batch: set[str] = set()
+    for q, chash in zip(doc["questions"], incoming_hashes):
         section_id = sections.get(q["section_code"])
         if section_id is None:
             raise ValidationError(f"section_code {q['section_code']!r} not found for exam")
+        if chash in existing or chash in seen_batch:  # dedup vs DB + within this file
+            counts["duplicates"] += 1
+            continue
+        seen_batch.add(chash)
 
+        question_id = uuid.uuid4()
         stimulus_id = None
         if q.get("stimulus_md"):
-            stimulus_id = await conn.fetchval(
-                """
-                insert into mock_db.stimuli (examination_id, section_id, content_md, status)
-                values ($1, $2, $3, 'published') returning id
-                """,
-                exam_id, section_id, q["stimulus_md"],
-            )
+            stimulus_id = uuid.uuid4()
+            stim_rows.append((stimulus_id, exam_id, section_id, q["stimulus_md"]))
             counts["stimuli"] += 1
 
-        question_id = await conn.fetchval(
-            """
-            insert into mock_db.questions
-                (examination_id, section_id, stimulus_id, question_type, content_md,
-                 position, marks, numeric_answer_key, status)
-            values ($1,$2,$3,$4::mock_db.question_type,$5,$6,$7,$8,$9::mock_db.content_status)
-            returning id
-            """,
-            exam_id, section_id, stimulus_id, q["type"], q["content_md"],
+        q_rows.append((
+            question_id, exam_id, section_id, stimulus_id, q["type"], q["content_md"],
             q.get("position", 0), q.get("marks", 1), q.get("numeric_answer_key"),
-            q.get("status", "draft"),
-        )
+            q.get("status", "draft"), chash,
+        ))
         counts["questions"] += 1
 
         for pos, o in enumerate(q.get("options", []), start=1):
-            await conn.execute(
-                """
-                insert into mock_db.question_options (question_id, label, content_md, is_correct, position)
-                values ($1, $2, $3, $4, $5)
-                """,
-                question_id, o.get("label"), o["content_md"], bool(o.get("is_correct")), o.get("position", pos),
-            )
+            opt_rows.append((question_id, o.get("label"), o["content_md"],
+                             bool(o.get("is_correct")), o.get("position", pos)))
             counts["options"] += 1
 
         for skill_code in q.get("skills", []):
             skill_id = skills.get(skill_code)
             if skill_id is None:
                 raise ValidationError(f"skill {skill_code!r} not found for exam")
-            await conn.execute(
-                "insert into mock_db.question_skill_tags (question_id, skill_id) values ($1,$2) on conflict do nothing",
-                question_id, skill_id,
-            )
+            tag_rows.append((question_id, skill_id))
             counts["tags"] += 1
+
+    if stim_rows:
+        await conn.executemany(
+            "insert into mock_db.stimuli (id, examination_id, section_id, content_md, status) "
+            "values ($1,$2,$3,$4,'published')",
+            stim_rows,
+        )
+    if q_rows:
+        await conn.executemany(
+            "insert into mock_db.questions "
+            "(id, examination_id, section_id, stimulus_id, question_type, content_md, "
+            " position, marks, numeric_answer_key, status, content_hash) "
+            "values ($1,$2,$3,$4,$5::mock_db.question_type,$6,$7,$8,$9,"
+            "$10::mock_db.content_status,$11)",
+            q_rows,
+        )
+    if opt_rows:
+        await conn.executemany(
+            "insert into mock_db.question_options (question_id, label, content_md, is_correct, position) "
+            "values ($1,$2,$3,$4,$5)",
+            opt_rows,
+        )
+    if tag_rows:
+        await conn.executemany(
+            "insert into mock_db.question_skill_tags (question_id, skill_id) values ($1,$2) "
+            "on conflict do nothing",
+            tag_rows,
+        )
     return counts
 
 

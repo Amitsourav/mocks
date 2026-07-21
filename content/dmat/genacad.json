@@ -1,0 +1,2447 @@
+{
+  "exam_code": "dMAT",
+  "questions": [
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following best captures the primary purpose of the research described?",
+      "stimulus_md": "A research team analyzed three decades of satellite imagery from coastal mangrove forests across Southeast Asia. They found that while total mangrove area declined by 18% due to aquaculture expansion, the remaining forests showed a 34% increase in canopy density. The denser canopies correlated with reduced tidal flushing and increased sedimentation from upstream deforestation. Paradoxically, this densification improved local carbon sequestration rates per hectare, yet the researchers cautioned that such 'greening' masks ecological degradation: root systems became shallower, species diversity dropped, and resilience to sea-level rise diminished. The team concluded that canopy density alone is an unreliable indicator of ecosystem health.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "To show that a commonly used metric of forest health can obscure significant ecological decline",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "To argue that satellite-based canopy measurements can fully replace ground-based ecological surveys",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "To demonstrate that mangrove conservation efforts have succeeded in increasing forest biomass",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "To prove that aquaculture poses less threat to mangroves than previously believed",
+          "is_correct": false
+        }
+      ],
+      "position": 1,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following can be most reasonably inferred from the information provided?",
+      "stimulus_md": "A university's admissions office has observed that applicants who submit their materials more than two weeks before the deadline are admitted at a rate 40% higher than those who submit within two weeks of the deadline. The office concludes that early submission demonstrates strong organizational skills and genuine enthusiasm for the program, and therefore plans to give automatic preference in borderline cases to any applicant who submits early. However, the data also show that early submitters have, on average, higher standardized test scores and GPAs than late submitters, and that international applicants—who face additional bureaucratic hurdles—tend to submit closer to the deadline.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The correlation between early submission and higher admission rates is fully explained by differences in standardized test scores and GPAs.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "International applicants are less likely to be admitted under the new policy than they would be under a policy that ignores submission timing.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Applicants with higher standardized test scores and GPAs are more likely than other applicants to have strong organizational skills.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The admissions office's policy of giving automatic preference to early submitters in borderline cases may not actually select for the traits it intends to reward.",
+          "is_correct": true
+        }
+      ],
+      "position": 2,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "What toll amount does the task force deem necessary to keep traffic below the 90-vehicle threshold when neither demand reduction nor curb-side parking removal is implemented?",
+      "stimulus_md": "A city’s congestion-pricing task force estimates that to keep central-area traffic below 90 vehicles per lane-hour, a toll of exactly \\(\\$ 8\\) per entry between 7 a.m. and 7 p.m. is required. The toll can be lowered to \\(\\$ 5\\) if two conditions are met simultaneously: first, flexible work-hour sign-ups must reduce peak-period demand by at least 12 %, and second, curb-side parking within the zone must be removed to raise effective road capacity by 8 %.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "\\( \\)5",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "\\( \\)3",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "\\( \\)10",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "\\( \\)8",
+          "is_correct": true
+        }
+      ],
+      "position": 3,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of the passage, the term “regressive” most nearly means that the policy:",
+      "stimulus_md": "A marine protected area (MPA) in the Mediterranean adopted a “maritime spatial zoning” plan in 2018. The plan designated three zones: a **core no-take zone** where all fishing is prohibited, a **buffer zone** where only non-destructive artisanal fishing is permitted, and a **transition zone** where sustainable industrial fishing may occur under seasonal restrictions. In 2022, scientists documented that fish biomass in the core no-take zone had increased 340% since 2018, while biomass in the transition zone had declined 18%. Fishers operating in the transition zone argued that this outcome demonstrated the policy’s **regressive** impact on their livelihoods.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "produced effects that moved backward from established sustainability goals",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "reverted resource management to an earlier, less protective state",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "imposed disproportionate burdens on a specific group relative to its benefits",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "reduced complexity by eliminating intermediate regulatory categories",
+          "is_correct": false
+        }
+      ],
+      "position": 4,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Marcus's recommendation against flight certification depends on assuming which of the following?",
+      "stimulus_md": "**Dr. Elena Voss** (Materials Scientist): Our team developed a new ceramic coating that reduces friction in jet turbine blades by 40%. The coating uses a hexagonal boron nitride matrix with embedded diamond nanoparticles. We've tested it for 500 hours at 1,200°C with no degradation.\n\n**Marcus Chen** (Aerospace Engineer): Impressive thermal stability, but I'm concerned. The diamond nanoparticles undergo graphitization above 700°C in standard atmospheric conditions. Your test environment was likely inert nitrogen, not actual combustion exhaust—which contains oxygen and water vapor. We need to see how the coating performs in realistic engine conditions before certifying it for flight.\n\n**Dr. Voss**: That's fair, but our follow-up study in moist air at 900°C showed only 3% friction reduction loss after 200 hours. The hexagonal boron nitride actually protects the diamond structure by forming a passivation layer that limits oxygen diffusion to the nanoparticles.\n\n**Marcus**: A 3% loss at 900°C doesn't extrapolate linearly. Combustion temperatures spike well above 1,200°C during thrust transients, and those spikes cause cumulative damage even if the average stays lower. More importantly, your moist-air test didn't include the high-pressure CO₂ and sulfur compounds present in actual exhaust. I still recommend against flight certification.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The hexagonal boron nitride passivation layer forms at temperatures below 700°C and therefore cannot protect diamond nanoparticles.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The 40% friction reduction achieved in inert nitrogen is insufficient to justify the cost of replacing current turbine blade coatings.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The coating's performance degradation in conditions not yet tested would exceed acceptable thresholds for flight safety.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Dr. Voss's team lacks the technical capability to conduct tests in high-pressure CO₂ and sulfur compound environments.",
+          "is_correct": false
+        }
+      ],
+      "position": 5,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A biotech startup has consistently reinvested all profits into R&D, leaving no retained earnings. It now needs $50 million to commercialize a new drug. According to the pecking order theory, which financing path should this firm rationally pursue?",
+      "stimulus_md": "In corporate finance, the **pecking order theory** describes how firms prioritize funding sources. When a firm needs capital, it follows a strict hierarchy: first using retained earnings (internal equity), then issuing debt, and finally issuing new equity as a last resort. This order exists because of **asymmetric information**—managers know more about the firm's true value than outside investors. Issuing equity signals that managers believe the stock is overvalued, causing the stock price to drop. Debt issuance carries a weaker negative signal, while retained earnings involve no external signaling. The theory predicts that profitable firms with ample internal funds will use less debt, while firms needing external capital will exhaust debt capacity before considering equity.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Seek venture capital as a hybrid source that combines debt and equity features",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Delay commercialization until retained earnings accumulate to fund the expansion internally",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Issue debt first; only if debt capacity is exhausted should it consider issuing equity",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Issue equity immediately to avoid future interest obligations and preserve flexibility",
+          "is_correct": false
+        }
+      ],
+      "position": 6,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following best captures the primary purpose of the argument presented?",
+      "stimulus_md": "A prominent AI company recently deployed a facial-recognition system for law enforcement despite internal tests showing higher error rates for darker-skinned individuals. The company's public statement defended the decision by noting that the system still performed better than human officers in controlled trials and that withholding the technology would delay public safety benefits. Critics countered that deploying a discriminatory system violates procedural fairness, regardless of aggregate accuracy. The company responded that perfect equity is unattainable and that delaying deployment causes measurable harm to potential crime victims. The debate thus centers not on whether bias exists, but on whether aggregate utility can justify distributive injustice in high-stakes algorithmic governance.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "To demonstrate that facial-recognition technology is inherently too flawed for law enforcement use",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "To prove that internal testing guarantees ethical accountability in technology deployment",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "To illustrate that disputes over AI ethics often reduce to conflicts between consequentialist and deontological frameworks",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "To argue that aggregate accuracy should always override concerns about demographic disparities",
+          "is_correct": false
+        }
+      ],
+      "position": 7,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "According to Chen, at what distance from the wing's leading edge does fuel-based cooling of the heat sink structure begin?",
+      "stimulus_md": "**Dr. Elena Vasquez** (Aerospace Engineer) and **Marcus Chen** (Materials Scientist) are reviewing thermal protection system data from a recent hypersonic vehicle test.\n\n> **Vasquez:** The nose cone reached 1,850°C, but the ablative coating performed within spec. What concerns me is the leading-edge temperature on the wing—our thermocouple array only recorded 1,420°C there.\n\n> **Chen:** That's actually expected. The wing's leading edge uses a metallic heat sink design, not ablative material. The titanium alloy has a much higher thermal conductivity than the carbon-carbon composite on the nose, so it dissipates heat through the structure rather than letting surface temperatures spike.\n\n> **Vasquez:** But the telemetry shows the wing root structural temperature peaked at 680°C. If the leading edge was only 1,420°C, how did we get that much thermal gradient across just 40 centimeters of span?\n\n> **Chen:** The heat sink has radial cooling channels fed by the fuel system. The fuel draws heat from the wing structure starting 15 cm back from the leading edge. So the temperature drops sharply aft of that point—our model predicted roughly 740°C at the root, so we're actually running slightly cooler than expected.\n\n> **Vasquez:** Slightly? That's 60 degrees below prediction. Still, I'd rather be under. What was the fuel inlet temperature again?\n\n> **Chen:** Started at -40°C, ended at 340°C. The temperature rise confirms the heat extraction rate matched our design.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "25 centimeters",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "40 centimeters",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "10 centimeters",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "15 centimeters",
+          "is_correct": true
+        }
+      ],
+      "position": 8,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In this context, \"legitimacy\" most nearly means which of the following?",
+      "stimulus_md": "In 1895, Wilhelm Röntgen discovered X-rays while experimenting with cathode-ray tubes. Unlike visible light, these rays could pass through opaque materials including human flesh, leaving shadows of bones on photographic plates. When asked to demonstrate his discovery to the Kaiser, Röntgen presented a photograph showing the bones in his wife's hand with her wedding ring clearly visible. News spread rapidly across scientific and popular media. Within months, physicians began using X-rays to locate bullets in wounded soldiers and diagnose fractures. Some entrepreneurs even marketed \"X-ray proof\" undergarments. Yet prominent physicist Lord Kelvin initially dismissed X-rays as a hoax, declaring they would prove to be \"a deception or a flaw in the experimental setup.\" By 1901, however, even skeptical physicists acknowledged their legitimacy when Röntgen received the first Nobel Prize in Physics.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "scientific acceptance based on reproducibility and peer validation",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "theoretical consistency with existing electromagnetic theory",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "physical tangibility as demonstrated by photographic evidence",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "commercial viability for widespread medical application",
+          "is_correct": false
+        }
+      ],
+      "position": 9,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "What does the experiment mainly demonstrate about the way anonymity affects citizens’ willingness to engage in policy formulation?",
+      "stimulus_md": "Researchers set up two identical online platforms for citizens to propose local policy ideas. Platform A required contributors to list their real names; Platform B kept submissions anonymous. After three months, Platform A had 48 proposals with an average word count of 110. Platform B had 122 proposals averaging 320 words each. The team quietly coded every proposal for feasibility using a 4-point municipal-engineer scale and found no significant difference in median scores between the platforms.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "It guarantees higher technical quality since evaluators focus only on content, not names.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "It reduces participation because anonymity undermines trust in the process.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "It promotes more cautious, lower-risk proposals because contributors fear future repercussions.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "It increases both the volume and detail of citizen input without lowering technical feasibility.",
+          "is_correct": true
+        }
+      ],
+      "position": 10,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following can be most reasonably inferred about the requirements for structural components subjected to cyclic loading?",
+      "stimulus_md": "A novel composite material is developed for aerospace applications by embedding carbon nanotubes (CNTs) in a polymer matrix. The research team reports that increasing CNT concentration from 0.5% to 2.0% by weight increases tensile strength by 40% but reduces fracture toughness by 25%. At 3.0% CNT concentration, tensile strength increases by only an additional 5% while fracture toughness drops by another 35%. The team concludes that 2.0% CNT concentration represents the optimal formulation for structural components subjected to cyclic loading.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Fracture toughness must remain above a threshold level even if some tensile strength is sacrificed",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "The optimal formulation minimizes total percentage change across both properties rather than maximizing either property individually",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Tensile strength gains beyond 40% provide diminishing returns that cannot justify any further loss in fracture toughness",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Both high tensile strength and adequate fracture toughness are necessary, but tensile strength is weighted more heavily in the optimization",
+          "is_correct": false
+        }
+      ],
+      "position": 11,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "According to the experiment's results, what was the annual voluntary turnover rate under the Team-Bonus System?",
+      "stimulus_md": "A manufacturing firm conducted a 24-month experiment to test two production-line incentive systems. In the **Piece-Rate System**, workers earned a fixed payment per unit produced. In the **Team-Bonus System**, workers received an equal share of a monthly pool based on their team's total output. Both systems were tested across identical production lines with 40 workers each (randomly assigned). Monthly output per worker and defect rates were recorded.\n\n| Metric | Piece-Rate System | Team-Bonus System |\n|--------|-------------------|-------------------|\n| Average monthly units per worker | 1,240 | 1,180 |\n| Average defect rate | 4.2% | 2.1% |\n| Voluntary turnover rate (annual) | 18% | 9% |\n| Training hours per new hire | 32 hours | 48 hours |\n\nAfter 18 months, the firm calculated **total labor cost per defect-free unit**—a metric combining wages, turnover costs (recruiting + training), and output quality. The Piece-Rate System showed 12% higher labor cost per defect-free unit than the Team-Bonus System.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "12%",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "9%",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "18%",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "2.1%",
+          "is_correct": false
+        }
+      ],
+      "position": 12,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the authors’ statement, the word *competitor* most nearly refers to a word that",
+      "stimulus_md": "Researchers asked bilingual Welsh–English speakers to name pictures in Welsh. Half the pictures had just been shown in an unrelated English sentence; for these, Welsh names took 90 ms longer to produce than for new pictures. The authors say this shows that the English _competitor_ label had to be suppressed before the Welsh name could be uttered.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "interferes because it is activated but is in the wrong language",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "shares the same syntactic category as the target word",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "belongs to a more frequent lexical set than the target word",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "must be repaired because it misnames the pictured object",
+          "is_correct": false
+        }
+      ],
+      "position": 13,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which finding, if true, would most weaken the prediction that automakers will shortly abandon lithium-ion cells?",
+      "stimulus_md": "A start-up claims its new solid-state battery doubles the energy density of any lithium-ion pack on the market, yet keeps the same weight and volume. Because energy density is the sole determinant of an electric vehicle's range, the firm argues that swapping present-day packs for its design would let every EV travel twice as far per charge without adding bulk or mass. Analysts therefore predict that legacy automakers will abandon lithium-ion cells within five years.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Several automakers have joint-venture contracts with lithium suppliers that extend beyond the next decade.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The solid-state prototype achieves its energy density by replacing graphite anodes with silicon nanowires.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "A major automaker recently unveiled a concept car that uses lithium-iron-phosphate cells instead of nickel-rich ones.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Laboratory tests show the solid-state cells lose 40% of their capacity after only 200 deep-discharge cycles, far below the 1 000-cycle warranty lithium-ion packs routinely meet.",
+          "is_correct": true
+        }
+      ],
+      "position": 14,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which comparison from the table most directly supports the researchers' conclusion?",
+      "stimulus_md": "A study examined how three factors—cognitive load (low vs. high), time pressure (none vs. moderate), and feedback type (immediate vs. delayed)—affected decision accuracy in a simulated medical diagnosis task. Each participant experienced only one combination. Results are shown below.\n\n| Condition | Cognitive Load | Time Pressure | Feedback Type | Mean Accuracy (%) | N |\n|-----------|---------------|---------------|---------------|-------------------|---|\n| A | Low | None | Immediate | 78 | 40 |\n| B | Low | None | Delayed | 72 | 40 |\n| C | Low | Moderate | Immediate | 71 | 40 |\n| D | Low | Moderate | Delayed | 65 | 40 |\n| E | High | None | Immediate | 62 | 40 |\n| F | High | None | Delayed | 58 | 40 |\n| G | High | Moderate | Immediate | 51 | 40 |\n| H | High | Moderate | Delayed | 44 | 40 |\n\nThe researchers concluded that reducing cognitive load improves accuracy more effectively than eliminating time pressure does.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DATA_INTERPRETATION"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Condition A vs. Condition E, because accuracy drops 16 percentage points when cognitive load increases while time pressure stays absent",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Condition A vs. Condition C, because accuracy drops 7 percentage points when time pressure is introduced while cognitive load stays low",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Condition B vs. Condition F, because accuracy drops 14 percentage points when cognitive load increases while feedback type stays delayed",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Condition C vs. Condition G, because accuracy drops 20 percentage points when cognitive load increases while time pressure stays moderate",
+          "is_correct": true
+        }
+      ],
+      "position": 15,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "The primary purpose of the argument is to",
+      "stimulus_md": "A common proposal to reduce carbon emissions is to subsidize renewable energy sources like wind and solar. However, this approach may inadvertently increase total emissions. When governments subsidize renewables, they lower electricity prices, which stimulates overall energy consumption. Unless the renewable sources completely displace fossil fuel generation on a one-to-one basis—a condition rarely met due to intermittency and backup power needs—the additional demand can lead to greater fossil fuel combustion elsewhere in the energy system. Therefore, policymakers should consider whether emission-reduction strategies account for rebound effects before assuming that renewable subsidies automatically yield net carbon savings.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "argue that renewable energy subsidies are fundamentally incompatible with emission-reduction goals",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "demonstrate that intermittency makes renewable energy sources economically unviable compared to fossil fuels",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "suggest that rebound effects may undermine the intended environmental benefits of renewable energy subsidies",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "prove that increased energy consumption always leads to proportional increases in carbon emissions",
+          "is_correct": false
+        }
+      ],
+      "position": 16,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "If the team's conclusion about sequential settlement is correct, which of the following is most strongly supported?",
+      "stimulus_md": "An archaeological team excavated two adjacent sites in a river valley. Site A contained pottery fragments with consistent decorative patterns dated to 800 CE. Site B, 200 meters downstream, held similar pottery dated to 950 CE. The team concluded that the same cultural group inhabited both locations sequentially, with Site B representing a later settlement after the group migrated downstream. However, the team noted that Site A's fragments showed heavy water-wear, while Site B's fragments were remarkably preserved. The river's flood records indicate a major flood event in 900 CE that significantly altered the river's course.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The heavy water-wear on Site A's pottery likely resulted from post-depositional flooding",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "The flood of 900 CE likely transported some pottery from Site A to Site B",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The inhabitants of Site B likely acquired pottery through trade rather than manufacture",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The pottery in Site B was likely produced using techniques developed after 900 CE",
+          "is_correct": false
+        }
+      ],
+      "position": 17,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "If a resident who lives within the downtown zone drives into the area at 11:15 on a Tuesday, what electronic toll must be paid?",
+      "stimulus_md": "A city council is debating whether to adopt a new congestion-pricing scheme for the downtown core. Under the proposal, drivers would pay a variable electronic toll only when entering the zone on weekdays between 07:30 and 18:30. A flat fee of $4 applies 07:30–10:00 and again 16:00–18:30, whereas off-peak mid-day drivers pay $2. Vehicles registered to zone residents receive a 50 % discount on whatever toll they incur; taxis and buses are exempt, as are all motorcycles regardless of origin. Revenue will be ring-fenced exclusively for expanding the public cycling network and cannot be re-allocated for road-widening or policing.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "$2",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "$1",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "$0",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "$4",
+          "is_correct": false
+        }
+      ],
+      "position": 18,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of the passage, what does the director mean by describing the penalty rate as a \"sunk cost\"?",
+      "stimulus_md": "A municipal water utility in a semi-arid region implemented a tiered pricing structure to reduce residential consumption. Under this system, households pay a low rate for the first 10,000 gallons monthly, a moderate rate for the next 15,000 gallons, and a steep \"penalty rate\" for any usage above 25,000 gallons. After one year, the utility reported that total consumption had decreased by 12%, but the number of households exceeding 25,000 gallons had actually risen by 8%. The utility's director noted: \"The penalty rate appears to have become a *sunk cost* for our highest-volume users.\"",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The penalty rate has caused the utility to lose revenue that it can never regain from conservation efforts",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The penalty rate functions as a hidden fee that most customers do not notice on their bills",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The penalty rate has become an unavoidable expense that high-volume users accept and continue paying without changing their behavior",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "The penalty rate represents money that the utility has already spent and cannot recover from infrastructure investments",
+          "is_correct": false
+        }
+      ],
+      "position": 19,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "The environmental analyst's objection most depends on assuming which of the following?",
+      "stimulus_md": "A city's transportation board is considering replacing its entire bus fleet with electric buses to reduce carbon emissions. The board's proposal argues that electric buses produce zero tailpipe emissions, and since 60% of the city's electricity already comes from renewable sources, the switch would significantly lower the city's transportation-related carbon footprint.\n\nAn environmental analyst objects: the city's electricity demand currently peaks in summer evenings when renewable generation is low. Electric buses would need overnight charging, which currently relies heavily on coal-fired backup plants. The analyst notes that the board's emission calculations use average annual renewable percentage rather than the actual generation mix during charging hours.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Coal-fired backup plants emit more carbon per unit of electricity than the renewable sources they displace.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Electric buses require more frequent charging than the transportation board has anticipated.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The transportation board has underestimated the total cost of purchasing electric buses.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Emissions from electricity generation are properly attributed to the time of consumption, not annual averages.",
+          "is_correct": true
+        }
+      ],
+      "position": 20,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Based on the experimental results shown, which conclusion is most strongly supported?",
+      "stimulus_md": "A psychology research team investigated how three factors—sleep quality, caffeine intake, and exercise frequency—influenced cognitive vigilance in graduate students during exam periods. Participants completed one week of baseline monitoring, then were randomly assigned to one of eight experimental conditions for two weeks. The table below shows mean vigilance scores (0-100 scale, higher = better sustained attention) and standard deviations for each condition.\n\n| Condition | Sleep (hrs/night) | Caffeine (mg/day) | Exercise (days/week) | Mean Vigilance | SD |\n|-----------|-------------------|-------------------|----------------------|----------------|-----|\n| 1 | 4 | 400 | 0 | 52 | 8 |\n| 2 | 4 | 400 | 4 | 58 | 7 |\n| 3 | 4 | 100 | 0 | 48 | 9 |\n| 4 | 4 | 100 | 4 | 51 | 8 |\n| 5 | 8 | 400 | 0 | 71 | 6 |\n| 6 | 8 | 400 | 4 | 74 | 5 |\n| 7 | 8 | 100 | 0 | 68 | 7 |\n| 8 | 8 | 100 | 4 | 76 | 6 |",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DATA_INTERPRETATION"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "High caffeine intake was associated with higher vigilance scores only among participants who exercised at least 4 days weekly",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Among participants exercising 0 days weekly, reducing caffeine from 400 to 100 mg/day decreased vigilance more substantially when sleep was 8 hours than when sleep was 4 hours",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The vigilance benefit of increasing sleep from 4 to 8 hours was larger for those consuming 100 mg/day caffeine than for those consuming 400 mg/day",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Among participants sleeping 4 hours nightly, increasing exercise from 0 to 4 days per week improved vigilance regardless of caffeine level",
+          "is_correct": false
+        }
+      ],
+      "position": 21,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A historian discovers that in the 1840s, astronomers observed that Uranus's orbit deviated from Newtonian predictions. They did not abandon Newtonian mechanics but instead hypothesized an unknown planet, eventually leading to Neptune's discovery. Which philosophical framework most naturally accommodates this episode?",
+      "stimulus_md": "| Scientific Principle | Historical Proponent | Core Claim | Scope of Application |\n|:---|:---|:---|:---|\n| Falsificationism | Karl Popper (1959) | A theory is scientific only if it can be empirically falsified; verification is impossible | Demarcation between science and non-science |\n| Paradigm Incommensurability | Thomas Kuhn (1962) | Competing paradigms use different standards and vocabularies; no neutral standpoint exists | Scientific revolutions and theory choice |\n| Research Programs | Imre Lakatos (1970) | Scientific progress occurs when research programs generate novel predictions and have progressive problem-shifts | Long-term assessment of research trajectories |\n| Anomaly Tolerance | Kuhn (1962) | Normal science routinely absorbs anomalies without rejecting the governing paradigm | Day-to-day scientific practice |\n\nLakatos explicitly designed his methodology to preserve what he saw as the rational kernel of Popper's falsificationism while accommodating Kuhn's historical observations about scientists' actual resistance to abandoning theories.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Research programs, because the auxiliary hypothesis of an unknown planet produced a novel, successful prediction",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "Paradigm incommensurability, because Newtonian and Einsteinian mechanics were competing frameworks",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Anomaly tolerance, because the episode exemplifies routine puzzle-solving within normal science",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Falsificationism, because the anomaly should have prompted immediate rejection of Newtonian theory",
+          "is_correct": false
+        }
+      ],
+      "position": 22,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "The primary purpose of the information presented is to",
+      "stimulus_md": "A study compared four interventions to reduce traffic congestion in a mid-sized city (population 500,000). Each intervention was piloted in a comparable district for one year. Results:\n\n| Intervention | Implementation Cost | Peak-hour Travel Time Reduction | Unintended Effects |\n|:---|:---|:---|:---|\n| Expanded bus network | $12 million | 8% | Increased bus operating subsidies required |\n| Congestion pricing (downtown only) | $3 million | 15% | Traffic displaced to peripheral routes; retail sales downtown fell 6% |\n| Remote-work incentives for city employees | $1 million | 5% | Minimal; some private employers adopted similar policies |\n| Smart traffic signal synchronization | $6 million | 7% | None observed |\n\nThe city's transportation director notes that the most cost-effective intervention must account for both direct outcomes and spillover effects.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "compare the technical specifications of traffic management systems across different urban contexts",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "argue for expanding bus networks as the optimal solution for cities of this size",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "demonstrate that low-cost interventions invariably produce better results than high-cost alternatives",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "illustrate how traffic reduction outcomes alone fail to capture the full impact of congestion interventions",
+          "is_correct": true
+        }
+      ],
+      "position": 23,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "According to Leo, what specific feature of Maya's second response undermines her original claim?",
+      "stimulus_md": "**Maya** and **Leo** are discussing a recent city council proposal.\n\n**Maya:** The council wants to require all new apartment buildings to include 20% affordable units. This will reduce the total number of units built, because developers will find some projects unprofitable and cancel them.\n\n**Leo:** That doesn't follow. The policy applies only to buildings with *more than* 50 units. Developers could simply build structures of exactly 50 units to avoid the requirement entirely.\n\n**Maya:** But the city's zoning already caps building height at 4 stories. A 50-unit building on these small lots would require larger units, which command higher rents. The developers would still build fewer total units than they would have without the policy.\n\n**Leo:** You've changed your claim. First you said the policy itself reduces units. Now you're saying zoning *combined with* the policy reduces units. Those are different arguments.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "It relies on data about actual building heights in the city",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "It introduces a factor external to the policy being discussed",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "It assumes developers prefer larger units over smaller ones",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "It contradicts her earlier statement about profitability",
+          "is_correct": false
+        }
+      ],
+      "position": 24,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the dialogue, Marcus uses the word **\"counterfactual\"** to refer to which of the following?",
+      "stimulus_md": "**Elena (transport economist):** The new ring road was sold to us as a congestion *relief* measure, but look at the data—trips are up 15% and average speeds haven't budged. Classic induced demand.\n\n**Marcus (city planner):** I hear you, but we need to be careful with causality. The *counterfactual* isn't \"no ring road\"—it's \"no ring road with the same population growth and housing sprawl.\" Absent the bypass, those cars would be cutting through neighborhoods.\n\n**Elena:** So you're saying the *latent* demand was always there, just suppressed by miserable arterial conditions?\n\n**Marcus:** Precisely. And that's not nothing. But I grant you—we absolutely failed to *price* the thing properly. No tolling, no TOD zoning... we basically invited the sprawl.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The political argument opponents used to delay the project",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The hypothetical scenario that would have occurred without the ring road, holding other variables constant",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "The actual observed outcome after the ring road was built",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The statistical method used to project traffic volumes before construction began",
+          "is_correct": false
+        }
+      ],
+      "position": 25,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A city plans to redesign a busy intersection near a university where students frequently cross while distracted by phones. Based on the study, which design modification would most likely reduce dangerous late crossings?",
+      "stimulus_md": "Researchers studied pedestrian behavior at four newly redesigned intersections in a mid-sized city. Each intersection replaced standard crosswalk signals with one of two prototypes:\n\n| Intersection | Design | Key Feature | Result (6-month average) |\n|:--|:--|:--|:--|\n| A & B | \"Pause-and-Check\" | Flashing yellow before solid red; pedestrians must confirm no cars approaching | 94% compliance with signal; 12% reduction in jaywalking citations vs. old design |\n| C & D | \"Countdown-Assist\" | Standard walk signal plus countdown timer showing seconds remaining | 67% compliance with signal; 8% *increase* in jaywalking citations vs. old design; 31% of pedestrians began crossing after timer hit zero |\n\nThe researchers noted that at C and D, many pedestrians interpreted the countdown as a guarantee of crossing time rather than a deadline, often starting late and rushing through against the signal. At A and B, the brief pause forced pedestrians to actively assess traffic conditions, creating a moment of deliberation that reinforced signal respect.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Install audio alerts that announce \"10 seconds remaining\" at regular intervals during the crossing phase",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Paint the crosswalk with high-visibility colors but keep the standard signal timing unchanged",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Add a large digital countdown display showing exactly how many seconds remain for crossing",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Replace the standard walk signal with a flashing yellow phase that requires pedestrians to look up and confirm traffic conditions before proceeding",
+          "is_correct": true
+        }
+      ],
+      "position": 26,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following best expresses the main conclusion of the argument?",
+      "stimulus_md": "Agricultural researchers have long assumed that maximizing crop yield per hectare is the most efficient path to global food security. However, recent analyses of regional food systems reveal a paradox: regions with the highest yields often exhibit the highest rates of food insecurity and nutritional deficiency. This occurs because high-yield monocultures prioritize caloric output over dietary diversity, while also degrading soil health that sustains long-term production. Consequently, policies promoting yield maximization may inadvertently undermine the very food security they aim to achieve. The researchers conclude that sustainable food security requires shifting policy focus from yield metrics to integrated assessments of nutritional output, ecosystem resilience, and equitable distribution.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "High-yield agricultural regions experience food insecurity primarily due to inadequate transportation infrastructure.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Soil degradation in high-yield regions is caused exclusively by monoculture farming practices.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Maximizing crop yield per hectare remains the most reliable method for ensuring long-term global food security.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Policies should prioritize nutritional diversity and ecosystem health over simple yield maximization to achieve sustainable food security.",
+          "is_correct": true
+        }
+      ],
+      "position": 27,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which inference about the predictive policing system is most strongly supported by the scenario?",
+      "stimulus_md": "A municipal government contracts with a private AI firm to deploy predictive policing software. The system flags city blocks as 'high risk' based on historical crime data, officer deployment patterns, and socioeconomic indicators. After six months, police presence increases dramatically in flagged areas, and reported incidents in those areas rise by 40%. The city council notes that the AI firm retains ownership of the algorithm and refuses to disclose its weighting factors, citing trade-secret protection. A resident advocacy group points out that the same neighborhoods were historically over-policed and under-resourced for decades before the AI was introduced.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The AI firm concealed the algorithm's flaws to protect its intellectual property from competitors.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Historical over-policing in certain neighborhoods directly caused the socioeconomic indicators used by the system.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The 40% increase in reported incidents proves that crime rates have actually risen in the flagged areas.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The system's predictions may be partially self-fulfilling because increased police presence in flagged areas leads to more detected incidents.",
+          "is_correct": true
+        }
+      ],
+      "position": 28,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "According to the table, approximately how many years elapsed between the first publication proposing heliocentrism and the first empirical measurement of stellar parallax?",
+      "stimulus_md": "| Year | Event | Significance |\n|------|-------|------------|\n| 1543 | Copernicus publishes *De revolutionibus* | Proposed heliocentric model |\n| 1610 | Galileo publishes *Sidereus Nuncius* | Telescopic observations of Jupiter's moons |\n| 1687 | Newton publishes *Principia* | Unified celestial and terrestrial mechanics |\n| 1835 | Bessel measures stellar parallax | Empirical confirmation of Earth's orbital motion |\n| 1919 | Eddington's eclipse expedition | Experimental verification of light bending by gravity |\n\nFraming: The heliocentric model faced empirical challenges because stellar parallax—predicted if Earth orbits the Sun—was expected but unobserved until technology improved.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "376 years",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "292 years",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "146 years",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "225 years",
+          "is_correct": false
+        }
+      ],
+      "position": 29,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In this context, describing tertiary regulation as \"soft-law\" most directly implies that such instruments are:",
+      "stimulus_md": "| Regulatory Tier | Description |\n|-----------------|-------------|\n| **Primary legislation** | Acts passed by Parliament; create broad legal frameworks |\n| **Secondary legislation** | Statutory instruments made by ministers under authority of an Act; detailed rules |\n| **Tertiary regulation** | Codes of practice, guidance, and soft-law instruments; non-binding but influential |\n| **Quaternary standards** | Industry-specific technical specifications; voluntary compliance, no statutory force |\n\nIn the hierarchy of UK law, \"soft-law\" instruments are explicitly distinguished from \"hard-law\" instruments by their binding effect.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "reviewable only by specialised tribunals",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "enforced by criminal sanctions for non-compliance",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "advisory rather than obligatory for those regulated",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "subject to parliamentary debate before issuance",
+          "is_correct": false
+        }
+      ],
+      "position": 30,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following statements is most strongly supported by the data in the table?",
+      "stimulus_md": "A university research team investigated whether the *timing* of feedback (immediate vs. delayed) and its *format* (written comments vs. numeric scores) affect student retention of conceptual knowledge. They randomly assigned 240 students to four conditions, taught them an identical lesson on statistical inference, then administered a delayed post-test two weeks later. Higher scores indicate better retention (maximum 100). The results are shown below.\n\n| Feedback Timing | Feedback Format | Mean Retention Score | Standard Deviation |\n|:----------------|:----------------|---------------------:|-------------------:|\n| Immediate | Written comments | 72 | 8 |\n| Immediate | Numeric score | 68 | 9 |\n| Delayed (48 hours) | Written comments | 65 | 7 |\n| Delayed (48 hours) | Numeric score | 64 | 10 |\n\nThe researchers concluded that written comments produce superior retention compared to numeric scores, and that this advantage persists regardless of feedback timing.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DATA_INTERPRETATION"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The combined mean retention score for all written-comments conditions exceeds the combined mean retention score for all numeric-score conditions by more than 5 points.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "For immediate feedback, the mean advantage of written comments over numeric scores is equal to the mean advantage of written comments over numeric scores under delayed feedback.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The condition with the highest mean retention score also exhibits the lowest variability in scores.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The difference in mean retention between the two feedback formats is smaller under delayed feedback than under immediate feedback.",
+          "is_correct": true
+        }
+      ],
+      "position": 31,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A language teacher wants students to remember vocabulary for a certification exam **2 years** after the final study session. Based on the principle illustrated, which schedule should yield the highest retention?",
+      "stimulus_md": "**The spacing effect in vocabulary learning**: Research on distributed practice shows that memory retention depends on both the interval between study sessions and the total retention interval (time from last study to test). The following table summarizes results from a controlled experiment where learners studied foreign vocabulary words under different spacing schedules, then were tested after varying delays.\n\n| Spacing Schedule | Study Sessions | Test Delay | Retention Rate |\n|:--|:--|:--|:--|\n| Massed (single day) | 3 × 20 min | 1 week | 45% |\n| Short spacing | 3 sessions, 1 day apart | 1 week | 52% |\n| Long spacing | 3 sessions, 1 month apart | 1 week | 38% |\n| Short spacing | 3 sessions, 1 day apart | 6 months | 15% |\n| Long spacing | 3 sessions, 1 month apart | 6 months | 41% |\n\nOptimal spacing maximizes long-term retention for the target test delay.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Three study sessions spaced 1 day apart, with the last session 6 months before the exam",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "A single intensive 3-hour session 1 week before the exam",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Three study sessions spaced 3 months apart, with the last session 2 weeks before the exam",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Three study sessions spaced 1 week apart, with the last session 1 week before the exam",
+          "is_correct": false
+        }
+      ],
+      "position": 32,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "The primary purpose of the stimulus is to",
+      "stimulus_md": "When autonomous vehicles must choose between passenger safety and pedestrian welfare in unavoidable collisions, engineers face a dilemma: whose life should the algorithm prioritize? Some argue that utilitarian programming—minimizing total casualties—best serves societal welfare. Yet critics note that passengers did not consent to assume risk for strangers, and that predictable sacrifice of occupants might deter adoption of life-saving technology overall. Meanwhile, manufacturers worry that any explicit fatality calculus exposes them to liability. The debate reveals a deeper tension: ethical frameworks designed for human deliberation may resist translation into deterministic code, yet deferring the choice merely conceals value judgments within ostensibly neutral defaults.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "examine how competing ethical considerations complicate the implementation of moral decision-making in autonomous systems",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "demonstrate that passengers in autonomous vehicles bear greater moral responsibility than pedestrians",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "illustrate why utilitarian approaches to autonomous vehicle ethics are ethically superior to alternatives",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "argue that manufacturers should be shielded from liability when programming unavoidable collision scenarios",
+          "is_correct": false
+        }
+      ],
+      "position": 33,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of this study, the \"sponge effect\" most specifically refers to which phenomenon?",
+      "stimulus_md": "| Treatment | Application Rate | Observed Outcome |\n|:---|:---|:---|\n| Control (no amendment) | — | Soil nitrate: 45 mg/kg; maize yield: 6.2 t/ha |\n| Biochar at 10 t/ha | 10 tonnes per hectare | Soil nitrate: 38 mg/kg; maize yield: 6.8 t/ha |\n| Biochar at 20 t/ha | 20 tonnes per hectare | Soil nitrate: 32 mg/kg; maize yield: 7.5 t/ha |\n| Synthetic fertilizer N | 150 kg N/ha | Soil nitrate: 112 mg/kg; maize yield: 8.1 t/ha |\n\nThe researchers noted that biochar exhibits a **sponge effect** on soil nitrogen, which they defined operationally as the capacity to retain nutrients in forms less prone to leaching while still maintaining crop productivity.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Biochar increases total nitrogen input into the agricultural system",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Biochar accelerates the conversion of nitrate into gaseous nitrogen losses",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Biochar reduces soil nitrate concentrations without proportionally reducing crop yields",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Biochar absorbs water from rainfall and stores it for dry-season crops",
+          "is_correct": false
+        }
+      ],
+      "position": 34,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "The analysts' conclusion that the plan will eliminate virtually all carbon emissions from electricity generation and transportation is most vulnerable to criticism on which grounds?",
+      "stimulus_md": "A coastal city plans to achieve net-zero emissions by 2040. Its strategy relies on two pillars: (1) replacing all gas power plants with a new offshore wind farm, projected to supply 60% of city electricity, and (2) electrifying the entire bus fleet, with buses consuming electricity equal to 15% of current total city demand. City analysts state this plan will eliminate virtually all carbon emissions from electricity generation and transportation.\n\n| Sector | Current annual emissions (kilotons CO₂) | Projected emissions under plan (kilotons CO₂) |\n|--------|----------------------------------------|-----------------------------------------------|\n| Electricity generation | 800 | 50* |\n| Transportation (buses) | 300 | 0 |\n| Other transportation (private vehicles) | 500 | 500 |\n| Building heating | 400 | 400 |\n\n\\*Residual emissions from backup generators and grid maintenance",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "It treats the 50 kilotons from backup generators as negligible without comparing to the city's total emissions.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "It interprets 'transportation' narrowly as only public buses while private vehicles continue emitting unchanged.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "It presupposes that building heating will be addressed by a separate policy not yet announced.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "It assumes the wind farm's projected 60% capacity factor will remain stable across seasonal wind variation.",
+          "is_correct": false
+        }
+      ],
+      "position": 35,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which scenario best satisfies the commission's stated selection criterion?",
+      "stimulus_md": "| Policy Scenario | Target Mode Share | Implementation Cost | Expected CO₂ Reduction | Equity Provision |\n|:---|:---|:---|:---|:---|\n| Scenario A: Car-centric upgrade | 75% private vehicle | $2.1 billion | 8% below baseline | None |\n| Scenario B: Transit-oriented | 45% public transit | $1.8 billion | 22% below baseline | Subsidized fares for low-income |\n| Scenario C: Active mobility | 60% walking/cycling | $0.9 billion | 15% below baseline | Free bike-sharing in underserved areas |\n| Scenario D: Mixed multimodal | 35% each: car, transit, active | $2.4 billion | 25% below baseline | Means-tested mobility credits |\n\nA metropolitan planning commission must select exactly one scenario to guide its 2040 regional transport strategy. The selection criterion prioritizes maximizing CO₂ reduction while ensuring that implementation cost does not exceed $2.0 billion.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Scenario D, because it yields the highest overall CO₂ reduction and most comprehensive equity provisions",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Scenario C, because it offers the lowest implementation cost while providing targeted equity benefits",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Scenario A, because it minimizes upfront public expenditure despite higher long-term environmental costs",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Scenario B, because it achieves the greatest CO₂ reduction among scenarios meeting the cost constraint",
+          "is_correct": true
+        }
+      ],
+      "position": 36,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which conclusion about learning durability is most strongly supported by these results?",
+      "stimulus_md": "| Training Condition | Immediate Test Score | Delayed Test Score (1 week) | Time Spent Studying |\n|:---|:---:|:---:|:---:|\n| Repeated Reading | 72% | 58% | 45 min |\n| Retrieval Practice | 68% | 65% | 45 min |\n| Concept Mapping | 70% | 62% | 45 min |\n\nStudents in three conditions spent equal time studying identical material. All groups took identical immediate and delayed tests.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Repeated reading is the most efficient method for long-term retention",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Immediate test scores are reliable predictors of delayed test scores within each condition",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Retrieval practice produces more durable learning than strategies yielding higher immediate performance",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Concept mapping outperforms retrieval practice on delayed tests",
+          "is_correct": false
+        }
+      ],
+      "position": 37,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "For which ethics board did the smallest absolute number of projects require modification after review?",
+      "stimulus_md": "| Ethics board | AI projects reviewed | Projects paused (%) | Projects modified (%) |\n|--------------|--------------------|-------------------|-------------------------|\n| Alpha        | 120                 | 15                | 20                      |\n| Beta         | 200                 | 20                | 35                      |\n| Gamma        | 150                 | 10                | 30                      |\nAn external audit ranked board Beta as the most stringent and Alpha as the least stringent in upholding ethical safeguards during AI development.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Beta and Gamma tied",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Gamma",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Alpha",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Beta",
+          "is_correct": false
+        }
+      ],
+      "position": 38,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of the stimulus, the phrase \"iron out\" most nearly means:",
+      "stimulus_md": "A regional retail chain has adopted a \"hub-and-spoke\" distribution model: large centralized warehouses (hubs) replenish smaller satellite stores (spokes) rather than suppliers shipping directly to each location. The CEO argues this reduces transportation costs and improves inventory visibility. However, critics note that when demand spikes unexpectedly at spoke locations, the hub's buffer stock depletes rapidly, creating a \"bullwhip effect\" that amplifies order volatility back through the supply chain. The CEO dismisses this concern, stating that the company's new predictive analytics system will \"iron out\" these demand fluctuations before they propagate upstream.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "physically redistribute inventory across hubs",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "compensate for with expedited shipping",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "eliminate entirely through preemptive smoothing",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "reduce to manageable levels through forecasting",
+          "is_correct": true
+        }
+      ],
+      "position": 39,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following, if true, most strengthens the researcher's argument?",
+      "stimulus_md": "A linguistics researcher argues that emoji function as a genuine **paralanguage**—a system of non-lexical communication that supplements rather than replaces verbal language. The researcher notes that emoji, like tone of voice or gestures, convey emotional and interpersonal information that written text alone often obscures. However, critics counter that emoji lack the systematic, rule-governed structure characteristic of true paralinguistic systems. In response, the researcher points to emerging patterns: certain emoji sequences follow predictable ordering conventions (e.g., 😂 appearing at utterance-final position to mark affect), and specific combinations carry conventionalized meanings distinct from their component parts (e.g., 🔥💀 meaning 'extremely funny' rather than literal 'fire' and 'death'). The researcher concludes that these patterns demonstrate emoji have developed the systematic structure necessary to qualify as paralanguage.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The majority of emoji users report that they select emoji based on visual appeal rather than any perceived conventional meaning.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Some emoji combinations remain ambiguous even to frequent users, with interpretations varying by conversational context.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Written languages historically developed paralinguistic markers only after achieving standardized orthographic systems.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Emoji users across different age groups independently converge on identical ordering conventions for expressing complex emotional sequences.",
+          "is_correct": true
+        }
+      ],
+      "position": 40,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A building engineer must minimize nighttime heat loss from a flat roof in a desert climate where days are hot and nights are cold. Based on the experiment's principle, which roof design is most appropriate?",
+      "stimulus_md": "Researchers tested how surface color affects thermal absorption by placing two identical metal cubes outdoors at noon. One cube was painted matte black; the other, matte white. Both started at 20°C. After 30 minutes, the black cube reached 55°C while the white cube reached 32°C. The researchers then repeated the experiment with the same cubes at midnight under a clear sky. Both started at 20°C. After 30 minutes, the black cube cooled to 8°C while the white cube cooled to only 15°C.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "A black roof surface with high thermal mass underneath",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "A white roof surface with high thermal mass underneath",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "A white roof surface with low thermal mass underneath",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "A black roof surface with low thermal mass underneath",
+          "is_correct": false
+        }
+      ],
+      "position": 41,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following best captures the primary purpose of this exchange?",
+      "stimulus_md": "**Dr. Elena Varga** (Policy Analyst): The city's rent-stabilization program was designed to protect long-term residents from displacement. Yet our data shows that in neighborhoods with the strictest caps, landlords are converting units to short-term tourist rentals at twice the rate of unregulated areas. The policy is achieving its immediate goal—tenants in stabilized units aren't leaving—but it's simultaneously eroding the total affordable housing stock.\n\n**Marcus Chen** (Housing Commissioner): I don't dispute your findings, but your framing assumes the program's purpose was static. When we drafted it, the council explicitly rejected a broader 'preserve affordable supply' mandate in favor of narrow tenant protection. We're now seeing a policy success by its own terms, even if the side effects trouble you.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "To trace the historical origins of short-term rental regulations in the city",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "To contrast two competing definitions of what constitutes policy success",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "To reconcile conflicting data about housing conversion rates across regulatory zones",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "To evaluate the cost-benefit ratio of rent stabilization for municipal budgets",
+          "is_correct": false
+        }
+      ],
+      "position": 42,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "What can most reasonably be inferred about NovaTech's strategic decision-making process?",
+      "stimulus_md": "**Maya Patel** (Chief Strategy Officer, NovaTech): \"Our competitor, Apex Systems, just launched a subscription pricing model for their enterprise software. Their Q1 revenue jumped 34%, but their customer acquisition cost also rose 22%. I'm concerned—we've always relied on perpetual licenses.\"\n\n**David Chen** (CEO, NovaTech): \"Apex's churn rate in Q2 was 18%, the highest in their history. Their support tickets per subscriber tripled. We're not following them yet. Let's watch how Q3 looks before we commit engineering resources to a pricing overhaul.\"",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "NovaTech believes perpetual licenses guarantee lower customer churn than subscriptions",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "NovaTech considers 18% churn acceptable for a 34% revenue increase",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "NovaTech will definitely adopt subscription pricing if Apex's Q3 churn improves",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "NovaTech prioritizes sustainable unit economics over short-term revenue growth",
+          "is_correct": true
+        }
+      ],
+      "position": 43,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which material should be selected?",
+      "stimulus_md": "| Material | Tensile Strength (MPa) | Density (g/cm³) | Max Service Temp (°C) | Relative Cost |\n|:---------|:-----------------------:|:----------------:|:----------------------:|:-------------:|\n| Ti-6Al-4V | 950 | 4.43 | 315 | High |\n| 7075-T6 Aluminum | 570 | 2.81 | 120 | Moderate |\n| AISI 4340 Steel | 745 | 7.85 | 480 | Low |\n| Carbon/Epoxy Composite | 1500 | 1.60 | 150 | Very High |\n\nA structural component must survive 200°C while achieving the highest possible specific strength (tensile strength divided by density).",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "7075-T6 Aluminum",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Ti-6Al-4V",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "Carbon/Epoxy Composite",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "AISI 4340 Steel",
+          "is_correct": false
+        }
+      ],
+      "position": 44,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of this experiment, \"valence framing\" most specifically refers to:",
+      "stimulus_md": "In a study of decision-making under uncertainty, researchers presented participants with two scenarios. In Scenario A, participants were told they had a 90% chance of losing $100 (framed as a \"high probability of loss\"). In Scenario B, participants were told they had a 10% chance of keeping $100 (framed as a \"small chance of no loss\"). Though mathematically identical in expected value, 72% of participants chose to gamble in Scenario B versus only 28% in Scenario A. The researchers concluded that the **valence framing** of outcomes—whether described in terms of potential gains preserved or losses incurred—systematically reversed preferences even when objective probabilities remained constant.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "the absolute monetary amount that participants stood to gain or lose",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "the numerical probability values attached to each possible outcome",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "the emotional intensity participants reported feeling during the decision",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "whether outcomes are described positively or negatively while holding the underlying probabilities constant",
+          "is_correct": true
+        }
+      ],
+      "position": 45,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which finding, if true, would most weaken the spokesperson’s defense of the program?",
+      "stimulus_md": "A city’s transit authority has begun equipping all buses with outward-facing cameras that automatically scan the faces of pedestrians and match them against a police database of wanted persons. In the first year, the system identified 28 suspects, leading to 17 arrests. A spokesperson defends the program, arguing: \"Because every scan occurs in a public space where privacy is inherently limited, the cameras protect public safety without violating any reasonable expectation of privacy.\"",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Most citizens were unaware that buses were recording them, so they did not modify their behaviour to avoid being scanned.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Facial-recognition technology used on moving vehicles misidentifies people of colour at three times the rate it misidentifies white pedestrians.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "The arrest rate for the crimes the cameras target is already so high elsewhere that the 17 arrests represent no practical gain in safety.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The company that sells the cameras also lobbied the city council for the ordinance that mandated the devices.",
+          "is_correct": false
+        }
+      ],
+      "position": 46,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which finding most strongly supports the researcher's conclusion that a specific sleep duration optimizes emotional regulation?",
+      "stimulus_md": "A researcher investigated whether sleep duration predicts next-day emotional reactivity. Participants (N=200) kept sleep diaries for 14 days and rated their emotional responses to standardized positive and negative images each morning. The table below shows mean next-day emotional reactivity scores (1-7 scale, higher = stronger reactions) by sleep-duration category, with standard deviations in parentheses.\n\n| Sleep Duration | Positive Image Reactivity | Negative Image Reactivity |\n|:---------------|:--------------------------|:--------------------------|\n| 4-5 hours      | 4.2 (1.3)                 | 5.8 (1.1)                 |\n| 6 hours        | 4.9 (1.0)                 | 5.3 (1.0)                 |\n| 7-8 hours      | 5.6 (0.9)                 | 4.1 (0.9)                 |\n| 9+ hours       | 5.3 (1.2)                 | 4.5 (1.3)                 |\n\nThe researcher concluded that optimal sleep duration enhances emotional regulation by reducing reactivity to negative stimuli while preserving responsiveness to positive stimuli.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DATA_INTERPRETATION"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The 9+ hours group shows greater negative reactivity than the 7-8 hours group despite similar positive reactivity",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The 7-8 hours group shows the highest positive reactivity combined with the lowest negative reactivity",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "The 6 hours group shows reactivity scores intermediate between the shortest and longest sleepers",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The 4-5 hours group shows the largest standard deviation for positive image reactivity",
+          "is_correct": false
+        }
+      ],
+      "position": 47,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A student seeks a tuition refund after withdrawing past the deadline due to a family emergency. Under the same principle governing the policies above, which condition would be required for the refund to be granted?",
+      "stimulus_md": "| Policy | Required Evidence | Outcome if Insufficient |\n|--------|-------------------|------------------------|\n| Academic probation appeal | Documented medical emergency during exam period | Appeal denied |\n| Late enrollment waiver | Proof of system outage preventing registration | Waiver denied |\n| Grade change request | Instructor's written confirmation of clerical error | Request denied |\n| Incomplete grade conversion | Submission of remaining work before deadline | Grade converts to F |\n\n**Principle:** The university's administrative policies treat procedural compliance as necessary but not sufficient; each policy additionally requires specific, category-matched evidence that directly explains the exceptional circumstance.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The student must prove the family emergency would have affected any student in the same situation",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The student must provide documentation of the family emergency that specifically prevented timely withdrawal",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "The student must have submitted the withdrawal form before the deadline, regardless of the reason",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The student must demonstrate that other students were granted similar refunds in comparable circumstances",
+          "is_correct": false
+        }
+      ],
+      "position": 48,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following best captures the main purpose of the regional health authority's report?",
+      "stimulus_md": "A regional health authority implemented a mandatory vaccination program for healthcare workers in 2019, citing evidence that unvaccinated staff were disproportionately responsible for influenza outbreaks in long-term care facilities. After three years, the authority reviewed data showing: (1) vaccination rates among workers rose from 45% to 94%; (2) documented influenza outbreaks in facilities dropped by 62%; (3) yet overall mortality among residents showed no statistically significant change compared to pre-implementation trends. The authority's subsequent report emphasized that the program should be evaluated primarily on its success in reducing transmission events, not on mortality outcomes, because residents faced multiple competing mortality risks beyond influenza.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "To propose expanding mandatory vaccination to additional healthcare settings",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "To argue that influenza vaccination is ineffective at preventing death in elderly populations",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "To demonstrate that mortality data should replace outbreak frequency as the primary program metric",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "To defend the vaccination program by narrowing the criteria for success to transmission reduction alone",
+          "is_correct": true
+        }
+      ],
+      "position": 49,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following can be most reasonably inferred from the study results?",
+      "stimulus_md": "A team of public health researchers tested whether a brief mindfulness intervention could reduce blood pressure in patients with pre-hypertension without medication. They randomized 120 participants into two groups: Group M received a weekly 15-minute guided mindfulness session for 8 weeks, while Group C received general lifestyle educational materials only. At week 8, mean systolic blood pressure (SBP) in Group M was 8 mmHg lower than at baseline, while Group C showed no significant change. However, when researchers analyzed attendance data, they found that among participants who completed at least 6 of 8 sessions, the mean SBP reduction was 12 mmHg; among those who attended fewer than 6 sessions, mean SBP reduction was only 3 mmHg. Across both groups, medication adherence rates were identical and self-reported stress levels decreased in both groups equally.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "General lifestyle education is equally effective as mindfulness for reducing blood pressure",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The mindfulness intervention's effect on blood pressure depends on sufficient exposure to the practice",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "Participants who attended fewer sessions had higher baseline blood pressure than those with better attendance",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "The observed blood pressure reduction in Group M was primarily mediated by decreased stress levels",
+          "is_correct": false
+        }
+      ],
+      "position": 50,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In 2022, how many cities had achieved an urban tree canopy cover of at least 25%?",
+      "stimulus_md": "| Indicator               | Target 2030 | 2022 Measured Value |\n|-------------------------|-------------|----------------------|\n| Renewable share of electricity | ≥80%  | 67% |\n| Final energy productivity | +2% yr⁻¹ | +1.4% yr⁻¹ |\n| Methane from landfills   | −50% vs 2015 | −31% |\n| CO₂e price               | €80 t⁻¹ | €43 t⁻¹ |\n| Urban tree cover         | ≥20 cities ≥25% canopy | 12 cities ≥25% |\n\nThe table summarises the national sustainability dashboard. All values refer to domestic performance within national borders. Trends are arithmetic means of the last five available annual data points rounded to the nearest whole unit. The renewable-power share is calculated as gross electricity generation from wind, solar, hydro, geothermal, tidal and sustainable biomass divided by gross national generation. Landfill methane reductions against the 2015 baseline are expressed as a percentage of the 2015 emission level.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "80",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "20",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "67",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "12",
+          "is_correct": true
+        }
+      ],
+      "position": 51,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of this study, \"latency\" most specifically refers to:",
+      "stimulus_md": "In a clinical trial of a novel sleep aid, researchers measured participants' **latency**—the time between lying down and the onset of sleep—across three nights. The active group received the drug; the control group received placebo. On night 1, both groups showed similar mean latency (42 minutes). By night 3, the active group's mean latency fell to 18 minutes, while the control group's remained at 40 minutes. The researchers concluded the drug significantly reduced sleep onset time.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "the interval between consecutive sleep cycles",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "the total duration of sleep achieved during the night",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "the delay between attempting to sleep and actually falling asleep",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "the period of drug absorption before therapeutic effects begin",
+          "is_correct": false
+        }
+      ],
+      "position": 52,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which of the following, if true, would most strengthen Dr. Okonkwo's response to Varga's final point?",
+      "stimulus_md": "**Dr. Elena Varga** (historian of physics): \"The 1919 eclipse expedition that confirmed Einstein's general relativity was not merely a test of a scientific theory. Notice that Eddington, who led it, was a Quaker pacifist. The expedition was organized immediately after World War I, when German scientists were being excluded from international conferences. By validating a German theory, Eddington was making a political statement about scientific internationalism—restoring Germany to the community of nations through its intellectual achievements.\"\n\n**Dr. Samuel Okonkwo** (philosopher of science): \"I disagree. Eddington's personal pacifism and the postwar timing are biographical details, not explanatory factors. The expedition proceeded because the theory made a precise, risky prediction: light bending by a specific amount. If the measurement had disagreed with Einstein's calculation, Eddington would have reported that result. The scientific method doesn't permit adjusting observations to fit political goals.\"\n\n**Varga:** \"But consider: Eddington's equipment was at the limit of precision. His team obtained two sets of measurements—one from Príncipe, one from Brazil. The Brazilian data was actually discordant, yet Eddington weighted it differently in his analysis. His final conclusion matched Einstein's prediction, but the selective handling of ambiguous data suggests his commitment to the theory preceded full evidential support.\"",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Eddington wrote private letters during the expedition expressing anxiety that the results might vindicate Newton's theory instead.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The Royal Astronomical Society had funded the expedition specifically to resolve competing predictions from Newtonian and Einsteinian physics.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Contemporary astronomers who reanalyzed the 1919 plates using modern techniques confirmed Eddington's final conclusion about light bending.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Eddington's weighting of the Brazilian data followed a pre-registered statistical protocol that he had published before the expedition departed.",
+          "is_correct": true
+        }
+      ],
+      "position": 53,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A university library wants to increase student use of its research workshops. Applying the principle demonstrated in the study, which approach should the library adopt?",
+      "stimulus_md": "Researchers studying **reactance theory** examined how people respond when behavioral freedoms are threatened. In one experiment, participants who received an *autonomy-supportive* framing (\"You may choose to exercise or not—it's entirely up to you\") subsequently spent **significantly more time** exercising than those who received a *controlling* framing (\"You should exercise regularly—it's important for your health\"). Surprisingly, the autonomy group also reported **higher intrinsic motivation** afterward. The researchers concluded that preserving perceived choice increases voluntary engagement, even when the objective behavior (exercising) is identical across conditions.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Advertise the workshops as mandatory for all first-year students to ensure high attendance",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Require professors to offer extra credit only to students who attend at least two workshops",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Post a notice: \"Workshops are available this semester; attend any that interest you, or none at all\"",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Email students: \"Research skills are essential for academic success—you really should attend\"",
+          "is_correct": false
+        }
+      ],
+      "position": 54,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "The primary purpose of Maya and Leo's exchange is to",
+      "stimulus_md": "**Maya:** The city's decision to ban electric scooters from downtown sidewalks was based on safety data showing 340 pedestrian injuries last year. But they didn't compare this to injuries caused by bicycles, which share those same sidewalks legally.\n\n**Leo:** Actually, the city did collect bicycle injury data. They found 89 bicycle-related pedestrian injuries—far fewer than scooters. The council concluded scooters pose a disproportionate risk.\n\n**Maya:** That comparison is misleading. Bicycle trips downtown outnumber scooter trips by roughly ten to one. If you account for usage rates, scooters might actually be *safer* per mile traveled. The council ignored exposure rates entirely.\n\n**Leo:** Exposure rates matter for policy decisions, sure. But the council's goal was reducing *absolute* pedestrian harm, not optimizing safety per vehicle-mile. From that standpoint, the ban targets the larger source of injuries regardless of why that source is larger.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "debate whether electric scooters or bicycles pose a greater threat to pedestrian safety in absolute terms",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "determine which mode of transportation generates more trips in the downtown area",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "argue for or against the legal permissibility of bicycles on downtown sidewalks",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "evaluate whether the city council correctly interpreted statistical evidence when formulating its safety policy",
+          "is_correct": true
+        }
+      ],
+      "position": 55,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which inference about feedback design is best supported by the study?",
+      "stimulus_md": "Researchers randomly assigned 120 ninth-grade science students to one of two feedback conditions. After each quiz, the \"process\" group received written comments that addressed the strategies the student had used (e.g., \"Your diagram helped organise the variables; try labelling arrows next time\"). The \"grade\" group received only the score. At mid-term and again at the final exam, both groups took the same conceptual-transfer test. Improvement was calculated as final-minus-mid-term score. Mean improvement (out of 20) was 3.4 (SD 2.1) for the process group and 0.9 (SD 1.8) for the grade group (p < .01).",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Written feedback is more effective for low-achieving students than for high-achieving students.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Students who get strategic feedback will prefer it and therefore study longer, which alone explains their larger gains.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Comments that focus on the learning strategies students employed can foster greater conceptual gains than comments that supply only the number of points earned.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Receiving any written comment guarantees larger score gains than receiving no comment at all.",
+          "is_correct": false
+        }
+      ],
+      "position": 56,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "According to the research team's calculations, which variety produced the highest total protein mass per hectare?",
+      "stimulus_md": "A research team studied three wheat varieties grown under identical controlled conditions: drought-tolerant variety D, high-yield variety H, and a newly developed dual-purpose variety DH. Over three growing seasons, D produced 4.2 tonnes per hectare with 15% protein content; H produced 6.8 tonnes per hectare with 11% protein; DH produced 5.5 tonnes per hectare with 14% protein. The team calculated 'protein yield' as total protein mass harvested per hectare. They concluded that while H maximizes grain output, DH offers the best compromise between yield stability under water stress and nutritional quality for human consumption.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Variety DH with 0.77 tonnes of protein per hectare",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Variety H with 6.8 tonnes of protein per hectare",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Variety D with 0.63 tonnes of protein per hectare",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Variety H with 0.748 tonnes of protein per hectare",
+          "is_correct": true
+        }
+      ],
+      "position": 57,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "In the context of this experiment, the word \"salient\" most nearly means:",
+      "stimulus_md": "A research team tested whether **escalation of commitment** affects decision quality in project management. They randomly assigned 120 experienced project managers to two conditions. In both conditions, participants reviewed a detailed case study of a software development project that was 18 months behind schedule and 40% over budget. \n\n| Condition | Information Provided | Result |\n|-----------|---------------------|--------|\n| Control | Case facts only | 62% recommended continuing the project |\n| Treatment | Same facts, plus explicit reminder that \"sunk costs are irrelevant to future decisions\" | 31% recommended continuing |\n\nThe 31-percentage-point gap persisted even when participants were told the project had almost no chance of recovery. The researchers concluded that simply **defining** escalation of commitment did not eliminate it, but making sunk costs **salient** significantly reduced its effect.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "temporarily suppressed from conscious awareness",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "accurately defined with technical precision",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "prominently noticeable and actively considered",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "logically consistent with financial theory",
+          "is_correct": false
+        }
+      ],
+      "position": 58,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which finding would most weaken the advocates’ claim that the chronological mandate should be adopted to safeguard competition?",
+      "stimulus_md": "A proposed \"Digital Services Neutrality Act\" would bar large platforms from showing content to users in any order other than strict chronological posting time. Advocates claim the rule is needed because algorithmic curation lets platforms privilege in-house services and suppress rivals, distorting competition. Critics counter that chronological feeds bury urgent safety notices and trusted sources under floods of trivial posts, so the rule would actually harm users. Advocates reply that users can simply scroll further to find what matters, and that competition—not convenience—should decide policy.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The Act exempts email and direct-messaging services, so platforms could still prioritize those internal tools.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Platforms ordered chronologically reduce the visibility of paid ads from smaller businesses that rely on algorithmic boosts, causing many to fold within six months.",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content_md": "Most users prefer chronological order when surveyed, provided they can toggle back to algorithmic feeds at any time.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Several jurisdictions already encourage voluntary disclosure of ranking criteria, which has not noticeably altered market shares.",
+          "is_correct": false
+        }
+      ],
+      "position": 59,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "A neighboring city with similar parking conditions is designing its own performance-based pricing system. Its primary goal is to reduce traffic congestion caused by drivers circling for parking. Which design choice most consistently applies the principle demonstrated by the original city's policy?",
+      "stimulus_md": "A municipal government implements a **performance-based parking pricing** system. Under this policy:\n\n| Zone | Base Rate | Dynamic Adjustment Rule |\n|------|-----------|------------------------|\n| Commercial core | $3/hour | +$1/hour when occupancy exceeds 85%; −$1/hour when occupancy falls below 60% |\n| Residential fringe | $1/hour | +$0.50/hour when occupancy exceeds 85%; −$0.50/hour when occupancy falls below 60% |\n\nThe stated policy goal is **\"to ensure 10–15% of spaces remain available at all times\"** (preventing both overcrowding and underuse), not revenue maximization. After one year, data show:\n- Commercial core: 12% availability, revenue up 22%\n- Residential fringe: 8% availability, revenue up 5%\n\nThe city council debates whether to adjust the policy.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "CRITICAL_REASONING"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Set uniform citywide rates based on average construction cost per parking space, with periodic council review",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Set prices to target 85% occupancy in all zones, accepting that some areas will have higher revenue than others",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Set higher base rates in zones near transit hubs, with dynamic adjustments tied to real-time traffic speed rather than parking occupancy",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Set prices to achieve 10–15% space availability, with higher base rates in zones where circling traffic data show the most congestion",
+          "is_correct": true
+        }
+      ],
+      "position": 60,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "What central conclusion about resource use does the experiment most clearly support?",
+      "stimulus_md": "A controlled greenhouse experiment measured biomass yield of wheat under three CO₂ regimes: 400 (ambient), 500, and 600 ppm. Each regime received either normal watering or 30 % less water. After 90 days, pots at 500 ppm with reduced water matched ambient-CO₂, normal-water biomass; yields rose only when both higher CO₂ and full water were supplied.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Irrigation can be eliminated if CO₂ reaches 600 ppm.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Water limitation has no effect on biomass when CO₂ is above ambient.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Elevated CO₂ can substitute for some water input but cannot alone offset a water deficit.",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "Rising atmospheric CO₂ will guarantee higher wheat yields regardless of rainfall.",
+          "is_correct": false
+        }
+      ],
+      "position": 61,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "If the cooperative chooses Priya’s plan, what will be the total decrease in the number of sacks at risk of fungal loss?",
+      "stimulus_md": "**Priya:** We just finished drying the last paddy lot. If we store all 1 600 sacks at 16 % moisture, the fungus-risk algorithm our co-op uses says we could lose 12 % of it in six months.\n\n**Luis:** Can’t we avoid that loss?\n\n**Priya:** The warehouse heater can only dry another 300 sacks down to 13 % before storage is due. Any more and we’d overshoot the shipment date the contract fixed.\n\n**Luis:** So we’ll have to accept some loss.\n\n**Priya:** Not if we sell that same 300 sacks straight off the drier at today’s spot price. The rest we keep; the higher moisture cuts the germination rate, but since it’s for eating, not seed, that’s irrelevant.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "1 300 sacks",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "0 sacks",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "1 600 sacks",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "300 sacks",
+          "is_correct": true
+        }
+      ],
+      "position": 62,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "According to the research team's conclusion, what specific factor accounted for the 13 percentage point difference in diarrhea reduction between Group A and Group B?",
+      "stimulus_md": "A 2019 field trial in rural Malawi compared three strategies for reducing childhood diarrhea incidence. All villages received free water purification tablets. Group A villages additionally received hygiene education sessions led by community health workers. Group B villages received the same education plus free handwashing stations with soap. Group C (control) received tablets only. After 12 months, diarrhea incidence fell by 18% in Group A, 31% in Group B, and 7% in Group C. The research team concluded that handwashing infrastructure, not merely education, drove the additional 13 percentage point reduction observed between Groups A and B.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "DETAIL_RETRIEVAL"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The frequency of hygiene education sessions",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "The leadership of community health workers",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The presence of handwashing stations with soap",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "The free distribution of water purification tablets",
+          "is_correct": false
+        }
+      ],
+      "position": 63,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which word or phrase, inserted in the blank, captures what the researchers concluded based on the experimental results?",
+      "stimulus_md": "In a psycholinguistic study, researchers presented participants with ambiguous sentences like \"The chicken is ready to eat.\" Half the participants first read a paragraph establishing that chickens are typically food (the \"kitchen context\"), while the other half read a paragraph establishing that animals are hungry creatures (the \"farm context\"). The researchers found that when subsequently asked to identify the intended meaning, participants in the kitchen context predominantly selected the interpretation where the chicken is to be *consumed*, whereas those in the farm context predominantly selected the interpretation where the chicken is doing the *eating*. The researchers concluded that ___________ profoundly shapes sentence comprehension.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "VOCABULARY_IN_CONTEXT"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "semantic disambiguation",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "priming",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "prior context",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content_md": "syntactic structure",
+          "is_correct": false
+        }
+      ],
+      "position": 64,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "What is the central claim advanced by the investigators?",
+      "stimulus_md": "In a series of three experiments, researchers asked volunteers to solve anagram puzzles while seated at a desk that either faced a bare wall or looked toward a window with a natural scene. After each five-minute round, participants estimated how much time they thought had passed and rated their own mental fatigue on a 7-point scale. Participants with the natural view consistently underestimated elapsed time and reported lower fatigue than those facing the wall. In a follow-up manipulation, the scientists reversed the seating arrangement midway through the session. When the wall-facing group was shifted to the natural view, their subsequent time estimates lengthened and fatigue scores dropped, converging toward the levels originally observed in the window-facing condition. The reversed group now seated at the wall began to underestimate duration and reported heightened fatigue, indicating that the scenic view—not pre-existing differences—drove the effects.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "MAIN_IDEA"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "Unchanging interior walls create more optical fatigue for the eyes than varied natural environments do.",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content_md": "Solving anagrams in front of a window improves objective puzzle performance compared with doing them facing a wall.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "Visual exposure to green spaces increases participants’ overall memory for how long an experimental session lasted.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Natural scenery can modulate both perceived duration of an interval and feelings of tiredness during a cognitively demanding task.",
+          "is_correct": true
+        }
+      ],
+      "position": 65,
+      "marks": 1
+    },
+    {
+      "section_code": "GENACAD",
+      "type": "single_choice",
+      "content_md": "Which inference is best supported by these results?",
+      "stimulus_md": "Researchers set up 48 identical mesocosms—enclosed aquatic systems—each containing 500 L of water, sediment, and identical communities of 8 native freshwater species (phytoplankton, zooplankton, and small fish). Over 12 months, half the mesocosms were maintained at ambient CO₂ (400 ppm), and half at elevated CO₂ (800 ppm). All other variables (temperature, light, nutrient inputs) were held constant. At the end, elevated-CO₂ mesocosms showed 35% higher total biomass but 60% lower mean body size across all animal species, with phytoplankton community composition shifted toward smaller, faster-growing taxa. No species extinctions occurred in either group.",
+      "status": "published",
+      "difficulty": "medium",
+      "skills": [
+        "READING_COMPREHENSION",
+        "PROBLEM_SOLVING",
+        "INFERENCE"
+      ],
+      "options": [
+        {
+          "label": "A",
+          "content_md": "The biomass increase likely reflected higher carbon fixation rates without a proportional increase in energy transfer to higher trophic levels.",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content_md": "Elevated CO₂ directly selected for smaller body size through genetic mechanisms.",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content_md": "The absence of extinctions indicates that community resilience was unchanged by CO₂ elevation.",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content_md": "Nutrient limitation was the primary driver of the observed community shifts.",
+          "is_correct": false
+        }
+      ],
+      "position": 66,
+      "marks": 1
+    }
+  ]
+}

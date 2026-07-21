@@ -27,6 +27,7 @@ def _to_mock(r) -> MockTestOut:
         total_questions=r["total_questions"],
         difficulty=r["difficulty"],
         is_playable=r["linked_examination_id"] is not None,
+        examination_id=r["linked_examination_id"],
     )
 
 

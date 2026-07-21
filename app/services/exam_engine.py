@@ -98,6 +98,27 @@ async def start_attempt(pool: asyncpg.Pool, user_id: UUID, exam_id: UUID) -> UUI
                 """,
                 attempt_id, exam_id,
             )
+
+            # Freeze the paper: sample `question_count` random published questions
+            # per section, ordered linearly by (section position, random). This is
+            # the exact set the student will see and submit against.
+            await conn.execute(
+                """
+                insert into attempt_questions (attempt_id, question_id, section_id, position)
+                select $1, x.id, x.section_id, row_number() over (order by x.module_pos, x.section_pos, x.rn)
+                from (
+                    select q.id, q.section_id, m.position as module_pos, s.position as section_pos,
+                           s.question_count,
+                           row_number() over (partition by q.section_id order by random()) as rn
+                    from questions q
+                    join exam_sections s on s.id = q.section_id
+                    join exam_modules m on m.id = s.module_id
+                    where q.examination_id = $2 and q.status = 'published'
+                ) x
+                where x.rn <= x.question_count
+                """,
+                attempt_id, exam_id,
+            )
     return attempt_id
 
 
@@ -137,6 +158,126 @@ async def submit_attempt(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID) ->
     )
     if result.endswith(" 0"):
         raise EngineError("attempt_not_submittable", "Attempt not found or not in progress", 409)
+
+
+async def current_attempt(pool: asyncpg.Pool, user_id: UUID, exam_id: UUID) -> dict | None:
+    """Resume helper: the user's in-progress attempt for this exam, or None."""
+    row = await pool.fetchrow(
+        """
+        select id from attempts
+        where user_id = $1 and examination_id = $2 and status = 'in_progress'
+        limit 1
+        """,
+        user_id, exam_id,
+    )
+    if row is None:
+        return None
+    return await get_attempt_state(pool, user_id, row["id"])
+
+
+# --------------------------------------------------------------------------
+# Whole-paper delivery (linear flow) — one call serves all 76 questions
+# --------------------------------------------------------------------------
+
+async def get_paper(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID) -> dict:
+    """Return the entire frozen paper for the attempt in linear order, WITHOUT any
+    answer-key fields, plus the overall timer and any previously-saved selections."""
+    attempt = await pool.fetchrow(
+        """
+        select a.id, a.user_id, a.examination_id, a.status, a.started_at,
+               a.submitted_at, a.expires_at, e.code as exam_code
+        from attempts a
+        join examinations e on e.id = a.examination_id
+        where a.id = $1
+        """,
+        attempt_id,
+    )
+    if attempt is None or attempt["user_id"] != user_id:
+        raise EngineError("attempt_not_found", "Attempt not found", 404)
+
+    # Frozen questions (NO is_correct / numeric_answer_key / explanation).
+    questions = await pool.fetch(
+        """
+        select aq.position, q.id, q.question_type, q.content_md, q.stimulus_id,
+               s.code as section_code, s.name as section_name,
+               st.content_md as stimulus_md
+        from attempt_questions aq
+        join questions q on q.id = aq.question_id
+        join exam_sections s on s.id = aq.section_id
+        left join stimuli st on st.id = q.stimulus_id
+        where aq.attempt_id = $1
+        order by aq.position
+        """,
+        attempt_id,
+    )
+    q_ids = [q["id"] for q in questions]
+
+    options = await pool.fetch(
+        """
+        select id, question_id, label, content_md, position
+        from question_options
+        where question_id = any($1::uuid[])
+        order by question_id, position
+        """,
+        q_ids,
+    )
+    options_by_q: dict[UUID, list[dict]] = {}
+    for o in options:
+        options_by_q.setdefault(o["question_id"], []).append(
+            {"id": o["id"], "label": o["label"], "content_md": o["content_md"], "position": o["position"]}
+        )
+
+    # Previously-saved selections (for resume).
+    saved = await pool.fetch(
+        "select question_id, selected_option_id, is_marked_for_review "
+        "from student_answers where attempt_id = $1",
+        attempt_id,
+    )
+    saved_by_q = {s["question_id"]: s for s in saved}
+
+    # Section labels/counts.
+    sections = await pool.fetch(
+        """
+        select s.code, s.name, count(aq.id) as count
+        from attempt_questions aq
+        join exam_sections s on s.id = aq.section_id
+        join exam_modules m on m.id = s.module_id
+        where aq.attempt_id = $1
+        group by s.code, s.name, m.position, s.position
+        order by m.position, s.position
+        """,
+        attempt_id,
+    )
+
+    expires_at = attempt["expires_at"]
+    now = _utcnow()
+    remaining = int((expires_at - now).total_seconds()) if expires_at else 0
+
+    return {
+        "attempt_id": attempt_id,
+        "exam_code": attempt["exam_code"],
+        "status": attempt["status"],
+        "expires_at": expires_at,
+        "server_time": now,
+        "remaining_seconds": max(0, remaining),
+        "total_questions": len(questions),
+        "sections": [{"code": s["code"], "name": s["name"], "count": int(s["count"])} for s in sections],
+        "questions": [
+            {
+                "id": q["id"],
+                "section_code": q["section_code"],
+                "section_name": q["section_name"],
+                "position": q["position"],
+                "question_type": q["question_type"],
+                "content_md": q["content_md"],
+                "stimulus_md": q["stimulus_md"],
+                "options": options_by_q.get(q["id"], []),
+                "selected_option_id": (saved_by_q.get(q["id"]) or {}).get("selected_option_id"),
+                "is_marked_for_review": bool((saved_by_q.get(q["id"]) or {}).get("is_marked_for_review")),
+            }
+            for q in questions
+        ],
+    }
 
 
 # --------------------------------------------------------------------------
@@ -282,24 +423,22 @@ async def submit_answer(pool: asyncpg.Pool, user_id: UUID, attempt_id: UUID, pay
         async with conn.transaction():
             attempt = await _load_attempt_for_write(conn, user_id, attempt_id)
 
+            # Linear flow: the question must belong to THIS attempt's frozen paper.
             q = await conn.fetchrow(
-                "select id, section_id, examination_id from questions where id = $1",
-                payload.question_id,
+                """
+                select aq.section_id
+                from attempt_questions aq
+                where aq.attempt_id = $1 and aq.question_id = $2
+                """,
+                attempt_id, payload.question_id,
             )
-            if q is None or q["examination_id"] != attempt["examination_id"]:
-                raise EngineError("question_not_found", "Question not found for this exam", 404)
+            if q is None:
+                raise EngineError("question_not_in_paper", "Question is not part of this attempt", 404)
 
-            asec = await conn.fetchrow(
-                "select status, deadline_at from attempt_sections where attempt_id = $1 and section_id = $2",
-                attempt_id, q["section_id"],
-            )
-            if asec is None or asec["status"] == "not_started":
-                raise EngineError("section_not_started", "Enter the section before answering", 409)
-            if asec["status"] == "completed":
-                raise EngineError("section_completed", "Section already completed", 409)
-            if asec["deadline_at"] is not None:
-                if _utcnow() > asec["deadline_at"] + timedelta(seconds=DEADLINE_GRACE_SECONDS):
-                    raise EngineError("section_expired", "Section time is over; answer rejected", 409)
+            # Overall exam timer (attempt-level), with a small grace for latency.
+            expires_at = await conn.fetchval("select expires_at from attempts where id = $1", attempt_id)
+            if expires_at is not None and _utcnow() > expires_at + timedelta(seconds=DEADLINE_GRACE_SECONDS):
+                raise EngineError("attempt_expired", "Time is over; answer rejected", 409)
 
             answered_at = _utcnow()
             await conn.execute(
