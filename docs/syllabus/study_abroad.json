@@ -75,7 +75,7 @@
         }
       ],
       "mocks": [
-        { "scope": "full", "title": "d-MAT — Full Mock (Core + General Academic)", "duration_min": 180, "questions": 90, "difficulty": "hard" },
+        { "scope": "full", "title": "d-MAT — Full Mock (Core + General Academic)", "duration_min": 160, "questions": 76, "difficulty": "hard" },
         { "scope": "subject", "subject_code": "DMAT_FIGURE_SEQUENCES", "title": "d-MAT Figure Sequences — Subtest Mock", "duration_min": 25, "questions": 20, "difficulty": "hard" },
         { "scope": "subject", "subject_code": "DMAT_MATH_EQUATIONS", "title": "d-MAT Mathematical Equations — Subtest Mock", "duration_min": 25, "questions": 20, "difficulty": "hard" },
         { "scope": "subject", "subject_code": "DMAT_LATIN_SQUARES", "title": "d-MAT Latin Squares — Subtest Mock", "duration_min": 25, "questions": 20, "difficulty": "hard" },
