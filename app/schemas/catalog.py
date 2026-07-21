@@ -42,6 +42,7 @@ class MockTestOut(BaseModel):
     total_questions: int | None
     difficulty: str | None
     is_playable: bool  # true only when linked to real engine content (dMAT)
+    examination_id: UUID | None = None  # the engine exam id to start (POST /exams/{id}/attempts)
 
 
 class SubjectGroup(BaseModel):

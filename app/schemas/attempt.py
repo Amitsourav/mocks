@@ -57,13 +57,58 @@ class SectionDelivery(BaseModel):
     section_id: UUID
     section_code: str
     section_name: str
-    deadline_at: datetime
+    deadline_at: datetime | None      # None when the section has no time limit
     server_time: datetime
     remaining_seconds: int
     navigation_locked: bool
-    allows_revisit: bool
+    allows_revisit: bool = True
     stimuli: list[StimulusOut]
     questions: list[QuestionOut]
+
+
+# ---- Whole-paper delivery (linear flow) ----
+
+class PaperOptionOut(BaseModel):
+    id: UUID
+    label: str | None
+    content_md: str
+    position: int
+
+
+class PaperQuestionOut(BaseModel):
+    id: UUID
+    section_code: str
+    section_name: str
+    position: int
+    question_type: str
+    content_md: str
+    stimulus_md: str | None
+    options: list[PaperOptionOut]
+    selected_option_id: UUID | None      # prior selection, for resume
+    is_marked_for_review: bool
+
+
+class PaperSectionOut(BaseModel):
+    code: str
+    name: str
+    count: int
+
+
+class PaperOut(BaseModel):
+    attempt_id: UUID
+    exam_code: str
+    status: str
+    expires_at: datetime | None
+    server_time: datetime
+    remaining_seconds: int
+    total_questions: int
+    sections: list[PaperSectionOut]
+    questions: list[PaperQuestionOut]
+
+
+class SubmitAck(BaseModel):
+    status: str
+    message: str
 
 
 # ---- Answer submission ----

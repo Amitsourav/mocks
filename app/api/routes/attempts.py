@@ -13,7 +13,9 @@ from app.schemas.attempt import (
     AttemptState,
     EventBatchAck,
     EventBatchIn,
+    PaperOut,
     SectionDelivery,
+    SubmitAck,
 )
 from app.schemas.user import CurrentUser
 from app.services import exam_engine
@@ -39,6 +41,15 @@ async def start_attempt(
     return _to_state(state)
 
 
+@router.get("/exams/{exam_id}/attempts/current", response_model=AttemptState)
+async def current_attempt(exam_id: UUID, user: CurrentUser = Depends(get_current_user)) -> AttemptState:
+    """Resume helper: the caller's in-progress attempt for this exam (404 if none)."""
+    state = await exam_engine.current_attempt(get_pool(), user.id, exam_id)
+    if state is None:
+        raise HTTPException(status_code=404, detail={"code": "no_active_attempt", "message": "No in-progress attempt"})
+    return _to_state(state)
+
+
 @router.get("/attempts/{attempt_id}", response_model=AttemptState)
 async def get_attempt(attempt_id: UUID, user: CurrentUser = Depends(get_current_user)) -> AttemptState:
     try:
@@ -46,6 +57,16 @@ async def get_attempt(attempt_id: UUID, user: CurrentUser = Depends(get_current_
     except EngineError as exc:
         raise _handle(exc) from exc
     return _to_state(state)
+
+
+@router.get("/attempts/{attempt_id}/paper", response_model=PaperOut)
+async def get_paper(attempt_id: UUID, user: CurrentUser = Depends(get_current_user)) -> PaperOut:
+    """The whole frozen paper (all questions, no answer keys) + overall timer."""
+    try:
+        data = await exam_engine.get_paper(get_pool(), user.id, attempt_id)
+    except EngineError as exc:
+        raise _handle(exc) from exc
+    return PaperOut(**data)
 
 
 @router.post("/attempts/{attempt_id}/sections/{section_id}/enter", response_model=SectionDelivery)
@@ -91,12 +112,18 @@ async def submit_section(
         raise _handle(exc) from exc
 
 
-@router.post("/attempts/{attempt_id}/submit", status_code=204)
-async def submit_attempt(attempt_id: UUID, user: CurrentUser = Depends(get_current_user)) -> None:
+@router.post("/attempts/{attempt_id}/submit", response_model=SubmitAck)
+async def submit_attempt(attempt_id: UUID, user: CurrentUser = Depends(get_current_user)) -> SubmitAck:
     try:
         await exam_engine.submit_attempt(get_pool(), user.id, attempt_id)
     except EngineError as exc:
         raise _handle(exc) from exc
+    # Scoring is a later pipeline; for now we just acknowledge and tell the student
+    # we're processing their answers.
+    return SubmitAck(
+        status="submitted",
+        message="We're checking your answers — we'll let you know once your result is ready.",
+    )
 
 
 def _to_state(state: dict) -> AttemptState:
