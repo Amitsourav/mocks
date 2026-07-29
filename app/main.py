@@ -1,14 +1,26 @@
 from __future__ import annotations
 
+import asyncio
 import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import attempts, dashboard, exams, health, me, mock_tests, reference
+from app.api.routes import (
+    attempts,
+    dashboard,
+    exams,
+    health,
+    me,
+    mock_tests,
+    news,
+    reference,
+    share,
+)
 from app.core import db, redis
 from app.core.config import get_settings
+from app.services import news_ingest
 
 settings = get_settings()
 logging.basicConfig(level=settings.log_level.upper())
@@ -24,7 +36,15 @@ async def lifespan(app: FastAPI):
         logger.info("Redis ready")
     except Exception as exc:  # noqa: BLE001 - Redis optional at boot in dev
         logger.warning("Redis unavailable at startup: %s", exc)
+    # Ingest "Dates & News" now (non-blocking) and every 6h thereafter. The task
+    # is fire-and-forget; the advisory lock inside keeps multiple workers safe.
+    news_task = asyncio.create_task(news_ingest.scheduler_loop())
     yield
+    news_task.cancel()
+    try:
+        await news_task
+    except asyncio.CancelledError:
+        pass
     await db.disconnect()
     await redis.disconnect()
     logger.info("Shutdown complete")
@@ -57,3 +77,5 @@ app.include_router(attempts.router)
 app.include_router(reference.router)
 app.include_router(mock_tests.router)
 app.include_router(dashboard.router)
+app.include_router(share.router)
+app.include_router(news.router)

@@ -7,6 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from app.api.deps import get_current_user, invalidate_user_cache
 from app.core.db import get_pool
 from app.schemas.catalog import StreamOut, StreamSwitchIn
+from app.schemas.predictor import AnabinInstitutionOut, SetAcademicsIn, SetInstitutionIn
 from app.schemas.user import CurrentUser, ProfileUpdate
 from app.services import streams
 from app.services.streams import StreamError
@@ -131,3 +132,62 @@ async def switch_stream(
             detail={"code": exc.code, "message": exc.message},
         ) from exc
     return StreamOut(**current)
+
+
+@router.post("/anabin-institution", response_model=AnabinInstitutionOut)
+async def set_anabin_institution(
+    payload: SetInstitutionIn, user: CurrentUser = Depends(get_current_user)
+) -> AnabinInstitutionOut:
+    """Store the student's own (Indian) university — the eligibility half of the
+    dMAT college-readiness prediction."""
+    pool = get_pool()
+    inst = await pool.fetchrow(
+        "select id, name, city, state, institution_type, status from anabin_institutions where id = $1",
+        payload.institution_id,
+    )
+    if inst is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail={"code": "institution_not_found", "message": "Unknown institution."},
+        )
+    await pool.execute(
+        "update users set anabin_institution_id = $2 where id = $1", user.id, payload.institution_id
+    )
+    return AnabinInstitutionOut(**dict(inst))
+
+
+# The three dMAT notified UG fields (graduates in these fields must take the
+# dMAT from Summer 2027). Kept in sync with dashboard._DMAT_FIELDS.
+_DMAT_FIELD_KEYS = {"engineering", "commerce_finance_economics", "business_management"}
+
+
+@router.post("/academics", response_model=CurrentUser)
+async def set_academics(
+    payload: SetAcademicsIn, user: CurrentUser = Depends(get_current_user)
+) -> CurrentUser:
+    """Store UG%, 12th% and the student's dMAT field — the academic inputs to the
+    college-readiness formula and the field used to scope the programme list.
+
+    Any field may be sent alone; a null leaves the stored value unchanged.
+    Percentages must be 0–100; dmat_field must be one of the three notified fields.
+    """
+    for label, val in (("UG", payload.ug_percentage), ("Class XII", payload.twelfth_percentage)):
+        if val is not None and not (0 <= val <= 100):
+            raise _bad("invalid_percentage", f"{label} percentage must be between 0 and 100.")
+    if payload.dmat_field is not None and payload.dmat_field not in _DMAT_FIELD_KEYS:
+        raise _bad("invalid_field", "Unknown dMAT field.")
+
+    row = await get_pool().fetchrow(
+        """
+        update users set
+            ug_percentage      = coalesce($2, ug_percentage),
+            twelfth_percentage = coalesce($3, twelfth_percentage),
+            dmat_field         = coalesce($4, dmat_field)
+        where id = $1
+        returning id, auth_user_id, full_name, email, phone, role, profile_completed,
+                  state_code, mock_category_code, catalog_exam_code, target_country_code
+        """,
+        user.id, payload.ug_percentage, payload.twelfth_percentage, payload.dmat_field,
+    )
+    invalidate_user_cache(user.auth_user_id)
+    return CurrentUser(**dict(row))

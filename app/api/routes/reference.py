@@ -11,9 +11,38 @@ from fastapi import APIRouter, Depends, HTTPException, status
 
 from app.api.deps import get_current_user
 from app.core.db import get_pool
+from app.schemas.predictor import AnabinInstitutionOut
 from app.schemas.user import CatalogExamOut, CountryOut, CurrentUser, MockCategoryOut, StateOut
 
 router = APIRouter(prefix="/reference", tags=["reference"])
+
+
+@router.get("/anabin-institutions", response_model=list[AnabinInstitutionOut])
+async def search_anabin_institutions(
+    q: str = "",
+    limit: int = 20,
+    _: CurrentUser = Depends(get_current_user),
+) -> list[AnabinInstitutionOut]:
+    """Typeahead over the Anabin Indian-institution list (name + aliases).
+
+    Backs the 'select your university' dropdown for the dMAT college-readiness
+    tool. Requires >=2 chars; prefix matches rank first.
+    """
+    query = q.strip()
+    if len(query) < 2:
+        return []
+    rows = await get_pool().fetch(
+        """
+        select id, name, city, state, institution_type, status
+        from anabin_institutions
+        where name ilike $1
+           or exists (select 1 from unnest(aliases) a where a ilike $1)
+        order by (name ilike $2) desc, name
+        limit $3
+        """,
+        f"%{query}%", f"{query}%", min(max(limit, 1), 50),
+    )
+    return [AnabinInstitutionOut(**dict(r)) for r in rows]
 
 
 @router.get("/states", response_model=list[StateOut])

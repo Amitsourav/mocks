@@ -76,7 +76,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A grocer sells apples for $4 per kg and oranges for $3 per kg. Yesterday, the total weight of apples and oranges sold was 150 kg, and the total sales revenue was $520. How many kilograms of apples were sold?",
+      "content_md": "A grocer sells apples for \\$4 per kg and oranges for \\$3 per kg. Yesterday, the total weight of apples and oranges sold was 150 kg, and the total sales revenue was \\$520. How many kilograms of apples were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -220,7 +220,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "An investor splits $12,000 into two simple-interest accounts. The first account earns a 5% annual interest rate, and the second earns a 3% annual interest rate. After one year, the total interest earned from both accounts is $480. How much money, in dollars, was invested in the 5% account?",
+      "content_md": "An investor splits \\$12,000 into two simple-interest accounts. The first account earns a 5% annual interest rate, and the second earns a 3% annual interest rate. After one year, the total interest earned from both accounts is \\$480. How much money, in dollars, was invested in the 5% account?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -328,7 +328,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A school canteen sells sandwiches and drinks. The price of one sandwich is $4 and the price of one drink is $2. On Monday, the canteen sold a total of 80 items and collected $260. How many sandwiches were sold?",
+      "content_md": "A school canteen sells sandwiches and drinks. The price of one sandwich is \\$4 and the price of one drink is \\$2. On Monday, the canteen sold a total of 80 items and collected \\$260. How many sandwiches were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -364,7 +364,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "Maria signs up for a new mobile plan that has a fixed monthly charge plus a cost per gigabyte (GB) of data used. Her bill for the first month, when she used 8 GB of data, was $68. Her bill for the second month, when she used 12 GB of data, was $92. If the fixed monthly charge and the cost per GB are constant, what is the fixed monthly charge in dollars?",
+      "content_md": "Maria signs up for a new mobile plan that has a fixed monthly charge plus a cost per gigabyte (GB) of data used. Her bill for the first month, when she used 8 GB of data, was \\$68. Her bill for the second month, when she used 12 GB of data, was \\$92. If the fixed monthly charge and the cost per GB are constant, what is the fixed monthly charge in dollars?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -400,7 +400,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A candy store mixes two types of gummy bears: Fruit Delight, which costs $5 per kilogram, and Sour Blast, which costs $8 per kilogram. The owner wants to create a 90-kilogram batch of a new mix that will sell for $6 per kilogram. How many kilograms of Fruit Delight gummy bears should be used?",
+      "content_md": "A candy store mixes two types of gummy bears: Fruit Delight, which costs \\$5 per kilogram, and Sour Blast, which costs \\$8 per kilogram. The owner wants to create a 90-kilogram batch of a new mix that will sell for \\$6 per kilogram. How many kilograms of Fruit Delight gummy bears should be used?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -472,7 +472,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "An investor puts a total of $10,000 into two simple-interest savings accounts. Account A pays 4% annual interest and Account B pays 6% annual interest. After one year, the total interest earned from both accounts is $520. How much money, in dollars, was invested in Account A?",
+      "content_md": "An investor puts a total of \\$10,000 into two simple-interest savings accounts. Account A pays 4% annual interest and Account B pays 6% annual interest. After one year, the total interest earned from both accounts is \\$520. How much money, in dollars, was invested in Account A?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -544,7 +544,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A taxi company charges a base fare plus a rate per kilometer. On Monday, a customer took a 15 km ride and was charged a total of $42. On Tuesday, the same customer took a 25 km ride and was charged a total of $62. Assuming the base fare (in dollars) and the rate per kilometer (in dollars per km) are constant integers, what is the base fare?",
+      "content_md": "A taxi company charges a base fare plus a rate per kilometer. On Monday, a customer took a 15 km ride and was charged a total of \\$42. On Tuesday, the same customer took a 25 km ride and was charged a total of \\$62. Assuming the base fare (in dollars) and the rate per kilometer (in dollars per km) are constant integers, what is the base fare?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -580,7 +580,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "Anna has a mobile phone plan. Her plan has a fixed monthly charge, plus a cost for each gigabyte (GB) of data she uses. In March, she used 8 GB of data and her total bill was $65. In April, she used 4 GB of data and her total bill was $45. What is the fixed monthly charge (in dollars) for her phone plan?",
+      "content_md": "Anna has a mobile phone plan. Her plan has a fixed monthly charge, plus a cost for each gigabyte (GB) of data she uses. In March, she used 8 GB of data and her total bill was \\$65. In April, she used 4 GB of data and her total bill was \\$45. What is the fixed monthly charge (in dollars) for her phone plan?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -616,7 +616,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A cinema sold 80 tickets for a special screening. The price for a standard ticket is $15 and for a premium ticket is $25. The total revenue from ticket sales was $1600. How many premium tickets were sold?",
+      "content_md": "A cinema sold 80 tickets for a special screening. The price for a standard ticket is \\$15 and for a premium ticket is \\$25. The total revenue from ticket sales was \\$1600. How many premium tickets were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -652,7 +652,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At a fruit stand, apples cost $2 each and oranges cost $1 each. Sarah bought a total of 90 apples and oranges and spent exactly $126. How many apples did Sarah buy?",
+      "content_md": "At a fruit stand, apples cost \\$2 each and oranges cost \\$1 each. Sarah bought a total of 90 apples and oranges and spent exactly \\$126. How many apples did Sarah buy?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -724,7 +724,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "For a special cinema screening, tickets were sold in two price tiers: Premium seats at $200 each and Standard seats at $100 each. A total of 90 tickets were sold, and the total revenue collected was $12,600. How many Premium seat tickets were sold?",
+      "content_md": "For a special cinema screening, tickets were sold in two price tiers: Premium seats at \\$200 each and Standard seats at \\$100 each. A total of 90 tickets were sold, and the total revenue collected was \\$12,600. How many Premium seat tickets were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -832,7 +832,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At the school canteen, one sandwich costs $5 and one juice box costs $2. On Monday, the total sales from sandwiches and juice boxes were $130, and a total of 35 items were sold. How many sandwiches were sold on Monday?",
+      "content_md": "At the school canteen, one sandwich costs \\$5 and one juice box costs \\$2. On Monday, the total sales from sandwiches and juice boxes were \\$130, and a total of 35 items were sold. How many sandwiches were sold on Monday?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1084,7 +1084,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "Anya buys pens and notebooks for school. One pen costs $3 and one notebook costs $5. She bought a total of 16 items. When she calculated the total cost, it came to $68. How many pens did Anya buy?",
+      "content_md": "Anya buys pens and notebooks for school. One pen costs \\$3 and one notebook costs \\$5. She bought a total of 16 items. When she calculated the total cost, it came to \\$68. How many pens did Anya buy?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1120,7 +1120,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A class is selling tickets for a school fair. They sell adult tickets for $5 each and child tickets for $2 each. At the end of the day, they have sold a total of 180 tickets and collected $648. How many adult tickets were sold?",
+      "content_md": "A class is selling tickets for a school fair. They sell adult tickets for \\$5 each and child tickets for \\$2 each. At the end of the day, they have sold a total of 180 tickets and collected \\$648. How many adult tickets were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1192,7 +1192,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A school canteen sells chicken sandwiches and veggie wraps. On Monday, they sold a total of 75 items. The chicken sandwich costs $120 and the veggie wrap costs $80. The total sales for Monday were $8000. How many chicken sandwiches were sold?",
+      "content_md": "A school canteen sells chicken sandwiches and veggie wraps. On Monday, they sold a total of 75 items. The chicken sandwich costs \\$120 and the veggie wrap costs \\$80. The total sales for Monday were \\$8000. How many chicken sandwiches were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1300,7 +1300,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A school canteen sells burgers and fries. A burger costs $8 and fries cost $5. On Monday, the canteen sold a total of 120 items and collected a total of $780 from these sales. How many burgers were sold?",
+      "content_md": "A school canteen sells burgers and fries. A burger costs \\$8 and fries cost \\$5. On Monday, the canteen sold a total of 120 items and collected a total of \\$780 from these sales. How many burgers were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1552,7 +1552,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A school canteen sells packs of fruit and bottles of juice. A fruit pack costs $2 and a juice bottle costs $3. On Monday, the total sales from these items were $180, and exactly 70 items were sold. How many fruit packs were sold?",
+      "content_md": "A school canteen sells packs of fruit and bottles of juice. A fruit pack costs \\$2 and a juice bottle costs \\$3. On Monday, the total sales from these items were \\$180, and exactly 70 items were sold. How many fruit packs were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1588,7 +1588,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A school canteen sells chicken sandwiches for a fixed price and fruit cups for a fixed price. On Monday, they sold 3 chicken sandwiches and 2 fruit cups, and the total money collected was $34. On Tuesday, they sold 1 chicken sandwich and 4 fruit cups, and the total was $28. How much does one chicken sandwich cost?",
+      "content_md": "A school canteen sells chicken sandwiches for a fixed price and fruit cups for a fixed price. On Monday, they sold 3 chicken sandwiches and 2 fruit cups, and the total money collected was \\$34. On Tuesday, they sold 1 chicken sandwich and 4 fruit cups, and the total was \\$28. How much does one chicken sandwich cost?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1624,7 +1624,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "In the school canteen, a slice of pizza costs $1.50 and a can of soda costs $0.80. On Monday, the canteen sold a total of 120 items and collected $146.40 from these two items. How many slices of pizza were sold?",
+      "content_md": "In the school canteen, a slice of pizza costs \\$1.50 and a can of soda costs \\$0.80. On Monday, the canteen sold a total of 120 items and collected \\$146.40 from these two items. How many slices of pizza were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1660,7 +1660,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At the farmers' market, apples cost $4 per kg and bananas cost $6 per kg. A fruit seller bought a total of 50 kg of these two fruits and spent $260 altogether. How many kilograms of apples did the seller buy?",
+      "content_md": "At the farmers' market, apples cost \\$4 per kg and bananas cost \\$6 per kg. A fruit seller bought a total of 50 kg of these two fruits and spent \\$260 altogether. How many kilograms of apples did the seller buy?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1948,7 +1948,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At a local market, strawberries are sold for $3 per kg and cherries for $5 per kg. On Saturday, a vendor sold a total of 80 kg of these fruits and collected $300 in total sales. How many kilograms of cherries were sold?",
+      "content_md": "At a local market, strawberries are sold for \\$3 per kg and cherries for \\$5 per kg. On Saturday, a vendor sold a total of 80 kg of these fruits and collected \\$300 in total sales. How many kilograms of cherries were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1984,7 +1984,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A school canteen sells apples for $1 each and oranges for $2 each. On Monday, a total of 60 fruits were sold, and the total revenue was $90. How many apples were sold?",
+      "content_md": "A school canteen sells apples for \\$1 each and oranges for \\$2 each. On Monday, a total of 60 fruits were sold, and the total revenue was \\$90. How many apples were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2020,7 +2020,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At the school fair, adult tickets cost $7 each and student tickets cost $3 each. The total number of tickets sold was 120, and the total money collected was $600. How many adult tickets were sold?",
+      "content_md": "At the school fair, adult tickets cost \\$7 each and student tickets cost \\$3 each. The total number of tickets sold was 120, and the total money collected was \\$600. How many adult tickets were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2056,7 +2056,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At a school canteen, hot dogs cost $2 each and juice boxes cost $1 each. On Monday, the canteen sold a total of 90 hot dogs and juice boxes combined. The total money collected from these sales was $126. How many hot dogs were sold?",
+      "content_md": "At a school canteen, hot dogs cost \\$2 each and juice boxes cost \\$1 each. On Monday, the canteen sold a total of 90 hot dogs and juice boxes combined. The total money collected from these sales was \\$126. How many hot dogs were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2092,7 +2092,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At a farmers' market, apples are sold for $3 per kilogram and pears for $2 per kilogram. Yesterday, the market sold 50 kilograms of fruit in total and collected $130 from these sales. How many kilograms of apples were sold?",
+      "content_md": "At a farmers' market, apples are sold for \\$3 per kilogram and pears for \\$2 per kilogram. Yesterday, the market sold 50 kilograms of fruit in total and collected \\$130 from these sales. How many kilograms of apples were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2164,7 +2164,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At the school fair, hot dogs cost $3 each and slices of pizza cost $4 each. On Tuesday, the total number of hot dogs and pizza slices sold was 120, and the total collected was $410. How many hot dogs were sold?",
+      "content_md": "At the school fair, hot dogs cost \\$3 each and slices of pizza cost \\$4 each. On Tuesday, the total number of hot dogs and pizza slices sold was 120, and the total collected was \\$410. How many hot dogs were sold?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2200,7 +2200,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "At a farmers' market, a customer buys mangoes and oranges. The total weight of the purchase is 20 kg. The price per kg for mangoes is $8, and for oranges is $5. If the total cost of the fruit is $139, how many kilograms of mangoes did the customer buy?",
+      "content_md": "At a farmers' market, a customer buys mangoes and oranges. The total weight of the purchase is 20 kg. The price per kg for mangoes is \\$8, and for oranges is \\$5. If the total cost of the fruit is \\$139, how many kilograms of mangoes did the customer buy?",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2236,7 +2236,7 @@
     {
       "section_code": "MATHEQ",
       "type": "single_choice",
-      "content_md": "A customer buys pens and notebooks. A pen costs $3 and a notebook costs $5. One day, the customer buys a total of 20 items and spends $84. How many pens did the customer buy?",
+      "content_md": "A customer buys pens and notebooks. A pen costs \\$3 and a notebook costs \\$5. One day, the customer buys a total of 20 items and spends \\$84. How many pens did the customer buy?",
       "status": "published",
       "difficulty": "medium",
       "skills": [

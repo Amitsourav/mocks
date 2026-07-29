@@ -18,9 +18,12 @@ from app.schemas.attempt import (
     SubmitAck,
 )
 from app.schemas.user import CurrentUser
-from app.services import exam_engine
+from app.services import exam_engine, scoring
 from app.services.exam_engine import EngineError
 
+import logging
+
+log = logging.getLogger("mock_exam")
 router = APIRouter(tags=["attempts"])
 
 
@@ -114,15 +117,25 @@ async def submit_section(
 
 @router.post("/attempts/{attempt_id}/submit", response_model=SubmitAck)
 async def submit_attempt(attempt_id: UUID, user: CurrentUser = Depends(get_current_user)) -> SubmitAck:
+    pool = get_pool()
     try:
-        await exam_engine.submit_attempt(get_pool(), user.id, attempt_id)
+        await exam_engine.submit_attempt(pool, user.id, attempt_id)
     except EngineError as exc:
         raise _handle(exc) from exc
-    # Scoring is a later pipeline; for now we just acknowledge and tell the student
-    # we're processing their answers.
+
+    # Grade immediately so the student's report is ready. Never fail the submit on
+    # a scoring hiccup — the answers are safely stored and can be re-scored.
+    result_id = None
+    try:
+        result_id = await scoring.score_attempt(pool, user.id, attempt_id)
+    except Exception:  # noqa: BLE001
+        log.exception("scoring failed for attempt %s", attempt_id)
+
+    if result_id is not None:
+        return SubmitAck(status="scored", message="Your result is ready.", result_id=result_id)
     return SubmitAck(
         status="submitted",
-        message="We're checking your answers — we'll let you know once your result is ready.",
+        message="We've received your answers — your result will be ready shortly.",
     )
 
 

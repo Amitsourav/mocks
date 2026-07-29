@@ -189,7 +189,7 @@
     {
       "section_code": "GENACAD",
       "type": "single_choice",
-      "content_md": "A biotech startup has consistently reinvested all profits into R&D, leaving no retained earnings. It now needs $50 million to commercialize a new drug. According to the pecking order theory, which financing path should this firm rationally pursue?",
+      "content_md": "A biotech startup has consistently reinvested all profits into R&D, leaving no retained earnings. It now needs \\$50 million to commercialize a new drug. According to the pecking order theory, which financing path should this firm rationally pursue?",
       "stimulus_md": "In corporate finance, the **pecking order theory** describes how firms prioritize funding sources. When a firm needs capital, it follows a strict hierarchy: first using retained earnings (internal equity), then issuing debt, and finally issuing new equity as a last resort. This order exists because of **asymmetric information**—managers know more about the firm's true value than outside investors. Issuing equity signals that managers believe the stock is overvalued, causing the stock price to drop. Debt issuance carries a weaker negative signal, while retained earnings involve no external signaling. The theory predicts that profitable firms with ample internal funds will use less debt, while firms needing external capital will exhaust debt capacity before considering equity.",
       "status": "published",
       "difficulty": "medium",
@@ -634,7 +634,7 @@
       "section_code": "GENACAD",
       "type": "single_choice",
       "content_md": "If a resident who lives within the downtown zone drives into the area at 11:15 on a Tuesday, what electronic toll must be paid?",
-      "stimulus_md": "A city council is debating whether to adopt a new congestion-pricing scheme for the downtown core. Under the proposal, drivers would pay a variable electronic toll only when entering the zone on weekdays between 07:30 and 18:30. A flat fee of $4 applies 07:30–10:00 and again 16:00–18:30, whereas off-peak mid-day drivers pay $2. Vehicles registered to zone residents receive a 50 % discount on whatever toll they incur; taxis and buses are exempt, as are all motorcycles regardless of origin. Revenue will be ring-fenced exclusively for expanding the public cycling network and cannot be re-allocated for road-widening or policing.",
+      "stimulus_md": "A city council is debating whether to adopt a new congestion-pricing scheme for the downtown core. Under the proposal, drivers would pay a variable electronic toll only when entering the zone on weekdays between 07:30 and 18:30. A flat fee of \\$4 applies 07:30–10:00 and again 16:00–18:30, whereas off-peak mid-day drivers pay \\$2. Vehicles registered to zone residents receive a 50 % discount on whatever toll they incur; taxis and buses are exempt, as are all motorcycles regardless of origin. Revenue will be ring-fenced exclusively for expanding the public cycling network and cannot be re-allocated for road-widening or policing.",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -645,22 +645,22 @@
       "options": [
         {
           "label": "A",
-          "content_md": "$2",
+          "content_md": "\\$2",
           "is_correct": false
         },
         {
           "label": "B",
-          "content_md": "$1",
+          "content_md": "\\$1",
           "is_correct": true
         },
         {
           "label": "C",
-          "content_md": "$0",
+          "content_md": "\\$0",
           "is_correct": false
         },
         {
           "label": "D",
-          "content_md": "$4",
+          "content_md": "\\$4",
           "is_correct": false
         }
       ],
@@ -819,7 +819,7 @@
       "section_code": "GENACAD",
       "type": "single_choice",
       "content_md": "The primary purpose of the information presented is to",
-      "stimulus_md": "A study compared four interventions to reduce traffic congestion in a mid-sized city (population 500,000). Each intervention was piloted in a comparable district for one year. Results:\n\n| Intervention | Implementation Cost | Peak-hour Travel Time Reduction | Unintended Effects |\n|:---|:---|:---|:---|\n| Expanded bus network | $12 million | 8% | Increased bus operating subsidies required |\n| Congestion pricing (downtown only) | $3 million | 15% | Traffic displaced to peripheral routes; retail sales downtown fell 6% |\n| Remote-work incentives for city employees | $1 million | 5% | Minimal; some private employers adopted similar policies |\n| Smart traffic signal synchronization | $6 million | 7% | None observed |\n\nThe city's transportation director notes that the most cost-effective intervention must account for both direct outcomes and spillover effects.",
+      "stimulus_md": "A study compared four interventions to reduce traffic congestion in a mid-sized city (population 500,000). Each intervention was piloted in a comparable district for one year. Results:\n\n| Intervention | Implementation Cost | Peak-hour Travel Time Reduction | Unintended Effects |\n|:---|:---|:---|:---|\n| Expanded bus network | \\$12 million | 8% | Increased bus operating subsidies required |\n| Congestion pricing (downtown only) | \\$3 million | 15% | Traffic displaced to peripheral routes; retail sales downtown fell 6% |\n| Remote-work incentives for city employees | \\$1 million | 5% | Minimal; some private employers adopted similar policies |\n| Smart traffic signal synchronization | \\$6 million | 7% | None observed |\n\nThe city's transportation director notes that the most cost-effective intervention must account for both direct outcomes and spillover effects.",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1300,7 +1300,7 @@
       "section_code": "GENACAD",
       "type": "single_choice",
       "content_md": "Which scenario best satisfies the commission's stated selection criterion?",
-      "stimulus_md": "| Policy Scenario | Target Mode Share | Implementation Cost | Expected CO₂ Reduction | Equity Provision |\n|:---|:---|:---|:---|:---|\n| Scenario A: Car-centric upgrade | 75% private vehicle | $2.1 billion | 8% below baseline | None |\n| Scenario B: Transit-oriented | 45% public transit | $1.8 billion | 22% below baseline | Subsidized fares for low-income |\n| Scenario C: Active mobility | 60% walking/cycling | $0.9 billion | 15% below baseline | Free bike-sharing in underserved areas |\n| Scenario D: Mixed multimodal | 35% each: car, transit, active | $2.4 billion | 25% below baseline | Means-tested mobility credits |\n\nA metropolitan planning commission must select exactly one scenario to guide its 2040 regional transport strategy. The selection criterion prioritizes maximizing CO₂ reduction while ensuring that implementation cost does not exceed $2.0 billion.",
+      "stimulus_md": "| Policy Scenario | Target Mode Share | Implementation Cost | Expected CO₂ Reduction | Equity Provision |\n|:---|:---|:---|:---|:---|\n| Scenario A: Car-centric upgrade | 75% private vehicle | \\$2.1 billion | 8% below baseline | None |\n| Scenario B: Transit-oriented | 45% public transit | \\$1.8 billion | 22% below baseline | Subsidized fares for low-income |\n| Scenario C: Active mobility | 60% walking/cycling | \\$0.9 billion | 15% below baseline | Free bike-sharing in underserved areas |\n| Scenario D: Mixed multimodal | 35% each: car, transit, active | \\$2.4 billion | 25% below baseline | Means-tested mobility credits |\n\nA metropolitan planning commission must select exactly one scenario to guide its 2040 regional transport strategy. The selection criterion prioritizes maximizing CO₂ reduction while ensuring that implementation cost does not exceed \\$2.0 billion.",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -1633,7 +1633,7 @@
       "section_code": "GENACAD",
       "type": "single_choice",
       "content_md": "In the context of this experiment, \"valence framing\" most specifically refers to:",
-      "stimulus_md": "In a study of decision-making under uncertainty, researchers presented participants with two scenarios. In Scenario A, participants were told they had a 90% chance of losing $100 (framed as a \"high probability of loss\"). In Scenario B, participants were told they had a 10% chance of keeping $100 (framed as a \"small chance of no loss\"). Though mathematically identical in expected value, 72% of participants chose to gamble in Scenario B versus only 28% in Scenario A. The researchers concluded that the **valence framing** of outcomes—whether described in terms of potential gains preserved or losses incurred—systematically reversed preferences even when objective probabilities remained constant.",
+      "stimulus_md": "In a study of decision-making under uncertainty, researchers presented participants with two scenarios. In Scenario A, participants were told they had a 90% chance of losing \\$100 (framed as a \"high probability of loss\"). In Scenario B, participants were told they had a 10% chance of keeping \\$100 (framed as a \"small chance of no loss\"). Though mathematically identical in expected value, 72% of participants chose to gamble in Scenario B versus only 28% in Scenario A. The researchers concluded that the **valence framing** of outcomes—whether described in terms of potential gains preserved or losses incurred—systematically reversed preferences even when objective probabilities remained constant.",
       "status": "published",
       "difficulty": "medium",
       "skills": [
@@ -2188,7 +2188,7 @@
       "section_code": "GENACAD",
       "type": "single_choice",
       "content_md": "A neighboring city with similar parking conditions is designing its own performance-based pricing system. Its primary goal is to reduce traffic congestion caused by drivers circling for parking. Which design choice most consistently applies the principle demonstrated by the original city's policy?",
-      "stimulus_md": "A municipal government implements a **performance-based parking pricing** system. Under this policy:\n\n| Zone | Base Rate | Dynamic Adjustment Rule |\n|------|-----------|------------------------|\n| Commercial core | $3/hour | +$1/hour when occupancy exceeds 85%; −$1/hour when occupancy falls below 60% |\n| Residential fringe | $1/hour | +$0.50/hour when occupancy exceeds 85%; −$0.50/hour when occupancy falls below 60% |\n\nThe stated policy goal is **\"to ensure 10–15% of spaces remain available at all times\"** (preventing both overcrowding and underuse), not revenue maximization. After one year, data show:\n- Commercial core: 12% availability, revenue up 22%\n- Residential fringe: 8% availability, revenue up 5%\n\nThe city council debates whether to adjust the policy.",
+      "stimulus_md": "A municipal government implements a **performance-based parking pricing** system. Under this policy:\n\n| Zone | Base Rate | Dynamic Adjustment Rule |\n|------|-----------|------------------------|\n| Commercial core | \\$3/hour | +\\$1/hour when occupancy exceeds 85%; −\\$1/hour when occupancy falls below 60% |\n| Residential fringe | \\$1/hour | +\\$0.50/hour when occupancy exceeds 85%; −\\$0.50/hour when occupancy falls below 60% |\n\nThe stated policy goal is **\"to ensure 10–15% of spaces remain available at all times\"** (preventing both overcrowding and underuse), not revenue maximization. After one year, data show:\n- Commercial core: 12% availability, revenue up 22%\n- Residential fringe: 8% availability, revenue up 5%\n\nThe city council debates whether to adjust the policy.",
       "status": "published",
       "difficulty": "medium",
       "skills": [

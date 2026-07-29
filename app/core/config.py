@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     # App
     app_env: str = "development"
     log_level: str = "INFO"
-    cors_origins: str = "http://localhost:3000"
+    cors_origins: str = "http://localhost:3000,http://192.168.1.8:3000"
 
     # Supabase
     supabase_url: str = ""

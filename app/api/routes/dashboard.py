@@ -23,13 +23,122 @@ from app.schemas.insights import (
     StrategyOut,
     StudentInsightOut,
 )
+from app.schemas.predictor import (
+    AdmissionSummary,
+    CollegeReadinessOut,
+    DaadProgramOut,
+    DmatFieldOut,
+    DmatStandingOut,
+    EligibilityOut,
+    ReadinessBreakdown,
+    TargetProgramsOut,
+    TierSummary,
+    UniUsingDmat,
+)
+from app.schemas.social import LeaderboardEntry, LeaderboardMe, LeaderboardOut
 from app.schemas.user import CurrentUser
+
+# The dMAT stream this predictor is scoped to (catalog_exams.code).
+_DMAT_CODE = "DMAT"
+
+# The only two German universities that currently use the dMAT SCORE as a formal
+# selection criterion, per the official d-mat.de site (2026): "Derzeit nutzen die
+# RWTH Aachen und die Georg-August-Universität Göttingen den dMAT als
+# Auswahlkriterium für die Zulassung." Neither has published a numeric cutoff.
+_DMAT_UNIVERSITIES = [
+    UniUsingDmat(
+        name="RWTH Aachen University",
+        program="M.Sc. Battery Science and Technology",
+        note="dMAT counts for roughly 80% of the admission decision.",
+    ),
+    UniUsingDmat(
+        name="Georg-August University Göttingen",
+        program="M.Sc. Applied Data Science",
+        note="dMAT is used as a selection criterion.",
+    ),
+]
+
+# The bigger picture: only 2 universities score the dMAT, but from Summer 2027 it
+# is a MANDATORY part of the APS process for every applicant in the notified
+# fields — so effectively every public university sees it. (aps-india.de/dmat)
+_DMAT_ADMISSION_NOTE = (
+    "From Summer 2027 the dMAT is a mandatory part of your APS application for degrees in "
+    "Engineering, Commerce/Finance/Economics, or Business/Management — so every German "
+    "public university you apply to in your field receives your dMAT. Admission stays "
+    "holistic: each university weighs it alongside your grades and documents."
+)
+
+# The three dMAT notified UG fields → the DAAD subject keywords that identify
+# matching Master's programmes. Graduates in these fields must take the dMAT
+# from Summer 2027. Keys kept in sync with me._DMAT_FIELD_KEYS.
+_DMAT_FIELDS: dict[str, dict] = {
+    "engineering": {
+        "label": "Engineering",
+        "keywords": [
+            "engineering", "mechanical", "electrical", "civil", "chemical", "automation",
+            "materials", "manufacturing", "renewable", "electronic", "mechatronic",
+            "aerospace", "automotive", "robotic", "computer science", "information technology",
+            "data science", "geodesy", "energy", "bioengineering", "production",
+        ],
+    },
+    "commerce_finance_economics": {
+        "label": "Commerce / Accounting / Finance / Economics",
+        "keywords": [
+            "economic", "finance", "financial", "accounting", "commerce", "insurance",
+            "banking", "actuarial", "quantitative",
+        ],
+    },
+    "business_management": {
+        "label": "Business / Management",
+        "keywords": [
+            "business", "management", "administration", "marketing", "logistics",
+            "entrepreneur", "supply chain",
+        ],
+    },
+}
+
+_DMAT_DISCLAIMER = (
+    "dMAT's first India cohort is 2026, so no official score cut-offs are published yet. "
+    "This is an estimate from your degree's Anabin recognition status and your dMAT "
+    "percentile — not a guarantee of admission."
+)
+
+_ELIGIBILITY_MEANING = {
+    "H+": "Your degree is recognized in Germany (Anabin H+) — you clear the eligibility bar.",
+    "H+/-": "Recognition is case-by-case for your university (Anabin H+/−) — verify your specific programme.",
+    "H-": "Your degree is not recognized in Germany (Anabin H−) — this blocks admission on its own.",
+}
+
+
+def _pct_band(pct: float | None) -> str | None:
+    if pct is None:
+        return None
+    if pct >= 80:
+        return "top"
+    if pct >= 60:
+        return "strong"
+    if pct >= 40:
+        return "mid"
+    return "low"
 
 router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
 
 def _f(v):
     return float(v) if v is not None else None
+
+
+def _display_name(full_name: str | None) -> str:
+    """Safe leaderboard name: first name + last initial. Never email/phone.
+
+    'Amit Kumar' -> 'Amit K.'  ·  'Priya' -> 'Priya'  ·  '' / None -> 'Student'.
+    """
+    parts = (full_name or "").strip().split()
+    if not parts:
+        return "Student"
+    if len(parts) == 1:
+        return parts[0]
+    return f"{parts[0]} {parts[-1][0].upper()}."
 
 
 def _attempt_item(r) -> AttemptListItem:
@@ -250,6 +359,105 @@ async def dashboard_concepts(user: CurrentUser = Depends(get_current_user)) -> l
     ]
 
 
+@router.get("/leaderboard", response_model=LeaderboardOut)
+async def dashboard_leaderboard(
+    timeframe: str = "all", user: CurrentUser = Depends(get_current_user)
+) -> LeaderboardOut:
+    """Best-score ranking within the user's exam stream. Top 10, a slice around
+    me when I'm outside it, and always my own row.
+
+    - Metric: best_score. `timeframe`: "all" (default) or "week" (best score from
+      attempts in the last 7 days only).
+    - Stream = the user's current catalog_exam_code; JEE ranks against JEE.
+    - Tie rule: same best score -> earlier attempt ranks higher (deterministic
+      row_number, so ranks are unique).
+    - delta_rank: real movement vs the ranking as of 7 days ago (positive = climbed).
+      Null for the "week" board and for anyone with no attempt older than 7 days.
+    - All values are computed live from attempt_results — nothing is seeded.
+    """
+    tf = "week" if timeframe == "week" else "all"
+    pool = get_pool()
+    stream_code = await pool.fetchval("select catalog_exam_code from users where id = $1", user.id)
+    if not stream_code:
+        return LeaderboardOut(
+            scope="stream", metric="best_score", stream_code=None, timeframe=tf,
+            entries=[], me=LeaderboardMe(rank=None, value=None, total_participants=0),
+        )
+
+    rows = await pool.fetch(
+        """
+        with best as (
+            -- each user's best-scoring attempt in the stream (earliest on ties),
+            -- optionally restricted to the last 7 days for the weekly board
+            select distinct on (ar.user_id)
+                   ar.user_id, ar.score, ar.submitted_at
+            from attempt_results ar
+            where ar.catalog_exam_code = $2 and ar.score is not null
+              and ($3 = 'all' or ar.submitted_at >= now() - interval '7 days')
+            order by ar.user_id, ar.score desc, ar.submitted_at asc
+        ),
+        ranked as (
+            select b.user_id, b.score, u.full_name,
+                   row_number() over (order by b.score desc, b.submitted_at asc) as rnk,
+                   count(*) over () as total
+            from best b
+            join users u on u.id = b.user_id
+        ),
+        prev as (
+            -- ranking as it stood 7 days ago (all-time board only), for movement
+            select bp.user_id,
+                   row_number() over (order by bp.score desc, bp.submitted_at asc) as rnk_prev
+            from (
+                select distinct on (ar.user_id) ar.user_id, ar.score, ar.submitted_at
+                from attempt_results ar
+                where ar.catalog_exam_code = $2 and ar.score is not null
+                  and ar.submitted_at <= now() - interval '7 days'
+                order by ar.user_id, ar.score desc, ar.submitted_at asc
+            ) bp
+        ),
+        me_rank as (select rnk from ranked where user_id = $1)
+        select r.user_id, r.score, r.full_name, r.rnk, r.total,
+               case when $3 = 'all' and p.rnk_prev is not null
+                    then p.rnk_prev - r.rnk else null end as delta_rank
+        from ranked r
+        left join prev p on p.user_id = r.user_id
+        where r.rnk <= 10
+           or r.user_id = $1
+           or abs(r.rnk - (select rnk from me_rank)) <= 2
+        order by r.rnk
+        """,
+        user.id, stream_code, tf,
+    )
+
+    total = rows[0]["total"] if rows else 0
+    me = LeaderboardMe(rank=None, value=None, total_participants=total)
+    entries: list[LeaderboardEntry] = []
+    near: list[LeaderboardEntry] = []
+    for r in rows:
+        is_me = r["user_id"] == user.id
+        entry = LeaderboardEntry(
+            rank=r["rnk"], display_name=_display_name(r["full_name"]),
+            value=_f(r["score"]), is_me=is_me, delta_rank=r["delta_rank"],
+        )
+        if r["rnk"] <= 10:
+            entries.append(entry)
+        else:
+            near.append(entry)
+        if is_me:
+            me = LeaderboardMe(
+                rank=r["rnk"], value=_f(r["score"]),
+                total_participants=total, delta_rank=r["delta_rank"],
+            )
+
+    # around_me only when I'm actually outside the top-10.
+    around_me = near if (me.rank is not None and me.rank > 10 and near) else None
+
+    return LeaderboardOut(
+        scope="stream", metric="best_score", stream_code=stream_code, timeframe=tf,
+        entries=entries, around_me=around_me, me=me,
+    )
+
+
 @router.get("/strategy", response_model=StrategyOut)
 async def dashboard_strategy(user: CurrentUser = Depends(get_current_user)) -> StrategyOut:
     """Behavioral / test-strategy view aggregated across all the user's attempts."""
@@ -290,4 +498,301 @@ async def dashboard_strategy(user: CurrentUser = Depends(get_current_user)) -> S
         dominant_archetype=arch["behavior_archetype"] if arch else None,
         pacing_note=(f"{careless_share:.0f}% of your wrong answers were careless (fast-wrong) — "
                      f"pacing discipline is your cheapest win." if careless_share else None),
+    )
+
+
+# ---- The readiness formula: R = C × E --------------------------------------
+# C = 0.55·A + 0.35·D + 0.10·T   (UG grade dominant, dMAT secondary, 12th minor)
+_W_ACADEMIC, _W_DMAT, _W_TWELFTH = 0.55, 0.35, 0.10
+_E_BY_STATUS = {"H+": 1.0, "H+/-": 0.5, "H-": 0.0}
+
+
+def _german_grade(ug: float) -> float:
+    """Modified Bavarian Formula: UG% → German grade (1.0 best … 4.0 pass)."""
+    return round(1 + (100 - ug) / 20, 2)
+
+
+def _academic_score(ug: float | None) -> float | None:
+    if ug is None:
+        return None
+    if ug < 60:                      # floor: below 60% UG contributes nothing
+        return 0.0
+    return round(max(0.0, min(100.0, 100 * (4.0 - _german_grade(ug)) / 3.0)), 1)
+
+
+def _dmat_score(pct: float | None) -> float | None:
+    if pct is None:
+        return None
+    if pct < 70:                     # floor: below the 70th percentile → 0
+        return 0.0
+    return round(max(0.0, min(100.0, (pct - 70) / 30 * 100)), 1)
+
+
+def _twelfth_score(t: float | None) -> float | None:
+    if t is None:
+        return None
+    return round(max(0.0, min(100.0, (t - 60) / 40 * 100)), 1)
+
+
+def _readiness_band(r: float) -> str:
+    if r >= 75:
+        return "strong"
+    if r >= 55:
+        return "target"
+    if r >= 40:
+        return "reach"
+    return "low"
+
+
+@router.get("/college-predictions", response_model=CollegeReadinessOut)
+async def college_predictions(user: CurrentUser = Depends(get_current_user)) -> CollegeReadinessOut:
+    """dMAT college-readiness — R = C × E.
+
+    Honest by construction (no invented score→college cut-offs; none exist for the
+    2026 first cohort):
+      - E (eligibility gate): the student's university's Anabin status — H+ =1.0,
+        H+/- =0.5, H- =0.
+      - C (competitiveness): 0.55·A + 0.35·D + 0.10·T where A = UG grade
+        (Modified Bavarian, floored below 60%), D = dMAT percentile (floored below
+        the 70th), T = 12th% (minor).
+    dMAT-scoped via `applicable`.
+    """
+    pool = get_pool()
+    urow, inst, agg = await asyncio.gather(
+        pool.fetchrow(
+            "select catalog_exam_code, ug_percentage, twelfth_percentage from users where id = $1",
+            user.id,
+        ),
+        pool.fetchrow(
+            """select ai.id, ai.name, ai.status
+               from anabin_institutions ai
+               join users u on u.anabin_institution_id = ai.id
+               where u.id = $1""",
+            user.id,
+        ),
+        pool.fetchrow(
+            """select max(score) as best,
+                      (array_agg(percentile order by submitted_at desc nulls last))[1] as latest_pct
+               from attempt_results where user_id = $1 and score is not null""",
+            user.id,
+        ),
+    )
+
+    applicable = urow["catalog_exam_code"] == _DMAT_CODE
+    ug = _f(urow["ug_percentage"])
+    twelfth = _f(urow["twelfth_percentage"])
+    pct = _f(agg["latest_pct"]) if agg else None
+
+    # Component scores.
+    A = _academic_score(ug)
+    D = _dmat_score(pct)
+    T = _twelfth_score(twelfth)
+    status_code = inst["status"] if inst else None
+    E = _E_BY_STATUS.get(status_code) if status_code else None
+
+    # Eligibility view — null until a university is selected (the client shows the
+    # picker), otherwise the recognition verdict.
+    eligibility = None if inst is None else EligibilityOut(
+        institution_id=inst["id"], institution_name=inst["name"], status=status_code,
+        recognized=(status_code == "H+"), meaning=_ELIGIBILITY_MEANING.get(status_code, ""),
+    )
+
+    # What's still needed for a real score. UG + university are essential; dMAT
+    # counts as missing only until the first mock (D floors to 0 meanwhile).
+    missing: list[str] = []
+    if inst is None:
+        missing.append("university")
+    if ug is None:
+        missing.append("ug_percentage")
+    if pct is None:
+        missing.append("dmat_percentile")
+
+    competitiveness = readiness_score = None
+    can_score = inst is not None and ug is not None
+    if can_score:
+        C = round(_W_ACADEMIC * (A or 0) + _W_DMAT * (D or 0) + _W_TWELFTH * (T or 0), 1)
+        competitiveness = C
+        readiness_score = round(C * E, 1)  # E is set whenever inst is set
+
+    breakdown = ReadinessBreakdown(
+        ug_percentage=ug, german_grade=_german_grade(ug) if ug is not None else None,
+        academic_score=A, dmat_percentile=pct, dmat_score=D,
+        twelfth_percentage=twelfth, twelfth_score=T,
+        competitiveness=competitiveness, eligibility_multiplier=E if E is not None else 0.0,
+        readiness_score=readiness_score,
+    )
+
+    # Readiness verdict.
+    if not can_score:
+        readiness = "unknown"
+        need = " and ".join(m.replace("_", " ") for m in missing if m != "dmat_percentile") or "a few details"
+        note = f"Add your {need} to see your college readiness."
+    elif status_code in ("H-", "H+/-"):
+        readiness = "eligibility_risk"
+        note = ("Your degree's recognition status is the blocker — a strong dMAT can't offset it. "
+                "Resolve eligibility first.")
+    else:  # H+, scored
+        readiness = _readiness_band(readiness_score)
+        note = {
+            "strong": "Recognized degree with strong academics/dMAT — a competitive profile.",
+            "target": "Recognized degree with solid academics — a realistic target with room to push your dMAT.",
+            "reach":  "Recognized, but academics/dMAT sit on the lower side — treat selective programmes as a reach.",
+            "low":    "Recognized degree, but the numbers are low — focus on lifting your dMAT and shortlisting accessible programmes.",
+        }[readiness]
+        if pct is None:
+            note += " Take a dMAT mock to complete the picture."
+
+    # dMAT standing — null until the student has a mock with a percentile.
+    dmat = None if pct is None else DmatStandingOut(
+        percentile=pct, band=_pct_band(pct), best_score=_f(agg["best"]) if agg else None
+    )
+
+    return CollegeReadinessOut(
+        applicable=applicable,
+        eligibility=eligibility,
+        dmat=dmat,
+        readiness=readiness,
+        readiness_note=note,
+        readiness_score=readiness_score,
+        breakdown=breakdown,
+        missing_inputs=missing,
+        universities_scoring_dmat=_DMAT_UNIVERSITIES,
+        dmat_admission_note=_DMAT_ADMISSION_NOTE,
+        disclaimer=_DMAT_DISCLAIMER,
+    )
+
+
+# ---- Reach / Target / Safe tiering for the target-programme list -----------
+# Honest by construction — the bucket comes only from a programme's real
+# admission mode plus the student's Anabin eligibility, never a fabricated
+# admission percentage (dMAT's first cohort has no published cut-offs):
+#   open admission  -> Safe   — admitted if you meet the requirements, BUT only
+#                      when the degree is recognized (H+); otherwise eligibility,
+#                      not the programme, is the blocker, so it can't be "safe".
+#   restricted (NC) -> Reach  — selective; competitive, worth a shot.
+#   unknown mode    -> Target — can't call it safe, not clearly a reach.
+def _program_tier(admission_mode: str | None, eligible: bool) -> str:
+    if admission_mode == "open":
+        return "safe" if eligible else "target"
+    if admission_mode == "restricted":
+        return "reach"
+    return "target"
+
+
+@router.get("/target-programs", response_model=TargetProgramsOut)
+async def target_programs(
+    field: str | None = None,
+    q: str = "",
+    limit: int = 20,
+    user: CurrentUser = Depends(get_current_user),
+) -> TargetProgramsOut:
+    """German PUBLIC university Master's programmes the student can apply to, in
+    their dMAT field (DAAD data), overlaid with their Anabin eligibility.
+
+    Scope: only state-run (public, tuition-free) universities — the realistic
+    target for Indian applicants, and the ones that from Summer 2027 receive the
+    dMAT via APS. Auto-scoped to the student's stored `dmat_field` (override with
+    `?field=`); `q` refines further by keyword.
+
+    Honest by construction: DAAD publishes no per-programme grade cut-off, so this
+    returns REAL programmes in the field + the eligibility gate — not a fabricated
+    'guaranteed to get in'. Grade-tier fit lives in the readiness endpoint.
+    """
+    pool = get_pool()
+    query = q.strip()
+    urow, inst = await asyncio.gather(
+        pool.fetchrow("select catalog_exam_code, dmat_field from users where id = $1", user.id),
+        pool.fetchrow(
+            """select ai.id, ai.name, ai.status from anabin_institutions ai
+               join users u on u.anabin_institution_id = ai.id where u.id = $1""",
+            user.id,
+        ),
+    )
+
+    # Eligibility view — null until a university is selected.
+    eligibility = None if inst is None else EligibilityOut(
+        institution_id=inst["id"], institution_name=inst["name"], status=inst["status"],
+        recognized=(inst["status"] == "H+"), meaning=_ELIGIBILITY_MEANING.get(inst["status"], ""),
+    )
+
+    # Resolve the field: explicit override wins, else the student's stored field.
+    field_key = field if field in _DMAT_FIELDS else (urow["dmat_field"] if urow else None)
+    field_out = (
+        DmatFieldOut(key=field_key, label=_DMAT_FIELDS[field_key]["label"])
+        if field_key in _DMAT_FIELDS else None
+    )
+
+    # Build the WHERE: always public; scope by field keywords; refine by q.
+    where = ["is_public is true"]
+    args: list = []
+    if field_key in _DMAT_FIELDS:
+        args.append([f"%{k}%" for k in _DMAT_FIELDS[field_key]["keywords"]])
+        where.append(f"(subject ilike any(${len(args)}) or name ilike any(${len(args)}))")
+    if len(query) >= 2:
+        args.append(f"%{query}%")
+        where.append(f"(name ilike ${len(args)} or subject ilike ${len(args)})")
+    where_sql = " and ".join(where)
+
+    args.append(min(max(limit, 1), 50))
+    limit_pos = len(args)
+    # One aggregate over the whole matched set: total + admission-mode counts.
+    agg_row = await pool.fetchrow(
+        f"""select count(*) as total,
+                   count(*) filter (where admission_mode = 'open') as open,
+                   count(*) filter (where admission_mode = 'restricted') as restricted,
+                   count(*) filter (where admission_mode is null) as unknown
+            from daad_programs where {where_sql}""",
+        *args[:-1],
+    )
+    total = agg_row["total"]
+    summary = AdmissionSummary(
+        open=agg_row["open"], restricted=agg_row["restricted"], unknown=agg_row["unknown"]
+    )
+    # Tier counts over the whole matched set, derived from the admission-mode
+    # counts + eligibility (H+). Open is "safe" only for a recognized degree;
+    # otherwise it folds into "target" because eligibility is the real blocker.
+    eligible = inst is not None and inst["status"] == "H+"
+    tier_summary = TierSummary(
+        safe=agg_row["open"] if eligible else 0,
+        target=agg_row["unknown"] if eligible else agg_row["open"] + agg_row["unknown"],
+        reach=agg_row["restricted"],
+    )
+    rows = await pool.fetch(
+        f"""select name, university, city, languages, subject, tuition, duration,
+                   application_deadline, link, admission_mode
+            from daad_programs
+            where {where_sql}
+            order by university, name
+            limit ${limit_pos}""",
+        *args,
+    )
+
+    # Note: eligibility gate first, then field-scope context.
+    field_phrase = f"in {field_out.label}" if field_out else "in your field"
+    if inst is None:
+        note = (f"Public German universities with Master's programmes {field_phrase}. "
+                "Add your university to check whether your degree is recognized.")
+    elif inst["status"] == "H+":
+        note = (f"Your degree is recognized (H+). Real Master's programmes at German PUBLIC "
+                f"universities {field_phrase} — grade fit is in your readiness. From Summer 2027 "
+                "you'll apply to these with your dMAT via APS.")
+    else:
+        note = ("Your degree's recognition status is a blocker (see readiness) — resolve eligibility "
+                "before targeting these programmes.")
+    if field_out is None:
+        note += " Set your dMAT field to auto-scope this list."
+
+    return TargetProgramsOut(
+        applicable=(urow["catalog_exam_code"] == _DMAT_CODE),
+        eligibility=eligibility,
+        field=field_out,
+        public_only=True,
+        total_matched=total or 0,
+        admission_summary=summary,
+        tier_summary=tier_summary,
+        programs=[
+            DaadProgramOut(**dict(r), tier=_program_tier(r["admission_mode"], eligible))
+            for r in rows
+        ],
+        note=note,
     )

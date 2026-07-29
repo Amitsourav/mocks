@@ -109,6 +109,7 @@ class PaperOut(BaseModel):
 class SubmitAck(BaseModel):
     status: str
     message: str
+    result_id: UUID | None = None   # the scored attempt_result to open the report
 
 
 # ---- Answer submission ----
