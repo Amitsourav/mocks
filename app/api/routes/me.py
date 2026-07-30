@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, status
 
 from app.api.deps import get_current_user, invalidate_user_cache
 from app.core.db import get_pool
@@ -10,6 +10,7 @@ from app.schemas.catalog import StreamOut, StreamSwitchIn
 from app.schemas.predictor import AnabinInstitutionOut, SetAcademicsIn, SetInstitutionIn
 from app.schemas.user import CurrentUser, ProfileUpdate
 from app.services import streams
+from app.services.crm import send_mock_lead_to_crm
 from app.services.streams import StreamError
 
 router = APIRouter(prefix="/me", tags=["me"])
@@ -33,6 +34,7 @@ async def get_me(user: CurrentUser = Depends(get_current_user)) -> CurrentUser:
 @router.post("/profile", response_model=CurrentUser)
 async def update_profile(
     payload: ProfileUpdate,
+    background_tasks: BackgroundTasks,
     user: CurrentUser = Depends(get_current_user),
 ) -> CurrentUser:
     """Fill the cascading registration form and mark the profile complete.
@@ -100,6 +102,26 @@ async def update_profile(
         country_code,
     )
     invalidate_user_cache(user.auth_user_id)
+
+    # Profile is now complete (name + phone + course) and committed above — this
+    # is the one moment we forward the student to the Admitverse CRM as a lead.
+    # Fire-and-forget AFTER the response is sent: the CRM must never delay or fail
+    # the student's save. Idempotent by external_id (the user id), so repeated
+    # profile edits produce one lead, not many. Not fired on login/provisioning.
+    background_tasks.add_task(
+        send_mock_lead_to_crm,
+        full_name=payload.full_name,
+        email=user.email,
+        phone=phone,
+        external_id=str(user.id),
+        extra_fields={
+            "mock_user_id": str(user.id),
+            "catalog_exam_code": payload.catalog_exam_code,
+            "mock_category_code": payload.mock_category_code,
+            "state_code": payload.state_code,
+            "target_country_code": country_code,
+        },
+    )
     return CurrentUser(**dict(row))
 
 

@@ -37,6 +37,14 @@ class Settings(BaseSettings):
     storage_bucket: str = "exam-media"
     signed_url_ttl: int = 3600
 
+    # Admitverse CRM — forward a completed mock-test profile as a Website Lead.
+    # SERVER-SIDE ONLY: never expose crm_website_lead_secret to the browser (no
+    # NEXT_PUBLIC_/VITE_ prefix). When either is unset the forward is skipped, so
+    # local dev works without a CRM. Reuse the existing Admitverse secret; the
+    # mock test writes into the same Admitverse database.
+    crm_api_url: str = ""
+    crm_website_lead_secret: str = ""
+
     # OpenRouter (AI insight pipeline). Dormant until a key is set.
     openrouter_api_key: str = ""
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
