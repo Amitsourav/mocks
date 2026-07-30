@@ -14,6 +14,15 @@ async def health() -> dict:
     return {"status": "ok"}
 
 
+@router.get("/health/crm-selftest")
+async def crm_selftest() -> dict:
+    """TEMPORARY diagnostic: run the CRM send path synchronously and report the
+    result. Idempotent (fixed external_id) — hitting it repeatedly makes one CRM
+    row. Remove once the mock-test lead forward is confirmed working."""
+    from app.services.crm import selftest
+    return await selftest()
+
+
 @router.get("/health/ready")
 async def readiness(response: Response) -> dict:
     """Deep check: Postgres and Redis both reachable.

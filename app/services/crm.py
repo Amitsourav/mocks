@@ -76,6 +76,34 @@ def _build_payload(
     return payload
 
 
+async def selftest() -> dict:
+    """Diagnostic: run the exact send path SYNCHRONOUSLY and REPORT the outcome
+    (send_mock_lead_to_crm swallows errors and only logs). Sends a fixed
+    external_id so the CRM dedups to one row no matter how often it's hit."""
+    settings = get_settings()
+    url = (settings.crm_api_url or "").rstrip("/")
+    secret = settings.crm_website_lead_secret
+    if not url or not secret:
+        return {"ok": False, "reason": "unconfigured",
+                "url_set": bool(url), "secret_set": bool(secret)}
+    payload = _build_payload(
+        full_name="Railway Selftest", email="railway-selftest@example.com",
+        phone=None, external_id="railway-selftest-1", extra_fields={"diagnostic": True},
+    )
+    try:
+        async with httpx.AsyncClient(timeout=_TIMEOUT) as client:
+            resp = await client.post(
+                f"{url}{_INGEST_PATH}",
+                headers={"Content-Type": "application/json", "X-Internal-Secret": secret},
+                json=payload,
+            )
+        return {"ok": resp.status_code == 201, "status_code": resp.status_code,
+                "body": resp.text[:200], "target": f"{url}{_INGEST_PATH}"}
+    except Exception as exc:  # noqa: BLE001 - report the failure verbatim
+        return {"ok": False, "error": f"{type(exc).__name__}: {exc}",
+                "target": f"{url}{_INGEST_PATH}"}
+
+
 async def send_mock_lead_to_crm(
     *,
     full_name: str | None = None,
