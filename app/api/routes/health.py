@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from fastapi import APIRouter, Response, status
 
+from app.core.config import get_settings
 from app.core.db import get_pool
 from app.core.redis import get_redis
 
@@ -35,6 +36,12 @@ async def readiness(response: Response) -> dict:
         checks["redis"] = "ok"
     except Exception as exc:  # noqa: BLE001
         checks["redis"] = f"error: {exc}"
+
+    # Informational only (no secret exposed): whether THIS process can read the
+    # CRM env vars. Does not affect readiness status. Diagnoses "leads not sending
+    # because the running process can't see CRM_API_URL / CRM_WEBSITE_LEAD_SECRET".
+    _s = get_settings()
+    checks["crm"] = "configured" if (_s.crm_api_url and _s.crm_website_lead_secret) else "unconfigured"
 
     if checks["postgres"] != "ok":
         checks["status"] = "unavailable"
