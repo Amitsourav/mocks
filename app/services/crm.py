@@ -32,7 +32,7 @@ logger = logging.getLogger("mock_exam")
 _INGEST_PATH = "/api/v1/internal/website/ingest"
 _FORM_KEY = "av_mock_test"
 _FORM_NAME = "AV — Mock Test Signup"
-_TIMEOUT = 10.0
+_TIMEOUT = 15.0  # CRM ingest legitimately takes ~2s; keep clear margin
 
 
 def _clean(value: str | None) -> str | None:
