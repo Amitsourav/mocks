@@ -81,8 +81,8 @@ async def selftest() -> dict:
     (send_mock_lead_to_crm swallows errors and only logs). Sends a fixed
     external_id so the CRM dedups to one row no matter how often it's hit."""
     settings = get_settings()
-    url = (settings.crm_api_url or "").rstrip("/")
-    secret = settings.crm_website_lead_secret
+    url = (settings.crm_api_url or "").strip().rstrip("/")
+    secret = (settings.crm_website_lead_secret or "").strip()
     if not url or not secret:
         return {"ok": False, "reason": "unconfigured",
                 "url_set": bool(url), "secret_set": bool(secret)}
@@ -113,8 +113,10 @@ async def send_mock_lead_to_crm(
     extra_fields: dict | None = None,
 ) -> None:
     settings = get_settings()
-    url = (settings.crm_api_url or "").rstrip("/")
-    secret = settings.crm_website_lead_secret
+    # .strip() guards against a stray space in the Railway env var (a leading
+    # space in CRM_API_URL makes httpx reject the URL before sending anything).
+    url = (settings.crm_api_url or "").strip().rstrip("/")
+    secret = (settings.crm_website_lead_secret or "").strip()
     logger.info("[crm] task running for %s (url_set=%s, secret_set=%s)",
                 external_id, bool(url), bool(secret))
     if not url or not secret:
