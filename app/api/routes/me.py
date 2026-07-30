@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import re
 
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, status
@@ -14,6 +15,7 @@ from app.services.crm import send_mock_lead_to_crm
 from app.services.streams import StreamError
 
 router = APIRouter(prefix="/me", tags=["me"])
+logger = logging.getLogger("mock_exam")
 
 # Lenient E.164: leading '+', 8–15 digits. UI collects country code + number.
 _E164 = re.compile(r"^\+\d{8,15}$")
@@ -108,6 +110,7 @@ async def update_profile(
     # Fire-and-forget AFTER the response is sent: the CRM must never delay or fail
     # the student's save. Idempotent by external_id (the user id), so repeated
     # profile edits produce one lead, not many. Not fired on login/provisioning.
+    logger.info("[crm] queueing mock-test lead for user=%s", user.id)
     background_tasks.add_task(
         send_mock_lead_to_crm,
         full_name=payload.full_name,

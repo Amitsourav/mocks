@@ -36,6 +36,15 @@ async def lifespan(app: FastAPI):
         logger.info("Redis ready")
     except Exception as exc:  # noqa: BLE001 - Redis optional at boot in dev
         logger.warning("Redis unavailable at startup: %s", exc)
+    # Show at boot whether THIS process can see the CRM env vars — the fastest way
+    # to tell "leads not sending because unconfigured" from an actual send failure.
+    if settings.crm_api_url and settings.crm_website_lead_secret:
+        logger.info("CRM lead forward: configured (url=%s)", settings.crm_api_url)
+    else:
+        logger.warning(
+            "CRM lead forward: NOT configured — CRM_API_URL set=%s, CRM_WEBSITE_LEAD_SECRET set=%s",
+            bool(settings.crm_api_url), bool(settings.crm_website_lead_secret),
+        )
     # Ingest "Dates & News" now (non-blocking) and every 6h thereafter. The task
     # is fire-and-forget; the advisory lock inside keeps multiple workers safe.
     news_task = asyncio.create_task(news_ingest.scheduler_loop())

@@ -87,6 +87,8 @@ async def send_mock_lead_to_crm(
     settings = get_settings()
     url = (settings.crm_api_url or "").rstrip("/")
     secret = settings.crm_website_lead_secret
+    logger.info("[crm] task running for %s (url_set=%s, secret_set=%s)",
+                external_id, bool(url), bool(secret))
     if not url or not secret:
         logger.warning("[crm] not configured — skipping mock-test lead")
         return
