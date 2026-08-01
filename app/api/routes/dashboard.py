@@ -12,9 +12,12 @@ from app.schemas.catalog import (
     AttemptDetail,
     AttemptListItem,
     DashboardSummary,
+    OptionReviewOut,
     QuestionResultOut,
+    QuestionReviewOut,
     SectionResultOut,
     SkillResultOut,
+    SkillTagOut,
     SkillStat,
 )
 from app.schemas.insights import (
@@ -291,6 +294,106 @@ async def dashboard_attempt_detail(
                                   for k, v in dict(s).items()}) for s in skills],
         questions=[QuestionResultOut(**dict(q)) for q in questions],
         insight=_to_attempt_insight(ins) if ins else None,
+    )
+
+
+@router.get("/attempts/{attempt_id}/questions/{question_no}", response_model=QuestionReviewOut)
+async def dashboard_question_review(
+    attempt_id: UUID, question_no: int, user: CurrentUser = Depends(get_current_user)
+) -> QuestionReviewOut:
+    """Grid drill-down: full review of one question in a submitted attempt — the question
+    body, every option (correct one + the candidate's pick both flagged), the worked
+    solution, and per-question stats. Answer keys are revealed (post-submission review)."""
+    pool = get_pool()
+    # Ownership + the engine attempt this result came from, plus the snapshot row (which
+    # always exists even when the underlying question was later deleted / is demo data).
+    ar, snap = await asyncio.gather(
+        pool.fetchrow(
+            "select id, user_id, engine_attempt_id from attempt_results where id=$1", attempt_id),
+        pool.fetchrow(
+            "select section_name, skill_code, error_type::text as error_type, is_correct, "
+            "time_spent_ms, difficulty, marked_for_review "
+            "from attempt_question_results where attempt_result_id=$1 and question_no=$2",
+            attempt_id, question_no),
+    )
+    if ar is None or ar["user_id"] != user.id:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Attempt not found")
+
+    eng = ar["engine_attempt_id"]
+    # Resolve the real question via the frozen paper (question_no == attempt_questions.position).
+    qrow = None
+    if eng is not None:
+        qrow = await pool.fetchrow(
+            """
+            select q.id as qid, q.question_type::text as qtype, q.content_md, q.difficulty,
+                   st.content_md as stimulus_md, s.name as section_name
+            from attempt_questions aq
+            join questions q on q.id = aq.question_id
+            join exam_sections s on s.id = aq.section_id
+            left join stimuli st on st.id = q.stimulus_id
+            where aq.attempt_id = $1 and aq.position = $2
+            """,
+            eng, question_no,
+        )
+
+    if qrow is None:
+        # Demo/dummy attempt (no engine attempt) or the question was deleted after the
+        # attempt — return the snapshot-only view so the UI can show a graceful message.
+        if snap is None:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Question not found")
+        return QuestionReviewOut(
+            question_no=question_no, section_name=snap["section_name"], question_type="single_choice",
+            difficulty=snap["difficulty"], content_md="", options=[], selected_label=None,
+            correct_label=None, is_correct=snap["is_correct"], error_type=snap["error_type"],
+            time_spent_ms=snap["time_spent_ms"], marked_for_review=snap["marked_for_review"],
+            skills=[], detail_available=False,
+        )
+
+    qid = qrow["qid"]
+    opts, ans, sol, skills = await asyncio.gather(
+        pool.fetch(
+            "select id, label, content_md, is_correct, position from question_options "
+            "where question_id=$1 order by position", qid),
+        pool.fetchrow(
+            "select selected_option_id, time_spent_ms, is_marked_for_review "
+            "from student_answers where attempt_id=$1 and question_id=$2", eng, qid),
+        pool.fetchrow(
+            "select solution_md, final_answer, correct_label from solutions where question_id=$1", qid),
+        pool.fetch(
+            "select sk.code, sk.name from question_skill_tags qst "
+            "join skills sk on sk.id=qst.skill_id where qst.question_id=$1", qid),
+    )
+    selected_id = ans["selected_option_id"] if ans else None
+    selected_label = correct_label = None
+    options = []
+    for o in opts:
+        is_sel = selected_id is not None and o["id"] == selected_id
+        if is_sel:
+            selected_label = o["label"]
+        if o["is_correct"]:
+            correct_label = o["label"]
+        options.append(OptionReviewOut(
+            id=str(o["id"]), label=o["label"], content_md=o["content_md"],
+            is_correct=o["is_correct"], is_selected=is_sel))
+    is_correct = None if selected_id is None else (selected_label == correct_label)
+
+    return QuestionReviewOut(
+        question_no=question_no,
+        section_name=qrow["section_name"] or (snap["section_name"] if snap else None),
+        question_type=qrow["qtype"], difficulty=qrow["difficulty"],
+        content_md=qrow["content_md"], stimulus_md=qrow["stimulus_md"],
+        options=options, selected_label=selected_label,
+        correct_label=correct_label or (sol["correct_label"] if sol else None),
+        is_correct=is_correct,
+        error_type=snap["error_type"] if snap else None,
+        time_spent_ms=(ans["time_spent_ms"] if ans and ans["time_spent_ms"] is not None
+                       else (snap["time_spent_ms"] if snap else None)),
+        marked_for_review=bool(ans["is_marked_for_review"]) if ans else (
+            snap["marked_for_review"] if snap else False),
+        skills=[SkillTagOut(code=s["code"], name=s["name"]) for s in skills],
+        solution_md=sol["solution_md"] if sol else None,
+        final_answer=sol["final_answer"] if sol else None,
+        detail_available=True,
     )
 
 

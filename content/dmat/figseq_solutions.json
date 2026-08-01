@@ -1,0 +1,394 @@
+[
+  {
+    "content_hash": "8961c4bfc3fbee58ea92689d1bfecde5f3b4344594c42c9e4d2f1a1718ce7e0d",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "1c358b853525ac71dd2d9da18ee0ee7f47849e2322ac29c7a361af7d8455cc7f",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "b537955907200553be77a4d07bc9c55346f1d41890d6d18b9e426aaa8d72917a",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "78b62bbea23d4a7658e805d91e6c1834f5007b8be014e6879b51aae6438057a2",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "419a2c04c4c71fb8772870612e3c167d83a6f7109048865b06e9df6a9d3f8aa1",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "d3a4f39287cfb7423b873a5ef4c800ab94ad5e5d0609f87355e83b18270c3977",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "523aa685964e8450bdcd852d6037aa9e4270bd11b23ff12e73abefbf01d4da45",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "555470eeae0a823a4a411f51be5d972cc2c239495bd78338583ea8b666de42d5",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "ca629c2cd0394d9d8d10021ed6eba9487e81d8be064f424330df6232bcf46f09",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "a541abf5e70d206cdce3bbcf9026a4d24cdabc04973c9249a460c1af130538ff",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "cee25ba4a362faf9ebdc1537c6ab67ca320c93306d9534265802aafdda054790",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "e27a82f518d86401717b0585d19f1fd0010ff1c78781741d7413f7418c18f960",
+    "family": "latin_shapes",
+    "solution_md": "**Rule:** Each row and column contains all three shapes once (distribution of three). The bottom-right cell's row and column already use the other two shapes, so the missing one is forced.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "507a5ba7b2197698c50a7934deeb2601afa8508ab8371499d7a7e30bd2ca04d6",
+    "family": "rotation",
+    "solution_md": "**Rule:** The L-shape rotates 90° each step (the marked end shows the direction).\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "b40e8d7149f564af614c4d4d804a90ca213522a337b53df720bf6399fe6e796b",
+    "family": "rotation",
+    "solution_md": "**Rule:** The marked square rotates 90° each step; the dot moves to the next corner.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "9c3d8fb7f35b9ae4ef84ad9ec39278e20be2508d727976e6e17e24094018afe0",
+    "family": "rotation",
+    "solution_md": "**Rule:** The dot rotates a fixed step around the circle each frame.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "b31d46f6fbfd9ac8456be97f760d88c2bcd0953a1fda236eacb6138b9d1073e4",
+    "family": "rotation",
+    "solution_md": "**Rule:** The L-shape rotates 90° each step (the marked end shows the direction).\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "59f8737122e789b02b83cb3147ba6fc8d61feab5c167b5f1aa818c265bfdf80b",
+    "family": "rotation",
+    "solution_md": "**Rule:** The L-shape rotates 90° each step (the marked end shows the direction).\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "c2afd6dd282b90ace3a9ce6e13f32b204045ce59784624bbc02e53aed04bfb17",
+    "family": "rotation",
+    "solution_md": "**Rule:** The dot rotates a fixed step around the circle each frame.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "9285c24307ab377bc655a2f03124f3c2c8e9427e450a66dc135c207df7c64bbe",
+    "family": "rotation",
+    "solution_md": "**Rule:** The dot rotates a fixed step around the circle each frame.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "f7e0fdd3ac8e356c6f2c77fa3a6623ed11a513242c02f51b1b902220edd9e035",
+    "family": "rotation",
+    "solution_md": "**Rule:** The marked square rotates 90° each step; the dot moves to the next corner.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "1c85fc9f43c12028d7bb4051ad38ccbbe289c04f9a496497af75a4a1131e57fc",
+    "family": "rotation",
+    "solution_md": "**Rule:** The dot rotates a fixed step around the circle each frame.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "4f85b45b324cf879bad1bc2f643753adeb3529ce2a0144dc12e45bb9e41671a3",
+    "family": "rotation",
+    "solution_md": "**Rule:** The marked square rotates 90° each step; the dot moves to the next corner.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "9c50eca3e25800ee272533ebc7321b24193874435e9d7557257bb1ec75385607",
+    "family": "rotation",
+    "solution_md": "**Rule:** The L-shape rotates 90° each step (the marked end shows the direction).\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "741416a210eb336d06ba9a249ed1f10ecb1257b0f5c2a8fb029d3c4adbcb8930",
+    "family": "rotation",
+    "solution_md": "**Rule:** The marked square rotates 90° each step; the dot moves to the next corner.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "cc86c28479d4af2c2b4123a7247597eb822f8950ccc8f0e89cf5384cd261e865",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "52c5f34c4e2a78e14f3609372d221c7df4f441883924489cb92e0760dd0a7b95",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "83f3ebc48816c534ee9c15e84e546ea6b8d4fd1462ce0b4d322d31a853b7a3d6",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "6d39af67a2b43bf28b64645edc58409efe0786122142d93c67a2aa8853218f46",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "845bb3f8937c4b8129e06c057ad4ad30137057fbf1fb2a23a95c65b6e86e04e3",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "cf7118b278b6172712d2f3861b6912bb2428f771bd2a2402c30d9734c3f034f8",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "d6a8d670d270c33ce5b239a08f79b4efd4a9a0fe9e3392cc1c5c3101bdd119ee",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "2e6a0bb9268122d15ac744e9f24bcd1fd413076dd08149806bfd6bc0bbbc37eb",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "ed79fcc50ea3784821d8a26e0fb54f015cbc962ad41905f6d525d085379937e1",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "8ea8edd3d6723f9776164fcb8df27a3342d775d5e1c9061ceb85ccd2968526a5",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "78b6a0653584035fa50f9701ae33b373de0dc21d18729f5d3673549e206a6bfb",
+    "family": "combine_and",
+    "solution_md": "**Rule:** In every row, the third cell shows only the shapes common to both of the first two cells (shapes in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "4776d957db798ef9a13a3f2cef73acba4feb7ed0cc545f7d24efa30d441878d8",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "b0df66a96bdd8633e7189b9f2266a6477fdb00104d35a085bf31af9510f12743",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "e3edff5ea16f76fba7ba94d96b406cd265ff085a7665516e281c6f9885c340dc",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "0389362f57abc77ee0586c79b88cea357852424972d6cd2e40b4f21f1a5eba11",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "c009b360c8a0a1028752e7ad37ae07ba660b045d0aac241beb67993dedca2761",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "a87a80ab0a5955aab88b82cb4ec3e21f7ff0f790d07335a2a0e6cd78a8d36c58",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "18034f64abe6fdd6442fe8aba3c44dc07dfd62606dee483b405e3dfed5355656",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "ab598f7e90cfa82f0ccd5637494aebd88ab6fda0fef0c9e14a5855487e67760c",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "1614fecc27fae3978d521a562f9c41d1aad310a34d09d6079a4297fba6ded79c",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "67bf59477f912385c2cdeac786e4cabbd2d70211825a508a08daf3cf801fa0dd",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "ad518c5a82d050d035ecfca50498dbce27f6a48330553aaaf6fb21d52d077d76",
+    "family": "combine_xor",
+    "solution_md": "**Rule:** In every row, the third cell shows the shapes that appear in exactly one of the first two cells (not in both). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option D**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option D",
+    "correct_label": "D"
+  },
+  {
+    "content_hash": "0bce467da0e32bee262928fa16d7fb86be5dc2c4a6de5e4e7787954516a66764",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "f332baa3cae4532cb15a936ea05708101f88fd9b78c7561ada42c1f4a7ffa3cf",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "eb0a7f7e88392baad6da74c53d72d8ce2bf32533d72cdff754a62d75fb4ea832",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "6796f1629658f99a33fb2bd8d484cb6c3900089a60b3f89df6907435c98666c5",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "647576cc8b7f063778b48b8abccb64ec13c199b1c574878686685dcaf3fafc36",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "86e2d81f4e1bc3acd2daf48653268b40d5e4715275675e994b029c14e7ee26f1",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option C**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option C",
+    "correct_label": "C"
+  },
+  {
+    "content_hash": "4e79f3b3fe11f2bbdcd10776305992894694cd4d266bfb32ebb9fea6d9030955",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option B**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option B",
+    "correct_label": "B"
+  },
+  {
+    "content_hash": "016d574a42877e355aafc92205599c101c4f53ad52cff03356d6cfb641e6c918",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "adb16224f2a82a957dcf43236d381f3241b8097384f3551b0853c292a33468d3",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  },
+  {
+    "content_hash": "dcb2a45beac244efa9094068f32ad1a87b49f86ca0437de967bada6f43914de8",
+    "family": "combine_or",
+    "solution_md": "**Rule:** In every row, the third cell shows the union of the shapes in the first two cells (every shape that appears in either). Applying that to the bottom row gives the missing figure.\n\nWorking that rule out from the first two rows and applying it to the row/cell in question, the figure that fits is **option A**. Every other option reflects a different (incorrect) rule or a one-element slip, so it can be ruled out.",
+    "final_answer": "Option A",
+    "correct_label": "A"
+  }
+]

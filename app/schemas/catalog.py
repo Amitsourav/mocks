@@ -134,3 +134,39 @@ class AttemptDetail(BaseModel):
     skills: list[SkillResultOut]
     questions: list[QuestionResultOut]
     insight: AttemptInsightOut | None = None
+
+
+class OptionReviewOut(BaseModel):
+    id: str
+    label: str | None
+    content_md: str
+    is_correct: bool
+    is_selected: bool
+
+
+class SkillTagOut(BaseModel):
+    code: str
+    name: str
+
+
+class QuestionReviewOut(BaseModel):
+    """Full post-submission review of a single answered question (the grid drill-down):
+    the question, its options with the correct one and the candidate's pick both marked,
+    and the worked solution. Answer keys ARE revealed here — the attempt is submitted."""
+    question_no: int
+    section_name: str | None
+    question_type: str
+    difficulty: str | None
+    content_md: str
+    stimulus_md: str | None = None
+    options: list[OptionReviewOut]
+    selected_label: str | None            # candidate's choice (None = unattempted)
+    correct_label: str | None
+    is_correct: bool | None               # True/False, None = unattempted
+    error_type: str | None = None
+    time_spent_ms: int | None = None
+    marked_for_review: bool = False
+    skills: list[SkillTagOut] = []
+    solution_md: str | None = None
+    final_answer: str | None = None
+    detail_available: bool = True         # False for demo/legacy attempts (no real question)

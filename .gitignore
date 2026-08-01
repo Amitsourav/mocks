@@ -16,3 +16,9 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# Local research tooling + AI keys — never pushed (per project rule)
+Research/
+# Generated review artifacts (large, regenerable)
+figseq_review.html
+dmat_questions_review.html
