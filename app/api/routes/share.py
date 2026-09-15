@@ -22,7 +22,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 
 from app.api.deps import get_current_user
 from app.api.routes import dashboard
-from app.core.config import get_settings
+from app.core.config import Settings, get_settings
 from app.core.db import get_pool
 from app.core.redis import get_redis
 from app.schemas.social import ShareCreateIn, ShareCreateOut
@@ -110,10 +110,20 @@ async def create_share(
         user.id, payload.scope, payload.attempt_id, token, json.dumps(snapshot), expires_at,
     )
 
-    # The share URL points at the frontend page (which renders the public report
-    # by calling GET /share/{token}); default to the configured frontend origin.
-    base = (get_settings().cors_origin_list or ["http://localhost:3000"])[0].rstrip("/")
-    return ShareCreateOut(token=token, url=f"{base}/share/{token}", expires_at=expires_at)
+    return ShareCreateOut(
+        token=token, url=share_url(get_settings(), token), expires_at=expires_at
+    )
+
+
+def share_url(settings: Settings, token: str) -> str:
+    """The frontend page that renders a share (it calls GET /share/{token}).
+
+    SHARE_BASE_URL wins, since it can carry a path prefix (the app is served at
+    www.admitverse.com/mock). CORS origins are bare origins, so the first one is
+    only a fallback for when the app sits at the root of its own host.
+    """
+    base = settings.share_base_url or (settings.cors_origin_list or ["http://localhost:3000"])[0]
+    return f"{base.rstrip('/')}/share/{token}"
 
 
 async def _rate_limit_ip(request: Request) -> None:
