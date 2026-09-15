@@ -10,6 +10,11 @@ class Settings(BaseSettings):
     app_env: str = "development"
     log_level: str = "INFO"
     cors_origins: str = "http://localhost:3000,http://192.168.1.8:3000"
+    # Public base URL of the frontend app, used to build share links
+    # ("{base}/share/{token}"). Must include any path prefix the app is served
+    # under, e.g. https://www.admitverse.com/mock. Unset -> the first CORS origin,
+    # which is only right while the app sits at the root of its own host.
+    share_base_url: str = ""
 
     # Supabase
     supabase_url: str = ""
